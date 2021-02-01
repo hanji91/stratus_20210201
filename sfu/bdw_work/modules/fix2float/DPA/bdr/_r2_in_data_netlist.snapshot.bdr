@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<netlist>
+	<module_name>_r2_in_data</module_name>
+	<signal>
+		<name>CAST_N90</name>
+		<source_loc>3815</source_loc>
+		<async/>
+	</signal>
+	<assign>
+		<name>drive_CAST_N90</name>
+		<lhs>
+			<name>CAST_N90</name>
+		</lhs>
+		<rhs>
+			<name>MUX_N91</name>
+		</rhs>
+	</assign>
+</netlist>

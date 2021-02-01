@@ -1,0 +1,292 @@
+<?xml version="1.0"?>
+<source_file>
+    <module>
+        <name>bn_addr_gen</name>
+        <id>2328</id>
+        <source_path>bn_addr_gen.h</source_path>
+        <source_line>7</source_line>
+        <source_column>1</source_column>
+        <port>
+            <name>clk</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>clk</rtl_port_name>
+        </port>
+        <port>
+            <name>rstn</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>rstn</rtl_port_name>
+        </port>
+        <port>
+            <name>out_feature_width</name>
+            <direction>in</direction>
+            <datatype W="16">sc_uint</datatype>
+            <rtl_port_name>out_feature_width</rtl_port_name>
+        </port>
+        <port>
+            <name>out_feature_height</name>
+            <direction>in</direction>
+            <datatype W="16">sc_uint</datatype>
+            <rtl_port_name>out_feature_height</rtl_port_name>
+        </port>
+        <port>
+            <name>out_feature_channel</name>
+            <direction>in</direction>
+            <datatype W="16">sc_uint</datatype>
+            <rtl_port_name>out_feature_channel</rtl_port_name>
+        </port>
+        <port>
+            <name>bn_read_base_addr</name>
+            <direction>in</direction>
+            <datatype W="32">sc_uint</datatype>
+            <rtl_port_name>bn_read_base_addr</rtl_port_name>
+        </port>
+        <port>
+            <name>conv_type</name>
+            <direction>in</direction>
+            <datatype W="8">sc_uint</datatype>
+            <rtl_port_name>conv_type</rtl_port_name>
+        </port>
+        <port>
+            <name>bn_en</name>
+            <direction>in</direction>
+            <datatype W="8">sc_uint</datatype>
+            <rtl_port_name>bn_en</rtl_port_name>
+        </port>
+        <port>
+            <name>start_rising</name>
+            <direction>in</direction>
+            <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>start_rising</rtl_port_name>
+        </port>
+        <port>
+            <name>data_en</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>data_en</rtl_port_name>
+        </port>
+        <port>
+            <name>bn_addr</name>
+            <direction>out</direction>
+            <datatype W="32">sc_uint</datatype>
+            <rtl_port_name>bn_addr</rtl_port_name>
+        </port>
+        <port>
+            <name>bn_addr_valid</name>
+            <direction>out</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>bn_addr_valid</rtl_port_name>
+        </port>
+        <signal>
+            <name>valid_cnt_enable</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>valid_cnt_enable</rtl_port_name>
+        </signal>
+        <signal>
+            <name>valid_cnt</name>
+                        <datatype W="16">sc_uint</datatype>
+            <rtl_port_name>valid_cnt</rtl_port_name>
+        </signal>
+        <signal>
+            <name>valid_cnt_clear</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>valid_cnt_clear</rtl_port_name>
+        </signal>
+        <signal>
+            <name>valid_cnt_max</name>
+                        <datatype W="16">sc_uint</datatype>
+            <rtl_port_name>valid_cnt_max</rtl_port_name>
+        </signal>
+        <signal>
+            <name>ox_enable</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>ox_enable</rtl_port_name>
+        </signal>
+        <signal>
+            <name>ox_cnt</name>
+                        <datatype W="16">sc_uint</datatype>
+            <rtl_port_name>ox_cnt</rtl_port_name>
+        </signal>
+        <signal>
+            <name>ox_clear</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>ox_clear</rtl_port_name>
+        </signal>
+        <signal>
+            <name>ox_cnt_max</name>
+                        <datatype W="16">sc_uint</datatype>
+            <rtl_port_name>ox_cnt_max</rtl_port_name>
+        </signal>
+        <signal>
+            <name>oy_enable</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>oy_enable</rtl_port_name>
+        </signal>
+        <signal>
+            <name>oy_cnt</name>
+                        <datatype W="16">sc_uint</datatype>
+            <rtl_port_name>oy_cnt</rtl_port_name>
+        </signal>
+        <signal>
+            <name>oy_clear</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>oy_clear</rtl_port_name>
+        </signal>
+        <signal>
+            <name>oy_cnt_max</name>
+                        <datatype W="16">sc_uint</datatype>
+            <rtl_port_name>oy_cnt_max</rtl_port_name>
+        </signal>
+        <signal>
+            <name>of_enable</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>of_enable</rtl_port_name>
+        </signal>
+        <signal>
+            <name>of_cnt</name>
+                        <datatype W="16">sc_uint</datatype>
+            <rtl_port_name>of_cnt</rtl_port_name>
+        </signal>
+        <signal>
+            <name>of_clear</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>of_clear</rtl_port_name>
+        </signal>
+        <signal>
+            <name>of_enable_1d</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>of_enable_1d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>of_enable_2d</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>of_enable_2d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>of_enable_3d</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>of_enable_3d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>of_enable_4d</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>of_enable_4d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>of_enable_5d</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>of_enable_5d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>of_enable_6d</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>of_enable_6d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>of_cnt_max</name>
+                        <datatype W="16">sc_uint</datatype>
+            <rtl_port_name>of_cnt_max</rtl_port_name>
+        </signal>
+        <signal>
+            <name>data_en_1d</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>data_en_1d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>data_en_2d</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>data_en_2d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>data_en_3d</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>data_en_3d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>data_en_4d</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>data_en_4d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>data_en_5d</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>data_en_5d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>data_en_6d</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>data_en_6d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>data_en_7d</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>data_en_7d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>data_en_8d</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>data_en_8d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>data_en_9d</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>data_en_9d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>data_en_10d</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>data_en_10d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>data_en_11d</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>data_en_11d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>data_en_12d</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>data_en_12d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>concate_data</name>
+                        <datatype>
+                <name>c2_Ulong_$</name>
+                <id>3060</id>
+            </datatype>
+            <rtl_port_name>concate_data</rtl_port_name>
+        </signal>
+        <signal>
+            <name>relu_data</name>
+                        <datatype>
+                <array>32</array>
+                <datatype W="16">sc_int</datatype>
+                <rtl_port_name>relu_data_[32]</rtl_port_name>
+            </datatype>
+        </signal>
+        <signal>
+            <name>relu_valid</name>
+                        <datatype>
+                <array>32</array>
+                <datatype W="1">bool</datatype>
+                <rtl_port_name>relu_valid_[32]</rtl_port_name>
+            </datatype>
+        </signal>
+        <signal>
+            <name>bn_addr_update</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>bn_addr_update</rtl_port_name>
+        </signal>
+        <ctor_params>
+            <param>
+                <name/>
+                <datatype>
+                    <name>sc_core::sc_module_name</name>
+                    <id>2311</id>
+                </datatype>
+                <rtl_port_name/>
+            </param>
+        </ctor_params>
+    </module>
+	<exit_status>0</exit_status>
+</source_file>

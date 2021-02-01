@@ -1,0 +1,12 @@
+41730
+41748
+design1
+bdw_work/trace/hls.pe_array.DPA.s.trace
+2
+0
+0
+0
+1611737801
+1611737815
+/usr/cadence/installs/Stratus/bin/stratus_hls --logfile=stratus_hls.log -I. -Ibdw_work/wrappers -I/usr/cadence/installs/Stratus/share/stratus/include --tl=/usr/cadence/installs/Stratus/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib --clock_period=1.000 --default_input_delay=0.100 --flatten_arrays=none --message_detail=3 --path_delay_limit=100.000 --rtl_annotation=op,stack -DDPA=1 -DBDW_RTL_pe_array_DPA=1 --dpopt_auto=op,expr --flatten_arrays=none -d bdw_work/modules/pe_array/DPA -o pe_array_rtl.cpp --hls_module=pe_array --hls_config=DPA --project=project.tcl pe_array.cpp
+

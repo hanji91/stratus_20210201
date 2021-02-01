@@ -1,0 +1,12 @@
+74478
+74479
+design1
+bdw_work/trace/hls.linear_dequant.DPA.trace
+2
+0
+0
+1
+1609395150
+1609395198
+make CWBExec=1 hls_linear_dequant_DPA
+

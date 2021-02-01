@@ -1,0 +1,12 @@
+35578
+35676
+design1
+bdw_work/trace/hls.fp_cmp.DPA.trace
+2
+0
+0
+0
+1610861826
+1610861859
+make CWBExec=1 hls_fp_cmp_DPA
+

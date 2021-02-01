@@ -1,0 +1,12 @@
+59107
+59623
+design1
+-
+2
+0
+0
+0
+1609835818
+1609835818
+make CWBExec=1 clean_hls_bn_float32_DPA
+

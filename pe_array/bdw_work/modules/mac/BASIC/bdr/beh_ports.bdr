@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<source_file>
+    <module>
+        <name>mac</name>
+        <id>2372</id>
+        <source_path>mac.h</source_path>
+        <source_line>6</source_line>
+        <source_column>1</source_column>
+        <port>
+            <name>clk</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>clk</rtl_port_name>
+        </port>
+        <port>
+            <name>rstn</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>rstn</rtl_port_name>
+        </port>
+        <port>
+            <name>init</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>init</rtl_port_name>
+        </port>
+        <port>
+            <name>clear</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>clear</rtl_port_name>
+        </port>
+        <port>
+            <name>src_vld</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>src_vld</rtl_port_name>
+        </port>
+        <port>
+            <name>src_0</name>
+            <direction>in</direction>
+            <datatype W="10">sc_int</datatype>
+            <rtl_port_name>src_0</rtl_port_name>
+        </port>
+        <port>
+            <name>src_1</name>
+            <direction>in</direction>
+            <datatype W="8">sc_int</datatype>
+            <rtl_port_name>src_1</rtl_port_name>
+        </port>
+        <port>
+            <name>acc</name>
+            <direction>out</direction>
+            <datatype W="32">sc_int</datatype>
+            <rtl_port_name>acc</rtl_port_name>
+        </port>
+        <port>
+            <name>src_1_1d</name>
+            <direction>out</direction>
+            <datatype W="8">sc_int</datatype>
+            <rtl_port_name>src_1_1d</rtl_port_name>
+        </port>
+        <signal>
+            <name>mul</name>
+                        <datatype W="18">sc_int</datatype>
+            <rtl_port_name>mul</rtl_port_name>
+        </signal>
+        <ctor_params>
+            <param>
+                <name></name>
+                <datatype>
+                    <name>sc_core::sc_module_name</name>
+                    <id>2355</id>
+                </datatype>
+                <rtl_port_name></rtl_port_name>
+            </param>
+        </ctor_params>
+    </module>
+</source_file>

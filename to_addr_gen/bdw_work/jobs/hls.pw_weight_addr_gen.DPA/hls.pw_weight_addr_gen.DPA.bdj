@@ -1,0 +1,12 @@
+80028
+80059
+design1
+bdw_work/trace/hls.pw_weight_addr_gen.DPA.trace
+2
+0
+0
+0
+1611543335
+1611543351
+make CWBExec=1 hls_pw_weight_addr_gen_DPA
+

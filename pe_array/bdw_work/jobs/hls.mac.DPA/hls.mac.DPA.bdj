@@ -1,0 +1,12 @@
+28878
+28914
+design1
+bdw_work/trace/hls.mac.DPA.trace
+2
+0
+0
+0
+1611814539
+1611814561
+make CWBExec=1 hls_mac_DPA
+

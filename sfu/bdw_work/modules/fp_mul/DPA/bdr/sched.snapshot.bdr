@@ -1,0 +1,179 @@
+<?xml version="1.0"?>
+<snapshot>
+	<name>sched</name>
+	<port>
+		<name>clk</name>
+		<source_loc>696</source_loc>
+		<clock/>
+		<direction>in</direction>
+		<datatype W="1">bool</datatype>
+	</port>
+	<port>
+		<name>rstn</name>
+		<source_loc>697</source_loc>
+		<direction>in</direction>
+		<datatype W="1">bool</datatype>
+	</port>
+	<port>
+		<name>src_valid</name>
+		<source_loc>698</source_loc>
+		<direction>in</direction>
+		<datatype W="1">bool</datatype>
+	</port>
+	<port>
+		<name>a_man</name>
+		<source_loc>6119</source_loc>
+		<direction>in</direction>
+		<datatype W="23">sc_uint</datatype>
+	</port>
+	<port>
+		<name>a_exp</name>
+		<source_loc>6118</source_loc>
+		<direction>in</direction>
+		<datatype W="8">sc_uint</datatype>
+	</port>
+	<port>
+		<name>a_sign</name>
+		<source_loc>6117</source_loc>
+		<direction>in</direction>
+		<datatype W="1">sc_uint</datatype>
+	</port>
+	<port>
+		<name>b_man</name>
+		<source_loc>6116</source_loc>
+		<direction>in</direction>
+		<datatype W="23">sc_uint</datatype>
+	</port>
+	<port>
+		<name>b_exp</name>
+		<source_loc>6115</source_loc>
+		<direction>in</direction>
+		<datatype W="8">sc_uint</datatype>
+	</port>
+	<port>
+		<name>b_sign</name>
+		<source_loc>6114</source_loc>
+		<direction>in</direction>
+		<datatype W="1">sc_uint</datatype>
+	</port>
+	<port>
+		<name>r_man</name>
+		<source_loc>6113</source_loc>
+		<direction>out</direction>
+		<datatype W="23">sc_uint</datatype>
+	</port>
+	<port>
+		<name>r_exp</name>
+		<source_loc>6112</source_loc>
+		<direction>out</direction>
+		<datatype W="8">sc_uint</datatype>
+	</port>
+	<port>
+		<name>r_sign</name>
+		<source_loc>6111</source_loc>
+		<direction>out</direction>
+		<datatype W="1">sc_uint</datatype>
+	</port>
+	<port>
+		<name>dst_valid</name>
+		<source_loc>715</source_loc>
+		<direction>out</direction>
+		<datatype W="1">bool</datatype>
+	</port>
+	<ios>
+		<thread>_dst_valid</thread>
+		<port>
+			<name>clk</name>
+			<source_loc>696</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>src_valid</name>
+			<source_loc>698</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>rstn</name>
+			<source_loc>697</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>dst_valid</name>
+			<source_loc>715</source_loc>
+			<direction>out</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+	</ios>
+	<ios>
+		<thread>_float_mul</thread>
+		<port>
+			<name>clk</name>
+			<source_loc>696</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>b_man</name>
+			<source_loc>6116</source_loc>
+			<direction>in</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>b_exp</name>
+			<source_loc>6115</source_loc>
+			<direction>in</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>b_sign</name>
+			<source_loc>6114</source_loc>
+			<direction>in</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>a_man</name>
+			<source_loc>6119</source_loc>
+			<direction>in</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>a_exp</name>
+			<source_loc>6118</source_loc>
+			<direction>in</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>a_sign</name>
+			<source_loc>6117</source_loc>
+			<direction>in</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>rstn</name>
+			<source_loc>697</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>r_man</name>
+			<source_loc>6113</source_loc>
+			<direction>out</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>r_exp</name>
+			<source_loc>6112</source_loc>
+			<direction>out</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>r_sign</name>
+			<source_loc>6111</source_loc>
+			<direction>out</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+	</ios>
+</snapshot>

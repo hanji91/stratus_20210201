@@ -1,0 +1,346 @@
+/****************************************************************************
+*
+*  Copyright (c) 2015, Cadence Design Systems. All Rights Reserved.
+*
+*  This file contains confidential information that may not be
+*  distributed under any circumstances without the written permision
+*  of Cadence Design Systems.
+*
+****************************************************************************/
+/****************************************************************************
+*
+* This file is used to wrap the three different versions of the DUT
+* block called "pe_array". By default, it will include the behavioral
+* model. Otherwise, it will include the RTL C++ or the RTL Verilog
+* depending on the definition of either of "RTL" or "COSIM".
+*
+****************************************************************************/
+
+
+#include	"pe_array_sc_wrap.h"
+#include	"pe_array_sc_foreign.h"
+
+// The following threads are used to connect structured ports to the actual
+// RTL ports
+
+void pe_array_wrapper::InitInstances(  )
+{
+	
+            
+    pe_array0 = new pe_array( "pe_array" );
+
+    pe_array0->clk(clk);
+    pe_array0->rstn(rstn);
+    pe_array0->enable(enable);
+    pe_array0->src_vld(src_vld);
+    pe_array0->clear(clear);
+    pe_array0->init(init);
+    pe_array0->systolic_en(systolic_en);
+    pe_array0->systolic_depth(systolic_depth);
+    pe_array0->mac_shift_len(mac_shift_len);
+    pe_array0->src_0_s0_0(src_0_s0[0]);
+    pe_array0->src_0_s0_1(src_0_s0[1]);
+    pe_array0->src_0_s0_2(src_0_s0[2]);
+    pe_array0->src_0_s0_3(src_0_s0[3]);
+    pe_array0->src_0_s0_4(src_0_s0[4]);
+    pe_array0->src_0_s0_5(src_0_s0[5]);
+    pe_array0->src_0_s0_6(src_0_s0[6]);
+    pe_array0->src_0_s0_7(src_0_s0[7]);
+    pe_array0->src_0_s0_8(src_0_s0[8]);
+    pe_array0->src_0_s0_9(src_0_s0[9]);
+    pe_array0->src_0_s0_10(src_0_s0[10]);
+    pe_array0->src_0_s0_11(src_0_s0[11]);
+    pe_array0->src_0_s0_12(src_0_s0[12]);
+    pe_array0->src_0_s0_13(src_0_s0[13]);
+    pe_array0->src_0_s0_14(src_0_s0[14]);
+    pe_array0->src_0_s0_15(src_0_s0[15]);
+    pe_array0->src_0_s0_16(src_0_s0[16]);
+    pe_array0->src_0_s0_17(src_0_s0[17]);
+    pe_array0->src_0_s0_18(src_0_s0[18]);
+    pe_array0->src_0_s0_19(src_0_s0[19]);
+    pe_array0->src_0_s0_20(src_0_s0[20]);
+    pe_array0->src_0_s0_21(src_0_s0[21]);
+    pe_array0->src_0_s0_22(src_0_s0[22]);
+    pe_array0->src_0_s0_23(src_0_s0[23]);
+    pe_array0->src_0_s0_24(src_0_s0[24]);
+    pe_array0->src_0_s0_25(src_0_s0[25]);
+    pe_array0->src_0_s0_26(src_0_s0[26]);
+    pe_array0->src_0_s0_27(src_0_s0[27]);
+    pe_array0->src_0_s0_28(src_0_s0[28]);
+    pe_array0->src_0_s0_29(src_0_s0[29]);
+    pe_array0->src_0_s0_30(src_0_s0[30]);
+    pe_array0->src_0_s0_31(src_0_s0[31]);
+    pe_array0->src_0_s1_0(src_0_s1[0]);
+    pe_array0->src_0_s1_1(src_0_s1[1]);
+    pe_array0->src_0_s1_2(src_0_s1[2]);
+    pe_array0->src_0_s1_3(src_0_s1[3]);
+    pe_array0->src_0_s1_4(src_0_s1[4]);
+    pe_array0->src_0_s1_5(src_0_s1[5]);
+    pe_array0->src_0_s1_6(src_0_s1[6]);
+    pe_array0->src_0_s1_7(src_0_s1[7]);
+    pe_array0->src_0_s1_8(src_0_s1[8]);
+    pe_array0->src_0_s1_9(src_0_s1[9]);
+    pe_array0->src_0_s1_10(src_0_s1[10]);
+    pe_array0->src_0_s1_11(src_0_s1[11]);
+    pe_array0->src_0_s1_12(src_0_s1[12]);
+    pe_array0->src_0_s1_13(src_0_s1[13]);
+    pe_array0->src_0_s1_14(src_0_s1[14]);
+    pe_array0->src_0_s1_15(src_0_s1[15]);
+    pe_array0->src_0_s1_16(src_0_s1[16]);
+    pe_array0->src_0_s1_17(src_0_s1[17]);
+    pe_array0->src_0_s1_18(src_0_s1[18]);
+    pe_array0->src_0_s1_19(src_0_s1[19]);
+    pe_array0->src_0_s1_20(src_0_s1[20]);
+    pe_array0->src_0_s1_21(src_0_s1[21]);
+    pe_array0->src_0_s1_22(src_0_s1[22]);
+    pe_array0->src_0_s1_23(src_0_s1[23]);
+    pe_array0->src_0_s1_24(src_0_s1[24]);
+    pe_array0->src_0_s1_25(src_0_s1[25]);
+    pe_array0->src_0_s1_26(src_0_s1[26]);
+    pe_array0->src_0_s1_27(src_0_s1[27]);
+    pe_array0->src_0_s1_28(src_0_s1[28]);
+    pe_array0->src_0_s1_29(src_0_s1[29]);
+    pe_array0->src_0_s1_30(src_0_s1[30]);
+    pe_array0->src_0_s1_31(src_0_s1[31]);
+    pe_array0->src_0_s2_0(src_0_s2[0]);
+    pe_array0->src_0_s2_1(src_0_s2[1]);
+    pe_array0->src_0_s2_2(src_0_s2[2]);
+    pe_array0->src_0_s2_3(src_0_s2[3]);
+    pe_array0->src_0_s2_4(src_0_s2[4]);
+    pe_array0->src_0_s2_5(src_0_s2[5]);
+    pe_array0->src_0_s2_6(src_0_s2[6]);
+    pe_array0->src_0_s2_7(src_0_s2[7]);
+    pe_array0->src_0_s2_8(src_0_s2[8]);
+    pe_array0->src_0_s2_9(src_0_s2[9]);
+    pe_array0->src_0_s2_10(src_0_s2[10]);
+    pe_array0->src_0_s2_11(src_0_s2[11]);
+    pe_array0->src_0_s2_12(src_0_s2[12]);
+    pe_array0->src_0_s2_13(src_0_s2[13]);
+    pe_array0->src_0_s2_14(src_0_s2[14]);
+    pe_array0->src_0_s2_15(src_0_s2[15]);
+    pe_array0->src_0_s2_16(src_0_s2[16]);
+    pe_array0->src_0_s2_17(src_0_s2[17]);
+    pe_array0->src_0_s2_18(src_0_s2[18]);
+    pe_array0->src_0_s2_19(src_0_s2[19]);
+    pe_array0->src_0_s2_20(src_0_s2[20]);
+    pe_array0->src_0_s2_21(src_0_s2[21]);
+    pe_array0->src_0_s2_22(src_0_s2[22]);
+    pe_array0->src_0_s2_23(src_0_s2[23]);
+    pe_array0->src_0_s2_24(src_0_s2[24]);
+    pe_array0->src_0_s2_25(src_0_s2[25]);
+    pe_array0->src_0_s2_26(src_0_s2[26]);
+    pe_array0->src_0_s2_27(src_0_s2[27]);
+    pe_array0->src_0_s2_28(src_0_s2[28]);
+    pe_array0->src_0_s2_29(src_0_s2[29]);
+    pe_array0->src_0_s2_30(src_0_s2[30]);
+    pe_array0->src_0_s2_31(src_0_s2[31]);
+    pe_array0->src_0_s3_0(src_0_s3[0]);
+    pe_array0->src_0_s3_1(src_0_s3[1]);
+    pe_array0->src_0_s3_2(src_0_s3[2]);
+    pe_array0->src_0_s3_3(src_0_s3[3]);
+    pe_array0->src_0_s3_4(src_0_s3[4]);
+    pe_array0->src_0_s3_5(src_0_s3[5]);
+    pe_array0->src_0_s3_6(src_0_s3[6]);
+    pe_array0->src_0_s3_7(src_0_s3[7]);
+    pe_array0->src_0_s3_8(src_0_s3[8]);
+    pe_array0->src_0_s3_9(src_0_s3[9]);
+    pe_array0->src_0_s3_10(src_0_s3[10]);
+    pe_array0->src_0_s3_11(src_0_s3[11]);
+    pe_array0->src_0_s3_12(src_0_s3[12]);
+    pe_array0->src_0_s3_13(src_0_s3[13]);
+    pe_array0->src_0_s3_14(src_0_s3[14]);
+    pe_array0->src_0_s3_15(src_0_s3[15]);
+    pe_array0->src_0_s3_16(src_0_s3[16]);
+    pe_array0->src_0_s3_17(src_0_s3[17]);
+    pe_array0->src_0_s3_18(src_0_s3[18]);
+    pe_array0->src_0_s3_19(src_0_s3[19]);
+    pe_array0->src_0_s3_20(src_0_s3[20]);
+    pe_array0->src_0_s3_21(src_0_s3[21]);
+    pe_array0->src_0_s3_22(src_0_s3[22]);
+    pe_array0->src_0_s3_23(src_0_s3[23]);
+    pe_array0->src_0_s3_24(src_0_s3[24]);
+    pe_array0->src_0_s3_25(src_0_s3[25]);
+    pe_array0->src_0_s3_26(src_0_s3[26]);
+    pe_array0->src_0_s3_27(src_0_s3[27]);
+    pe_array0->src_0_s3_28(src_0_s3[28]);
+    pe_array0->src_0_s3_29(src_0_s3[29]);
+    pe_array0->src_0_s3_30(src_0_s3[30]);
+    pe_array0->src_0_s3_31(src_0_s3[31]);
+    pe_array0->src_0_s4_0(src_0_s4[0]);
+    pe_array0->src_0_s4_1(src_0_s4[1]);
+    pe_array0->src_0_s4_2(src_0_s4[2]);
+    pe_array0->src_0_s4_3(src_0_s4[3]);
+    pe_array0->src_0_s4_4(src_0_s4[4]);
+    pe_array0->src_0_s4_5(src_0_s4[5]);
+    pe_array0->src_0_s4_6(src_0_s4[6]);
+    pe_array0->src_0_s4_7(src_0_s4[7]);
+    pe_array0->src_0_s4_8(src_0_s4[8]);
+    pe_array0->src_0_s4_9(src_0_s4[9]);
+    pe_array0->src_0_s4_10(src_0_s4[10]);
+    pe_array0->src_0_s4_11(src_0_s4[11]);
+    pe_array0->src_0_s4_12(src_0_s4[12]);
+    pe_array0->src_0_s4_13(src_0_s4[13]);
+    pe_array0->src_0_s4_14(src_0_s4[14]);
+    pe_array0->src_0_s4_15(src_0_s4[15]);
+    pe_array0->src_0_s4_16(src_0_s4[16]);
+    pe_array0->src_0_s4_17(src_0_s4[17]);
+    pe_array0->src_0_s4_18(src_0_s4[18]);
+    pe_array0->src_0_s4_19(src_0_s4[19]);
+    pe_array0->src_0_s4_20(src_0_s4[20]);
+    pe_array0->src_0_s4_21(src_0_s4[21]);
+    pe_array0->src_0_s4_22(src_0_s4[22]);
+    pe_array0->src_0_s4_23(src_0_s4[23]);
+    pe_array0->src_0_s4_24(src_0_s4[24]);
+    pe_array0->src_0_s4_25(src_0_s4[25]);
+    pe_array0->src_0_s4_26(src_0_s4[26]);
+    pe_array0->src_0_s4_27(src_0_s4[27]);
+    pe_array0->src_0_s4_28(src_0_s4[28]);
+    pe_array0->src_0_s4_29(src_0_s4[29]);
+    pe_array0->src_0_s4_30(src_0_s4[30]);
+    pe_array0->src_0_s4_31(src_0_s4[31]);
+    pe_array0->src_0_s5_0(src_0_s5[0]);
+    pe_array0->src_0_s5_1(src_0_s5[1]);
+    pe_array0->src_0_s5_2(src_0_s5[2]);
+    pe_array0->src_0_s5_3(src_0_s5[3]);
+    pe_array0->src_0_s5_4(src_0_s5[4]);
+    pe_array0->src_0_s5_5(src_0_s5[5]);
+    pe_array0->src_0_s5_6(src_0_s5[6]);
+    pe_array0->src_0_s5_7(src_0_s5[7]);
+    pe_array0->src_0_s5_8(src_0_s5[8]);
+    pe_array0->src_0_s5_9(src_0_s5[9]);
+    pe_array0->src_0_s5_10(src_0_s5[10]);
+    pe_array0->src_0_s5_11(src_0_s5[11]);
+    pe_array0->src_0_s5_12(src_0_s5[12]);
+    pe_array0->src_0_s5_13(src_0_s5[13]);
+    pe_array0->src_0_s5_14(src_0_s5[14]);
+    pe_array0->src_0_s5_15(src_0_s5[15]);
+    pe_array0->src_0_s5_16(src_0_s5[16]);
+    pe_array0->src_0_s5_17(src_0_s5[17]);
+    pe_array0->src_0_s5_18(src_0_s5[18]);
+    pe_array0->src_0_s5_19(src_0_s5[19]);
+    pe_array0->src_0_s5_20(src_0_s5[20]);
+    pe_array0->src_0_s5_21(src_0_s5[21]);
+    pe_array0->src_0_s5_22(src_0_s5[22]);
+    pe_array0->src_0_s5_23(src_0_s5[23]);
+    pe_array0->src_0_s5_24(src_0_s5[24]);
+    pe_array0->src_0_s5_25(src_0_s5[25]);
+    pe_array0->src_0_s5_26(src_0_s5[26]);
+    pe_array0->src_0_s5_27(src_0_s5[27]);
+    pe_array0->src_0_s5_28(src_0_s5[28]);
+    pe_array0->src_0_s5_29(src_0_s5[29]);
+    pe_array0->src_0_s5_30(src_0_s5[30]);
+    pe_array0->src_0_s5_31(src_0_s5[31]);
+    pe_array0->src_0_s6_0(src_0_s6[0]);
+    pe_array0->src_0_s6_1(src_0_s6[1]);
+    pe_array0->src_0_s6_2(src_0_s6[2]);
+    pe_array0->src_0_s6_3(src_0_s6[3]);
+    pe_array0->src_0_s6_4(src_0_s6[4]);
+    pe_array0->src_0_s6_5(src_0_s6[5]);
+    pe_array0->src_0_s6_6(src_0_s6[6]);
+    pe_array0->src_0_s6_7(src_0_s6[7]);
+    pe_array0->src_0_s6_8(src_0_s6[8]);
+    pe_array0->src_0_s6_9(src_0_s6[9]);
+    pe_array0->src_0_s6_10(src_0_s6[10]);
+    pe_array0->src_0_s6_11(src_0_s6[11]);
+    pe_array0->src_0_s6_12(src_0_s6[12]);
+    pe_array0->src_0_s6_13(src_0_s6[13]);
+    pe_array0->src_0_s6_14(src_0_s6[14]);
+    pe_array0->src_0_s6_15(src_0_s6[15]);
+    pe_array0->src_0_s6_16(src_0_s6[16]);
+    pe_array0->src_0_s6_17(src_0_s6[17]);
+    pe_array0->src_0_s6_18(src_0_s6[18]);
+    pe_array0->src_0_s6_19(src_0_s6[19]);
+    pe_array0->src_0_s6_20(src_0_s6[20]);
+    pe_array0->src_0_s6_21(src_0_s6[21]);
+    pe_array0->src_0_s6_22(src_0_s6[22]);
+    pe_array0->src_0_s6_23(src_0_s6[23]);
+    pe_array0->src_0_s6_24(src_0_s6[24]);
+    pe_array0->src_0_s6_25(src_0_s6[25]);
+    pe_array0->src_0_s6_26(src_0_s6[26]);
+    pe_array0->src_0_s6_27(src_0_s6[27]);
+    pe_array0->src_0_s6_28(src_0_s6[28]);
+    pe_array0->src_0_s6_29(src_0_s6[29]);
+    pe_array0->src_0_s6_30(src_0_s6[30]);
+    pe_array0->src_0_s6_31(src_0_s6[31]);
+    pe_array0->src_1_0(src_1[0]);
+    pe_array0->src_1_1(src_1[1]);
+    pe_array0->src_1_2(src_1[2]);
+    pe_array0->src_1_3(src_1[3]);
+    pe_array0->src_1_4(src_1[4]);
+    pe_array0->src_1_5(src_1[5]);
+    pe_array0->src_1_6(src_1[6]);
+    pe_array0->src_1_7(src_1[7]);
+    pe_array0->src_1_8(src_1[8]);
+    pe_array0->src_1_9(src_1[9]);
+    pe_array0->src_1_10(src_1[10]);
+    pe_array0->src_1_11(src_1[11]);
+    pe_array0->src_1_12(src_1[12]);
+    pe_array0->src_1_13(src_1[13]);
+    pe_array0->src_1_14(src_1[14]);
+    pe_array0->src_1_15(src_1[15]);
+    pe_array0->src_1_16(src_1[16]);
+    pe_array0->src_1_17(src_1[17]);
+    pe_array0->src_1_18(src_1[18]);
+    pe_array0->src_1_19(src_1[19]);
+    pe_array0->src_1_20(src_1[20]);
+    pe_array0->src_1_21(src_1[21]);
+    pe_array0->src_1_22(src_1[22]);
+    pe_array0->src_1_23(src_1[23]);
+    pe_array0->src_1_24(src_1[24]);
+    pe_array0->src_1_25(src_1[25]);
+    pe_array0->src_1_26(src_1[26]);
+    pe_array0->src_1_27(src_1[27]);
+    pe_array0->src_1_28(src_1[28]);
+    pe_array0->src_1_29(src_1[29]);
+    pe_array0->src_1_30(src_1[30]);
+    pe_array0->src_1_31(src_1[31]);
+    pe_array0->pe_data_0(pe_data[0]);
+    pe_array0->pe_data_1(pe_data[1]);
+    pe_array0->pe_data_2(pe_data[2]);
+    pe_array0->pe_data_3(pe_data[3]);
+    pe_array0->pe_data_4(pe_data[4]);
+    pe_array0->pe_data_5(pe_data[5]);
+    pe_array0->pe_data_6(pe_data[6]);
+    pe_array0->pe_data_7(pe_data[7]);
+    pe_array0->pe_data_8(pe_data[8]);
+    pe_array0->pe_data_9(pe_data[9]);
+    pe_array0->pe_data_10(pe_data[10]);
+    pe_array0->pe_data_11(pe_data[11]);
+    pe_array0->pe_data_12(pe_data[12]);
+    pe_array0->pe_data_13(pe_data[13]);
+    pe_array0->pe_data_14(pe_data[14]);
+    pe_array0->pe_data_15(pe_data[15]);
+    pe_array0->pe_data_16(pe_data[16]);
+    pe_array0->pe_data_17(pe_data[17]);
+    pe_array0->pe_data_18(pe_data[18]);
+    pe_array0->pe_data_19(pe_data[19]);
+    pe_array0->pe_data_20(pe_data[20]);
+    pe_array0->pe_data_21(pe_data[21]);
+    pe_array0->pe_data_22(pe_data[22]);
+    pe_array0->pe_data_23(pe_data[23]);
+    pe_array0->pe_data_24(pe_data[24]);
+    pe_array0->pe_data_25(pe_data[25]);
+    pe_array0->pe_data_26(pe_data[26]);
+    pe_array0->pe_data_27(pe_data[27]);
+    pe_array0->pe_data_28(pe_data[28]);
+    pe_array0->pe_data_29(pe_data[29]);
+    pe_array0->pe_data_30(pe_data[30]);
+    pe_array0->pe_data_31(pe_data[31]);
+    pe_array0->pe_data_valid(pe_data_valid);
+
+}
+
+void pe_array_wrapper::InitThreads()
+{
+    
+}
+
+void pe_array_wrapper::DeleteInstances()
+{
+    if (pe_array0)
+    {
+        delete pe_array0;
+        pe_array0 = 0;
+    }
+}
+

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<netlist>
+	<module_name>_bias_add</module_name>
+	<signal>
+		<name>MUX_N69</name>
+		<source_loc>2706</source_loc>
+		<async/>
+	</signal>
+	<thread>
+		<name>MUX_N69</name>
+		<async/>
+		<lhs>
+			<name>MUX_N69</name>
+		</lhs>
+		<rhs>
+			<name>ubias_add_bias_addr_next</name>
+			<name>CynTemp_1</name>
+		</rhs>
+		<cond>
+			<name>amtmp003</name>
+		</cond>
+		<mux_area>91.5739</mux_area>
+		<mux_delay>0.0615</mux_delay>
+		<control_delay>0.0615</control_delay>
+	</thread>
+</netlist>

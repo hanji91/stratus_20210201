@@ -1,0 +1,338 @@
+<?xml version="1.0"?>
+<snapshot>
+	<name>sched</name>
+	<port>
+		<name>clk</name>
+		<source_loc>572</source_loc>
+		<clock/>
+		<direction>in</direction>
+		<datatype W="1">bool</datatype>
+	</port>
+	<port>
+		<name>rstn</name>
+		<source_loc>573</source_loc>
+		<direction>in</direction>
+		<datatype W="1">bool</datatype>
+	</port>
+	<port>
+		<name>src_valid</name>
+		<source_loc>574</source_loc>
+		<direction>in</direction>
+		<datatype W="1">bool</datatype>
+	</port>
+	<port>
+		<name>src</name>
+		<source_loc>599</source_loc>
+		<direction>in</direction>
+		<datatype W="32">sc_uint</datatype>
+	</port>
+	<port>
+		<name>dst_valid</name>
+		<source_loc>613</source_loc>
+		<direction>out</direction>
+		<datatype W="1">bool</datatype>
+	</port>
+	<port>
+		<name>dst</name>
+		<source_loc>652</source_loc>
+		<direction>out</direction>
+		<datatype W="32">sc_uint</datatype>
+	</port>
+	<ios>
+		<thread>_dst_valid</thread>
+		<port>
+			<name>clk</name>
+			<source_loc>572</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>src_valid_3d</name>
+			<source_loc>729</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>rstn</name>
+			<source_loc>573</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>dst_valid</name>
+			<source_loc>613</source_loc>
+			<direction>out</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+	</ios>
+	<ios>
+		<thread>_dst</thread>
+		<port>
+			<name>clk</name>
+			<source_loc>572</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>r_a_s</name>
+			<source_loc>772</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>src_valid_3d</name>
+			<source_loc>729</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>r_zero_sig</name>
+			<source_loc>733</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>r_a_m</name>
+			<source_loc>736</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>r_max_sig</name>
+			<source_loc>734</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>rstn</name>
+			<source_loc>573</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>dst</name>
+			<source_loc>652</source_loc>
+			<direction>out</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+	</ios>
+	<ios>
+		<thread>_r_a_m</thread>
+		<port>
+			<name>clk</name>
+			<source_loc>572</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>shift_num</name>
+			<source_loc>709</source_loc>
+			<direction>in</direction>
+			<datatype W="5">sc_uint</datatype>
+		</port>
+		<port>
+			<name>a_m</name>
+			<source_loc>735</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_valid_2d</name>
+			<source_loc>728</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>zm_sig</name>
+			<source_loc>732</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>rstn</name>
+			<source_loc>573</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>r_a_m</name>
+			<source_loc>736</source_loc>
+			<direction>out</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+	</ios>
+	<ios>
+		<thread>_comb_sig</thread>
+		<port>
+			<name>a_e</name>
+			<source_loc>769</source_loc>
+			<direction>in</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>shift_num</name>
+			<source_loc>709</source_loc>
+			<direction>out</direction>
+			<datatype W="5">sc_uint</datatype>
+		</port>
+		<port>
+			<name>max_sig</name>
+			<source_loc>731</source_loc>
+			<direction>out</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>zm_sig</name>
+			<source_loc>732</source_loc>
+			<direction>out</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+	</ios>
+	<ios>
+		<thread>_a_m_e_s</thread>
+		<port>
+			<name>clk</name>
+			<source_loc>572</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>src_valid_1d</name>
+			<source_loc>727</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>r_in_data</name>
+			<source_loc>676</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>rstn</name>
+			<source_loc>573</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>a_s</name>
+			<source_loc>771</source_loc>
+			<direction>out</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>a_e</name>
+			<source_loc>769</source_loc>
+			<direction>out</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>a_m</name>
+			<source_loc>735</source_loc>
+			<direction>out</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+	</ios>
+	<ios>
+		<thread>_r_in_data</thread>
+		<port>
+			<name>clk</name>
+			<source_loc>572</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>src</name>
+			<source_loc>599</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_valid</name>
+			<source_loc>574</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>rstn</name>
+			<source_loc>573</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>r_in_data</name>
+			<source_loc>676</source_loc>
+			<direction>out</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+	</ios>
+	<ios>
+		<thread>_delay</thread>
+		<port>
+			<name>clk</name>
+			<source_loc>572</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>max_sig</name>
+			<source_loc>731</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>a_s</name>
+			<source_loc>771</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>src_valid</name>
+			<source_loc>574</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>rstn</name>
+			<source_loc>573</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>r_max_sig</name>
+			<source_loc>734</source_loc>
+			<direction>out</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>r_zero_sig</name>
+			<source_loc>733</source_loc>
+			<direction>out</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>r_a_s</name>
+			<source_loc>772</source_loc>
+			<direction>out</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>src_valid_3d</name>
+			<source_loc>729</source_loc>
+			<direction>out</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>src_valid_2d</name>
+			<source_loc>728</source_loc>
+			<direction>out</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>src_valid_1d</name>
+			<source_loc>727</source_loc>
+			<direction>out</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+	</ios>
+</snapshot>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE QtCreatorSession>
+<!-- Written by Qt Creator 2.5.1, 2021-01-28T16:04:41. -->
+<qtcreator>
+ <data>
+  <variable>EditorSettings</variable>
+  <value type="QByteArray">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</value>
+ </data>
+ <data>
+  <variable>OpenEditors</variable>
+  <value type="int">1</value>
+ </data>
+ <data>
+  <variable>ProjectDependencies</variable>
+  <valuemap type="QVariantMap"/>
+ </data>
+ <data>
+  <variable>ProjectList</variable>
+  <valuelist type="QVariantList"/>
+ </data>
+ <data>
+  <variable>value-ActiveMode</variable>
+  <value type="QString">Mode.CynthAnalysis</value>
+ </data>
+ <data>
+  <variable>value-Breakpoints</variable>
+  <valuelist type="QVariantList"/>
+ </data>
+ <data>
+  <variable>value-DebuggerToolTips</variable>
+  <value type="QString"></value>
+ </data>
+ <data>
+  <variable>value-DefaultFormats</variable>
+  <valuemap type="QVariantMap"/>
+ </data>
+ <data>
+  <variable>value-ProjectTree.ExpandData</variable>
+  <valuelist type="QVariantList">
+   <value type="QString">session</value>
+  </valuelist>
+ </data>
+ <data>
+  <variable>value-Watchers</variable>
+  <valuelist type="QVariantList"/>
+ </data>
+ <data>
+  <variable>valueKeys</variable>
+  <valuelist type="QVariantList">
+   <value type="QString">ActiveMode</value>
+   <value type="QString">Breakpoints</value>
+   <value type="QString">DebuggerToolTips</value>
+   <value type="QString">DefaultFormats</value>
+   <value type="QString">ProjectTree.ExpandData</value>
+   <value type="QString">Watchers</value>
+  </valuelist>
+ </data>
+</qtcreator>

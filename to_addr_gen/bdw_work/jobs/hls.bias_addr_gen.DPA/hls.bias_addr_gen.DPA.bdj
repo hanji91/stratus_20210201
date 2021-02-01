@@ -1,0 +1,12 @@
+4657
+4691
+design1
+bdw_work/trace/hls.bias_addr_gen.DPA.trace
+2
+0
+0
+0
+1611710556
+1611710580
+make CWBExec=1 hls_bias_addr_gen_DPA
+

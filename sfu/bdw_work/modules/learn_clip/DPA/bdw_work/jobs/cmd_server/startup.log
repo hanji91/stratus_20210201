@@ -1,0 +1,24 @@
+ Starting CellMath Designer (Linux)
+  Time: January 07, 2021. 10:31:36
+  Host: design1
+  User: hanji
+  Args: --dofile /usr/cadence/installs/Stratus/share/stratus/tcl/bdw_cmd_shell.tcl --locallogfile /dev/null -x bdw_server_start
+
+               CellMath Designer
+               =================
+              Version: 2019.1.01 
+
+  Copyright (c) 2014-2019 Cadence Design Systems.  All rights reserved worldwide.
+  
+  Warning: This computer program is protected by copyright law and 
+  international treaties.  Unauthorized reproduction, modification, 
+  or distribution of this program, or any portion of it, may result 
+  in severe civil and criminal penalties.
+INFO: Using installation at: /usr/cadence/installs/Stratus/tools.lnx86/cellmath/ (DPEAPI-3)
+  
+  Info: Script "/usr/cadence/installs/Stratus/share/stratus/tcl/bdw_cmd_shell.tcl" run successfully
+
+##########################################################################
+# Starting in server mode with port 43969
+#   client pid = 58630
+##########################################################################

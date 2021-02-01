@@ -1,0 +1,842 @@
+<?xml version="1.0"?>
+<snapshot>
+	<name>sched</name>
+	<port>
+		<name>clk</name>
+		<source_loc>705</source_loc>
+		<clock/>
+		<direction>in</direction>
+		<datatype W="1">bool</datatype>
+	</port>
+	<port>
+		<name>rstn</name>
+		<source_loc>706</source_loc>
+		<direction>in</direction>
+		<datatype W="1">bool</datatype>
+	</port>
+	<port>
+		<name>enable</name>
+		<source_loc>707</source_loc>
+		<direction>in</direction>
+		<datatype W="1">bool</datatype>
+	</port>
+	<port>
+		<name>src_valid</name>
+		<source_loc>708</source_loc>
+		<direction>in</direction>
+		<datatype W="1">bool</datatype>
+	</port>
+	<port>
+		<name>src_0</name>
+		<source_loc>3460</source_loc>
+		<direction>in</direction>
+		<datatype W="32">sc_uint</datatype>
+	</port>
+	<port>
+		<name>src_1</name>
+		<source_loc>3461</source_loc>
+		<direction>in</direction>
+		<datatype W="32">sc_uint</datatype>
+	</port>
+	<port>
+		<name>src_2</name>
+		<source_loc>3462</source_loc>
+		<direction>in</direction>
+		<datatype W="32">sc_uint</datatype>
+	</port>
+	<port>
+		<name>src_3</name>
+		<source_loc>3463</source_loc>
+		<direction>in</direction>
+		<datatype W="32">sc_uint</datatype>
+	</port>
+	<port>
+		<name>src_4</name>
+		<source_loc>3464</source_loc>
+		<direction>in</direction>
+		<datatype W="32">sc_uint</datatype>
+	</port>
+	<port>
+		<name>src_5</name>
+		<source_loc>3465</source_loc>
+		<direction>in</direction>
+		<datatype W="32">sc_uint</datatype>
+	</port>
+	<port>
+		<name>src_6</name>
+		<source_loc>3466</source_loc>
+		<direction>in</direction>
+		<datatype W="32">sc_uint</datatype>
+	</port>
+	<port>
+		<name>src_7</name>
+		<source_loc>3467</source_loc>
+		<direction>in</direction>
+		<datatype W="32">sc_uint</datatype>
+	</port>
+	<port>
+		<name>bias_data</name>
+		<source_loc>710</source_loc>
+		<direction>in</direction>
+		<datatype W="512">sc_biguint</datatype>
+	</port>
+	<port>
+		<name>dst_valid</name>
+		<source_loc>724</source_loc>
+		<direction>out</direction>
+		<datatype W="1">bool</datatype>
+	</port>
+	<port>
+		<name>dst_0</name>
+		<source_loc>3444</source_loc>
+		<direction>out</direction>
+		<datatype W="32">sc_uint</datatype>
+	</port>
+	<port>
+		<name>dst_1</name>
+		<source_loc>3445</source_loc>
+		<direction>out</direction>
+		<datatype W="32">sc_uint</datatype>
+	</port>
+	<port>
+		<name>dst_2</name>
+		<source_loc>3446</source_loc>
+		<direction>out</direction>
+		<datatype W="32">sc_uint</datatype>
+	</port>
+	<port>
+		<name>dst_3</name>
+		<source_loc>3447</source_loc>
+		<direction>out</direction>
+		<datatype W="32">sc_uint</datatype>
+	</port>
+	<port>
+		<name>dst_4</name>
+		<source_loc>3448</source_loc>
+		<direction>out</direction>
+		<datatype W="32">sc_uint</datatype>
+	</port>
+	<port>
+		<name>dst_5</name>
+		<source_loc>3449</source_loc>
+		<direction>out</direction>
+		<datatype W="32">sc_uint</datatype>
+	</port>
+	<port>
+		<name>dst_6</name>
+		<source_loc>3450</source_loc>
+		<direction>out</direction>
+		<datatype W="32">sc_uint</datatype>
+	</port>
+	<port>
+		<name>dst_7</name>
+		<source_loc>3451</source_loc>
+		<direction>out</direction>
+		<datatype W="32">sc_uint</datatype>
+	</port>
+	<ios>
+		<thread>_dst_valid</thread>
+		<port>
+			<name>clk</name>
+			<source_loc>705</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>r2_src_valid</name>
+			<source_loc>757</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>src_valid</name>
+			<source_loc>708</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>enable</name>
+			<source_loc>707</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>rstn</name>
+			<source_loc>706</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>dst_valid</name>
+			<source_loc>724</source_loc>
+			<direction>out</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+	</ios>
+	<ios>
+		<thread>_dst</thread>
+		<port>
+			<name>clk</name>
+			<source_loc>705</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>src_7</name>
+			<source_loc>3467</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_6</name>
+			<source_loc>3466</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_5</name>
+			<source_loc>3465</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_4</name>
+			<source_loc>3464</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_3</name>
+			<source_loc>3463</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_2</name>
+			<source_loc>3462</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_1</name>
+			<source_loc>3461</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_0</name>
+			<source_loc>3460</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>add_result_7</name>
+			<source_loc>3459</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_int</datatype>
+		</port>
+		<port>
+			<name>add_result_6</name>
+			<source_loc>3458</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_int</datatype>
+		</port>
+		<port>
+			<name>add_result_5</name>
+			<source_loc>3457</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_int</datatype>
+		</port>
+		<port>
+			<name>add_result_4</name>
+			<source_loc>3456</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_int</datatype>
+		</port>
+		<port>
+			<name>add_result_3</name>
+			<source_loc>3455</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_int</datatype>
+		</port>
+		<port>
+			<name>add_result_2</name>
+			<source_loc>3454</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_int</datatype>
+		</port>
+		<port>
+			<name>add_result_1</name>
+			<source_loc>3453</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_int</datatype>
+		</port>
+		<port>
+			<name>add_result_0</name>
+			<source_loc>3452</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_int</datatype>
+		</port>
+		<port>
+			<name>r2_src_valid</name>
+			<source_loc>757</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>enable</name>
+			<source_loc>707</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>rstn</name>
+			<source_loc>706</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>dst_7</name>
+			<source_loc>3451</source_loc>
+			<direction>out</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>dst_6</name>
+			<source_loc>3450</source_loc>
+			<direction>out</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>dst_5</name>
+			<source_loc>3449</source_loc>
+			<direction>out</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>dst_4</name>
+			<source_loc>3448</source_loc>
+			<direction>out</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>dst_3</name>
+			<source_loc>3447</source_loc>
+			<direction>out</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>dst_2</name>
+			<source_loc>3446</source_loc>
+			<direction>out</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>dst_1</name>
+			<source_loc>3445</source_loc>
+			<direction>out</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>dst_0</name>
+			<source_loc>3444</source_loc>
+			<direction>out</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+	</ios>
+	<ios>
+		<thread>_add</thread>
+		<port>
+			<name>clk</name>
+			<source_loc>705</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>bias_to_int16_7</name>
+			<source_loc>4012</source_loc>
+			<direction>in</direction>
+			<datatype W="16">sc_int</datatype>
+		</port>
+		<port>
+			<name>r_src_7</name>
+			<source_loc>4020</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>bias_to_int16_6</name>
+			<source_loc>4011</source_loc>
+			<direction>in</direction>
+			<datatype W="16">sc_int</datatype>
+		</port>
+		<port>
+			<name>r_src_6</name>
+			<source_loc>4019</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>bias_to_int16_5</name>
+			<source_loc>4010</source_loc>
+			<direction>in</direction>
+			<datatype W="16">sc_int</datatype>
+		</port>
+		<port>
+			<name>r_src_5</name>
+			<source_loc>4018</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>bias_to_int16_4</name>
+			<source_loc>4009</source_loc>
+			<direction>in</direction>
+			<datatype W="16">sc_int</datatype>
+		</port>
+		<port>
+			<name>r_src_4</name>
+			<source_loc>4017</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>bias_to_int16_3</name>
+			<source_loc>4008</source_loc>
+			<direction>in</direction>
+			<datatype W="16">sc_int</datatype>
+		</port>
+		<port>
+			<name>r_src_3</name>
+			<source_loc>4016</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>bias_to_int16_2</name>
+			<source_loc>4007</source_loc>
+			<direction>in</direction>
+			<datatype W="16">sc_int</datatype>
+		</port>
+		<port>
+			<name>r_src_2</name>
+			<source_loc>4015</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>bias_to_int16_1</name>
+			<source_loc>4006</source_loc>
+			<direction>in</direction>
+			<datatype W="16">sc_int</datatype>
+		</port>
+		<port>
+			<name>r_src_1</name>
+			<source_loc>4014</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>bias_to_int16_0</name>
+			<source_loc>4005</source_loc>
+			<direction>in</direction>
+			<datatype W="16">sc_int</datatype>
+		</port>
+		<port>
+			<name>r_src_0</name>
+			<source_loc>4013</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>enable</name>
+			<source_loc>707</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>rstn</name>
+			<source_loc>706</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>add_result_7</name>
+			<source_loc>3459</source_loc>
+			<direction>out</direction>
+			<datatype W="32">sc_int</datatype>
+		</port>
+		<port>
+			<name>add_result_6</name>
+			<source_loc>3458</source_loc>
+			<direction>out</direction>
+			<datatype W="32">sc_int</datatype>
+		</port>
+		<port>
+			<name>add_result_5</name>
+			<source_loc>3457</source_loc>
+			<direction>out</direction>
+			<datatype W="32">sc_int</datatype>
+		</port>
+		<port>
+			<name>add_result_4</name>
+			<source_loc>3456</source_loc>
+			<direction>out</direction>
+			<datatype W="32">sc_int</datatype>
+		</port>
+		<port>
+			<name>add_result_3</name>
+			<source_loc>3455</source_loc>
+			<direction>out</direction>
+			<datatype W="32">sc_int</datatype>
+		</port>
+		<port>
+			<name>add_result_2</name>
+			<source_loc>3454</source_loc>
+			<direction>out</direction>
+			<datatype W="32">sc_int</datatype>
+		</port>
+		<port>
+			<name>add_result_1</name>
+			<source_loc>3453</source_loc>
+			<direction>out</direction>
+			<datatype W="32">sc_int</datatype>
+		</port>
+		<port>
+			<name>add_result_0</name>
+			<source_loc>3452</source_loc>
+			<direction>out</direction>
+			<datatype W="32">sc_int</datatype>
+		</port>
+	</ios>
+	<ios>
+		<thread>_bias</thread>
+		<port>
+			<name>separated_bias_data_7</name>
+			<source_loc>2747</source_loc>
+			<direction>in</direction>
+			<datatype W="16">sc_uint</datatype>
+		</port>
+		<port>
+			<name>separated_bias_data_6</name>
+			<source_loc>2745</source_loc>
+			<direction>in</direction>
+			<datatype W="16">sc_uint</datatype>
+		</port>
+		<port>
+			<name>separated_bias_data_5</name>
+			<source_loc>2743</source_loc>
+			<direction>in</direction>
+			<datatype W="16">sc_uint</datatype>
+		</port>
+		<port>
+			<name>separated_bias_data_4</name>
+			<source_loc>2741</source_loc>
+			<direction>in</direction>
+			<datatype W="16">sc_uint</datatype>
+		</port>
+		<port>
+			<name>separated_bias_data_3</name>
+			<source_loc>2739</source_loc>
+			<direction>in</direction>
+			<datatype W="16">sc_uint</datatype>
+		</port>
+		<port>
+			<name>separated_bias_data_2</name>
+			<source_loc>2737</source_loc>
+			<direction>in</direction>
+			<datatype W="16">sc_uint</datatype>
+		</port>
+		<port>
+			<name>separated_bias_data_1</name>
+			<source_loc>2735</source_loc>
+			<direction>in</direction>
+			<datatype W="16">sc_uint</datatype>
+		</port>
+		<port>
+			<name>separated_bias_data_0</name>
+			<source_loc>2733</source_loc>
+			<direction>in</direction>
+			<datatype W="16">sc_uint</datatype>
+		</port>
+		<port>
+			<name>bias_to_int16_7</name>
+			<source_loc>4012</source_loc>
+			<direction>out</direction>
+			<datatype W="16">sc_int</datatype>
+		</port>
+		<port>
+			<name>bias_to_int16_6</name>
+			<source_loc>4011</source_loc>
+			<direction>out</direction>
+			<datatype W="16">sc_int</datatype>
+		</port>
+		<port>
+			<name>bias_to_int16_5</name>
+			<source_loc>4010</source_loc>
+			<direction>out</direction>
+			<datatype W="16">sc_int</datatype>
+		</port>
+		<port>
+			<name>bias_to_int16_4</name>
+			<source_loc>4009</source_loc>
+			<direction>out</direction>
+			<datatype W="16">sc_int</datatype>
+		</port>
+		<port>
+			<name>bias_to_int16_3</name>
+			<source_loc>4008</source_loc>
+			<direction>out</direction>
+			<datatype W="16">sc_int</datatype>
+		</port>
+		<port>
+			<name>bias_to_int16_2</name>
+			<source_loc>4007</source_loc>
+			<direction>out</direction>
+			<datatype W="16">sc_int</datatype>
+		</port>
+		<port>
+			<name>bias_to_int16_1</name>
+			<source_loc>4006</source_loc>
+			<direction>out</direction>
+			<datatype W="16">sc_int</datatype>
+		</port>
+		<port>
+			<name>bias_to_int16_0</name>
+			<source_loc>4005</source_loc>
+			<direction>out</direction>
+			<datatype W="16">sc_int</datatype>
+		</port>
+	</ios>
+	<ios>
+		<thread>_separate_bias</thread>
+		<port>
+			<name>r_bias_data</name>
+			<source_loc>737</source_loc>
+			<direction>in</direction>
+			<datatype W="512">sc_biguint</datatype>
+		</port>
+		<port>
+			<name>bias_mux_cnt</name>
+			<source_loc>791</source_loc>
+			<direction>in</direction>
+			<datatype W="2">sc_uint</datatype>
+		</port>
+		<port>
+			<name>separated_bias_data_0</name>
+			<source_loc>2733</source_loc>
+			<direction>out</direction>
+			<datatype W="16">sc_uint</datatype>
+		</port>
+		<port>
+			<name>separated_bias_data_1</name>
+			<source_loc>2735</source_loc>
+			<direction>out</direction>
+			<datatype W="16">sc_uint</datatype>
+		</port>
+		<port>
+			<name>separated_bias_data_2</name>
+			<source_loc>2737</source_loc>
+			<direction>out</direction>
+			<datatype W="16">sc_uint</datatype>
+		</port>
+		<port>
+			<name>separated_bias_data_3</name>
+			<source_loc>2739</source_loc>
+			<direction>out</direction>
+			<datatype W="16">sc_uint</datatype>
+		</port>
+		<port>
+			<name>separated_bias_data_4</name>
+			<source_loc>2741</source_loc>
+			<direction>out</direction>
+			<datatype W="16">sc_uint</datatype>
+		</port>
+		<port>
+			<name>separated_bias_data_5</name>
+			<source_loc>2743</source_loc>
+			<direction>out</direction>
+			<datatype W="16">sc_uint</datatype>
+		</port>
+		<port>
+			<name>separated_bias_data_6</name>
+			<source_loc>2745</source_loc>
+			<direction>out</direction>
+			<datatype W="16">sc_uint</datatype>
+		</port>
+		<port>
+			<name>separated_bias_data_7</name>
+			<source_loc>2747</source_loc>
+			<direction>out</direction>
+			<datatype W="16">sc_uint</datatype>
+		</port>
+	</ios>
+	<ios>
+		<thread>_bias_mux_cnt</thread>
+		<port>
+			<name>clk</name>
+			<source_loc>705</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>r_src_valid</name>
+			<source_loc>756</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>rstn</name>
+			<source_loc>706</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>bias_mux_cnt</name>
+			<source_loc>791</source_loc>
+			<direction>out</direction>
+			<datatype W="2">sc_uint</datatype>
+		</port>
+	</ios>
+	<ios>
+		<thread>_delay</thread>
+		<port>
+			<name>clk</name>
+			<source_loc>705</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>bias_data</name>
+			<source_loc>710</source_loc>
+			<direction>in</direction>
+			<datatype W="512">sc_biguint</datatype>
+		</port>
+		<port>
+			<name>src_valid</name>
+			<source_loc>708</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>src_7</name>
+			<source_loc>3467</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_6</name>
+			<source_loc>3466</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_5</name>
+			<source_loc>3465</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_4</name>
+			<source_loc>3464</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_3</name>
+			<source_loc>3463</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_2</name>
+			<source_loc>3462</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_1</name>
+			<source_loc>3461</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_0</name>
+			<source_loc>3460</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>rstn</name>
+			<source_loc>706</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>r_bias_data</name>
+			<source_loc>737</source_loc>
+			<direction>out</direction>
+			<datatype W="512">sc_biguint</datatype>
+		</port>
+		<port>
+			<name>r2_src_valid</name>
+			<source_loc>757</source_loc>
+			<direction>out</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>r_src_valid</name>
+			<source_loc>756</source_loc>
+			<direction>out</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>r_src_7</name>
+			<source_loc>4020</source_loc>
+			<direction>out</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>r_src_6</name>
+			<source_loc>4019</source_loc>
+			<direction>out</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>r_src_5</name>
+			<source_loc>4018</source_loc>
+			<direction>out</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>r_src_4</name>
+			<source_loc>4017</source_loc>
+			<direction>out</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>r_src_3</name>
+			<source_loc>4016</source_loc>
+			<direction>out</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>r_src_2</name>
+			<source_loc>4015</source_loc>
+			<direction>out</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>r_src_1</name>
+			<source_loc>4014</source_loc>
+			<direction>out</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>r_src_0</name>
+			<source_loc>4013</source_loc>
+			<direction>out</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+	</ios>
+</snapshot>

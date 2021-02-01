@@ -1,0 +1,12 @@
+38145
+38176
+design1
+bdw_work/trace/hls.fix2float.DPA.trace
+2
+0
+0
+0
+1610867829
+1610867847
+make CWBExec=1 hls_fix2float_DPA
+

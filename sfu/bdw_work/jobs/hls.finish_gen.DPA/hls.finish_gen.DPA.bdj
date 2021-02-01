@@ -1,0 +1,12 @@
+42672
+42673
+design1
+bdw_work/trace/hls.finish_gen.DPA.trace
+2
+15
+0
+1
+1610436413
+1610436449
+make CWBExec=1 hls_finish_gen_DPA
+

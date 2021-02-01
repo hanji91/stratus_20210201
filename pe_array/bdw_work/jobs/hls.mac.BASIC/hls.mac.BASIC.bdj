@@ -1,0 +1,12 @@
+14618
+18430
+design1
+bdw_work/trace/hls.mac.BASIC.trace
+3
+0
+0
+0
+1606895664
+1606895699
+make CWBExec=1 hls_mac_BASIC
+

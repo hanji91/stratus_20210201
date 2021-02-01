@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<netlist>
+	<module_name>_fifo_read</module_name>
+	<signal>
+		<name>MUX_N137</name>
+		<source_loc>3540</source_loc>
+		<async/>
+	</signal>
+	<thread>
+		<name>MUX_N137</name>
+		<async/>
+		<lhs>
+			<name>MUX_N137</name>
+		</lhs>
+		<rhs>
+			<name>tmp8</name>
+			<name>tmp9</name>
+			<name>tmp10</name>
+			<name>tmp11</name>
+			<name>tmp12</name>
+			<name>tmp13</name>
+			<name>tmp14</name>
+			<name>tmp15</name>
+		</rhs>
+		<cond>
+			<name>tmp16</name>
+		</cond>
+		<mux_area>4103.7400</mux_area>
+		<mux_delay>0.2277</mux_delay>
+		<control_delay>0.2277</control_delay>
+	</thread>
+</netlist>

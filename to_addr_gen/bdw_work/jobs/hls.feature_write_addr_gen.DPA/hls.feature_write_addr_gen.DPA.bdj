@@ -1,0 +1,12 @@
+20737
+20768
+design1
+bdw_work/trace/hls.feature_write_addr_gen.DPA.trace
+2
+0
+0
+0
+1611822138
+1611822154
+make CWBExec=1 hls_feature_write_addr_gen_DPA
+

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<netlist>
+	<module_name>_acc_cnt</module_name>
+	<signal>
+		<name>CAST_N69</name>
+		<source_loc>7549</source_loc>
+		<async/>
+	</signal>
+	<assign>
+		<name>drive_CAST_N69</name>
+		<lhs>
+			<name>CAST_N69</name>
+		</lhs>
+		<rhs>
+			<name>MUX_N70</name>
+		</rhs>
+	</assign>
+</netlist>

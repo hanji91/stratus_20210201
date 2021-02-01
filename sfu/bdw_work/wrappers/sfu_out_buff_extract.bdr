@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<source_file>
+    <module>
+        <name>sfu_out_buff</name>
+        <id>2494</id>
+        <source_path>sfu_out_buff.h</source_path>
+        <source_line>6</source_line>
+        <source_column>1</source_column>
+        <port>
+            <name>clk</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>clk</rtl_port_name>
+        </port>
+        <port>
+            <name>rstn</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>rstn</rtl_port_name>
+        </port>
+        <port>
+            <name>enable</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>enable</rtl_port_name>
+        </port>
+        <port>
+            <name>learned_clip_en</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>learned_clip_en</rtl_port_name>
+        </port>
+        <port>
+            <name>in0_data</name>
+            <direction>in</direction>
+            <datatype>
+                <array>8</array>
+                <datatype W="32">sc_uint</datatype>
+                <rtl_port_name>in0_data_[8]</rtl_port_name>
+            </datatype>
+        </port>
+        <port>
+            <name>in0_data_valid</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>in0_data_valid</rtl_port_name>
+        </port>
+        <port>
+            <name>in1_data</name>
+            <direction>in</direction>
+            <datatype>
+                <array>8</array>
+                <datatype W="32">sc_uint</datatype>
+                <rtl_port_name>in1_data_[8]</rtl_port_name>
+            </datatype>
+        </port>
+        <port>
+            <name>in1_data_valid</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>in1_data_valid</rtl_port_name>
+        </port>
+        <port>
+            <name>out_data</name>
+            <direction>out</direction>
+            <datatype W="320">sc_biguint</datatype>
+            <rtl_port_name>out_data</rtl_port_name>
+        </port>
+        <port>
+            <name>out_data_valid</name>
+            <direction>out</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>out_data_valid</rtl_port_name>
+        </port>
+        <signal>
+            <name>data_cnt</name>
+                        <datatype W="2">sc_uint</datatype>
+            <rtl_port_name>data_cnt</rtl_port_name>
+        </signal>
+        <signal>
+            <name>r_data</name>
+                        <datatype W="80">sc_uint</datatype>
+            <rtl_port_name>r_data</rtl_port_name>
+        </signal>
+        <signal>
+            <name>t_data</name>
+                        <datatype W="256">sc_uint</datatype>
+            <rtl_port_name>t_data</rtl_port_name>
+        </signal>
+        <signal>
+            <name>r_data_valid</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>r_data_valid</rtl_port_name>
+        </signal>
+        <ctor_params>
+            <param>
+                <name/>
+                <datatype>
+                    <name>sc_core::sc_module_name</name>
+                    <id>2477</id>
+                </datatype>
+                <rtl_port_name/>
+            </param>
+        </ctor_params>
+    </module>
+	<exit_status>0</exit_status>
+</source_file>

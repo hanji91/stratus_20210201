@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<netlist>
+	<module_name>_rd_ptr</module_name>
+	<signal>
+		<name>MUX_N96</name>
+		<source_loc>3145</source_loc>
+		<async/>
+	</signal>
+	<thread>
+		<name>MUX_N96</name>
+		<async/>
+		<lhs>
+			<name>MUX_N96</name>
+		</lhs>
+		<rhs>
+			<name>urd_ptr_rd_ptr_next</name>
+			<name>CynTemp_0</name>
+		</rhs>
+		<cond>
+			<name>dmux_ctrl_001</name>
+		</cond>
+		<mux_area>8.5850</mux_area>
+		<mux_delay>0.0615</mux_delay>
+		<control_delay>0.0615</control_delay>
+	</thread>
+</netlist>

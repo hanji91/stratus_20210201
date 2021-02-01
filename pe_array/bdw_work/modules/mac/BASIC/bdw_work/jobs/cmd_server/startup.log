@@ -1,0 +1,594 @@
+ Starting Stratus DPOpt (Linux)
+  Time: December 02, 2020. 16:54:29
+  Host: design1
+  User: hanji
+  Args: --dofile /usr/cadence/installs/Stratus/share/stratus/tcl/bdw_cmd_shell.tcl --locallogfile /dev/null -x bdw_server_start
+
+               Stratus DpOpt
+               =============
+              Version: 2019.1.01 
+
+  Copyright (c) 2014-2019 Cadence Design Systems.  All rights reserved worldwide.
+  
+  Warning: This computer program is protected by copyright law and 
+  international treaties.  Unauthorized reproduction, modification, 
+  or distribution of this program, or any portion of it, may result 
+  in severe civil and criminal penalties.
+INFO: Using installation at: /usr/cadence/installs/Stratus/tools.lnx86/cellmath/ (DPEAPI-3)
+  
+  Info: Script "/usr/cadence/installs/Stratus/share/stratus/tcl/bdw_cmd_shell.tcl" run successfully
+
+##########################################################################
+# Starting in server mode with port 43167
+#   client pid = 19029
+##########################################################################
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadence/installs/Stratus/tools.lnx86/cellmath/ (DPEAPI-3)
+Failed to read SDL file.
+If you intended to read a SAVI file then please use CellMath Designer.
+  Warning: No instances to remove.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadence/installs/Stratus/tools.lnx86/cellmath/ (DPEAPI-3)
+Failed to read SDL file.
+If you intended to read a SAVI file then please use CellMath Designer.
+  Warning: No instances to remove.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadence/installs/Stratus/tools.lnx86/cellmath/ (DPEAPI-3)
+Failed to read SDL file.
+If you intended to read a SAVI file then please use CellMath Designer.
+  Warning: No instances to remove.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadence/installs/Stratus/tools.lnx86/cellmath/ (DPEAPI-3)
+Failed to read SDL file.
+If you intended to read a SAVI file then please use CellMath Designer.
+  Warning: No instances to remove.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadence/installs/Stratus/tools.lnx86/cellmath/ (DPEAPI-3)
+Failed to read SDL file.
+If you intended to read a SAVI file then please use CellMath Designer.
+  Warning: No instances to remove.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadence/installs/Stratus/tools.lnx86/cellmath/ (DPEAPI-3)
+Failed to read SDL file.
+If you intended to read a SAVI file then please use CellMath Designer.
+  Warning: No instances to remove.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadence/installs/Stratus/tools.lnx86/cellmath/ (DPEAPI-3)
+Failed to read SDL file.
+If you intended to read a SAVI file then please use CellMath Designer.
+  Warning: No instances to remove.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadence/installs/Stratus/tools.lnx86/cellmath/ (DPEAPI-3)
+Failed to read SDL file.
+If you intended to read a SAVI file then please use CellMath Designer.
+  Warning: No instances to remove.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadence/installs/Stratus/tools.lnx86/cellmath/ (DPEAPI-3)
+Failed to read SDL file.
+If you intended to read a SAVI file then please use CellMath Designer.
+  Warning: No instances to remove.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadence/installs/Stratus/tools.lnx86/cellmath/ (DPEAPI-3)
+Failed to read SDL file.
+If you intended to read a SAVI file then please use CellMath Designer.
+  Warning: No instances to remove.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadence/installs/Stratus/tools.lnx86/cellmath/ (DPEAPI-3)
+Failed to read SDL file.
+If you intended to read a SAVI file then please use CellMath Designer.
+  Warning: No instances to remove.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadence/installs/Stratus/tools.lnx86/cellmath/ (DPEAPI-3)
+Failed to read SDL file.
+If you intended to read a SAVI file then please use CellMath Designer.
+  Warning: No instances to remove.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadence/installs/Stratus/tools.lnx86/cellmath/ (DPEAPI-3)
+Failed to read SDL file.
+If you intended to read a SAVI file then please use CellMath Designer.
+  Warning: No instances to remove.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadence/installs/Stratus/tools.lnx86/cellmath/ (DPEAPI-3)
+Failed to read SDL file.
+If you intended to read a SAVI file then please use CellMath Designer.
+  Warning: No instances to remove.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadence/installs/Stratus/tools.lnx86/cellmath/ (DPEAPI-3)
+Failed to read SDL file.
+If you intended to read a SAVI file then please use CellMath Designer.
+  Warning: No instances to remove.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadence/installs/Stratus/tools.lnx86/cellmath/ (DPEAPI-3)
+Failed to read SDL file.
+If you intended to read a SAVI file then please use CellMath Designer.
+  Warning: No instances to remove.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadence/installs/Stratus/tools.lnx86/cellmath/ (DPEAPI-3)
+Failed to read SDL file.
+If you intended to read a SAVI file then please use CellMath Designer.
+  Warning: No instances to remove.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadence/installs/Stratus/tools.lnx86/cellmath/ (DPEAPI-3)
+Failed to read SDL file.
+If you intended to read a SAVI file then please use CellMath Designer.
+  Warning: No instances to remove.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadence/installs/Stratus/tools.lnx86/cellmath/ (DPEAPI-3)
+Failed to read SDL file.
+If you intended to read a SAVI file then please use CellMath Designer.
+  Warning: No instances to remove.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadence/installs/Stratus/tools.lnx86/cellmath/ (DPEAPI-3)
+Failed to read SDL file.
+If you intended to read a SAVI file then please use CellMath Designer.
+  Warning: No instances to remove.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadence/installs/Stratus/tools.lnx86/cellmath/ (DPEAPI-3)
+WARNING: No library loaded, loading generic library. (CMDSHELL-13)
+WARNING: No directories in variable lib_path  (CMDSHELL-10)
+INFO: Reading LBF file '/usr/cadence/installs/Stratus/tools.lnx86/cellmath/libs/generic.lbf' and building datastructures (LBFPARSE-1)
+INFO: Reading LBF file '/usr/cadence/installs/Stratus/tools.lnx86/cellmath/libs/gencount.lbf' and building datastructures (LBFPARSE-1)
+INFO: Constructing composite cells (CMDSHELL-4)
+INFO: Library load complete (CMDSHELL-5)
+INFO: Instantiating implementation module "mac_N_Mux_18_2_1_4" (CMDSHELL-8)
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_N_Mux_18_2_1_4.sdl(2,3): INFO: Running flattening on "mac_N_Mux_18_2_1_4" (DPETRANS-23)
+  Design has no flip-flops to report.
+  Design has no RAMs to report.
+  Design has no latches to report.
+INFO: Function instance "mac_N_Mux_18_2_1_4" is now selected. (CMDSHELL-12)
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_N_Mux_18_2_1_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_N_Mux_18_2_1_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Netlist model
+  Info: use delimiter:true
+  Info: ----------------
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_N_Mux_18_2_1_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_N_Mux_18_2_1_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Behavioural model
+  Info: use delimiter:true
+  Info: ----------------
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_N_Mux_18_2_1_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_N_Mux_18_2_1_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Hierarchical netlist model
+  Info: use delimiter:true
+  Info: ----------------
+  Writing Verilog Bvrl Model mac_N_Mux_18_2_1_4 for output to /home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/v_rtl/mac_N_Mux_18_2_1_4.input.v
+  Warning: Unsupported STARC rule:S2.2.2.2
+  Warning: Unsupported STARC rule:S2.2.3.1
+  Warning: Unsupported STARC rule:S2.3.1.1
+  Write complete.
+  Removing all instances.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadence/installs/Stratus/tools.lnx86/cellmath/ (DPEAPI-3)
+INFO: Instantiating implementation module "mac_N_Mux_18_2_1_4" (CMDSHELL-8)
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_N_Mux_18_2_1_4.sdl(2,3): INFO: Running flattening on "mac_N_Mux_18_2_1_4" (DPETRANS-23)
+  Design has no flip-flops to report.
+  Design has no RAMs to report.
+  Design has no latches to report.
+INFO: Function instance "mac_N_Mux_18_2_1_4" is now selected. (CMDSHELL-12)
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_N_Mux_18_2_1_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_N_Mux_18_2_1_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Netlist model
+  Info: use delimiter:true
+  Info: ----------------
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_N_Mux_18_2_1_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_N_Mux_18_2_1_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Behavioural model
+  Info: use delimiter:true
+  Info: ----------------
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_N_Mux_18_2_1_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_N_Mux_18_2_1_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Hierarchical netlist model
+  Info: use delimiter:true
+  Info: ----------------
+  Writing Verilog Bvrl Model mac_N_Mux_18_2_1_4 for output to /home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/v_rtl/mac_N_Mux_18_2_1_4.v
+  Warning: Unsupported STARC rule:S2.2.2.2
+  Warning: Unsupported STARC rule:S2.2.3.1
+  Warning: Unsupported STARC rule:S2.3.1.1
+  Write complete.
+  Removing all instances.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadence/installs/Stratus/tools.lnx86/cellmath/ (DPEAPI-3)
+INFO: Instantiating implementation module "mac_Mul_10Sx8S_18S_4" (CMDSHELL-8)
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_Mul_10Sx8S_18S_4.sdl(2,3): INFO: Running flattening on "mac_Mul_10Sx8S_18S_4" (DPETRANS-23)
+  Design has no flip-flops to report.
+  Design has no RAMs to report.
+  Design has no latches to report.
+INFO: Function instance "mac_Mul_10Sx8S_18S_4" is now selected. (CMDSHELL-12)
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_Mul_10Sx8S_18S_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_Mul_10Sx8S_18S_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Netlist model
+  Info: use delimiter:true
+  Info: ----------------
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_Mul_10Sx8S_18S_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_Mul_10Sx8S_18S_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Behavioural model
+  Info: use delimiter:true
+  Info: ----------------
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_Mul_10Sx8S_18S_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_Mul_10Sx8S_18S_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Hierarchical netlist model
+  Info: use delimiter:true
+  Info: ----------------
+  Writing Verilog Bvrl Model mac_Mul_10Sx8S_18S_4 for output to /home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/v_rtl/mac_Mul_10Sx8S_18S_4.input.v
+  Warning: Unsupported STARC rule:S2.2.2.2
+  Warning: Unsupported STARC rule:S2.2.3.1
+  Warning: Unsupported STARC rule:S2.3.1.1
+  Write complete.
+  Removing all instances.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadence/installs/Stratus/tools.lnx86/cellmath/ (DPEAPI-3)
+INFO: Instantiating implementation module "mac_Mul_10Sx8S_18S_4" (CMDSHELL-8)
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_Mul_10Sx8S_18S_4.sdl(2,3): INFO: Running flattening on "mac_Mul_10Sx8S_18S_4" (DPETRANS-23)
+  Design has no flip-flops to report.
+  Design has no RAMs to report.
+  Design has no latches to report.
+INFO: Function instance "mac_Mul_10Sx8S_18S_4" is now selected. (CMDSHELL-12)
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_Mul_10Sx8S_18S_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_Mul_10Sx8S_18S_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Netlist model
+  Info: use delimiter:true
+  Info: ----------------
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_Mul_10Sx8S_18S_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_Mul_10Sx8S_18S_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Behavioural model
+  Info: use delimiter:true
+  Info: ----------------
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_Mul_10Sx8S_18S_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_Mul_10Sx8S_18S_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Hierarchical netlist model
+  Info: use delimiter:true
+  Info: ----------------
+  Writing Verilog Bvrl Model mac_Mul_10Sx8S_18S_4 for output to /home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/v_rtl/mac_Mul_10Sx8S_18S_4.v
+  Warning: Unsupported STARC rule:S2.2.2.2
+  Warning: Unsupported STARC rule:S2.2.3.1
+  Warning: Unsupported STARC rule:S2.3.1.1
+  Write complete.
+  Removing all instances.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadence/installs/Stratus/tools.lnx86/cellmath/ (DPEAPI-3)
+INFO: Instantiating implementation module "mac_N_Mux_32_2_0_4" (CMDSHELL-8)
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_N_Mux_32_2_0_4.sdl(2,3): INFO: Running flattening on "mac_N_Mux_32_2_0_4" (DPETRANS-23)
+  Design has no flip-flops to report.
+  Design has no RAMs to report.
+  Design has no latches to report.
+INFO: Function instance "mac_N_Mux_32_2_0_4" is now selected. (CMDSHELL-12)
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_N_Mux_32_2_0_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_N_Mux_32_2_0_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Netlist model
+  Info: use delimiter:true
+  Info: ----------------
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_N_Mux_32_2_0_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_N_Mux_32_2_0_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Behavioural model
+  Info: use delimiter:true
+  Info: ----------------
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_N_Mux_32_2_0_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_N_Mux_32_2_0_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Hierarchical netlist model
+  Info: use delimiter:true
+  Info: ----------------
+  Writing Verilog Bvrl Model mac_N_Mux_32_2_0_4 for output to /home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/v_rtl/mac_N_Mux_32_2_0_4.input.v
+  Warning: Unsupported STARC rule:S2.2.2.2
+  Warning: Unsupported STARC rule:S2.2.3.1
+  Warning: Unsupported STARC rule:S2.3.1.1
+  Write complete.
+  Removing all instances.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadence/installs/Stratus/tools.lnx86/cellmath/ (DPEAPI-3)
+INFO: Instantiating implementation module "mac_N_Mux_32_2_0_4" (CMDSHELL-8)
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_N_Mux_32_2_0_4.sdl(2,3): INFO: Running flattening on "mac_N_Mux_32_2_0_4" (DPETRANS-23)
+  Design has no flip-flops to report.
+  Design has no RAMs to report.
+  Design has no latches to report.
+INFO: Function instance "mac_N_Mux_32_2_0_4" is now selected. (CMDSHELL-12)
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_N_Mux_32_2_0_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_N_Mux_32_2_0_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Netlist model
+  Info: use delimiter:true
+  Info: ----------------
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_N_Mux_32_2_0_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_N_Mux_32_2_0_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Behavioural model
+  Info: use delimiter:true
+  Info: ----------------
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_N_Mux_32_2_0_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_N_Mux_32_2_0_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Hierarchical netlist model
+  Info: use delimiter:true
+  Info: ----------------
+  Writing Verilog Bvrl Model mac_N_Mux_32_2_0_4 for output to /home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/v_rtl/mac_N_Mux_32_2_0_4.v
+  Warning: Unsupported STARC rule:S2.2.2.2
+  Warning: Unsupported STARC rule:S2.2.3.1
+  Warning: Unsupported STARC rule:S2.3.1.1
+  Write complete.
+  Removing all instances.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadence/installs/Stratus/tools.lnx86/cellmath/ (DPEAPI-3)
+INFO: Instantiating implementation module "mac_Add_32Sx18S_32S_4" (CMDSHELL-8)
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_Add_32Sx18S_32S_4.sdl(2,3): INFO: Running flattening on "mac_Add_32Sx18S_32S_4" (DPETRANS-23)
+  Design has no flip-flops to report.
+  Design has no RAMs to report.
+  Design has no latches to report.
+INFO: Function instance "mac_Add_32Sx18S_32S_4" is now selected. (CMDSHELL-12)
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_Add_32Sx18S_32S_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_Add_32Sx18S_32S_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Netlist model
+  Info: use delimiter:true
+  Info: ----------------
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_Add_32Sx18S_32S_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_Add_32Sx18S_32S_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Behavioural model
+  Info: use delimiter:true
+  Info: ----------------
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_Add_32Sx18S_32S_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_Add_32Sx18S_32S_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Hierarchical netlist model
+  Info: use delimiter:true
+  Info: ----------------
+  Writing Verilog Bvrl Model mac_Add_32Sx18S_32S_4 for output to /home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/v_rtl/mac_Add_32Sx18S_32S_4.input.v
+  Warning: Unsupported STARC rule:S2.2.2.2
+  Warning: Unsupported STARC rule:S2.2.3.1
+  Warning: Unsupported STARC rule:S2.3.1.1
+  Write complete.
+  Removing all instances.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadence/installs/Stratus/tools.lnx86/cellmath/ (DPEAPI-3)
+INFO: Instantiating implementation module "mac_Add_32Sx18S_32S_4" (CMDSHELL-8)
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_Add_32Sx18S_32S_4.sdl(2,3): INFO: Running flattening on "mac_Add_32Sx18S_32S_4" (DPETRANS-23)
+  Design has no flip-flops to report.
+  Design has no RAMs to report.
+  Design has no latches to report.
+INFO: Function instance "mac_Add_32Sx18S_32S_4" is now selected. (CMDSHELL-12)
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_Add_32Sx18S_32S_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_Add_32Sx18S_32S_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Netlist model
+  Info: use delimiter:true
+  Info: ----------------
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_Add_32Sx18S_32S_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_Add_32Sx18S_32S_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Behavioural model
+  Info: use delimiter:true
+  Info: ----------------
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_Add_32Sx18S_32S_4.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_Add_32Sx18S_32S_4" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Hierarchical netlist model
+  Info: use delimiter:true
+  Info: ----------------
+  Writing Verilog Bvrl Model mac_Add_32Sx18S_32S_4 for output to /home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/v_rtl/mac_Add_32Sx18S_32S_4.v
+  Warning: Unsupported STARC rule:S2.2.2.2
+  Warning: Unsupported STARC rule:S2.2.3.1
+  Warning: Unsupported STARC rule:S2.3.1.1
+  Write complete.
+  Removing all instances.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadence/installs/Stratus/tools.lnx86/cellmath/ (DPEAPI-3)
+INFO: Instantiating implementation module "mac_N_Mux_18_2_1_1" (CMDSHELL-8)
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_N_Mux_18_2_1_1.sdl(2,3): INFO: Running flattening on "mac_N_Mux_18_2_1_1" (DPETRANS-23)
+  Design has no flip-flops to report.
+  Design has no RAMs to report.
+  Design has no latches to report.
+INFO: Function instance "mac_N_Mux_18_2_1_1" is now selected. (CMDSHELL-12)
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_N_Mux_18_2_1_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_N_Mux_18_2_1_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Netlist model
+  Info: use delimiter:true
+  Info: ----------------
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_N_Mux_18_2_1_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_N_Mux_18_2_1_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Behavioural model
+  Info: use delimiter:true
+  Info: ----------------
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_N_Mux_18_2_1_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_N_Mux_18_2_1_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Hierarchical netlist model
+  Info: use delimiter:true
+  Info: ----------------
+  Writing Verilog Bvrl Model mac_N_Mux_18_2_1_1 for output to /home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/v_rtl/mac_N_Mux_18_2_1_1.input.v
+  Warning: Unsupported STARC rule:S2.2.2.2
+  Warning: Unsupported STARC rule:S2.2.3.1
+  Warning: Unsupported STARC rule:S2.3.1.1
+  Write complete.
+  Removing all instances.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadence/installs/Stratus/tools.lnx86/cellmath/ (DPEAPI-3)
+INFO: Instantiating implementation module "mac_N_Mux_18_2_1_1" (CMDSHELL-8)
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_N_Mux_18_2_1_1.sdl(2,3): INFO: Running flattening on "mac_N_Mux_18_2_1_1" (DPETRANS-23)
+  Design has no flip-flops to report.
+  Design has no RAMs to report.
+  Design has no latches to report.
+INFO: Function instance "mac_N_Mux_18_2_1_1" is now selected. (CMDSHELL-12)
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_N_Mux_18_2_1_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_N_Mux_18_2_1_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Netlist model
+  Info: use delimiter:true
+  Info: ----------------
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_N_Mux_18_2_1_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_N_Mux_18_2_1_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Behavioural model
+  Info: use delimiter:true
+  Info: ----------------
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_N_Mux_18_2_1_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_N_Mux_18_2_1_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Hierarchical netlist model
+  Info: use delimiter:true
+  Info: ----------------
+  Writing Verilog Bvrl Model mac_N_Mux_18_2_1_1 for output to /home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/v_rtl/mac_N_Mux_18_2_1_1.v
+  Warning: Unsupported STARC rule:S2.2.2.2
+  Warning: Unsupported STARC rule:S2.2.3.1
+  Warning: Unsupported STARC rule:S2.3.1.1
+  Write complete.
+  Removing all instances.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadence/installs/Stratus/tools.lnx86/cellmath/ (DPEAPI-3)
+INFO: Instantiating implementation module "mac_Mul_10Sx8S_18S_1" (CMDSHELL-8)
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_Mul_10Sx8S_18S_1.sdl(2,3): INFO: Running flattening on "mac_Mul_10Sx8S_18S_1" (DPETRANS-23)
+  Design has no flip-flops to report.
+  Design has no RAMs to report.
+  Design has no latches to report.
+INFO: Function instance "mac_Mul_10Sx8S_18S_1" is now selected. (CMDSHELL-12)
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_Mul_10Sx8S_18S_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_Mul_10Sx8S_18S_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Netlist model
+  Info: use delimiter:true
+  Info: ----------------
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_Mul_10Sx8S_18S_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_Mul_10Sx8S_18S_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Behavioural model
+  Info: use delimiter:true
+  Info: ----------------
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_Mul_10Sx8S_18S_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_Mul_10Sx8S_18S_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Hierarchical netlist model
+  Info: use delimiter:true
+  Info: ----------------
+  Writing Verilog Bvrl Model mac_Mul_10Sx8S_18S_1 for output to /home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/v_rtl/mac_Mul_10Sx8S_18S_1.input.v
+  Warning: Unsupported STARC rule:S2.2.2.2
+  Warning: Unsupported STARC rule:S2.2.3.1
+  Warning: Unsupported STARC rule:S2.3.1.1
+  Write complete.
+  Removing all instances.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadence/installs/Stratus/tools.lnx86/cellmath/ (DPEAPI-3)
+INFO: Instantiating implementation module "mac_Mul_10Sx8S_18S_1" (CMDSHELL-8)
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_Mul_10Sx8S_18S_1.sdl(2,3): INFO: Running flattening on "mac_Mul_10Sx8S_18S_1" (DPETRANS-23)
+  Design has no flip-flops to report.
+  Design has no RAMs to report.
+  Design has no latches to report.
+INFO: Function instance "mac_Mul_10Sx8S_18S_1" is now selected. (CMDSHELL-12)
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_Mul_10Sx8S_18S_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_Mul_10Sx8S_18S_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Netlist model
+  Info: use delimiter:true
+  Info: ----------------
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_Mul_10Sx8S_18S_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_Mul_10Sx8S_18S_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Behavioural model
+  Info: use delimiter:true
+  Info: ----------------
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_Mul_10Sx8S_18S_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_Mul_10Sx8S_18S_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Hierarchical netlist model
+  Info: use delimiter:true
+  Info: ----------------
+  Writing Verilog Bvrl Model mac_Mul_10Sx8S_18S_1 for output to /home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/v_rtl/mac_Mul_10Sx8S_18S_1.v
+  Warning: Unsupported STARC rule:S2.2.2.2
+  Warning: Unsupported STARC rule:S2.2.3.1
+  Warning: Unsupported STARC rule:S2.3.1.1
+  Write complete.
+  Removing all instances.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadence/installs/Stratus/tools.lnx86/cellmath/ (DPEAPI-3)
+INFO: Instantiating implementation module "mac_N_Mux_32_2_0_1" (CMDSHELL-8)
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_N_Mux_32_2_0_1.sdl(2,3): INFO: Running flattening on "mac_N_Mux_32_2_0_1" (DPETRANS-23)
+  Design has no flip-flops to report.
+  Design has no RAMs to report.
+  Design has no latches to report.
+INFO: Function instance "mac_N_Mux_32_2_0_1" is now selected. (CMDSHELL-12)
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_N_Mux_32_2_0_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_N_Mux_32_2_0_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Netlist model
+  Info: use delimiter:true
+  Info: ----------------
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_N_Mux_32_2_0_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_N_Mux_32_2_0_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Behavioural model
+  Info: use delimiter:true
+  Info: ----------------
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_N_Mux_32_2_0_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_N_Mux_32_2_0_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Hierarchical netlist model
+  Info: use delimiter:true
+  Info: ----------------
+  Writing Verilog Bvrl Model mac_N_Mux_32_2_0_1 for output to /home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/v_rtl/mac_N_Mux_32_2_0_1.input.v
+  Warning: Unsupported STARC rule:S2.2.2.2
+  Warning: Unsupported STARC rule:S2.2.3.1
+  Warning: Unsupported STARC rule:S2.3.1.1
+  Write complete.
+  Removing all instances.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadence/installs/Stratus/tools.lnx86/cellmath/ (DPEAPI-3)
+INFO: Instantiating implementation module "mac_N_Mux_32_2_0_1" (CMDSHELL-8)
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_N_Mux_32_2_0_1.sdl(2,3): INFO: Running flattening on "mac_N_Mux_32_2_0_1" (DPETRANS-23)
+  Design has no flip-flops to report.
+  Design has no RAMs to report.
+  Design has no latches to report.
+INFO: Function instance "mac_N_Mux_32_2_0_1" is now selected. (CMDSHELL-12)
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_N_Mux_32_2_0_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_N_Mux_32_2_0_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Netlist model
+  Info: use delimiter:true
+  Info: ----------------
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_N_Mux_32_2_0_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_N_Mux_32_2_0_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Behavioural model
+  Info: use delimiter:true
+  Info: ----------------
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_N_Mux_32_2_0_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_N_Mux_32_2_0_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Hierarchical netlist model
+  Info: use delimiter:true
+  Info: ----------------
+  Writing Verilog Bvrl Model mac_N_Mux_32_2_0_1 for output to /home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/v_rtl/mac_N_Mux_32_2_0_1.v
+  Warning: Unsupported STARC rule:S2.2.2.2
+  Warning: Unsupported STARC rule:S2.2.3.1
+  Warning: Unsupported STARC rule:S2.3.1.1
+  Write complete.
+  Removing all instances.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadence/installs/Stratus/tools.lnx86/cellmath/ (DPEAPI-3)
+INFO: Instantiating implementation module "mac_Add_32Sx18S_32S_1" (CMDSHELL-8)
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_Add_32Sx18S_32S_1.sdl(2,3): INFO: Running flattening on "mac_Add_32Sx18S_32S_1" (DPETRANS-23)
+  Design has no flip-flops to report.
+  Design has no RAMs to report.
+  Design has no latches to report.
+INFO: Function instance "mac_Add_32Sx18S_32S_1" is now selected. (CMDSHELL-12)
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_Add_32Sx18S_32S_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_Add_32Sx18S_32S_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Netlist model
+  Info: use delimiter:true
+  Info: ----------------
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_Add_32Sx18S_32S_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_Add_32Sx18S_32S_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Behavioural model
+  Info: use delimiter:true
+  Info: ----------------
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_Add_32Sx18S_32S_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_Add_32Sx18S_32S_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Hierarchical netlist model
+  Info: use delimiter:true
+  Info: ----------------
+  Writing Verilog Bvrl Model mac_Add_32Sx18S_32S_1 for output to /home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/v_rtl/mac_Add_32Sx18S_32S_1.input.v
+  Warning: Unsupported STARC rule:S2.2.2.2
+  Warning: Unsupported STARC rule:S2.2.3.1
+  Warning: Unsupported STARC rule:S2.3.1.1
+  Write complete.
+  Removing all instances.
+  Warning:  No Forte toolkit found. Please use the latest toolkit.
+INFO: Using installation at: /usr/cadence/installs/Stratus/tools.lnx86/cellmath/ (DPEAPI-3)
+INFO: Instantiating implementation module "mac_Add_32Sx18S_32S_1" (CMDSHELL-8)
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_Add_32Sx18S_32S_1.sdl(2,3): INFO: Running flattening on "mac_Add_32Sx18S_32S_1" (DPETRANS-23)
+  Design has no flip-flops to report.
+  Design has no RAMs to report.
+  Design has no latches to report.
+INFO: Function instance "mac_Add_32Sx18S_32S_1" is now selected. (CMDSHELL-12)
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_Add_32Sx18S_32S_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_Add_32Sx18S_32S_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Netlist model
+  Info: use delimiter:true
+  Info: ----------------
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_Add_32Sx18S_32S_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_Add_32Sx18S_32S_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Behavioural model
+  Info: use delimiter:true
+  Info: ----------------
+/home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/mac_Add_32Sx18S_32S_1.sdl(2,3): INFO: Changing names in the RTL operator graph of "mac_Add_32Sx18S_32S_1" (DPETRANS-42)
+  Info: CellMath Designer changed names report
+  Info: Hierarchical netlist model
+  Info: use delimiter:true
+  Info: ----------------
+  Writing Verilog Bvrl Model mac_Add_32Sx18S_32S_1 for output to /home/hanji/stratus/mv1/train_npu/pe_array/bdw_work/modules/mac/BASIC/v_rtl/mac_Add_32Sx18S_32S_1.v
+  Warning: Unsupported STARC rule:S2.2.2.2
+  Warning: Unsupported STARC rule:S2.2.3.1
+  Warning: Unsupported STARC rule:S2.3.1.1
+  Write complete.
+  Removing all instances.

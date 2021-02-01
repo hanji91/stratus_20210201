@@ -1,0 +1,319 @@
+/****************************************************************************
+*
+*  Copyright (c) 2015, Cadence Design Systems. All Rights Reserved.
+*
+*  This file contains confidential information that may not be
+*  distributed under any circumstances without the written permision
+*  of Cadence Design Systems.
+*
+****************************************************************************/
+/****************************************************************************
+*
+* This file is used to wrap the three different versions of the DUT
+* block called "cache". By default, it will include the behavioral
+* model. Otherwise, it will include the RTL C++ or the RTL Verilog
+* depending on the definition of either of "RTL" or "COSIM".
+*
+****************************************************************************/
+
+
+#include	"cache_sc_wrap.h"
+#include	"cache_sc_foreign.h"
+
+// The following threads are used to connect structured ports to the actual
+// RTL ports
+
+void cache_wrapper::InitInstances(  )
+{
+	
+            
+    cache0 = new cache( "cache" );
+
+    cache0->clk(clk);
+    cache0->rstn(rstn);
+    cache0->cache_en(cache_en);
+    cache0->systolic_en(systolic_en);
+    cache0->systolic_depth(systolic_depth);
+    cache0->addr_if_start(addr_if_start);
+    cache0->systolic_sel(systolic_sel);
+    cache0->feature_data(feature_data);
+    cache0->feature_share_en(feature_share_en);
+    cache0->feature_data_en(feature_data_en);
+    cache0->feature_data_sel(feature_data_sel);
+    cache0->weight_data(weight_data);
+    cache0->weight_data_en(weight_data_en);
+    cache0->mac_src_0_s0_0(mac_src_0_s0[0]);
+    cache0->mac_src_0_s0_1(mac_src_0_s0[1]);
+    cache0->mac_src_0_s0_2(mac_src_0_s0[2]);
+    cache0->mac_src_0_s0_3(mac_src_0_s0[3]);
+    cache0->mac_src_0_s0_4(mac_src_0_s0[4]);
+    cache0->mac_src_0_s0_5(mac_src_0_s0[5]);
+    cache0->mac_src_0_s0_6(mac_src_0_s0[6]);
+    cache0->mac_src_0_s0_7(mac_src_0_s0[7]);
+    cache0->mac_src_0_s0_8(mac_src_0_s0[8]);
+    cache0->mac_src_0_s0_9(mac_src_0_s0[9]);
+    cache0->mac_src_0_s0_10(mac_src_0_s0[10]);
+    cache0->mac_src_0_s0_11(mac_src_0_s0[11]);
+    cache0->mac_src_0_s0_12(mac_src_0_s0[12]);
+    cache0->mac_src_0_s0_13(mac_src_0_s0[13]);
+    cache0->mac_src_0_s0_14(mac_src_0_s0[14]);
+    cache0->mac_src_0_s0_15(mac_src_0_s0[15]);
+    cache0->mac_src_0_s0_16(mac_src_0_s0[16]);
+    cache0->mac_src_0_s0_17(mac_src_0_s0[17]);
+    cache0->mac_src_0_s0_18(mac_src_0_s0[18]);
+    cache0->mac_src_0_s0_19(mac_src_0_s0[19]);
+    cache0->mac_src_0_s0_20(mac_src_0_s0[20]);
+    cache0->mac_src_0_s0_21(mac_src_0_s0[21]);
+    cache0->mac_src_0_s0_22(mac_src_0_s0[22]);
+    cache0->mac_src_0_s0_23(mac_src_0_s0[23]);
+    cache0->mac_src_0_s0_24(mac_src_0_s0[24]);
+    cache0->mac_src_0_s0_25(mac_src_0_s0[25]);
+    cache0->mac_src_0_s0_26(mac_src_0_s0[26]);
+    cache0->mac_src_0_s0_27(mac_src_0_s0[27]);
+    cache0->mac_src_0_s0_28(mac_src_0_s0[28]);
+    cache0->mac_src_0_s0_29(mac_src_0_s0[29]);
+    cache0->mac_src_0_s0_30(mac_src_0_s0[30]);
+    cache0->mac_src_0_s0_31(mac_src_0_s0[31]);
+    cache0->mac_src_0_s1_0(mac_src_0_s1[0]);
+    cache0->mac_src_0_s1_1(mac_src_0_s1[1]);
+    cache0->mac_src_0_s1_2(mac_src_0_s1[2]);
+    cache0->mac_src_0_s1_3(mac_src_0_s1[3]);
+    cache0->mac_src_0_s1_4(mac_src_0_s1[4]);
+    cache0->mac_src_0_s1_5(mac_src_0_s1[5]);
+    cache0->mac_src_0_s1_6(mac_src_0_s1[6]);
+    cache0->mac_src_0_s1_7(mac_src_0_s1[7]);
+    cache0->mac_src_0_s1_8(mac_src_0_s1[8]);
+    cache0->mac_src_0_s1_9(mac_src_0_s1[9]);
+    cache0->mac_src_0_s1_10(mac_src_0_s1[10]);
+    cache0->mac_src_0_s1_11(mac_src_0_s1[11]);
+    cache0->mac_src_0_s1_12(mac_src_0_s1[12]);
+    cache0->mac_src_0_s1_13(mac_src_0_s1[13]);
+    cache0->mac_src_0_s1_14(mac_src_0_s1[14]);
+    cache0->mac_src_0_s1_15(mac_src_0_s1[15]);
+    cache0->mac_src_0_s1_16(mac_src_0_s1[16]);
+    cache0->mac_src_0_s1_17(mac_src_0_s1[17]);
+    cache0->mac_src_0_s1_18(mac_src_0_s1[18]);
+    cache0->mac_src_0_s1_19(mac_src_0_s1[19]);
+    cache0->mac_src_0_s1_20(mac_src_0_s1[20]);
+    cache0->mac_src_0_s1_21(mac_src_0_s1[21]);
+    cache0->mac_src_0_s1_22(mac_src_0_s1[22]);
+    cache0->mac_src_0_s1_23(mac_src_0_s1[23]);
+    cache0->mac_src_0_s1_24(mac_src_0_s1[24]);
+    cache0->mac_src_0_s1_25(mac_src_0_s1[25]);
+    cache0->mac_src_0_s1_26(mac_src_0_s1[26]);
+    cache0->mac_src_0_s1_27(mac_src_0_s1[27]);
+    cache0->mac_src_0_s1_28(mac_src_0_s1[28]);
+    cache0->mac_src_0_s1_29(mac_src_0_s1[29]);
+    cache0->mac_src_0_s1_30(mac_src_0_s1[30]);
+    cache0->mac_src_0_s1_31(mac_src_0_s1[31]);
+    cache0->mac_src_0_s2_0(mac_src_0_s2[0]);
+    cache0->mac_src_0_s2_1(mac_src_0_s2[1]);
+    cache0->mac_src_0_s2_2(mac_src_0_s2[2]);
+    cache0->mac_src_0_s2_3(mac_src_0_s2[3]);
+    cache0->mac_src_0_s2_4(mac_src_0_s2[4]);
+    cache0->mac_src_0_s2_5(mac_src_0_s2[5]);
+    cache0->mac_src_0_s2_6(mac_src_0_s2[6]);
+    cache0->mac_src_0_s2_7(mac_src_0_s2[7]);
+    cache0->mac_src_0_s2_8(mac_src_0_s2[8]);
+    cache0->mac_src_0_s2_9(mac_src_0_s2[9]);
+    cache0->mac_src_0_s2_10(mac_src_0_s2[10]);
+    cache0->mac_src_0_s2_11(mac_src_0_s2[11]);
+    cache0->mac_src_0_s2_12(mac_src_0_s2[12]);
+    cache0->mac_src_0_s2_13(mac_src_0_s2[13]);
+    cache0->mac_src_0_s2_14(mac_src_0_s2[14]);
+    cache0->mac_src_0_s2_15(mac_src_0_s2[15]);
+    cache0->mac_src_0_s2_16(mac_src_0_s2[16]);
+    cache0->mac_src_0_s2_17(mac_src_0_s2[17]);
+    cache0->mac_src_0_s2_18(mac_src_0_s2[18]);
+    cache0->mac_src_0_s2_19(mac_src_0_s2[19]);
+    cache0->mac_src_0_s2_20(mac_src_0_s2[20]);
+    cache0->mac_src_0_s2_21(mac_src_0_s2[21]);
+    cache0->mac_src_0_s2_22(mac_src_0_s2[22]);
+    cache0->mac_src_0_s2_23(mac_src_0_s2[23]);
+    cache0->mac_src_0_s2_24(mac_src_0_s2[24]);
+    cache0->mac_src_0_s2_25(mac_src_0_s2[25]);
+    cache0->mac_src_0_s2_26(mac_src_0_s2[26]);
+    cache0->mac_src_0_s2_27(mac_src_0_s2[27]);
+    cache0->mac_src_0_s2_28(mac_src_0_s2[28]);
+    cache0->mac_src_0_s2_29(mac_src_0_s2[29]);
+    cache0->mac_src_0_s2_30(mac_src_0_s2[30]);
+    cache0->mac_src_0_s2_31(mac_src_0_s2[31]);
+    cache0->mac_src_0_s3_0(mac_src_0_s3[0]);
+    cache0->mac_src_0_s3_1(mac_src_0_s3[1]);
+    cache0->mac_src_0_s3_2(mac_src_0_s3[2]);
+    cache0->mac_src_0_s3_3(mac_src_0_s3[3]);
+    cache0->mac_src_0_s3_4(mac_src_0_s3[4]);
+    cache0->mac_src_0_s3_5(mac_src_0_s3[5]);
+    cache0->mac_src_0_s3_6(mac_src_0_s3[6]);
+    cache0->mac_src_0_s3_7(mac_src_0_s3[7]);
+    cache0->mac_src_0_s3_8(mac_src_0_s3[8]);
+    cache0->mac_src_0_s3_9(mac_src_0_s3[9]);
+    cache0->mac_src_0_s3_10(mac_src_0_s3[10]);
+    cache0->mac_src_0_s3_11(mac_src_0_s3[11]);
+    cache0->mac_src_0_s3_12(mac_src_0_s3[12]);
+    cache0->mac_src_0_s3_13(mac_src_0_s3[13]);
+    cache0->mac_src_0_s3_14(mac_src_0_s3[14]);
+    cache0->mac_src_0_s3_15(mac_src_0_s3[15]);
+    cache0->mac_src_0_s3_16(mac_src_0_s3[16]);
+    cache0->mac_src_0_s3_17(mac_src_0_s3[17]);
+    cache0->mac_src_0_s3_18(mac_src_0_s3[18]);
+    cache0->mac_src_0_s3_19(mac_src_0_s3[19]);
+    cache0->mac_src_0_s3_20(mac_src_0_s3[20]);
+    cache0->mac_src_0_s3_21(mac_src_0_s3[21]);
+    cache0->mac_src_0_s3_22(mac_src_0_s3[22]);
+    cache0->mac_src_0_s3_23(mac_src_0_s3[23]);
+    cache0->mac_src_0_s3_24(mac_src_0_s3[24]);
+    cache0->mac_src_0_s3_25(mac_src_0_s3[25]);
+    cache0->mac_src_0_s3_26(mac_src_0_s3[26]);
+    cache0->mac_src_0_s3_27(mac_src_0_s3[27]);
+    cache0->mac_src_0_s3_28(mac_src_0_s3[28]);
+    cache0->mac_src_0_s3_29(mac_src_0_s3[29]);
+    cache0->mac_src_0_s3_30(mac_src_0_s3[30]);
+    cache0->mac_src_0_s3_31(mac_src_0_s3[31]);
+    cache0->mac_src_0_s4_0(mac_src_0_s4[0]);
+    cache0->mac_src_0_s4_1(mac_src_0_s4[1]);
+    cache0->mac_src_0_s4_2(mac_src_0_s4[2]);
+    cache0->mac_src_0_s4_3(mac_src_0_s4[3]);
+    cache0->mac_src_0_s4_4(mac_src_0_s4[4]);
+    cache0->mac_src_0_s4_5(mac_src_0_s4[5]);
+    cache0->mac_src_0_s4_6(mac_src_0_s4[6]);
+    cache0->mac_src_0_s4_7(mac_src_0_s4[7]);
+    cache0->mac_src_0_s4_8(mac_src_0_s4[8]);
+    cache0->mac_src_0_s4_9(mac_src_0_s4[9]);
+    cache0->mac_src_0_s4_10(mac_src_0_s4[10]);
+    cache0->mac_src_0_s4_11(mac_src_0_s4[11]);
+    cache0->mac_src_0_s4_12(mac_src_0_s4[12]);
+    cache0->mac_src_0_s4_13(mac_src_0_s4[13]);
+    cache0->mac_src_0_s4_14(mac_src_0_s4[14]);
+    cache0->mac_src_0_s4_15(mac_src_0_s4[15]);
+    cache0->mac_src_0_s4_16(mac_src_0_s4[16]);
+    cache0->mac_src_0_s4_17(mac_src_0_s4[17]);
+    cache0->mac_src_0_s4_18(mac_src_0_s4[18]);
+    cache0->mac_src_0_s4_19(mac_src_0_s4[19]);
+    cache0->mac_src_0_s4_20(mac_src_0_s4[20]);
+    cache0->mac_src_0_s4_21(mac_src_0_s4[21]);
+    cache0->mac_src_0_s4_22(mac_src_0_s4[22]);
+    cache0->mac_src_0_s4_23(mac_src_0_s4[23]);
+    cache0->mac_src_0_s4_24(mac_src_0_s4[24]);
+    cache0->mac_src_0_s4_25(mac_src_0_s4[25]);
+    cache0->mac_src_0_s4_26(mac_src_0_s4[26]);
+    cache0->mac_src_0_s4_27(mac_src_0_s4[27]);
+    cache0->mac_src_0_s4_28(mac_src_0_s4[28]);
+    cache0->mac_src_0_s4_29(mac_src_0_s4[29]);
+    cache0->mac_src_0_s4_30(mac_src_0_s4[30]);
+    cache0->mac_src_0_s4_31(mac_src_0_s4[31]);
+    cache0->mac_src_0_s5_0(mac_src_0_s5[0]);
+    cache0->mac_src_0_s5_1(mac_src_0_s5[1]);
+    cache0->mac_src_0_s5_2(mac_src_0_s5[2]);
+    cache0->mac_src_0_s5_3(mac_src_0_s5[3]);
+    cache0->mac_src_0_s5_4(mac_src_0_s5[4]);
+    cache0->mac_src_0_s5_5(mac_src_0_s5[5]);
+    cache0->mac_src_0_s5_6(mac_src_0_s5[6]);
+    cache0->mac_src_0_s5_7(mac_src_0_s5[7]);
+    cache0->mac_src_0_s5_8(mac_src_0_s5[8]);
+    cache0->mac_src_0_s5_9(mac_src_0_s5[9]);
+    cache0->mac_src_0_s5_10(mac_src_0_s5[10]);
+    cache0->mac_src_0_s5_11(mac_src_0_s5[11]);
+    cache0->mac_src_0_s5_12(mac_src_0_s5[12]);
+    cache0->mac_src_0_s5_13(mac_src_0_s5[13]);
+    cache0->mac_src_0_s5_14(mac_src_0_s5[14]);
+    cache0->mac_src_0_s5_15(mac_src_0_s5[15]);
+    cache0->mac_src_0_s5_16(mac_src_0_s5[16]);
+    cache0->mac_src_0_s5_17(mac_src_0_s5[17]);
+    cache0->mac_src_0_s5_18(mac_src_0_s5[18]);
+    cache0->mac_src_0_s5_19(mac_src_0_s5[19]);
+    cache0->mac_src_0_s5_20(mac_src_0_s5[20]);
+    cache0->mac_src_0_s5_21(mac_src_0_s5[21]);
+    cache0->mac_src_0_s5_22(mac_src_0_s5[22]);
+    cache0->mac_src_0_s5_23(mac_src_0_s5[23]);
+    cache0->mac_src_0_s5_24(mac_src_0_s5[24]);
+    cache0->mac_src_0_s5_25(mac_src_0_s5[25]);
+    cache0->mac_src_0_s5_26(mac_src_0_s5[26]);
+    cache0->mac_src_0_s5_27(mac_src_0_s5[27]);
+    cache0->mac_src_0_s5_28(mac_src_0_s5[28]);
+    cache0->mac_src_0_s5_29(mac_src_0_s5[29]);
+    cache0->mac_src_0_s5_30(mac_src_0_s5[30]);
+    cache0->mac_src_0_s5_31(mac_src_0_s5[31]);
+    cache0->mac_src_0_s6_0(mac_src_0_s6[0]);
+    cache0->mac_src_0_s6_1(mac_src_0_s6[1]);
+    cache0->mac_src_0_s6_2(mac_src_0_s6[2]);
+    cache0->mac_src_0_s6_3(mac_src_0_s6[3]);
+    cache0->mac_src_0_s6_4(mac_src_0_s6[4]);
+    cache0->mac_src_0_s6_5(mac_src_0_s6[5]);
+    cache0->mac_src_0_s6_6(mac_src_0_s6[6]);
+    cache0->mac_src_0_s6_7(mac_src_0_s6[7]);
+    cache0->mac_src_0_s6_8(mac_src_0_s6[8]);
+    cache0->mac_src_0_s6_9(mac_src_0_s6[9]);
+    cache0->mac_src_0_s6_10(mac_src_0_s6[10]);
+    cache0->mac_src_0_s6_11(mac_src_0_s6[11]);
+    cache0->mac_src_0_s6_12(mac_src_0_s6[12]);
+    cache0->mac_src_0_s6_13(mac_src_0_s6[13]);
+    cache0->mac_src_0_s6_14(mac_src_0_s6[14]);
+    cache0->mac_src_0_s6_15(mac_src_0_s6[15]);
+    cache0->mac_src_0_s6_16(mac_src_0_s6[16]);
+    cache0->mac_src_0_s6_17(mac_src_0_s6[17]);
+    cache0->mac_src_0_s6_18(mac_src_0_s6[18]);
+    cache0->mac_src_0_s6_19(mac_src_0_s6[19]);
+    cache0->mac_src_0_s6_20(mac_src_0_s6[20]);
+    cache0->mac_src_0_s6_21(mac_src_0_s6[21]);
+    cache0->mac_src_0_s6_22(mac_src_0_s6[22]);
+    cache0->mac_src_0_s6_23(mac_src_0_s6[23]);
+    cache0->mac_src_0_s6_24(mac_src_0_s6[24]);
+    cache0->mac_src_0_s6_25(mac_src_0_s6[25]);
+    cache0->mac_src_0_s6_26(mac_src_0_s6[26]);
+    cache0->mac_src_0_s6_27(mac_src_0_s6[27]);
+    cache0->mac_src_0_s6_28(mac_src_0_s6[28]);
+    cache0->mac_src_0_s6_29(mac_src_0_s6[29]);
+    cache0->mac_src_0_s6_30(mac_src_0_s6[30]);
+    cache0->mac_src_0_s6_31(mac_src_0_s6[31]);
+    cache0->mac_src_1_0(mac_src_1[0]);
+    cache0->mac_src_1_1(mac_src_1[1]);
+    cache0->mac_src_1_2(mac_src_1[2]);
+    cache0->mac_src_1_3(mac_src_1[3]);
+    cache0->mac_src_1_4(mac_src_1[4]);
+    cache0->mac_src_1_5(mac_src_1[5]);
+    cache0->mac_src_1_6(mac_src_1[6]);
+    cache0->mac_src_1_7(mac_src_1[7]);
+    cache0->mac_src_1_8(mac_src_1[8]);
+    cache0->mac_src_1_9(mac_src_1[9]);
+    cache0->mac_src_1_10(mac_src_1[10]);
+    cache0->mac_src_1_11(mac_src_1[11]);
+    cache0->mac_src_1_12(mac_src_1[12]);
+    cache0->mac_src_1_13(mac_src_1[13]);
+    cache0->mac_src_1_14(mac_src_1[14]);
+    cache0->mac_src_1_15(mac_src_1[15]);
+    cache0->mac_src_1_16(mac_src_1[16]);
+    cache0->mac_src_1_17(mac_src_1[17]);
+    cache0->mac_src_1_18(mac_src_1[18]);
+    cache0->mac_src_1_19(mac_src_1[19]);
+    cache0->mac_src_1_20(mac_src_1[20]);
+    cache0->mac_src_1_21(mac_src_1[21]);
+    cache0->mac_src_1_22(mac_src_1[22]);
+    cache0->mac_src_1_23(mac_src_1[23]);
+    cache0->mac_src_1_24(mac_src_1[24]);
+    cache0->mac_src_1_25(mac_src_1[25]);
+    cache0->mac_src_1_26(mac_src_1[26]);
+    cache0->mac_src_1_27(mac_src_1[27]);
+    cache0->mac_src_1_28(mac_src_1[28]);
+    cache0->mac_src_1_29(mac_src_1[29]);
+    cache0->mac_src_1_30(mac_src_1[30]);
+    cache0->mac_src_1_31(mac_src_1[31]);
+    cache0->mac_src_valid(mac_src_valid);
+    cache0->mac_clear(mac_clear);
+
+}
+
+void cache_wrapper::InitThreads()
+{
+    
+}
+
+void cache_wrapper::DeleteInstances()
+{
+    if (cache0)
+    {
+        delete cache0;
+        cache0 = 0;
+    }
+}
+

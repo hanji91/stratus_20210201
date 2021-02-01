@@ -1,0 +1,12 @@
+48201
+48233
+design1
+bdw_work/trace/hls.fp_add.DPA.trace
+2
+0
+0
+0
+1609421969
+1609422055
+make CWBExec=1 hls_fp_add_DPA
+

@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<source_file>
+    <module>
+        <name>finish_gen</name>
+        <id>2584</id>
+        <source_path>finish_gen.h</source_path>
+        <source_line>8</source_line>
+        <source_column>1</source_column>
+        <port>
+            <name>clk</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>clk</rtl_port_name>
+        </port>
+        <port>
+            <name>rstn</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>rstn</rtl_port_name>
+        </port>
+        <port>
+            <name>enable</name>
+            <direction>in</direction>
+            <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>enable</rtl_port_name>
+        </port>
+        <port>
+            <name>clear</name>
+            <direction>in</direction>
+            <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>clear</rtl_port_name>
+        </port>
+        <port>
+            <name>cnt_enable</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>cnt_enable</rtl_port_name>
+        </port>
+        <port>
+            <name>total_num</name>
+            <direction>in</direction>
+            <datatype W="32">sc_uint</datatype>
+            <rtl_port_name>total_num</rtl_port_name>
+        </port>
+        <port>
+            <name>finish</name>
+            <direction>out</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>finish</rtl_port_name>
+        </port>
+        <signal>
+            <name>cnt</name>
+                        <datatype W="32">sc_uint</datatype>
+            <rtl_port_name>cnt</rtl_port_name>
+        </signal>
+        <signal>
+            <name>last_en</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>last_en</rtl_port_name>
+        </signal>
+        <signal>
+            <name>internal_cnt</name>
+                        <datatype W="8">sc_uint</datatype>
+            <rtl_port_name>internal_cnt</rtl_port_name>
+        </signal>
+        <ctor_params>
+            <param>
+                <name></name>
+                <datatype>
+                    <name>sc_core::sc_module_name</name>
+                    <id>2567</id>
+                </datatype>
+                <rtl_port_name></rtl_port_name>
+            </param>
+        </ctor_params>
+    </module>
+</source_file>

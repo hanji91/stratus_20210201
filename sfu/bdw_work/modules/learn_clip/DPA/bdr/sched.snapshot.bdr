@@ -1,0 +1,1202 @@
+<?xml version="1.0"?>
+<snapshot>
+	<name>sched</name>
+	<port>
+		<name>clk</name>
+		<source_loc>771</source_loc>
+		<clock/>
+		<direction>in</direction>
+		<datatype W="1">bool</datatype>
+	</port>
+	<port>
+		<name>rstn</name>
+		<source_loc>772</source_loc>
+		<direction>in</direction>
+		<datatype W="1">bool</datatype>
+	</port>
+	<port>
+		<name>enable</name>
+		<source_loc>773</source_loc>
+		<direction>in</direction>
+		<datatype W="1">bool</datatype>
+	</port>
+	<port>
+		<name>src_valid</name>
+		<source_loc>774</source_loc>
+		<direction>in</direction>
+		<datatype W="1">bool</datatype>
+	</port>
+	<port>
+		<name>src_man_0</name>
+		<source_loc>11942</source_loc>
+		<direction>in</direction>
+		<datatype W="23">sc_uint</datatype>
+	</port>
+	<port>
+		<name>src_man_1</name>
+		<source_loc>11943</source_loc>
+		<direction>in</direction>
+		<datatype W="23">sc_uint</datatype>
+	</port>
+	<port>
+		<name>src_man_2</name>
+		<source_loc>11944</source_loc>
+		<direction>in</direction>
+		<datatype W="23">sc_uint</datatype>
+	</port>
+	<port>
+		<name>src_man_3</name>
+		<source_loc>11945</source_loc>
+		<direction>in</direction>
+		<datatype W="23">sc_uint</datatype>
+	</port>
+	<port>
+		<name>src_man_4</name>
+		<source_loc>11946</source_loc>
+		<direction>in</direction>
+		<datatype W="23">sc_uint</datatype>
+	</port>
+	<port>
+		<name>src_man_5</name>
+		<source_loc>11947</source_loc>
+		<direction>in</direction>
+		<datatype W="23">sc_uint</datatype>
+	</port>
+	<port>
+		<name>src_man_6</name>
+		<source_loc>11948</source_loc>
+		<direction>in</direction>
+		<datatype W="23">sc_uint</datatype>
+	</port>
+	<port>
+		<name>src_man_7</name>
+		<source_loc>11949</source_loc>
+		<direction>in</direction>
+		<datatype W="23">sc_uint</datatype>
+	</port>
+	<port>
+		<name>src_exp_0</name>
+		<source_loc>11934</source_loc>
+		<direction>in</direction>
+		<datatype W="8">sc_uint</datatype>
+	</port>
+	<port>
+		<name>src_exp_1</name>
+		<source_loc>11935</source_loc>
+		<direction>in</direction>
+		<datatype W="8">sc_uint</datatype>
+	</port>
+	<port>
+		<name>src_exp_2</name>
+		<source_loc>11936</source_loc>
+		<direction>in</direction>
+		<datatype W="8">sc_uint</datatype>
+	</port>
+	<port>
+		<name>src_exp_3</name>
+		<source_loc>11937</source_loc>
+		<direction>in</direction>
+		<datatype W="8">sc_uint</datatype>
+	</port>
+	<port>
+		<name>src_exp_4</name>
+		<source_loc>11938</source_loc>
+		<direction>in</direction>
+		<datatype W="8">sc_uint</datatype>
+	</port>
+	<port>
+		<name>src_exp_5</name>
+		<source_loc>11939</source_loc>
+		<direction>in</direction>
+		<datatype W="8">sc_uint</datatype>
+	</port>
+	<port>
+		<name>src_exp_6</name>
+		<source_loc>11940</source_loc>
+		<direction>in</direction>
+		<datatype W="8">sc_uint</datatype>
+	</port>
+	<port>
+		<name>src_exp_7</name>
+		<source_loc>11941</source_loc>
+		<direction>in</direction>
+		<datatype W="8">sc_uint</datatype>
+	</port>
+	<port>
+		<name>src_sign_0</name>
+		<source_loc>11926</source_loc>
+		<direction>in</direction>
+		<datatype W="1">sc_uint</datatype>
+	</port>
+	<port>
+		<name>src_sign_1</name>
+		<source_loc>11927</source_loc>
+		<direction>in</direction>
+		<datatype W="1">sc_uint</datatype>
+	</port>
+	<port>
+		<name>src_sign_2</name>
+		<source_loc>11928</source_loc>
+		<direction>in</direction>
+		<datatype W="1">sc_uint</datatype>
+	</port>
+	<port>
+		<name>src_sign_3</name>
+		<source_loc>11929</source_loc>
+		<direction>in</direction>
+		<datatype W="1">sc_uint</datatype>
+	</port>
+	<port>
+		<name>src_sign_4</name>
+		<source_loc>11930</source_loc>
+		<direction>in</direction>
+		<datatype W="1">sc_uint</datatype>
+	</port>
+	<port>
+		<name>src_sign_5</name>
+		<source_loc>11931</source_loc>
+		<direction>in</direction>
+		<datatype W="1">sc_uint</datatype>
+	</port>
+	<port>
+		<name>src_sign_6</name>
+		<source_loc>11932</source_loc>
+		<direction>in</direction>
+		<datatype W="1">sc_uint</datatype>
+	</port>
+	<port>
+		<name>src_sign_7</name>
+		<source_loc>11933</source_loc>
+		<direction>in</direction>
+		<datatype W="1">sc_uint</datatype>
+	</port>
+	<port>
+		<name>scale_man</name>
+		<source_loc>9972</source_loc>
+		<direction>in</direction>
+		<datatype W="23">sc_uint</datatype>
+	</port>
+	<port>
+		<name>scale_exp</name>
+		<source_loc>9971</source_loc>
+		<direction>in</direction>
+		<datatype W="8">sc_uint</datatype>
+	</port>
+	<port>
+		<name>scale_sign</name>
+		<source_loc>9970</source_loc>
+		<direction>in</direction>
+		<datatype W="1">sc_uint</datatype>
+	</port>
+	<port>
+		<name>zero_point_man</name>
+		<source_loc>9969</source_loc>
+		<direction>in</direction>
+		<datatype W="23">sc_uint</datatype>
+	</port>
+	<port>
+		<name>zero_point_exp</name>
+		<source_loc>9968</source_loc>
+		<direction>in</direction>
+		<datatype W="8">sc_uint</datatype>
+	</port>
+	<port>
+		<name>zero_point_sign</name>
+		<source_loc>9967</source_loc>
+		<direction>in</direction>
+		<datatype W="1">sc_uint</datatype>
+	</port>
+	<port>
+		<name>dst_valid</name>
+		<source_loc>778</source_loc>
+		<direction>out</direction>
+		<datatype W="1">bool</datatype>
+	</port>
+	<port>
+		<name>dst_man_0</name>
+		<source_loc>18823</source_loc>
+		<direction>out</direction>
+		<datatype W="23">sc_uint</datatype>
+	</port>
+	<port>
+		<name>dst_man_1</name>
+		<source_loc>18824</source_loc>
+		<direction>out</direction>
+		<datatype W="23">sc_uint</datatype>
+	</port>
+	<port>
+		<name>dst_man_2</name>
+		<source_loc>18825</source_loc>
+		<direction>out</direction>
+		<datatype W="23">sc_uint</datatype>
+	</port>
+	<port>
+		<name>dst_man_3</name>
+		<source_loc>18826</source_loc>
+		<direction>out</direction>
+		<datatype W="23">sc_uint</datatype>
+	</port>
+	<port>
+		<name>dst_man_4</name>
+		<source_loc>18827</source_loc>
+		<direction>out</direction>
+		<datatype W="23">sc_uint</datatype>
+	</port>
+	<port>
+		<name>dst_man_5</name>
+		<source_loc>18828</source_loc>
+		<direction>out</direction>
+		<datatype W="23">sc_uint</datatype>
+	</port>
+	<port>
+		<name>dst_man_6</name>
+		<source_loc>18829</source_loc>
+		<direction>out</direction>
+		<datatype W="23">sc_uint</datatype>
+	</port>
+	<port>
+		<name>dst_man_7</name>
+		<source_loc>18830</source_loc>
+		<direction>out</direction>
+		<datatype W="23">sc_uint</datatype>
+	</port>
+	<port>
+		<name>dst_exp_0</name>
+		<source_loc>18815</source_loc>
+		<direction>out</direction>
+		<datatype W="8">sc_uint</datatype>
+	</port>
+	<port>
+		<name>dst_exp_1</name>
+		<source_loc>18816</source_loc>
+		<direction>out</direction>
+		<datatype W="8">sc_uint</datatype>
+	</port>
+	<port>
+		<name>dst_exp_2</name>
+		<source_loc>18817</source_loc>
+		<direction>out</direction>
+		<datatype W="8">sc_uint</datatype>
+	</port>
+	<port>
+		<name>dst_exp_3</name>
+		<source_loc>18818</source_loc>
+		<direction>out</direction>
+		<datatype W="8">sc_uint</datatype>
+	</port>
+	<port>
+		<name>dst_exp_4</name>
+		<source_loc>18819</source_loc>
+		<direction>out</direction>
+		<datatype W="8">sc_uint</datatype>
+	</port>
+	<port>
+		<name>dst_exp_5</name>
+		<source_loc>18820</source_loc>
+		<direction>out</direction>
+		<datatype W="8">sc_uint</datatype>
+	</port>
+	<port>
+		<name>dst_exp_6</name>
+		<source_loc>18821</source_loc>
+		<direction>out</direction>
+		<datatype W="8">sc_uint</datatype>
+	</port>
+	<port>
+		<name>dst_exp_7</name>
+		<source_loc>18822</source_loc>
+		<direction>out</direction>
+		<datatype W="8">sc_uint</datatype>
+	</port>
+	<port>
+		<name>dst_sign_0</name>
+		<source_loc>18807</source_loc>
+		<direction>out</direction>
+		<datatype W="1">sc_uint</datatype>
+	</port>
+	<port>
+		<name>dst_sign_1</name>
+		<source_loc>18808</source_loc>
+		<direction>out</direction>
+		<datatype W="1">sc_uint</datatype>
+	</port>
+	<port>
+		<name>dst_sign_2</name>
+		<source_loc>18809</source_loc>
+		<direction>out</direction>
+		<datatype W="1">sc_uint</datatype>
+	</port>
+	<port>
+		<name>dst_sign_3</name>
+		<source_loc>18810</source_loc>
+		<direction>out</direction>
+		<datatype W="1">sc_uint</datatype>
+	</port>
+	<port>
+		<name>dst_sign_4</name>
+		<source_loc>18811</source_loc>
+		<direction>out</direction>
+		<datatype W="1">sc_uint</datatype>
+	</port>
+	<port>
+		<name>dst_sign_5</name>
+		<source_loc>18812</source_loc>
+		<direction>out</direction>
+		<datatype W="1">sc_uint</datatype>
+	</port>
+	<port>
+		<name>dst_sign_6</name>
+		<source_loc>18813</source_loc>
+		<direction>out</direction>
+		<datatype W="1">sc_uint</datatype>
+	</port>
+	<port>
+		<name>dst_sign_7</name>
+		<source_loc>18814</source_loc>
+		<direction>out</direction>
+		<datatype W="1">sc_uint</datatype>
+	</port>
+	<ios>
+		<thread>_dst_valid</thread>
+		<port>
+			<name>clk</name>
+			<source_loc>771</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>add_valid_0</name>
+			<source_loc>10477</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>src_valid</name>
+			<source_loc>774</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>enable</name>
+			<source_loc>773</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>rstn</name>
+			<source_loc>772</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>dst_valid</name>
+			<source_loc>778</source_loc>
+			<direction>out</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+	</ios>
+	<ios>
+		<thread>_dst</thread>
+		<port>
+			<name>clk</name>
+			<source_loc>771</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>add_result_man_7</name>
+			<source_loc>10476</source_loc>
+			<direction>in</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>add_result_exp_7</name>
+			<source_loc>10468</source_loc>
+			<direction>in</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>add_result_sign_7</name>
+			<source_loc>10460</source_loc>
+			<direction>in</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>add_result_man_6</name>
+			<source_loc>10475</source_loc>
+			<direction>in</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>add_result_exp_6</name>
+			<source_loc>10467</source_loc>
+			<direction>in</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>add_result_sign_6</name>
+			<source_loc>10459</source_loc>
+			<direction>in</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>add_result_man_5</name>
+			<source_loc>10474</source_loc>
+			<direction>in</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>add_result_exp_5</name>
+			<source_loc>10466</source_loc>
+			<direction>in</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>add_result_sign_5</name>
+			<source_loc>10458</source_loc>
+			<direction>in</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>add_result_man_4</name>
+			<source_loc>10473</source_loc>
+			<direction>in</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>add_result_exp_4</name>
+			<source_loc>10465</source_loc>
+			<direction>in</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>add_result_sign_4</name>
+			<source_loc>10457</source_loc>
+			<direction>in</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>add_result_man_3</name>
+			<source_loc>10472</source_loc>
+			<direction>in</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>add_result_exp_3</name>
+			<source_loc>10464</source_loc>
+			<direction>in</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>add_result_sign_3</name>
+			<source_loc>10456</source_loc>
+			<direction>in</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>add_result_man_2</name>
+			<source_loc>10471</source_loc>
+			<direction>in</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>add_result_exp_2</name>
+			<source_loc>10463</source_loc>
+			<direction>in</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>add_result_sign_2</name>
+			<source_loc>10455</source_loc>
+			<direction>in</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>add_result_man_1</name>
+			<source_loc>10470</source_loc>
+			<direction>in</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>add_result_exp_1</name>
+			<source_loc>10462</source_loc>
+			<direction>in</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>add_result_sign_1</name>
+			<source_loc>10454</source_loc>
+			<direction>in</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>add_result_man_0</name>
+			<source_loc>10469</source_loc>
+			<direction>in</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>add_result_exp_0</name>
+			<source_loc>10461</source_loc>
+			<direction>in</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>add_result_sign_0</name>
+			<source_loc>10453</source_loc>
+			<direction>in</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_man_7</name>
+			<source_loc>11949</source_loc>
+			<direction>in</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_exp_7</name>
+			<source_loc>11941</source_loc>
+			<direction>in</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_sign_7</name>
+			<source_loc>11933</source_loc>
+			<direction>in</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_man_6</name>
+			<source_loc>11948</source_loc>
+			<direction>in</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_exp_6</name>
+			<source_loc>11940</source_loc>
+			<direction>in</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_sign_6</name>
+			<source_loc>11932</source_loc>
+			<direction>in</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_man_5</name>
+			<source_loc>11947</source_loc>
+			<direction>in</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_exp_5</name>
+			<source_loc>11939</source_loc>
+			<direction>in</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_sign_5</name>
+			<source_loc>11931</source_loc>
+			<direction>in</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_man_4</name>
+			<source_loc>11946</source_loc>
+			<direction>in</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_exp_4</name>
+			<source_loc>11938</source_loc>
+			<direction>in</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_sign_4</name>
+			<source_loc>11930</source_loc>
+			<direction>in</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_man_3</name>
+			<source_loc>11945</source_loc>
+			<direction>in</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_exp_3</name>
+			<source_loc>11937</source_loc>
+			<direction>in</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_sign_3</name>
+			<source_loc>11929</source_loc>
+			<direction>in</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_man_2</name>
+			<source_loc>11944</source_loc>
+			<direction>in</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_exp_2</name>
+			<source_loc>11936</source_loc>
+			<direction>in</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_sign_2</name>
+			<source_loc>11928</source_loc>
+			<direction>in</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_man_1</name>
+			<source_loc>11943</source_loc>
+			<direction>in</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_exp_1</name>
+			<source_loc>11935</source_loc>
+			<direction>in</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_sign_1</name>
+			<source_loc>11927</source_loc>
+			<direction>in</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_man_0</name>
+			<source_loc>11942</source_loc>
+			<direction>in</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_exp_0</name>
+			<source_loc>11934</source_loc>
+			<direction>in</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_sign_0</name>
+			<source_loc>11926</source_loc>
+			<direction>in</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>enable</name>
+			<source_loc>773</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>rstn</name>
+			<source_loc>772</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>dst_man_7</name>
+			<source_loc>18830</source_loc>
+			<direction>out</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>dst_exp_7</name>
+			<source_loc>18822</source_loc>
+			<direction>out</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>dst_sign_7</name>
+			<source_loc>18814</source_loc>
+			<direction>out</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>dst_man_6</name>
+			<source_loc>18829</source_loc>
+			<direction>out</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>dst_exp_6</name>
+			<source_loc>18821</source_loc>
+			<direction>out</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>dst_sign_6</name>
+			<source_loc>18813</source_loc>
+			<direction>out</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>dst_man_5</name>
+			<source_loc>18828</source_loc>
+			<direction>out</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>dst_exp_5</name>
+			<source_loc>18820</source_loc>
+			<direction>out</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>dst_sign_5</name>
+			<source_loc>18812</source_loc>
+			<direction>out</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>dst_man_4</name>
+			<source_loc>18827</source_loc>
+			<direction>out</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>dst_exp_4</name>
+			<source_loc>18819</source_loc>
+			<direction>out</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>dst_sign_4</name>
+			<source_loc>18811</source_loc>
+			<direction>out</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>dst_man_3</name>
+			<source_loc>18826</source_loc>
+			<direction>out</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>dst_exp_3</name>
+			<source_loc>18818</source_loc>
+			<direction>out</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>dst_sign_3</name>
+			<source_loc>18810</source_loc>
+			<direction>out</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>dst_man_2</name>
+			<source_loc>18825</source_loc>
+			<direction>out</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>dst_exp_2</name>
+			<source_loc>18817</source_loc>
+			<direction>out</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>dst_sign_2</name>
+			<source_loc>18809</source_loc>
+			<direction>out</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>dst_man_1</name>
+			<source_loc>18824</source_loc>
+			<direction>out</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>dst_exp_1</name>
+			<source_loc>18816</source_loc>
+			<direction>out</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>dst_sign_1</name>
+			<source_loc>18808</source_loc>
+			<direction>out</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>dst_man_0</name>
+			<source_loc>18823</source_loc>
+			<direction>out</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>dst_exp_0</name>
+			<source_loc>18815</source_loc>
+			<direction>out</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>dst_sign_0</name>
+			<source_loc>18807</source_loc>
+			<direction>out</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+	</ios>
+	<ios>
+		<thread>_delay</thread>
+		<port>
+			<name>clk</name>
+			<source_loc>771</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>src_valid</name>
+			<source_loc>774</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>zero_point_man</name>
+			<source_loc>9969</source_loc>
+			<direction>in</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>zero_point_exp</name>
+			<source_loc>9968</source_loc>
+			<direction>in</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>zero_point_sign</name>
+			<source_loc>9967</source_loc>
+			<direction>in</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_man_7</name>
+			<source_loc>11949</source_loc>
+			<direction>in</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_exp_7</name>
+			<source_loc>11941</source_loc>
+			<direction>in</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_sign_7</name>
+			<source_loc>11933</source_loc>
+			<direction>in</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_man_6</name>
+			<source_loc>11948</source_loc>
+			<direction>in</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_exp_6</name>
+			<source_loc>11940</source_loc>
+			<direction>in</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_sign_6</name>
+			<source_loc>11932</source_loc>
+			<direction>in</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_man_5</name>
+			<source_loc>11947</source_loc>
+			<direction>in</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_exp_5</name>
+			<source_loc>11939</source_loc>
+			<direction>in</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_sign_5</name>
+			<source_loc>11931</source_loc>
+			<direction>in</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_man_4</name>
+			<source_loc>11946</source_loc>
+			<direction>in</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_exp_4</name>
+			<source_loc>11938</source_loc>
+			<direction>in</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_sign_4</name>
+			<source_loc>11930</source_loc>
+			<direction>in</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_man_3</name>
+			<source_loc>11945</source_loc>
+			<direction>in</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_exp_3</name>
+			<source_loc>11937</source_loc>
+			<direction>in</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_sign_3</name>
+			<source_loc>11929</source_loc>
+			<direction>in</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_man_2</name>
+			<source_loc>11944</source_loc>
+			<direction>in</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_exp_2</name>
+			<source_loc>11936</source_loc>
+			<direction>in</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_sign_2</name>
+			<source_loc>11928</source_loc>
+			<direction>in</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_man_1</name>
+			<source_loc>11943</source_loc>
+			<direction>in</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_exp_1</name>
+			<source_loc>11935</source_loc>
+			<direction>in</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_sign_1</name>
+			<source_loc>11927</source_loc>
+			<direction>in</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_man_0</name>
+			<source_loc>11942</source_loc>
+			<direction>in</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_exp_0</name>
+			<source_loc>11934</source_loc>
+			<direction>in</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>src_sign_0</name>
+			<source_loc>11926</source_loc>
+			<direction>in</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>rstn</name>
+			<source_loc>772</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>r_src_valid</name>
+			<source_loc>799</source_loc>
+			<direction>out</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>r1_zero_point_man</name>
+			<source_loc>10136</source_loc>
+			<direction>out</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>r1_zero_point_exp</name>
+			<source_loc>10135</source_loc>
+			<direction>out</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>r1_zero_point_sign</name>
+			<source_loc>10134</source_loc>
+			<direction>out</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>r_src_man_7</name>
+			<source_loc>10420</source_loc>
+			<direction>out</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>r_src_exp_7</name>
+			<source_loc>10412</source_loc>
+			<direction>out</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>r_src_sign_7</name>
+			<source_loc>10404</source_loc>
+			<direction>out</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>r_src_man_6</name>
+			<source_loc>10419</source_loc>
+			<direction>out</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>r_src_exp_6</name>
+			<source_loc>10411</source_loc>
+			<direction>out</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>r_src_sign_6</name>
+			<source_loc>10403</source_loc>
+			<direction>out</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>r_src_man_5</name>
+			<source_loc>10418</source_loc>
+			<direction>out</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>r_src_exp_5</name>
+			<source_loc>10410</source_loc>
+			<direction>out</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>r_src_sign_5</name>
+			<source_loc>10402</source_loc>
+			<direction>out</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>r_src_man_4</name>
+			<source_loc>10417</source_loc>
+			<direction>out</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>r_src_exp_4</name>
+			<source_loc>10409</source_loc>
+			<direction>out</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>r_src_sign_4</name>
+			<source_loc>10401</source_loc>
+			<direction>out</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>r_src_man_3</name>
+			<source_loc>10416</source_loc>
+			<direction>out</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>r_src_exp_3</name>
+			<source_loc>10408</source_loc>
+			<direction>out</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>r_src_sign_3</name>
+			<source_loc>10400</source_loc>
+			<direction>out</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>r_src_man_2</name>
+			<source_loc>10415</source_loc>
+			<direction>out</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>r_src_exp_2</name>
+			<source_loc>10407</source_loc>
+			<direction>out</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>r_src_sign_2</name>
+			<source_loc>10399</source_loc>
+			<direction>out</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>r_src_man_1</name>
+			<source_loc>10414</source_loc>
+			<direction>out</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>r_src_exp_1</name>
+			<source_loc>10406</source_loc>
+			<direction>out</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>r_src_sign_1</name>
+			<source_loc>10398</source_loc>
+			<direction>out</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>r_src_man_0</name>
+			<source_loc>10413</source_loc>
+			<direction>out</direction>
+			<datatype W="23">sc_uint</datatype>
+		</port>
+		<port>
+			<name>r_src_exp_0</name>
+			<source_loc>10405</source_loc>
+			<direction>out</direction>
+			<datatype W="8">sc_uint</datatype>
+		</port>
+		<port>
+			<name>r_src_sign_0</name>
+			<source_loc>10397</source_loc>
+			<direction>out</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+	</ios>
+</snapshot>

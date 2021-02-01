@@ -1,0 +1,213 @@
+<?xml version="1.0"?>
+<source_file>
+    <module>
+        <name>feature_write_addr_gen</name>
+        <id>2042</id>
+        <source_path>feature_write_addr_gen.h</source_path>
+        <source_line>7</source_line>
+        <source_column>1</source_column>
+        <port>
+            <name>clk</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>clk</rtl_port_name>
+        </port>
+        <port>
+            <name>rstn</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>rstn</rtl_port_name>
+        </port>
+        <port>
+            <name>init</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>init</rtl_port_name>
+        </port>
+        <port>
+            <name>start</name>
+            <direction>in</direction>
+            <datatype W="8">sc_uint</datatype>
+            <rtl_port_name>start</rtl_port_name>
+        </port>
+        <port>
+            <name>conv_type</name>
+            <direction>in</direction>
+            <datatype W="8">sc_uint</datatype>
+            <rtl_port_name>conv_type</rtl_port_name>
+        </port>
+        <port>
+            <name>stop</name>
+            <direction>out</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>stop</rtl_port_name>
+        </port>
+        <port>
+            <name>base_addr</name>
+            <direction>in</direction>
+            <datatype W="32">sc_uint</datatype>
+            <rtl_port_name>base_addr</rtl_port_name>
+        </port>
+        <port>
+            <name>src</name>
+            <direction>in</direction>
+            <datatype W="320">sc_biguint</datatype>
+            <rtl_port_name>src</rtl_port_name>
+        </port>
+        <port>
+            <name>src_vld</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>src_vld</rtl_port_name>
+        </port>
+        <port>
+            <name>read_address</name>
+            <direction>in</direction>
+            <datatype W="32">sc_uint</datatype>
+            <rtl_port_name>read_address</rtl_port_name>
+        </port>
+        <port>
+            <name>read_address_valid</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>read_address_valid</rtl_port_name>
+        </port>
+        <port>
+            <name>data_in_en</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>data_in_en</rtl_port_name>
+        </port>
+        <port>
+            <name>read_data</name>
+            <direction>out</direction>
+            <datatype W="320">sc_biguint</datatype>
+            <rtl_port_name>read_data</rtl_port_name>
+        </port>
+        <port>
+            <name>address_0</name>
+            <direction>out</direction>
+            <datatype W="32">sc_uint</datatype>
+            <rtl_port_name>address_0</rtl_port_name>
+        </port>
+        <port>
+            <name>cs_0</name>
+            <direction>out</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>cs_0</rtl_port_name>
+        </port>
+        <port>
+            <name>we_0</name>
+            <direction>out</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>we_0</rtl_port_name>
+        </port>
+        <port>
+            <name>oe_0</name>
+            <direction>out</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>oe_0</rtl_port_name>
+        </port>
+        <port>
+            <name>data_in</name>
+            <direction>in</direction>
+            <datatype W="320">sc_biguint</datatype>
+            <rtl_port_name>data_in</rtl_port_name>
+        </port>
+        <port>
+            <name>data_out</name>
+            <direction>out</direction>
+            <datatype W="320">sc_biguint</datatype>
+            <rtl_port_name>data_out</rtl_port_name>
+        </port>
+        <signal>
+            <name>write_address</name>
+                        <datatype W="32">sc_uint</datatype>
+            <rtl_port_name>write_address</rtl_port_name>
+        </signal>
+        <signal>
+            <name>write_cnt</name>
+                        <datatype W="32">unsigned int</datatype>
+            <rtl_port_name>write_cnt</rtl_port_name>
+        </signal>
+        <signal>
+            <name>fifo_mem</name>
+                        <datatype>
+                <array>8</array>
+                <datatype>
+                    <name>c2_Ulong_$</name>
+                    <id>2782</id>
+                </datatype>
+                <rtl_port_name>fifo_mem_[8]</rtl_port_name>
+            </datatype>
+        </signal>
+        <signal>
+            <name>src_vld_1d</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>src_vld_1d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>src_vld_2d</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>src_vld_2d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>src_vld_3d</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>src_vld_3d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>write_address_valid</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>write_address_valid</rtl_port_name>
+        </signal>
+        <signal>
+            <name>wr_en</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>wr_en</rtl_port_name>
+        </signal>
+        <signal>
+            <name>rd_en</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>rd_en</rtl_port_name>
+        </signal>
+        <signal>
+            <name>wr_ptr</name>
+                        <datatype W="3">sc_uint</datatype>
+            <rtl_port_name>wr_ptr</rtl_port_name>
+        </signal>
+        <signal>
+            <name>rd_ptr</name>
+                        <datatype W="3">sc_uint</datatype>
+            <rtl_port_name>rd_ptr</rtl_port_name>
+        </signal>
+        <signal>
+            <name>fifo_cnt</name>
+                        <datatype W="3">sc_uint</datatype>
+            <rtl_port_name>fifo_cnt</rtl_port_name>
+        </signal>
+        <signal>
+            <name>fifo_cnt_1d</name>
+                        <datatype W="3">sc_uint</datatype>
+            <rtl_port_name>fifo_cnt_1d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>fifo_out</name>
+                        <datatype>
+                <name>c2_Ulong_$</name>
+                <id>2782</id>
+            </datatype>
+            <rtl_port_name>fifo_out</rtl_port_name>
+        </signal>
+        <ctor_params>
+            <param>
+                <name></name>
+                <datatype>
+                    <name>sc_core::sc_module_name</name>
+                    <id>2025</id>
+                </datatype>
+                <rtl_port_name></rtl_port_name>
+            </param>
+        </ctor_params>
+    </module>
+</source_file>

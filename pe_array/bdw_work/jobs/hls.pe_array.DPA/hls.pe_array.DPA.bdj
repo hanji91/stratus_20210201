@@ -1,0 +1,12 @@
+41603
+41637
+design1
+bdw_work/trace/hls.pe_array.DPA.trace
+2
+0
+0
+0
+1611737800
+1611737817
+make CWBExec=1 hls_pe_array_DPA
+

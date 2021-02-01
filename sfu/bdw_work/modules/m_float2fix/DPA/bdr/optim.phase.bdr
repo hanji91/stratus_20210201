@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<tool_log>
+	<optim_nodes>
+		<thread>_dst_valid</thread>
+		<value>25</value>
+	</optim_nodes>
+	<optim_nodes>
+		<thread>_dst_valid</thread>
+		<value>31</value>
+	</optim_nodes>
+	<optim_nodes>
+		<thread>_dst_valid</thread>
+		<value>28</value>
+	</optim_nodes>
+	<optim_nodes>
+		<thread>_dst_valid</thread>
+		<value>28</value>
+	</optim_nodes>
+	<optim_nodes>
+		<thread>_dst_valid</thread>
+		<value>28</value>
+	</optim_nodes>
+	<optim_nodes>
+		<thread>_dst_valid</thread>
+		<value>28</value>
+	</optim_nodes>
+	<optim_nodes>
+		<thread>_dst_valid</thread>
+		<value>28</value>
+	</optim_nodes>
+	<thread>
+		<name>_dst_valid</name>
+		<source_loc>1768</source_loc>
+		<async/>
+		<out_sig>
+			<name>dst_valid</name>
+			<source_loc>797</source_loc>
+			<datatype>1,0</datatype>
+		</out_sig>
+		<in_sig>
+			<name>m_dst_valid_0</name>
+			<source_loc>2424</source_loc>
+			<datatype>1,0</datatype>
+		</in_sig>
+	</thread>
+	<message>
+		<code_num>486</code_num>
+		<severity>NOTE</severity>
+		<message_text>Creating custom parts for this design</message_text>
+		<phase>optim</phase>
+		<order>13</order>
+	</message>
+	<message>
+		<code_num>487</code_num>
+		<severity>NOTE</severity>
+		<message_text>Created 0 parts</message_text>
+		<phase>optim</phase>
+		<order>14</order>
+	</message>
+	<message>
+		<code_num>488</code_num>
+		<severity>NOTE</severity>
+		<message_text>dpopt_auto: Suggesting 0 parts</message_text>
+		<phase>optim</phase>
+		<order>15</order>
+	</message>
+	<create_ops/>
+	<snapshot>
+		<path>bdr/optim.snapshot.bdr</path>
+		<name>optim</name>
+	</snapshot>
+	<phase_complete>optim</phase_complete>
+	<phase_summary>
+		<phase_complete>optim</phase_complete>
+		<summary>Optimization complete: 1 threads, 23 nodes.</summary>
+	</phase_summary>
+</tool_log>

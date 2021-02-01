@@ -1,0 +1,12 @@
+83993
+83994
+design1
+bdw_work/trace/hls.cache.DPA.trace
+2
+0
+0
+1
+1611733274
+1611733318
+make CWBExec=1 hls_cache_DPA
+

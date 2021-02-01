@@ -1,0 +1,12 @@
+57169
+57201
+design1
+bdw_work/trace/hls.bn_addr_gen.DPA.trace
+2
+0
+0
+0
+1611661398
+1611661414
+make CWBExec=1 hls_bn_addr_gen_DPA
+

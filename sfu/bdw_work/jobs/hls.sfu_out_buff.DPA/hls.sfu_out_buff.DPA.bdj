@@ -1,0 +1,12 @@
+52726
+52759
+design1
+bdw_work/trace/hls.sfu_out_buff.DPA.trace
+2
+0
+0
+0
+1610709874
+1610709918
+make CWBExec=1 hls_sfu_out_buff_DPA
+

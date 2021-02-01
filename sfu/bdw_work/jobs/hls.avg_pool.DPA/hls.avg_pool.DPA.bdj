@@ -1,0 +1,12 @@
+77969
+78007
+design1
+bdw_work/trace/hls.avg_pool.DPA.trace
+2
+0
+0
+0
+1611836031
+1611836057
+make CWBExec=1 hls_avg_pool_DPA
+

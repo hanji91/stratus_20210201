@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<source_file>
+    <module>
+        <name>in_buff</name>
+        <id>1975</id>
+        <source_path>in_buff.h</source_path>
+        <source_line>6</source_line>
+        <source_column>1</source_column>
+        <port>
+            <name>clk</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>clk</rtl_port_name>
+        </port>
+        <port>
+            <name>rstn</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>rstn</rtl_port_name>
+        </port>
+        <port>
+            <name>enable</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>enable</rtl_port_name>
+        </port>
+        <port>
+            <name>in_data</name>
+            <direction>in</direction>
+            <datatype>
+                <array>32</array>
+                <datatype W="32">sc_int</datatype>
+                <rtl_port_name>in_data_[32]</rtl_port_name>
+            </datatype>
+        </port>
+        <port>
+            <name>in_data_valid</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>in_data_valid</rtl_port_name>
+        </port>
+        <port>
+            <name>out_data</name>
+            <direction>out</direction>
+            <datatype>
+                <array>8</array>
+                <datatype W="32">sc_int</datatype>
+                <rtl_port_name>out_data_[8]</rtl_port_name>
+            </datatype>
+        </port>
+        <port>
+            <name>out_data_valid</name>
+            <direction>out</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>out_data_valid</rtl_port_name>
+        </port>
+        <signal>
+            <name>concate_in_data</name>
+                        <datatype>
+                <name>c2_Ulong_$</name>
+                <id>2377</id>
+            </datatype>
+            <rtl_port_name>concate_in_data</rtl_port_name>
+        </signal>
+        <signal>
+            <name>w_data</name>
+                        <datatype>
+                <array>32</array>
+                <datatype W="32">sc_int</datatype>
+                <rtl_port_name>w_data_[32]</rtl_port_name>
+            </datatype>
+        </signal>
+        <signal>
+            <name>read_en</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>read_en</rtl_port_name>
+        </signal>
+        <signal>
+            <name>read_en_1d</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>read_en_1d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>read_en_2d</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>read_en_2d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>read_en_3d</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>read_en_3d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>read_en_4d</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>read_en_4d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>wr_en</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>wr_en</rtl_port_name>
+        </signal>
+        <signal>
+            <name>rd_en</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>rd_en</rtl_port_name>
+        </signal>
+        <signal>
+            <name>wr_ptr</name>
+                        <datatype W="3">sc_uint</datatype>
+            <rtl_port_name>wr_ptr</rtl_port_name>
+        </signal>
+        <signal>
+            <name>rd_ptr</name>
+                        <datatype W="3">sc_uint</datatype>
+            <rtl_port_name>rd_ptr</rtl_port_name>
+        </signal>
+        <signal>
+            <name>tmp_rd_ptr</name>
+                        <datatype W="5">sc_uint</datatype>
+            <rtl_port_name>tmp_rd_ptr</rtl_port_name>
+        </signal>
+        <signal>
+            <name>fifo_cnt</name>
+                        <datatype W="3">sc_uint</datatype>
+            <rtl_port_name>fifo_cnt</rtl_port_name>
+        </signal>
+        <signal>
+            <name>fifo</name>
+                        <datatype>
+                <array>8</array>
+                <datatype>
+                    <name>c2_Ulong_$</name>
+                    <id>2377</id>
+                </datatype>
+                <rtl_port_name>fifo_[8]</rtl_port_name>
+            </datatype>
+        </signal>
+        <ctor_params>
+            <param>
+                <name></name>
+                <datatype>
+                    <name>sc_core::sc_module_name</name>
+                    <id>1958</id>
+                </datatype>
+                <rtl_port_name></rtl_port_name>
+            </param>
+        </ctor_params>
+    </module>
+</source_file>

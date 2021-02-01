@@ -1,0 +1,485 @@
+<?xml version="1.0"?>
+<snapshot>
+	<name>sched</name>
+	<port>
+		<name>clk</name>
+		<source_loc>668</source_loc>
+		<clock/>
+		<direction>in</direction>
+		<datatype W="1">bool</datatype>
+	</port>
+	<port>
+		<name>rstn</name>
+		<source_loc>669</source_loc>
+		<direction>in</direction>
+		<datatype W="1">bool</datatype>
+	</port>
+	<port>
+		<name>enable</name>
+		<source_loc>670</source_loc>
+		<direction>in</direction>
+		<datatype W="1">bool</datatype>
+	</port>
+	<port>
+		<name>learned_clip_en</name>
+		<source_loc>671</source_loc>
+		<direction>in</direction>
+		<datatype W="1">bool</datatype>
+	</port>
+	<port>
+		<name>in0_data_0</name>
+		<source_loc>2929</source_loc>
+		<direction>in</direction>
+		<datatype W="32">sc_uint</datatype>
+	</port>
+	<port>
+		<name>in0_data_1</name>
+		<source_loc>2930</source_loc>
+		<direction>in</direction>
+		<datatype W="32">sc_uint</datatype>
+	</port>
+	<port>
+		<name>in0_data_2</name>
+		<source_loc>2931</source_loc>
+		<direction>in</direction>
+		<datatype W="32">sc_uint</datatype>
+	</port>
+	<port>
+		<name>in0_data_3</name>
+		<source_loc>2932</source_loc>
+		<direction>in</direction>
+		<datatype W="32">sc_uint</datatype>
+	</port>
+	<port>
+		<name>in0_data_4</name>
+		<source_loc>2933</source_loc>
+		<direction>in</direction>
+		<datatype W="32">sc_uint</datatype>
+	</port>
+	<port>
+		<name>in0_data_5</name>
+		<source_loc>2934</source_loc>
+		<direction>in</direction>
+		<datatype W="32">sc_uint</datatype>
+	</port>
+	<port>
+		<name>in0_data_6</name>
+		<source_loc>2935</source_loc>
+		<direction>in</direction>
+		<datatype W="32">sc_uint</datatype>
+	</port>
+	<port>
+		<name>in0_data_7</name>
+		<source_loc>2936</source_loc>
+		<direction>in</direction>
+		<datatype W="32">sc_uint</datatype>
+	</port>
+	<port>
+		<name>in0_data_valid</name>
+		<source_loc>673</source_loc>
+		<direction>in</direction>
+		<datatype W="1">bool</datatype>
+	</port>
+	<port>
+		<name>in1_data_0</name>
+		<source_loc>2661</source_loc>
+		<direction>in</direction>
+		<datatype W="32">sc_uint</datatype>
+	</port>
+	<port>
+		<name>in1_data_1</name>
+		<source_loc>2662</source_loc>
+		<direction>in</direction>
+		<datatype W="32">sc_uint</datatype>
+	</port>
+	<port>
+		<name>in1_data_2</name>
+		<source_loc>2663</source_loc>
+		<direction>in</direction>
+		<datatype W="32">sc_uint</datatype>
+	</port>
+	<port>
+		<name>in1_data_3</name>
+		<source_loc>2664</source_loc>
+		<direction>in</direction>
+		<datatype W="32">sc_uint</datatype>
+	</port>
+	<port>
+		<name>in1_data_4</name>
+		<source_loc>2665</source_loc>
+		<direction>in</direction>
+		<datatype W="32">sc_uint</datatype>
+	</port>
+	<port>
+		<name>in1_data_5</name>
+		<source_loc>2666</source_loc>
+		<direction>in</direction>
+		<datatype W="32">sc_uint</datatype>
+	</port>
+	<port>
+		<name>in1_data_6</name>
+		<source_loc>2667</source_loc>
+		<direction>in</direction>
+		<datatype W="32">sc_uint</datatype>
+	</port>
+	<port>
+		<name>in1_data_7</name>
+		<source_loc>2668</source_loc>
+		<direction>in</direction>
+		<datatype W="32">sc_uint</datatype>
+	</port>
+	<port>
+		<name>in1_data_valid</name>
+		<source_loc>675</source_loc>
+		<direction>in</direction>
+		<datatype W="1">bool</datatype>
+	</port>
+	<port>
+		<name>out_data</name>
+		<source_loc>721</source_loc>
+		<direction>out</direction>
+		<datatype W="320">sc_biguint</datatype>
+	</port>
+	<port>
+		<name>out_data_valid</name>
+		<source_loc>735</source_loc>
+		<direction>out</direction>
+		<datatype W="1">bool</datatype>
+	</port>
+	<ios>
+		<thread>_out_data</thread>
+		<port>
+			<name>clk</name>
+			<source_loc>668</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>r_data</name>
+			<source_loc>770</source_loc>
+			<direction>in</direction>
+			<datatype W="80">sc_biguint</datatype>
+		</port>
+		<port>
+			<name>t_data</name>
+			<source_loc>804</source_loc>
+			<direction>in</direction>
+			<datatype W="256">sc_biguint</datatype>
+		</port>
+		<port>
+			<name>r_data_valid</name>
+			<source_loc>822</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>enable</name>
+			<source_loc>670</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>learned_clip_en</name>
+			<source_loc>671</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>rstn</name>
+			<source_loc>669</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>out_data</name>
+			<source_loc>721</source_loc>
+			<direction>out</direction>
+			<datatype W="320">sc_biguint</datatype>
+		</port>
+	</ios>
+	<ios>
+		<thread>_out_data_valid</thread>
+		<port>
+			<name>clk</name>
+			<source_loc>668</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>enable</name>
+			<source_loc>670</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>r_data_valid</name>
+			<source_loc>822</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>data_cnt</name>
+			<source_loc>768</source_loc>
+			<direction>in</direction>
+			<datatype W="2">sc_uint</datatype>
+		</port>
+		<port>
+			<name>learned_clip_en</name>
+			<source_loc>671</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>rstn</name>
+			<source_loc>669</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>out_data_valid</name>
+			<source_loc>735</source_loc>
+			<direction>out</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+	</ios>
+	<ios>
+		<thread>_data_cnt</thread>
+		<port>
+			<name>clk</name>
+			<source_loc>668</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>r_data_valid</name>
+			<source_loc>822</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>enable</name>
+			<source_loc>670</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>rstn</name>
+			<source_loc>669</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>data_cnt</name>
+			<source_loc>768</source_loc>
+			<direction>out</direction>
+			<datatype W="2">sc_uint</datatype>
+		</port>
+	</ios>
+	<ios>
+		<thread>_r_data_valid</thread>
+		<port>
+			<name>clk</name>
+			<source_loc>668</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>enable</name>
+			<source_loc>670</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>in0_data_valid</name>
+			<source_loc>673</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>in1_data_valid</name>
+			<source_loc>675</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>learned_clip_en</name>
+			<source_loc>671</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>rstn</name>
+			<source_loc>669</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>r_data_valid</name>
+			<source_loc>822</source_loc>
+			<direction>out</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+	</ios>
+	<ios>
+		<thread>_t_data</thread>
+		<port>
+			<name>clk</name>
+			<source_loc>668</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>in1_data_0</name>
+			<source_loc>2661</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>in1_data_1</name>
+			<source_loc>2662</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>in1_data_2</name>
+			<source_loc>2663</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>in1_data_3</name>
+			<source_loc>2664</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>in1_data_4</name>
+			<source_loc>2665</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>in1_data_5</name>
+			<source_loc>2666</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>in1_data_6</name>
+			<source_loc>2667</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>in1_data_7</name>
+			<source_loc>2668</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>learned_clip_en</name>
+			<source_loc>671</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>enable</name>
+			<source_loc>670</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>rstn</name>
+			<source_loc>669</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>t_data</name>
+			<source_loc>804</source_loc>
+			<direction>out</direction>
+			<datatype W="256">sc_biguint</datatype>
+		</port>
+	</ios>
+	<ios>
+		<thread>_r_data</thread>
+		<port>
+			<name>clk</name>
+			<source_loc>668</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>in0_data_0</name>
+			<source_loc>2929</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>in0_data_1</name>
+			<source_loc>2930</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>in0_data_2</name>
+			<source_loc>2931</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>in0_data_3</name>
+			<source_loc>2932</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>in0_data_4</name>
+			<source_loc>2933</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>in0_data_5</name>
+			<source_loc>2934</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>in0_data_6</name>
+			<source_loc>2935</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>in0_data_7</name>
+			<source_loc>2936</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>learned_clip_en</name>
+			<source_loc>671</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>enable</name>
+			<source_loc>670</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>rstn</name>
+			<source_loc>669</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>r_data</name>
+			<source_loc>770</source_loc>
+			<direction>out</direction>
+			<datatype W="80">sc_biguint</datatype>
+		</port>
+	</ios>
+</snapshot>

@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+<source_file>
+    <module>
+        <name>fix2float</name>
+        <id>2300</id>
+        <source_path>fix2float.h</source_path>
+        <source_line>6</source_line>
+        <source_column>1</source_column>
+        <port>
+            <name>clk</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>clk</rtl_port_name>
+        </port>
+        <port>
+            <name>rstn</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>rstn</rtl_port_name>
+        </port>
+        <port>
+            <name>enable</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>enable</rtl_port_name>
+        </port>
+        <port>
+            <name>fraction_len</name>
+            <direction>in</direction>
+            <datatype W="32">sc_uint</datatype>
+            <rtl_port_name>fraction_len</rtl_port_name>
+        </port>
+        <port>
+            <name>src_valid</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>src_valid</rtl_port_name>
+        </port>
+        <port>
+            <name>src</name>
+            <direction>in</direction>
+            <datatype W="32">sc_int</datatype>
+            <rtl_port_name>src</rtl_port_name>
+        </port>
+        <port>
+            <name>dst_valid</name>
+            <direction>out</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>dst_valid</rtl_port_name>
+        </port>
+        <port>
+            <name>dst</name>
+            <direction>out</direction>
+            <datatype W="32">sc_uint</datatype>
+            <rtl_port_name>dst</rtl_port_name>
+        </port>
+        <signal>
+            <name>r_in_data</name>
+                        <datatype W="32">sc_int</datatype>
+            <rtl_port_name>r_in_data</rtl_port_name>
+        </signal>
+        <signal>
+            <name>r2_in_data</name>
+                        <datatype W="32">sc_int</datatype>
+            <rtl_port_name>r2_in_data</rtl_port_name>
+        </signal>
+        <signal>
+            <name>r_sign</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>r_sign</rtl_port_name>
+        </signal>
+        <signal>
+            <name>r2_sign</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>r2_sign</rtl_port_name>
+        </signal>
+        <signal>
+            <name>r_fraction_len</name>
+                        <datatype W="8">sc_uint</datatype>
+            <rtl_port_name>r_fraction_len</rtl_port_name>
+        </signal>
+        <signal>
+            <name>shift_num</name>
+                        <datatype W="5">sc_uint</datatype>
+            <rtl_port_name>shift_num</rtl_port_name>
+        </signal>
+        <signal>
+            <name>r2_shift_num</name>
+                        <datatype W="5">sc_uint</datatype>
+            <rtl_port_name>r2_shift_num</rtl_port_name>
+        </signal>
+        <signal>
+            <name>src_valid_1d</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>src_valid_1d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>src_valid_2d</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>src_valid_2d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>src_valid_3d</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>src_valid_3d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>zero_sig</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>zero_sig</rtl_port_name>
+        </signal>
+        <signal>
+            <name>r2_zero_sig</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>r2_zero_sig</rtl_port_name>
+        </signal>
+        <signal>
+            <name>r3_zero_sig</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>r3_zero_sig</rtl_port_name>
+        </signal>
+        <signal>
+            <name>z_m</name>
+                        <datatype W="23">sc_int</datatype>
+            <rtl_port_name>z_m</rtl_port_name>
+        </signal>
+        <signal>
+            <name>r_z_m</name>
+                        <datatype W="23">sc_int</datatype>
+            <rtl_port_name>r_z_m</rtl_port_name>
+        </signal>
+        <signal>
+            <name>z_e</name>
+                        <datatype W="8">sc_int</datatype>
+            <rtl_port_name>z_e</rtl_port_name>
+        </signal>
+        <signal>
+            <name>r_z_e</name>
+                        <datatype W="8">sc_int</datatype>
+            <rtl_port_name>r_z_e</rtl_port_name>
+        </signal>
+        <signal>
+            <name>r_z_s</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>r_z_s</rtl_port_name>
+        </signal>
+        <signal>
+            <name>guard</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>guard</rtl_port_name>
+        </signal>
+        <signal>
+            <name>round_bit</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>round_bit</rtl_port_name>
+        </signal>
+        <signal>
+            <name>sticky</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>sticky</rtl_port_name>
+        </signal>
+        <ctor_params>
+            <param>
+                <name/>
+                <datatype>
+                    <name>sc_core::sc_module_name</name>
+                    <id>2283</id>
+                </datatype>
+                <rtl_port_name/>
+            </param>
+        </ctor_params>
+    </module>
+	<exit_status>0</exit_status>
+</source_file>

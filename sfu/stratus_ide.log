@@ -1,0 +1,2 @@
+Qt Warning: QFileSystemWatcher::removePaths: list is empty
+FATAL: cannot continue, received signal: Segmentation fault

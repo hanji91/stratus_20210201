@@ -1,0 +1,4 @@
+   NOTE 01991: The reset port, pe_array.rstn, is connected to at least one
+   NOTE 01991.   circuit element that is not the reset pin of a register or
+   NOTE 01991.   pipelined part. E.g., rstn.
+FATAL: cannot continue, received signal: Segmentation fault

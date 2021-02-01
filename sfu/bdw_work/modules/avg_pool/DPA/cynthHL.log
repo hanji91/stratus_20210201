@@ -1,0 +1,1138 @@
+Start at Thu Jan 28 21:13:58 2021
+
+
+stratus_hls 19.10-p100  (91500.011111)
+Copyright (c) 2019 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+        00481: -D is set to "__x86_64__, STRATUS=1, STRATUS_HLS=1, CYNTHESIZER,
+        00481.   CYNTHHL, DPA=1, BDW_RTL_avg_pool_DPA=1".
+        00481: -I is set to "., bdw_work/wrappers,
+        00481.   /usr/cadence/installs/Stratus/share/stratus/include,
+        00481.   bdw_work/libs/cynw_cm_float/c_parts,
+        00481.   /usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts,
+        00481.   /usr/cadence/installs/Stratus/share/stratus/include,
+        00481.   /usr/cadence/installs/Stratus/tools.lnx86/stratus/systemc/2.3.1/include".
+        00481: -U is not set.
+        00481: --abort_level is set to "FATAL".
+        00481: --allow_pipeline_loop_expansion is set to "on".
+        00481: --attrib_value is not set.
+        00481: --balance_expr is set to "off".
+        00481: --cachelib is set to "on".
+        00481: --cachelib_dir is not set.
+        00481: --cap_table_file is not set.
+        00481: --clock_gating_module is not set.
+        00481: --clock_period is set to "1.400".
+        00481: --comm_subexp_elim is set to "off".
+        00481: --constrain_multiport_mem_distance is set to "on".
+        00481: --cycle_slack is set to "0.000".
+        00481: --default_input_delay is set to "0.100".
+        00481: --default_preserve_io is set to "off".
+        00481: --default_protocol is set to "off".
+        00481: --default_stable_input_delay is not set.
+        00481: --dont_ungroup_name is not set.
+        00481: --dont_ungroup_type is set to "none".
+        00481: --dpopt_auto is set to "op,expr".
+        00481: --dpopt_effort is set to "normal".
+        00481: --dpopt_with_enable is set to "off".
+        00481: --eco_baseline is not set.
+        00481: --eco_sharing is set to "off".
+        00481: --fail_level is set to "ERROR".
+        00481: --fixed_reset is set to "off".
+        00481: --flatten_arrays is set to "none".
+        00481: --fpga_dsp_latency is set to "2".
+        00481: --fpga_dsp_min_widths is set to "12,12".
+        00481: --fpga_part is not set.
+        00481: --fpga_tool is not set.
+        00481: --fpga_use_dsp is set to "off".
+        00481: --global_state_encoding is set to "binary".
+        00481: --help is not set.
+        00481: --hls_config is set to "DPA".
+        00481: --hls_module is set to "avg_pool".
+        00481: --ignore_cells is not set.
+        00481: --ignore_scan_cells is set to "off".
+        00481: --inline_partial_constants is set to "off".
+        00481: --interconnect_mode is set to "wireload".
+        00481: --lef_library is not set.
+        00481: --logfile is set to "bdw_work/modules/avg_pool/DPA/stratus_hls.log".
+        00481: --lsb_trimming is set to "off".
+        00481: --message_detail is set to "3".
+        00481: --message_level is not set.
+        00481: --message_suppress is not set.
+        00481: --method_processing is set to "synthesize".
+        00481: --mux_pushing is set to "on".
+        00481: --number_of_routing_layers is not set.
+        00481: --output is set to "avg_pool_rtl.cpp".
+        00481: --output_dir is set to "bdw_work/modules/avg_pool/DPA".
+        00481: --output_style_fp_rtl_same_arch is set to "off".
+        00481: --output_style_fsm_increment is set to "on".
+        00481: --output_style_mem is set to "array".
+        00481: --output_style_merge_cases is set to "on".
+        00481: --output_style_mux is set to "impl_case".
+        00481: --output_style_parts is set to "rtl".
+        00481: --output_style_pipelined_parts is set to "generic".
+        00481: --output_style_reset_all is set to "off".
+        00481: --output_style_reset_all_async is set to "off".
+        00481: --output_style_reset_all_sync is set to "off".
+        00481: --output_style_separate_behaviors is set to "off".
+        00481: --output_style_separate_memories is set to "off".
+        00481: --output_style_starc is set to "S2.2.2.2,S2.2.3.1,S2.3.1.1".
+        00481: --output_style_structure_only is set to "off".
+        00481: --output_style_two_part_fsm is set to "on".
+        00481: --output_style_ungroup_parts is set to "on".
+        00481: --parts_effort is set to "high".
+        00481: --parts_lib is set to "cynw_cm_float".
+        00481: --parts_lib_path is set to "bdw_work/libs/cynw_cm_float/c_parts,
+        00481.   /usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts".
+        00481: --path_delay_limit is set to "100".
+        00481: --path_delay_limit_unshare_regs is set to "on".
+        00481: --pipelined_parts is set to "on".
+        00481: --port_conns is set to "named".
+        00481: --power is set to "off".
+        00481: --power_clock_gating is set to "off".
+        00481: --power_fsm is set to "off".
+        00481: --power_memory is set to "off".
+        00481: --prints is set to "on".
+        00481: --project is set to "project.tcl".
+        00481: --qrc_tech_file is not set.
+        00481: --register_fsm_mux_selects is set to "on".
+        00481: --relax_timing is set to "off".
+        00481: --rtl_annotation is set to "op,stack".
+        00481: --run_through is set to "rtl".
+        00481: --scale_of_cap_per_unit_len is not set.
+        00481: --scale_of_res_per_unit_len is not set.
+        00481: --sched_analysis is set to "on_failure".
+        00481: --sched_asap is set to "off".
+        00481: --sched_effort is set to "medium".
+        00481: --sharing_effort_parts is set to "high".
+        00481: --sharing_effort_regs is set to "high".
+        00481: --shift_trimming is set to "standard".
+        00481: --simple_index_mapping is set to "off".
+        00481: --split_add is set to "0".
+        00481: --split_multiply is set to "0".
+        00481: --src_file is set to "avg_pool.cpp".
+        00481: --summary_level is set to "WARNING".
+        00481: --switch_optimizer is set to "on".
+        00481: --tech_lib is set to "/usr/cadence/installs/Stratus/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib".
+        00481: --timing_aggression is set to "off".
+        00481: --undef_func is set to "warn".
+        00481: --unroll_loops is set to "off".
+        00481: --verilog_dialect is set to "1995".
+        00481: --wait_for_license is set to "off".
+        00481: --wireload is not set.
+   NOTE 03065: Control flow zipping is enabled
+   NOTE 01483: Using cmdesigner 2019.1.01.8041 (03251817).
+   NOTE 01727: Using Genus 17.11-s014_1.
+
+        01425: Loading design and library files:
+        01279:   All time values are in "ns".
+   NOTE 01277:   Using a clock period of 1.400ns.
+        01824:     Physical estimation options:
+        01825:       interconnect_mode .......... wireload
+        01825:       techlib ....................
+        01825.         /usr/cadence/installs/Stratus/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib
+        00967:   Processing library
+        02788:       Using cached results for cyn_reg_estimate_8
+        01472:       Register Metrics:
+        01440:          Register Type          Area              Delay (ns)
+        01440.         --------------   -------------------   ---------------
+        01440.         EN SS SC AS AC   Total   Comb    Seq     Prop    Setup
+        01440.         -- -- -- -- --   -----  -----  -----   ------   ------
+        01438:          0  0  0  0  0     5.5    0.0    5.5    0.114    0.066
+        01438:          0  0  0  0  1     6.2    0.0    6.2    0.131    0.067
+        01438:          0  0  0  1  0     6.5    0.0    6.5    0.127    0.067
+        01438:          0  0  0  1  1    12.0    0.7   11.3    0.141    0.098
+        01438:          0  0  1  0  0     6.8    1.4    5.5    0.114    0.123
+        01438:          0  0  1  0  1     7.5    1.4    6.2    0.131    0.125
+        01438:          0  0  1  1  0     7.9    1.0    6.8    0.161    0.089
+        01438:          0  0  1  1  1    12.3    1.0   11.3    0.141    0.106
+        01438:          0  1  0  0  0     6.8    1.4    5.5    0.114    0.104
+        01438:          0  1  0  0  1     7.5    1.4    6.2    0.131    0.105
+        01438:          0  1  0  1  0     7.9    1.0    6.8    0.161    0.100
+        01438:          0  1  0  1  1    12.3    1.0   11.3    0.141    0.115
+        01438:          0  1  1  0  0     7.5    2.1    5.5    0.114    0.147
+        01438:          0  1  1  0  1     8.2    2.1    6.2    0.131    0.149
+        01438:          0  1  1  1  0     8.6    1.7    6.8    0.161    0.111
+        01438:          0  1  1  1  1    13.0    1.7   11.3    0.141    0.127
+        01438:          1  0  0  0  0     7.5    0.0    7.5    0.112    0.122
+        01438:          1  0  0  0  1     8.2    0.0    8.2    0.134    0.110
+        01438:          1  0  0  1  0     8.9    2.4    6.5    0.129    0.143
+        01438:          1  0  0  1  1    13.7    2.4   11.3    0.143    0.133
+        01438:          1  0  1  0  0     8.9    1.4    7.5    0.112    0.177
+        01438:          1  0  1  0  1     9.6    1.4    8.2    0.134    0.169
+        01438:          1  0  1  1  0     9.9    1.7    8.2    0.153    0.131
+        01438:          1  0  1  1  1    14.4    1.7   12.7    0.149    0.164
+        01438:          1  1  0  0  0     8.9    1.4    7.5    0.112    0.158
+        01438:          1  1  0  0  1     9.6    1.4    8.2    0.134    0.150
+        01438:          1  1  0  1  0     9.9    1.7    8.2    0.153    0.145
+        01438:          1  1  0  1  1    14.4    1.7   12.7    0.149    0.175
+        01438:          1  1  1  0  0     9.6    2.1    7.5    0.112    0.202
+        01438:          1  1  1  0  1    10.3    2.1    8.2    0.134    0.192
+        01438:          1  1  1  1  0    10.6    2.4    8.2    0.153    0.156
+        01438:          1  1  1  1  1    15.0    2.4   12.7    0.149    0.187
+   NOTE 01037:     Characterizing multiplexors up to 1 bits by 33 inputs.
+        02788:       Using cached results for cyn_mux_estimate_29
+        01429:       Binary Multiplexor Metrics:
+        01431:         Bitwidth    Num Inputs      Area    Delay (ns)
+        01430:     1            2          2.86      0.061
+        01430:     1            3          4.78      0.120
+        01430:     1            4          7.23      0.120
+        01430:     1            5          9.69      0.178
+        01430:     1            8         17.06      0.178
+        01430:     1            9         19.52      0.237
+        01430:     1           16         36.72      0.237
+        01430:     1           17         39.18      0.295
+        01430:     1           32         76.04      0.295
+        01430:     1           33         78.50      0.354
+        01429:       Onehot Multiplexor Metrics:
+        01431:         Bitwidth    Num Inputs      Area    Delay (ns)
+        01430:     1            2          3.10      0.061
+        01430:     1            3          4.15      0.095
+        01430:     1            4          5.57      0.095
+        01430:     1            5          7.00      0.133
+        01430:     1            8         11.27      0.133
+        01430:     1            9         12.70      0.172
+        01430:     1           16         22.67      0.172
+        01430:     1           17         24.09      0.210
+        01430:     1           32         45.46      0.210
+        01430:     1           33         46.88      0.249
+
+        00148: Normalization and optimization:
+   NOTE 00860:   Long int data types are being implemented with 64 bits.
+        02923:   Dissolving function boundaries.
+        02924:   Dissolved 0 function calls.
+   NOTE 01446:   at avg_pool.h line 39
+   NOTE 01446.     The edge-triggered SC_METHOD, _acc_cnt, does not have a
+   NOTE 01446.     "dont_initialize()" invocation. This may lead to a mismatch
+   NOTE 01446.     between the SystemC and Verilog simulation models.
+   NOTE 01446:   at avg_pool.h line 57
+   NOTE 01446.     The edge-triggered SC_METHOD, _acc_data, does not have a
+   NOTE 01446.     "dont_initialize()" invocation. This may lead to a mismatch
+   NOTE 01446.     between the SystemC and Verilog simulation models.
+   NOTE 01446:   at avg_pool.h line 104
+   NOTE 01446.     The edge-triggered SC_METHOD, _out_data_valid, does not have
+   NOTE 01446.     a "dont_initialize()" invocation. This may lead to a
+   NOTE 01446.     mismatch between the SystemC and Verilog simulation models.
+   NOTE 01446:   at avg_pool.h line 114
+   NOTE 01446.     The edge-triggered SC_METHOD, _out_data, does not have a
+   NOTE 01446.     "dont_initialize()" invocation. This may lead to a mismatch
+   NOTE 01446.     between the SystemC and Verilog simulation models.
+   NOTE 01446:   at avg_pool.h line 132
+   NOTE 01446.     The edge-triggered SC_METHOD, _delay, does not have a
+   NOTE 01446.     "dont_initialize()" invocation. This may lead to a mismatch
+   NOTE 01446.     between the SystemC and Verilog simulation models.
+        00116:   at avg_pool.h line 132
+        00116.     Optimizing method avg_pool::_delay
+        00116:   at avg_pool.h line 114
+        00116.     Optimizing method avg_pool::_out_data
+        00116:   at avg_pool.h line 104
+        00116.     Optimizing method avg_pool::_out_data_valid
+        00116:   at avg_pool.h line 57
+        00116.     Optimizing method avg_pool::_acc_data
+        00116:   at avg_pool.h line 52
+        00116.     Optimizing method avg_pool::_acc_data_ctrl
+        00116:   at avg_pool.h line 39
+        00116.     Optimizing method avg_pool::_acc_cnt
+        00116:   at avg_pool.h line 33
+        00116.     Optimizing method avg_pool::_acc_cnt_ctrl
+        00116:   at avg_pool.h line 132
+        00116.     Optimizing method avg_pool::_delay
+        00305:     157 nodes
+        00306:     Optimize: pass 1.
+        00305:     64 nodes
+        00306:     Optimize: pass 2.
+        00305:     91 nodes
+        00306:     Optimize: pass 3..
+        00305:     76 nodes
+        00306:     Optimize: pass 4.
+        00305:     76 nodes
+        00306:     Optimize: pass 5.
+        00305:     76 nodes
+        00306:     Optimize: pass 6.
+        00305:     70 nodes
+        00306:     Optimize: pass 7.
+        00305:     70 nodes
+        00306:     Optimize: pass 8.
+        00116:   at avg_pool.h line 114
+        00116.     Optimizing method avg_pool::_out_data
+        00305:     452 nodes
+        00306:     Optimize: pass 1..
+        00305:     214 nodes
+        00306:     Optimize: pass 2.
+        00305:     227 nodes
+        00306:     Optimize: pass 3.
+        00305:     216 nodes
+        00306:     Optimize: pass 4.
+        00288:     at avg_pool.h line 117
+        00288.       Unrolling loop 32 times because it is inside a protocol
+        00288.       block and does not contain a wait.
+        00288:     at avg_pool.h line 128
+        00288.       Unrolling loop 32 times because it is inside a protocol
+        00288.       block and does not contain a wait.
+        00288:     at avg_pool.h line 123
+        00288.       Unrolling loop 32 times because it is inside a protocol
+        00288.       block and does not contain a wait.
+        00305:     1584 nodes
+        00306:     Optimize: pass 5....
+        00305:     814 nodes
+        00306:     Optimize: pass 6..
+        00305:     805 nodes
+        00306:     Optimize: pass 7.
+        00258:       at avg_pool.h line 14
+        00258.         Array out_data, 32 words x 32 bits (1024 total bits),
+        00258.         HAS been flattened into 32, 32 bit scalar variables
+        00258.         because it is an array of ports.
+        00258:       at avg_pool.h line 12
+        00258.         Array in_data, 32 words x 32 bits (1024 total bits), HAS
+        00258.         been flattened into 32, 32 bit scalar variables because
+        00258.         it is an array of ports.
+        00258:       at avg_pool.h line 20
+        00258.         Array acc_data, 32 words x 32 bits (1024 total bits),
+        00258.         HAS been flattened into 32, 32 bit scalar variables
+        00258.         because it is an array of signals.
+        00305:     485 nodes
+        00306:     Optimize: pass 8..
+        00305:     485 nodes
+        00306:     Optimize: pass 9.
+        00305:     485 nodes
+        00306:     Optimize: pass 10.
+        00305:     485 nodes
+        00306:     Optimize: pass 11.
+        00305:     378 nodes
+        00306:     Optimize: pass 12.
+        00305:     378 nodes
+        00306:     Optimize: pass 13.
+        00305:     378 nodes
+        00306:     Optimize: pass 14.
+        02835:       at avg_pool.h line 120
+        02835.         Not converting control branching to datapath elements
+        02835.         because one of the branch states has a different
+        02835.         successor.
+        00116:   at avg_pool.h line 104
+        00116.     Optimizing method avg_pool::_out_data_valid
+        00305:     189 nodes
+        00306:     Optimize: pass 1.
+        00305:     117 nodes
+        00306:     Optimize: pass 2.
+        00305:     136 nodes
+        00306:     Optimize: pass 3..
+        00305:     133 nodes
+        00306:     Optimize: pass 4.
+        00305:     133 nodes
+        00306:     Optimize: pass 5.
+        00305:     133 nodes
+        00306:     Optimize: pass 6.
+        02831:       at avg_pool.h line 108
+        02831.         Converting control branching to datapath elements. (11
+        02831.         bits multiplexed)
+        00305:     102 nodes
+        00306:     Optimize: pass 7..
+        00305:     99 nodes
+        00306:     Optimize: pass 8.
+        00305:     98 nodes
+        00306:     Optimize: pass 9..
+        00305:     96 nodes
+        00306:     Optimize: pass 10.
+        00305:     95 nodes
+        00306:     Optimize: pass 11..
+        00305:     92 nodes
+        00306:     Optimize: pass 12.
+        00305:     92 nodes
+        00306:     Optimize: pass 13.
+        00305:     92 nodes
+        00306:     Optimize: pass 14.
+        00116:   at avg_pool.h line 57
+        00116.     Optimizing method avg_pool::_acc_data
+        00305:     899 nodes
+        00306:     Optimize: pass 1.
+        00305:     452 nodes
+        00306:     Optimize: pass 2.
+        00305:     465 nodes
+        00306:     Optimize: pass 3.
+        00305:     454 nodes
+        00306:     Optimize: pass 4.
+        00288:     at avg_pool.h line 60
+        00288.       Unrolling loop 32 times because it is inside a protocol
+        00288.       block and does not contain a wait.
+        00288:     at avg_pool.h line 76
+        00288.       Unrolling loop 32 times because it is inside a protocol
+        00288.       block and does not contain a wait.
+        00288:     at avg_pool.h line 69
+        00288.       Unrolling loop 32 times because it is inside a protocol
+        00288.       block and does not contain a wait.
+        00288:     at avg_pool.h line 65
+        00288.       Unrolling loop 32 times because it is inside a protocol
+        00288.       block and does not contain a wait.
+        00305:     7046 nodes
+        00306:     Optimize: pass 5....
+        00305:     5673 nodes
+        00306:     Optimize: pass 6..
+        00305:     5650 nodes
+        00306:     Optimize: pass 7.
+        00305:     4818 nodes
+        00306:     Optimize: pass 8..
+        00305:     4786 nodes
+        00306:     Optimize: pass 9.
+        00305:     4786 nodes
+        00306:     Optimize: pass 10.
+        00305:     4786 nodes
+        00306:     Optimize: pass 11.
+        00305:     4928 nodes
+        00306:     Optimize: pass 12.
+        00305:     4928 nodes
+        00306:     Optimize: pass 13.
+        00305:     4928 nodes
+        00306:     Optimize: pass 14.
+        02835:       at avg_pool.h line 63
+        02835.         Not converting control branching to datapath elements
+        02835.         because one of the branch states has a different
+        02835.         successor.
+        02835:       at avg_pool.h line 68
+        02835.         Not converting control branching to datapath elements
+        02835.         because one of the branch states has a different
+        02835.         successor.
+        02835:       at avg_pool.h line 78
+        02835.         Not converting control branching to datapath elements
+        02835.         because one of the branch states has a different
+        02835.         successor.
+        02835:       at avg_pool.h line 87
+        02835.         Not converting control branching to datapath elements
+        02835.         because one of the branch states has a different
+        02835.         successor.
+        02835:       at avg_pool.h line 92
+        02835.         Not converting control branching to datapath elements
+        02835.         because we have a process output, volatile variable, or
+        02835.         unresolved pointer.
+        00116:   at avg_pool.h line 52
+        00116.     Optimizing method avg_pool::_acc_data_ctrl
+        00305:     28 nodes
+        00306:     Optimize: pass 1.
+        00305:     40 nodes
+        00306:     Optimize: pass 2..
+        00305:     34 nodes
+        00306:     Optimize: pass 3.
+        00305:     34 nodes
+        00306:     Optimize: pass 4.
+        00305:     34 nodes
+        00306:     Optimize: pass 5.
+        00305:     34 nodes
+        00306:     Optimize: pass 6.
+        00305:     34 nodes
+        00306:     Optimize: pass 7.
+        00116:   at avg_pool.h line 39
+        00116.     Optimizing method avg_pool::_acc_cnt
+        00305:     231 nodes
+        00306:     Optimize: pass 1.
+        00305:     104 nodes
+        00306:     Optimize: pass 2.
+        00305:     126 nodes
+        00306:     Optimize: pass 3.
+        00305:     126 nodes
+        00306:     Optimize: pass 4.
+        00305:     126 nodes
+        00306:     Optimize: pass 5.
+        02831:       at avg_pool.h line 45
+        02831.         Converting control branching to datapath elements. (11
+        02831.         bits multiplexed)
+        00305:     106 nodes
+        00306:     Optimize: pass 6..
+        00305:     103 nodes
+        00306:     Optimize: pass 7.
+        02831:       at avg_pool.h line 43
+        02831.         Converting control branching to datapath elements. (11
+        02831.         bits multiplexed)
+        00305:     83 nodes
+        00306:     Optimize: pass 8..
+        00305:     80 nodes
+        00306:     Optimize: pass 9.
+        00305:     78 nodes
+        00306:     Optimize: pass 10..
+        00305:     74 nodes
+        00306:     Optimize: pass 11.
+        00305:     60 nodes
+        00306:     Optimize: pass 12.
+        00305:     60 nodes
+        00306:     Optimize: pass 13.
+        00116:   at avg_pool.h line 33
+        00116.     Optimizing method avg_pool::_acc_cnt_ctrl
+        00305:     32 nodes
+        00306:     Optimize: pass 1.
+        00305:     44 nodes
+        00306:     Optimize: pass 2..
+        00305:     38 nodes
+        00306:     Optimize: pass 3.
+        00305:     38 nodes
+        00306:     Optimize: pass 4.
+        00305:     38 nodes
+        00306:     Optimize: pass 5.
+        00305:     44 nodes
+        00306:     Optimize: pass 6..
+        00305:     38 nodes
+        00306:     Optimize: pass 7.
+        00305:     38 nodes
+        00306:     Optimize: pass 8.
+        00305:     38 nodes
+        00306:     Optimize: pass 9.
+        01352:   at avg_pool.h line 132
+        01352.     Postprocessing method avg_pool::_delay
+        01352:   at avg_pool.h line 114
+        01352.     Postprocessing method avg_pool::_out_data
+        01352:   at avg_pool.h line 104
+        01352.     Postprocessing method avg_pool::_out_data_valid
+        01352:   at avg_pool.h line 57
+        01352.     Postprocessing method avg_pool::_acc_data
+        01352:   at avg_pool.h line 52
+        01352.     Postprocessing method avg_pool::_acc_data_ctrl
+        01352:   at avg_pool.h line 39
+        01352.     Postprocessing method avg_pool::_acc_cnt
+        01352:   at avg_pool.h line 33
+        01352.     Postprocessing method avg_pool::_acc_cnt_ctrl
+
+WARNING 02057: at avg_pool.h line 108
+WARNING 02057.   A non-constant has been used on the RHS of an assignment in
+WARNING 02057.   the reset definition in METHOD _out_data_valid.
+
+WARNING 02057: at avg_pool.h line 112
+WARNING 02057.   A non-constant has been used on the RHS of an assignment in
+WARNING 02057.   the reset definition in METHOD _out_data_valid.
+
+WARNING 02057: at avg_pool.h line 109
+WARNING 02057.   A non-constant has been used on the RHS of an assignment in
+WARNING 02057.   the reset definition in METHOD _out_data_valid.
+
+   NOTE 00486: Creating custom parts for this design
+   NOTE 00487: Created 14 parts
+   NOTE 00488:     dpopt_auto: Suggesting 5 parts
+
+        00182: Initial resource mapping:
+   NOTE 01037:     Characterizing multiplexors up to 33 bits by 128 inputs.
+        02788:       Using cached results for cyn_mux_estimate_52
+        01429:       Binary Multiplexor Metrics:
+        01431:         Bitwidth    Num Inputs      Area    Delay (ns)
+        01430:     1            2          2.86      0.061
+        01430:     1            3          4.78      0.120
+        01430:     1            4          7.23      0.120
+        01430:     1            5          9.69      0.178
+        01430:     1            8         17.06      0.178
+        01430:     1            9         19.52      0.237
+        01430:     1           16         36.72      0.237
+        01430:     1           17         39.18      0.295
+        01430:     1           32         76.04      0.295
+        01430:     1           33         78.50      0.354
+        01430:     1           64        154.68      0.354
+        01430:     1           65        157.14      0.412
+        01430:     1          128        311.96      0.412
+        01430:     2            2          5.72      0.061
+        01430:     2            3          8.36      0.129
+        01430:     2            4         12.66      0.129
+        01430:     2            5         16.96      0.188
+        01430:     2            8         29.86      0.188
+        01430:     2            9         34.16      0.246
+        01430:     2           16         64.27      0.246
+        01430:     2           17         68.57      0.305
+        01430:     2           32        133.08      0.305
+        01430:     2           33        137.38      0.363
+        01430:     2           64        270.70      0.363
+        01430:     2           65        275.00      0.422
+        01430:     2          128        545.94      0.422
+        01430:     4            2         11.45      0.061
+        01430:     4            3         16.72      0.139
+        01430:     4            4         25.32      0.139
+        01430:     4            5         33.92      0.197
+        01430:     4            8         59.72      0.197
+        01430:     4            9         68.32      0.256
+        01430:     4           16        128.53      0.256
+        01430:     4           17        137.13      0.314
+        01430:     4           32        266.15      0.314
+        01430:     4           33        274.75      0.373
+        01430:     4           64        541.39      0.373
+        01430:     4           65        550.00      0.431
+        01430:     4          128       1091.88      0.431
+        01430:     8            2         22.89      0.061
+        01430:     8            3         31.04      0.148
+        01430:     8            4         47.02      0.148
+        01430:     8            5         62.99      0.207
+        01430:     8            8        110.91      0.207
+        01430:     8            9        126.89      0.265
+        01430:     8           16        238.70      0.265
+        01430:     8           17        254.68      0.324
+        01430:     8           32        494.28      0.324
+        01430:     8           33        510.26      0.382
+        01430:     8           64       1005.45      0.382
+        01430:     8           65       1021.42      0.440
+        01430:     8          128       2027.77      0.440
+        01430:    32            2         91.57      0.061
+        01430:    32            3        117.01      0.167
+        01430:    32            4        177.22      0.167
+        01430:    32            5        237.43      0.225
+        01430:    32            8        418.05      0.225
+        01430:    32            9        478.26      0.284
+        01430:    32           16        899.73      0.284
+        01430:    32           17        959.93      0.342
+        01430:    32           32       1863.07      0.342
+        01430:    32           33       1923.28      0.401
+        01430:    32           64       3789.76      0.401
+        01430:    32           65       3849.97      0.459
+        01430:    32          128       7643.14      0.459
+        01430:    33            2         94.44      0.061
+        01430:    33            3        120.59      0.176
+        01430:    33            4        182.64      0.176
+        01430:    33            5        244.69      0.235
+        01430:    33            8        430.85      0.235
+        01430:    33            9        492.90      0.293
+        01430:    33           16        927.27      0.293
+        01430:    33           17        989.32      0.352
+        01430:    33           32       1920.10      0.352
+        01430:    33           33       1982.16      0.410
+        01430:    33           64       3905.77      0.410
+        01430:    33           65       3967.83      0.469
+        01430:    33          128       7877.12      0.469
+        01429:       Onehot Multiplexor Metrics:
+        01431:         Bitwidth    Num Inputs      Area    Delay (ns)
+        01430:     1            2          3.10      0.061
+        01430:     1            3          4.15      0.095
+        01430:     1            4          5.57      0.095
+        01430:     1            5          7.00      0.133
+        01430:     1            8         11.27      0.133
+        01430:     1            9         12.70      0.172
+        01430:     1           16         22.67      0.172
+        01430:     1           17         24.09      0.210
+        01430:     1           32         45.46      0.210
+        01430:     1           33         46.88      0.249
+        01430:     1           64         91.04      0.249
+        01430:     1           65         92.46      0.288
+        01430:     1          128        182.20      0.288
+        01430:     2            2          6.21      0.061
+        01430:     2            3          7.26      0.095
+        01430:     2            4          9.76      0.095
+        01430:     2            5         12.25      0.133
+        01430:     2            8         19.73      0.133
+        01430:     2            9         22.22      0.172
+        01430:     2           16         39.67      0.172
+        01430:     2           17         42.16      0.210
+        01430:     2           32         79.55      0.210
+        01430:     2           33         82.04      0.249
+        01430:     2           64        159.32      0.249
+        01430:     2           65        161.81      0.288
+        01430:     2          128        318.85      0.288
+        01430:     4            2         12.42      0.061
+        01430:     4            3         14.53      0.095
+        01430:     4            4         19.51      0.095
+        01430:     4            5         24.50      0.133
+        01430:     4            8         39.45      0.133
+        01430:     4            9         44.44      0.172
+        01430:     4           16         79.34      0.172
+        01430:     4           17         84.32      0.210
+        01430:     4           32        159.10      0.210
+        01430:     4           33        164.09      0.249
+        01430:     4           64        318.63      0.249
+        01430:     4           65        323.62      0.288
+        01430:     4          128        637.70      0.288
+        01430:     8            2         24.84      0.061
+        01430:     8            3         26.98      0.095
+        01430:     8            4         36.23      0.095
+        01430:     8            5         45.49      0.133
+        01430:     8            8         73.27      0.133
+        01430:     8            9         82.53      0.172
+        01430:     8           16        147.34      0.172
+        01430:     8           17        156.60      0.210
+        01430:     8           32        295.48      0.210
+        01430:     8           33        304.73      0.249
+        01430:     8           64        591.75      0.249
+        01430:     8           65        601.01      0.288
+        01430:     8          128       1184.30      0.288
+        01430:    32            2         99.34      0.061
+        01430:    32            3        101.68      0.095
+        01430:    32            4        136.58      0.095
+        01430:    32            5        171.47      0.133
+        01430:    32            8        276.17      0.133
+        01430:    32            9        311.07      0.172
+        01430:    32           16        555.35      0.172
+        01430:    32           17        590.25      0.210
+        01430:    32           32       1113.72      0.210
+        01430:    32           33       1148.61      0.249
+        01430:    32           64       2230.44      0.249
+        01430:    32           65       2265.34      0.288
+        01430:    32          128       4463.90      0.288
+        01430:    33            2        102.45      0.061
+        01430:    33            3        104.79      0.095
+        01430:    33            4        140.76      0.095
+        01430:    33            5        176.72      0.133
+        01430:    33            8        284.62      0.133
+        01430:    33            9        320.59      0.172
+        01430:    33           16        572.35      0.172
+        01430:    33           17        608.32      0.210
+        01430:    33           32       1147.81      0.210
+        01430:    33           33       1183.78      0.249
+        01430:    33           64       2298.72      0.249
+        01430:    33           65       2334.69      0.288
+        01430:    33          128       4600.55      0.288
+        00968:   Matching resources
+        02788:       Using cached results for avg_pool_Equal_8Sx7S_1U_4
+        02790:         Area =    24.28  Latency = 0  Delay =    0.307ns
+        02788:       Using cached results for avg_pool_Add_8Sx2S_8S_4
+        02790:         Area =    53.69  Latency = 0  Delay =    0.617ns
+        02788:       Using cached results for avg_pool_Add_33Ux33U_33U_4
+        02790:         Area =   313.96  Latency = 0  Delay =    0.952ns
+        02788:       Using cached results for avg_pool_Add_32Ux32U_32U_4
+        02790:         Area =   292.75  Latency = 0  Delay =    1.091ns
+        02788:       Using cached results for avg_pool_Or_1Ux1U_1U_4
+        02790:         Area =     1.37  Latency = 0  Delay =    0.070ns
+        02788:       Using cached results for avg_pool_GreaterThan_33Sx32S_1U_4
+        02790:         Area =   146.03  Latency = 0  Delay =    0.783ns
+        02788:       Using cached results for avg_pool_LessThan_33Sx32S_1U_4
+        02790:         Area =   146.03  Latency = 0  Delay =    0.783ns
+        02788:       Using cached results for avg_pool_Add_32Sx32S_33S_4
+        02790:         Area =   309.17  Latency = 0  Delay =    0.970ns
+        02788:       Using cached results for avg_pool_And_1Ux1U_1U_4
+        02790:         Area =     1.37  Latency = 0  Delay =    0.071ns
+        02788:       Using cached results for avg_pool_N_Muxb_1_2_6_4
+        02790:         Area =     2.39  Latency = 0  Delay =    0.090ns
+        02788:       Using cached results for avg_pool_N_Mux_8_2_7_4
+        02790:         Area =    10.94  Latency = 0  Delay =    0.063ns
+        02788:       Using cached results for avg_pool_N_Mux_8_2_8_4
+        02790:         Area =    19.15  Latency = 0  Delay =    0.090ns
+        02788:       Using cached results for avg_pool_GtiLLs33_4
+        02790:         Area =     7.52  Latency = 0  Delay =    0.221ns
+        02788:       Using cached results for avg_pool_LtnLLs33_4
+        02790:         Area =     7.18  Latency = 0  Delay =    0.229ns
+        02788:       Using cached results for avg_pool_Muxi0Add2i1s8u1_4
+        02790:         Area =    36.25  Latency = 0  Delay =    0.462ns
+        02788:       Using cached results for avg_pool_Eqi48s8_4
+        02790:         Area =     4.79  Latency = 0  Delay =    0.255ns
+        02788:       Using cached results for avg_pool_Add2i1s8_4
+        02790:         Area =    26.33  Latency = 0  Delay =    0.410ns
+        02723:       Synthesizing avg_pool_Not_1U_1U_4...
+
+   NOTE 03280: A specified technology library contains scan flip flops which
+   NOTE 03280.   may be used in timing estimation.
+
+   NOTE 00171: No wireload models present in technology library,
+   NOTE 00171.   /usr/cadence/installs/Stratus/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib.
+
+   NOTE 00198: No wire load model is being used.
+
+        02790:         Area =     0.68  Latency = 0  Delay =    0.029ns
+        02788:       Using cached results for avg_pool_Equal_8Sx7S_1U_1
+        02790:         Area =    82.76  Latency = 0  Delay =    0.173ns
+        02788:       Using cached results for avg_pool_Add_8Sx2S_8S_1
+        02790:         Area =    90.07  Latency = 0  Delay =    0.271ns
+        02788:       Using cached results for avg_pool_Add_33Ux33U_33U_1
+        02790:         Area =   579.04  Latency = 0  Delay =    0.388ns
+        02788:       Using cached results for avg_pool_Add_32Ux32U_32U_1
+        02790:         Area =   519.67  Latency = 0  Delay =    0.398ns
+        02788:       Using cached results for avg_pool_Or_1Ux1U_1U_1
+        02790:         Area =     4.45  Latency = 0  Delay =    0.051ns
+        02788:       Using cached results for avg_pool_GreaterThan_33Sx32S_1U_1
+        02790:         Area =   199.04  Latency = 0  Delay =    0.355ns
+        02788:       Using cached results for avg_pool_LessThan_33Sx32S_1U_1
+        02790:         Area =   198.36  Latency = 0  Delay =    0.355ns
+        02788:       Using cached results for avg_pool_Add_32Sx32S_33S_1
+        02790:         Area =   543.56  Latency = 0  Delay =    0.403ns
+        02788:       Using cached results for avg_pool_And_1Ux1U_1U_1
+        02790:         Area =     8.89  Latency = 0  Delay =    0.046ns
+        02788:       Using cached results for avg_pool_Not_1U_1U_1
+        02790:         Area =     4.10  Latency = 0  Delay =    0.019ns
+        02788:       Using cached results for avg_pool_N_Muxb_1_2_6_1
+        02790:         Area =    11.75  Latency = 0  Delay =    0.060ns
+        02788:       Using cached results for avg_pool_N_Mux_8_2_7_1
+        02790:         Area =    57.46  Latency = 0  Delay =    0.039ns
+        02788:       Using cached results for avg_pool_N_Mux_8_2_8_1
+        02790:         Area =    93.98  Latency = 0  Delay =    0.060ns
+        02788:       Using cached results for avg_pool_GtiLLs33_1
+        02790:         Area =    28.11  Latency = 0  Delay =    0.186ns
+        02788:       Using cached results for avg_pool_LtnLLs33_1
+        02790:         Area =    24.62  Latency = 0  Delay =    0.188ns
+        02788:       Using cached results for avg_pool_Muxi0Add2i1s8u1_1
+        02790:         Area =    54.69  Latency = 0  Delay =    0.211ns
+        02788:       Using cached results for avg_pool_Eqi48s8_1
+        02790:         Area =    22.91  Latency = 0  Delay =    0.106ns
+        02788:       Using cached results for avg_pool_Add2i1s8_1
+        02790:         Area =    46.07  Latency = 0  Delay =    0.179ns
+
+        00969: Scheduling:
+   NOTE 01437:   at avg_pool.h line 132
+   NOTE 01437.     Using global default input delay value of 0.100ns.
+   NOTE 01437:   at avg_pool.h line 114
+   NOTE 01437.     Using global default input delay value of 0.100ns.
+   NOTE 01437:   at avg_pool.h line 104
+   NOTE 01437.     Using global default input delay value of 0.100ns.
+   NOTE 01437:   at avg_pool.h line 57
+   NOTE 01437.     Using global default input delay value of 0.100ns.
+   NOTE 01437:   at avg_pool.h line 52
+   NOTE 01437.     Using global default input delay value of 0.100ns.
+   NOTE 01437:   at avg_pool.h line 39
+   NOTE 01437.     Using global default input delay value of 0.100ns.
+   NOTE 01437:   at avg_pool.h line 33
+   NOTE 01437.     Using global default input delay value of 0.100ns.
+               .
+        01171:   Scheduling method avg_pool::_out_data
+        02080:       sched_asap            off     
+        02080:       sched_effort          medium  
+        02080:       sharing_effort_parts  high    
+        02080:       sharing_effort_regs   high    
+        02080:       relax_timing          off     
+        02080:       power_clock_gating    off     
+        02098:     Total op count: 164
+        03257:     Sharable op count: 0
+        01170:     Unsharable op count: 164
+        01166:     Estimated intrinsic mux area: 0
+        02361:     Schedule complete. Optimizing
+        01230:     Optimize: pass 1.
+        01230:     Optimize: pass 2
+
+        00970: Allocation & binding:
+        01218:     Scheduling Resources:
+        01463:       No scheduled resources (functional units) are needed.
+               .
+        01171:   Scheduling method avg_pool::_out_data_valid
+        02080:       sched_asap            off     
+        02080:       sched_effort          medium  
+        02080:       sharing_effort_parts  high    
+        02080:       sharing_effort_regs   high    
+        02080:       relax_timing          off     
+        02080:       power_clock_gating    off     
+        02098:     Total op count: 12
+        03257:     Sharable op count: 0
+        01170:     Unsharable op count: 12
+        01166:     Estimated intrinsic mux area: 11
+        01167:     at avg_pool.h line 112 estimated mux area: 11
+        01168:     Symbol:out_data_valid Mux inputs: 2 Width: 1 Mux area: 11
+        02361:     Schedule complete. Optimizing
+        01230:     Optimize: pass 1..
+        01230:     Optimize: pass 2
+
+        00970: Allocation & binding:
+        01218:     Scheduling Resources:
+        01219:                      Resource Quantity
+        01220:       avg_pool_N_Muxb_1_2_6_4        1
+               .
+        01171:   Scheduling method avg_pool::_acc_data_ctrl
+        02080:       sched_asap            off     
+        02080:       sched_effort          medium  
+        02080:       sharing_effort_parts  high    
+        02080:       sharing_effort_regs   high    
+        02080:       relax_timing          off     
+        02080:       power_clock_gating    off     
+        02098:     Total op count: 4
+        03257:     Sharable op count: 0
+        01170:     Unsharable op count: 4
+        01166:     Estimated intrinsic mux area: 0
+        02361:     Schedule complete. Optimizing
+        01230:     Optimize: pass 1.
+        01230:     Optimize: pass 2
+
+        00970: Allocation & binding:
+        01218:     Scheduling Resources:
+        01463:       No scheduled resources (functional units) are needed.
+               .
+        01171:   Scheduling method avg_pool::_acc_data
+        02080:       sched_asap            off     
+        02080:       sched_effort          medium  
+        02080:       sharing_effort_parts  high    
+        02080:       sharing_effort_regs   high    
+        02080:       relax_timing          off     
+        02080:       power_clock_gating    off     
+        02098:     Total op count: 781
+        03257:     Sharable op count: 160
+        01170:     Unsharable op count: 621
+        01166:     Estimated intrinsic mux area: 0
+        01117:     Initialized resource counts
+        02361:     Schedule complete. Optimizing
+        01230:     Optimize: pass 1.
+        01230:     Optimize: pass 2
+
+        00970: Allocation & binding:
+        01218:     Scheduling Resources:
+        01219:                         Resource Quantity
+        01220:       avg_pool_Add_33Ux33U_33U_1       64
+        01220:              avg_pool_GtiLLs33_1       64
+        01220:              avg_pool_LtnLLs33_1       32
+        01220:           avg_pool_Or_1Ux1U_1U_1       32
+        01220:          avg_pool_And_1Ux1U_1U_1        3
+        01220:             avg_pool_Not_1U_1U_1        1
+               .
+        01171:   Scheduling method avg_pool::_acc_cnt_ctrl
+        02080:       sched_asap            off     
+        02080:       sched_effort          medium  
+        02080:       sharing_effort_parts  high    
+        02080:       sharing_effort_regs   high    
+        02080:       relax_timing          off     
+        02080:       power_clock_gating    off     
+        02098:     Total op count: 6
+        03257:     Sharable op count: 0
+        01170:     Unsharable op count: 6
+        01166:     Estimated intrinsic mux area: 0
+        02361:     Schedule complete. Optimizing
+        01230:     Optimize: pass 1.
+
+        00970: Allocation & binding:
+        01218:     Scheduling Resources:
+        01219:                      Resource Quantity
+        01220:       avg_pool_And_1Ux1U_1U_1        1
+        01220:            avg_pool_Eqi48s8_1        1
+               .
+        01171:   Scheduling method avg_pool::_delay
+        02080:       sched_asap            off     
+        02080:       sched_effort          medium  
+        02080:       sharing_effort_parts  high    
+        02080:       sharing_effort_regs   high    
+        02080:       relax_timing          off     
+        02080:       power_clock_gating    off     
+        02098:     Total op count: 13
+        03257:     Sharable op count: 0
+        01170:     Unsharable op count: 13
+        01166:     Estimated intrinsic mux area: 0
+        02361:     Schedule complete. Optimizing
+        01230:     Optimize: pass 1.
+        01230:     Optimize: pass 2
+
+        00970: Allocation & binding:
+        01218:     Scheduling Resources:
+        01463:       No scheduled resources (functional units) are needed.
+               .
+        01171:   Scheduling method avg_pool::_acc_cnt
+        02080:       sched_asap            off     
+        02080:       sched_effort          medium  
+        02080:       sharing_effort_parts  high    
+        02080:       sharing_effort_regs   high    
+        02080:       relax_timing          off     
+        02080:       power_clock_gating    off     
+        02098:     Total op count: 8
+        03257:     Sharable op count: 0
+        01170:     Unsharable op count: 8
+        01166:     Estimated intrinsic mux area: 93
+        01167:     at avg_pool.h line 48 estimated mux area: 93
+        01168:     Symbol:acc_cnt Mux inputs: 2 Width: 8 Mux area: 93
+        02361:     Schedule complete. Optimizing
+        01230:     Optimize: pass 1...
+        01230:     Optimize: pass 2
+
+        00970: Allocation & binding:
+        01218:     Scheduling Resources:
+        01219:                         Resource Quantity
+        01220:       avg_pool_Muxi0Add2i1s8u1_4        1
+        01220:           avg_pool_N_Mux_8_2_8_4        1
+
+        02918: RTL Generation & Optimization:
+        02917:   Preparing method avg_pool::_out_data for final RTL output
+        01006:     States: 2
+        01677:     Building RTL structures, pass 1
+        01677:     Building RTL structures, pass 2
+
+               ..............................................................
+               .                                                            .
+        00802: . Allocation Report for method "_out_data":                  .
+        00805: .                               Area/Instance                .
+        00805: .                        --------------------------    Total .
+        00805: .       Resource  Count     Seq(#FF)     Comb    BB     Area .
+        00805: . --------------  -----  ------------  ------  ----  ------- .
+        00810: . implicit muxes                                      3744.2 .
+        00808: .      registers     33                                      .
+        00809: .  register bits   1025     5.5(1)        0.0         5608.8 .
+        00811: . ---------------------------------------------------------- .
+        00812: .     Total Area         5608.8(1025)  3744.2   0.0   9353.0 .
+               .                                                            .
+               ..............................................................
+
+
+        01677:     Building RTL structures, pass 3
+        02917:   Preparing method avg_pool::_out_data_valid for final RTL
+        02917.     output
+        01006:     States: 2
+        01677:     Building RTL structures, pass 1
+        01677:     Building RTL structures, pass 2
+
+               .....................................................................
+               .                                                                   .
+        00802: . Allocation Report for method "_out_data_valid":                   .
+        00805: .                                       Area/Instance               .
+        00805: .                                 ------------------------    Total .
+        00805: .                Resource  Count    Seq(#FF)    Comb    BB     Area .
+        00805: . -----------------------  -----  ----------  ------  ----  ------- .
+        00807: . avg_pool_N_Muxb_1_2_6_4      1                 2.4            2.4 .
+        00810: .          implicit muxes                                       7.2 .
+        00808: .               registers      1                                    .
+        00809: .           register bits      1    5.5(1)       0.0            5.5 .
+        00811: . ----------------------------------------------------------------- .
+        00812: .              Total Area           5.5(1)       9.6   0.0     15.1 .
+               .                                                                   .
+               .....................................................................
+
+
+        01677:     Building RTL structures, pass 3
+        02917:   Preparing method avg_pool::_acc_data_ctrl for final RTL output
+        01006:     States: 2
+        01677:     Building RTL structures, pass 1
+        01677:     Building RTL structures, pass 2
+
+               ............................................................
+               .                                                          .
+        00802: . Allocation Report for method "_acc_data_ctrl":           .
+        00805: .                              Area/Instance               .
+        00805: .                        ------------------------    Total .
+        00805: .       Resource  Count    Seq(#FF)    Comb    BB     Area .
+        00805: . --------------  -----  ----------  ------  ----  ------- .
+        00810: . implicit muxes                                       0.0 .
+        00808: .      registers      0                                    .
+        00809: .  register bits      0    5.5(1)       0.0            0.0 .
+        00811: . -------------------------------------------------------- .
+        00812: .     Total Area           0.0(0)       0.0   0.0      0.0 .
+               .                                                          .
+               ............................................................
+
+
+        01677:     Building RTL structures, pass 3
+        02917:   Preparing method avg_pool::_acc_data for final RTL output
+        01006:     States: 2
+        01677:     Building RTL structures, pass 1
+        01677:     Building RTL structures, pass 2
+
+               ...........................................................................
+               .                                                                         .
+        00802: . Allocation Report for method "_acc_data":                               .
+        00805: .                                           Area/Instance                 .
+        00805: .                                    ---------------------------    Total .
+        00805: .                   Resource  Count     Seq(#FF)      Comb    BB     Area .
+        00805: . --------------------------  -----  ------------  -------  ----  ------- .
+        00807: . avg_pool_Add_33Ux33U_33U_1     32                  579.0        18529.3 .
+        00807: . avg_pool_Add_33Ux33U_33U_4     32                  314.0        10046.6 .
+        00807: .        avg_pool_GtiLLs33_4     64                    7.5          481.5 .
+        00807: .        avg_pool_LtnLLs33_4     32                    7.2          229.8 .
+        00807: .     avg_pool_Or_1Ux1U_1U_4     32                    1.4           43.8 .
+        00807: .    avg_pool_And_1Ux1U_1U_4      3                    1.4            4.1 .
+        00807: .       avg_pool_Not_1U_1U_4      1                    0.7            0.7 .
+        00810: .             implicit muxes                                       7597.6 .
+        00808: .                  registers     32                                       .
+        00809: .              register bits   1024     5.5(1)         0.0         5603.3 .
+        00811: . ----------------------------------------------------------------------- .
+        00812: .                 Total Area         5603.3(1024)  36933.4   0.0  42536.7 .
+               .                                                                         .
+               ...........................................................................
+
+
+        01677:     Building RTL structures, pass 3
+        02917:   Preparing method avg_pool::_acc_cnt_ctrl for final RTL output
+        01006:     States: 2
+        01677:     Building RTL structures, pass 1
+        01677:     Building RTL structures, pass 2
+
+               .....................................................................
+               .                                                                   .
+        00802: . Allocation Report for method "_acc_cnt_ctrl":                     .
+        00805: .                                       Area/Instance               .
+        00805: .                                 ------------------------    Total .
+        00805: .                Resource  Count    Seq(#FF)    Comb    BB     Area .
+        00805: . -----------------------  -----  ----------  ------  ----  ------- .
+        00807: .      avg_pool_Eqi48s8_1      1                22.9           22.9 .
+        00807: . avg_pool_And_1Ux1U_1U_1      1                 8.9            8.9 .
+        00810: .          implicit muxes                                       0.0 .
+        00808: .               registers      0                                    .
+        00809: .           register bits      0    5.5(1)       0.0            0.0 .
+        00811: . ----------------------------------------------------------------- .
+        00812: .              Total Area           0.0(0)      31.8   0.0     31.8 .
+               .                                                                   .
+               .....................................................................
+
+
+        01677:     Building RTL structures, pass 3
+        02917:   Preparing method avg_pool::_delay for final RTL output
+        01006:     States: 2
+        01677:     Building RTL structures, pass 1
+        01677:     Building RTL structures, pass 2
+
+               ............................................................
+               .                                                          .
+        00802: . Allocation Report for method "_delay":                   .
+        00805: .                              Area/Instance               .
+        00805: .                        ------------------------    Total .
+        00805: .       Resource  Count    Seq(#FF)    Comb    BB     Area .
+        00805: . --------------  -----  ----------  ------  ----  ------- .
+        00810: . implicit muxes                                      11.4 .
+        00808: .      registers      4                                    .
+        00809: .  register bits      4    5.5(1)       0.0           21.9 .
+        00811: . -------------------------------------------------------- .
+        00812: .     Total Area          21.9(4)      11.4   0.0     33.3 .
+               .                                                          .
+               ............................................................
+
+
+        01677:     Building RTL structures, pass 3
+        02917:   Preparing method avg_pool::_acc_cnt for final RTL output
+        01006:     States: 2
+        01677:     Building RTL structures, pass 1
+        01677:     Building RTL structures, pass 2
+
+               ........................................................................
+               .                                                                      .
+        00802: . Allocation Report for method "_acc_cnt":                             .
+        00805: .                                          Area/Instance               .
+        00805: .                                    ------------------------    Total .
+        00805: .                   Resource  Count    Seq(#FF)    Comb    BB     Area .
+        00805: . --------------------------  -----  ----------  ------  ----  ------- .
+        00807: . avg_pool_Muxi0Add2i1s8u1_4      1                36.3           36.3 .
+        00807: .     avg_pool_N_Mux_8_2_8_4      1                19.2           19.2 .
+        00810: .             implicit muxes                                      22.9 .
+        00808: .                  registers      1                                    .
+        00809: .              register bits      8    5.5(1)       0.0           43.8 .
+        00811: . -------------------------------------------------------------------- .
+        00812: .                 Total Area          43.8(8)      78.3   0.0    122.1 .
+               .                                                                      .
+               ........................................................................
+
+
+        01677:     Building RTL structures, pass 3
+        00971:   Cleaning up
+        00144:     Global optimizations....................
+        00144:     Global optimizations....................
+        02788:       Using cached results for avg_pool_DECODE_2U_14_4
+        02790:         Area =     0.68  Latency = 0  Delay =    0.029ns
+
+               +--------------------------------------------------------------------------+
+               |                                                                          |
+        00803: | Allocation Report for all threads:                                       |
+        00805: |                                            Area/Instance                 |
+        00805: |                                    ----------------------------    Total |
+        00805: |                   Resource  Count      Seq(#FF)      Comb    BB     Area |
+        00805: | --------------------------  -----  -------------  -------  ----  ------- |
+        00807: | avg_pool_Add_33Ux33U_33U_1     32                   579.0        18529.3 |
+        00807: | avg_pool_Add_33Ux33U_33U_4     32                   314.0        10046.6 |
+        00807: |               mux_32bx5i3c     32                   145.8         4664.1 |
+        00807: |               mux_32bx2i0c     32                    99.3         3179.0 |
+        00807: |        avg_pool_GtiLLs33_4     64                     7.5          481.5 |
+        00807: |        avg_pool_LtnLLs33_4     32                     7.2          229.8 |
+        00807: |     avg_pool_Or_1Ux1U_1U_4     32                     1.4           43.8 |
+        00807: | avg_pool_Muxi0Add2i1s8u1_4      1                    36.3           36.3 |
+        00807: |         avg_pool_Eqi48s8_1      1                    22.9           22.9 |
+        00807: |     avg_pool_N_Mux_8_2_8_4      1                    19.2           19.2 |
+        00807: |    avg_pool_And_1Ux1U_1U_1      1                     8.9            8.9 |
+        00807: |    avg_pool_And_1Ux1U_1U_4      3                     1.4            4.1 |
+        00807: |                mux_1bx2i0c      1                     3.1            3.1 |
+        00807: |    avg_pool_N_Muxb_1_2_6_4      1                     2.4            2.4 |
+        00807: |       avg_pool_Not_1U_1U_4      1                     0.7            0.7 |
+        00808: |                  registers     69                                        |
+        01442: |          Reg bits by type:                                               |
+        01442. |             EN SS SC AS AC                                               |
+        00809: |              0  0  0  0  1     12      6.2(1)         0.0                |
+        00809: |              1  0  0  0  1   2048      8.2(1)         0.0                |
+        00809: |          all register bits   2060      8.2(1)         0.0        16883.9 |
+        02604: |            estimated cntrl      1                   184.7          184.7 |
+        00811: | ------------------------------------------------------------------------ |
+        00812: |                 Total Area         16883.9(2060)  37456.3   0.0  54340.2 |
+               |                                                                          |
+               +--------------------------------------------------------------------------+
+
+
+
+        00195: Writing RTL files:
+        01766:   bdw_work/modules/avg_pool/DPA/avg_pool_rtl.h
+        01767:   bdw_work/modules/avg_pool/DPA/avg_pool_rtl.cpp
+        01768:   bdw_work/modules/avg_pool/DPA/avg_pool_rtl.v
+
+        01445: Summary of messages of severity WARNING or greater:
+        01193:   SEVERITY MSGID CNT
+        01198:    WARNING 02057   3
+
+stratus_hls succeeded with 0 errors and 3 warnings.
+
+End at Thu Jan 28 21:14:16 2021
+

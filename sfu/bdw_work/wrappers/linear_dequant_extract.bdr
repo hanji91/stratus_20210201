@@ -1,0 +1,321 @@
+<?xml version="1.0"?>
+<source_file>
+    <module>
+        <name>fp_div</name>
+        <id>3078</id>
+        <source_path>fp_div.h</source_path>
+        <source_line>7</source_line>
+        <source_column>1</source_column>
+        <port>
+            <name>clk</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>clk</rtl_port_name>
+        </port>
+        <port>
+            <name>rstn</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>rstn</rtl_port_name>
+        </port>
+        <port>
+            <name>src_valid</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>src_valid</rtl_port_name>
+        </port>
+        <port>
+            <name>a</name>
+            <direction>in</direction>
+            <datatype>
+                <name>cynw_cm_float &lt;(int)8, (int)23, (int)1, (int)5, (int)1 &gt;</name>
+                <id>2513</id>
+                <required_file>/usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts/cynw_cm_float_int.h</required_file>
+                <member>
+                    <name>man</name>
+                    <datatype W="23">sc_uint</datatype>
+                    <rtl_port_name>a_man</rtl_port_name>
+                </member>
+                <member>
+                    <name>exp</name>
+                    <datatype W="8">sc_uint</datatype>
+                    <rtl_port_name>a_exp</rtl_port_name>
+                </member>
+                <member>
+                    <name>sign</name>
+                    <datatype W="1">sc_uint</datatype>
+                    <rtl_port_name>a_sign</rtl_port_name>
+                </member>
+            </datatype>
+        </port>
+        <port>
+            <name>b</name>
+            <direction>in</direction>
+            <datatype>
+                <name>cynw_cm_float &lt;(int)8, (int)23, (int)1, (int)5, (int)1 &gt;</name>
+                <id>2513</id>
+                <required_file>/usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts/cynw_cm_float_int.h</required_file>
+                <member>
+                    <name>man</name>
+                    <datatype W="23">sc_uint</datatype>
+                    <rtl_port_name>b_man</rtl_port_name>
+                </member>
+                <member>
+                    <name>exp</name>
+                    <datatype W="8">sc_uint</datatype>
+                    <rtl_port_name>b_exp</rtl_port_name>
+                </member>
+                <member>
+                    <name>sign</name>
+                    <datatype W="1">sc_uint</datatype>
+                    <rtl_port_name>b_sign</rtl_port_name>
+                </member>
+            </datatype>
+        </port>
+        <port>
+            <name>r</name>
+            <direction>out</direction>
+            <datatype>
+                <name>cynw_cm_float &lt;(int)8, (int)23, (int)1, (int)5, (int)1 &gt;</name>
+                <id>2513</id>
+                <required_file>/usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts/cynw_cm_float_int.h</required_file>
+                <member>
+                    <name>man</name>
+                    <datatype W="23">sc_uint</datatype>
+                    <rtl_port_name>r_man</rtl_port_name>
+                </member>
+                <member>
+                    <name>exp</name>
+                    <datatype W="8">sc_uint</datatype>
+                    <rtl_port_name>r_exp</rtl_port_name>
+                </member>
+                <member>
+                    <name>sign</name>
+                    <datatype W="1">sc_uint</datatype>
+                    <rtl_port_name>r_sign</rtl_port_name>
+                </member>
+            </datatype>
+        </port>
+        <port>
+            <name>dst_valid</name>
+            <direction>out</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>dst_valid</rtl_port_name>
+        </port>
+        <signal>
+            <name>src_valid_1d</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>src_valid_1d</rtl_port_name>
+        </signal>
+        <ctor_params>
+            <param>
+                <name/>
+                <datatype>
+                    <name>sc_core::sc_module_name</name>
+                    <id>3061</id>
+                </datatype>
+                <rtl_port_name/>
+            </param>
+        </ctor_params>
+    </module>
+    <module>
+        <name>linear_dequant</name>
+        <id>3719</id>
+        <source_path>linear_dequant.h</source_path>
+        <source_line>10</source_line>
+        <source_column>1</source_column>
+        <port>
+            <name>clk</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>clk</rtl_port_name>
+        </port>
+        <port>
+            <name>rstn</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>rstn</rtl_port_name>
+        </port>
+        <port>
+            <name>enable</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>enable</rtl_port_name>
+        </port>
+        <port>
+            <name>src_valid</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>src_valid</rtl_port_name>
+        </port>
+        <port>
+            <name>src</name>
+            <direction>in</direction>
+            <datatype>
+                <array>8</array>
+                <datatype>
+                    <name>cynw_cm_float &lt;(int)8, (int)23, (int)1, (int)5, (int)1 &gt;</name>
+                    <id>2513</id>
+                    <required_file>/usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts/cynw_cm_float_int.h</required_file>
+                    <member>
+                        <name>man</name>
+                        <datatype W="23">sc_uint</datatype>
+                        <rtl_port_name>src_man_[8]</rtl_port_name>
+                    </member>
+                    <member>
+                        <name>exp</name>
+                        <datatype W="8">sc_uint</datatype>
+                        <rtl_port_name>src_exp_[8]</rtl_port_name>
+                    </member>
+                    <member>
+                        <name>sign</name>
+                        <datatype W="1">sc_uint</datatype>
+                        <rtl_port_name>src_sign_[8]</rtl_port_name>
+                    </member>
+                </datatype>
+            </datatype>
+        </port>
+        <port>
+            <name>divisor</name>
+            <direction>in</direction>
+            <datatype>
+                <name>cynw_cm_float &lt;(int)8, (int)23, (int)1, (int)5, (int)1 &gt;</name>
+                <id>2513</id>
+                <required_file>/usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts/cynw_cm_float_int.h</required_file>
+                <member>
+                    <name>man</name>
+                    <datatype W="23">sc_uint</datatype>
+                    <rtl_port_name>divisor_man</rtl_port_name>
+                </member>
+                <member>
+                    <name>exp</name>
+                    <datatype W="8">sc_uint</datatype>
+                    <rtl_port_name>divisor_exp</rtl_port_name>
+                </member>
+                <member>
+                    <name>sign</name>
+                    <datatype W="1">sc_uint</datatype>
+                    <rtl_port_name>divisor_sign</rtl_port_name>
+                </member>
+            </datatype>
+        </port>
+        <port>
+            <name>dst_valid</name>
+            <direction>out</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>dst_valid</rtl_port_name>
+        </port>
+        <port>
+            <name>dst</name>
+            <direction>out</direction>
+            <datatype>
+                <array>8</array>
+                <datatype>
+                    <name>cynw_cm_float &lt;(int)8, (int)23, (int)1, (int)5, (int)1 &gt;</name>
+                    <id>2513</id>
+                    <required_file>/usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts/cynw_cm_float_int.h</required_file>
+                    <member>
+                        <name>man</name>
+                        <datatype W="23">sc_uint</datatype>
+                        <rtl_port_name>dst_man_[8]</rtl_port_name>
+                    </member>
+                    <member>
+                        <name>exp</name>
+                        <datatype W="8">sc_uint</datatype>
+                        <rtl_port_name>dst_exp_[8]</rtl_port_name>
+                    </member>
+                    <member>
+                        <name>sign</name>
+                        <datatype W="1">sc_uint</datatype>
+                        <rtl_port_name>dst_sign_[8]</rtl_port_name>
+                    </member>
+                </datatype>
+            </datatype>
+        </port>
+        <signal>
+            <name>div_result</name>
+                        <datatype>
+                <array>8</array>
+                <datatype>
+                    <name>cynw_cm_float &lt;(int)8, (int)23, (int)1, (int)5, (int)1 &gt;</name>
+                    <id>3652</id>
+                    <required_file>/usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts/cynw_cm_float_int.h</required_file>
+                    <member>
+                        <name>man</name>
+                        <datatype W="23">sc_uint</datatype>
+                        <rtl_port_name>div_result_man_[8]</rtl_port_name>
+                    </member>
+                    <member>
+                        <name>exp</name>
+                        <datatype W="8">sc_uint</datatype>
+                        <rtl_port_name>div_result_exp_[8]</rtl_port_name>
+                    </member>
+                    <member>
+                        <name>sign</name>
+                        <datatype W="1">sc_uint</datatype>
+                        <rtl_port_name>div_result_sign_[8]</rtl_port_name>
+                    </member>
+                </datatype>
+            </datatype>
+        </signal>
+        <signal>
+            <name>div_valid</name>
+                        <datatype>
+                <array>8</array>
+                <datatype W="1">bool</datatype>
+                <rtl_port_name>div_valid_[8]</rtl_port_name>
+            </datatype>
+        </signal>
+        <ctor_params>
+            <param>
+                <name/>
+                <datatype>
+                    <name>sc_core::sc_module_name</name>
+                    <id>3061</id>
+                </datatype>
+                <rtl_port_name/>
+            </param>
+        </ctor_params>
+        <module_inst>
+            <module_name>fp_div</module_name>
+            <name>u_fp_div_0</name>
+            <instance_name>u_fp_div_0</instance_name>
+        </module_inst>
+        <module_inst>
+            <module_name>fp_div</module_name>
+            <name>u_fp_div_1</name>
+            <instance_name>u_fp_div_1</instance_name>
+        </module_inst>
+        <module_inst>
+            <module_name>fp_div</module_name>
+            <name>u_fp_div_2</name>
+            <instance_name>u_fp_div_2</instance_name>
+        </module_inst>
+        <module_inst>
+            <module_name>fp_div</module_name>
+            <name>u_fp_div_3</name>
+            <instance_name>u_fp_div_3</instance_name>
+        </module_inst>
+        <module_inst>
+            <module_name>fp_div</module_name>
+            <name>u_fp_div_4</name>
+            <instance_name>u_fp_div_4</instance_name>
+        </module_inst>
+        <module_inst>
+            <module_name>fp_div</module_name>
+            <name>u_fp_div_5</name>
+            <instance_name>u_fp_div_5</instance_name>
+        </module_inst>
+        <module_inst>
+            <module_name>fp_div</module_name>
+            <name>u_fp_div_6</name>
+            <instance_name>u_fp_div_6</instance_name>
+        </module_inst>
+        <module_inst>
+            <module_name>fp_div</module_name>
+            <name>u_fp_div_7</name>
+            <instance_name>u_fp_div_7</instance_name>
+        </module_inst>
+    </module>
+	<exit_status>0</exit_status>
+</source_file>

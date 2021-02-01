@@ -1,0 +1,12 @@
+45724
+45757
+design1
+bdw_work/trace/hls.in_buff.DPA.trace
+2
+0
+0
+0
+1610625042
+1610625067
+make CWBExec=1 hls_in_buff_DPA
+

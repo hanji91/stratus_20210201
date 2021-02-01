@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<netlist>
+	<module_name>_multiplier</module_name>
+	<signal>
+		<name>CAST_N50</name>
+		<source_loc>1996</source_loc>
+		<async/>
+	</signal>
+	<assign>
+		<name>drive_CAST_N50</name>
+		<lhs>
+			<name>CAST_N50</name>
+		</lhs>
+		<rhs>
+			<name>MUX_N51</name>
+		</rhs>
+	</assign>
+</netlist>

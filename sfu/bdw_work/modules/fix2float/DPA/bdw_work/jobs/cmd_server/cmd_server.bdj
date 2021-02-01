@@ -1,0 +1,12 @@
+38945
+38951
+design1
+-
+3
+0
+0
+1
+1610867837
+1610867842
+/usr/cadence/installs/Stratus/tools.lnx86/stratus/bin/bdw_cmd_shell --locallogfile /dev/null -x bdw_server_start
+

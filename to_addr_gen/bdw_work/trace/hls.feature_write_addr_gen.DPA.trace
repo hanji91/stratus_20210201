@@ -1,0 +1,1945 @@
+Generating dependencies for HLS config DPA of feature_write_addr_gen.cpp
+/usr/cadence/installs/Stratus/bin/bdw_wrapgen -project project.tcl -module feature_write_addr_gen "-Ibdw_work/wrappers   -DCLOCK_PERIOD=2.0 -g  "
+/usr/cadence/installs/Stratus/bin/bdw_tracegen -module feature_write_addr_gen -vcd 
+BDW_HLS_CONFIG=DPA BDW_CYNTH_CONFIG=DPA \
+bdw_exec -jobproject project.tcl -job hls.feature_write_addr_gen.DPA.s \
+/usr/cadence/installs/Stratus/bin/stratus_hls --logfile=stratus_hls.log -I. -Ibdw_work/wrappers -I/usr/cadence/installs/Stratus/share/stratus/include   --tl=/usr/cadence/installs/Stratus/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib --clock_period=1.500 --default_input_delay=0.100 --flatten_arrays=none --message_detail=3 --path_delay_limit=100.000 --rtl_annotation=op,stack -DDPA=1 -DBDW_RTL_feature_write_addr_gen_DPA=1 --clock_period=1.500 --dpopt_auto=op,expr  \
+	-d bdw_work/modules/feature_write_addr_gen/DPA -o feature_write_addr_gen_rtl.cpp \
+	--hls_module=feature_write_addr_gen --hls_config=DPA --project=project.tcl \
+	 \
+	 \
+	 \
+	 \
+	 feature_write_addr_gen.cpp
+
+stratus_hls 19.10-p100  (91500.011111)
+Copyright (c) 2019 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+        00481: -D is set to "__x86_64__, STRATUS=1, STRATUS_HLS=1, CYNTHESIZER,
+        00481.   CYNTHHL, DPA=1, BDW_RTL_feature_write_addr_gen_DPA=1".
+        00481: -I is set to "., bdw_work/wrappers,
+        00481.   /usr/cadence/installs/Stratus/share/stratus/include,
+        00481.   /usr/cadence/installs/Stratus/share/stratus/include,
+        00481.   /usr/cadence/installs/Stratus/tools.lnx86/stratus/systemc/2.3.1/include".
+        00481: -U is not set.
+        00481: --abort_level is set to "FATAL".
+        00481: --allow_pipeline_loop_expansion is set to "on".
+        00481: --attrib_value is not set.
+        00481: --balance_expr is set to "off".
+        00481: --cachelib is set to "on".
+        00481: --cachelib_dir is not set.
+        00481: --cap_table_file is not set.
+        00481: --clock_gating_module is not set.
+        00481: --clock_period is set to "1.500".
+        00481: --comm_subexp_elim is set to "off".
+        00481: --constrain_multiport_mem_distance is set to "on".
+        00481: --cycle_slack is set to "0.000".
+        00481: --default_input_delay is set to "0.100".
+        00481: --default_preserve_io is set to "off".
+        00481: --default_protocol is set to "off".
+        00481: --default_stable_input_delay is not set.
+        00481: --dont_ungroup_name is not set.
+        00481: --dont_ungroup_type is set to "none".
+        00481: --dpopt_auto is set to "op,expr".
+        00481: --dpopt_effort is set to "normal".
+        00481: --dpopt_with_enable is set to "off".
+        00481: --eco_baseline is not set.
+        00481: --eco_sharing is set to "off".
+        00481: --fail_level is set to "ERROR".
+        00481: --fixed_reset is set to "off".
+        00481: --flatten_arrays is set to "none".
+        00481: --fpga_dsp_latency is set to "2".
+        00481: --fpga_dsp_min_widths is set to "12,12".
+        00481: --fpga_part is not set.
+        00481: --fpga_tool is not set.
+        00481: --fpga_use_dsp is set to "off".
+        00481: --global_state_encoding is set to "binary".
+        00481: --help is not set.
+        00481: --hls_config is set to "DPA".
+        00481: --hls_module is set to "feature_write_addr_gen".
+        00481: --ignore_cells is not set.
+        00481: --ignore_scan_cells is set to "off".
+        00481: --inline_partial_constants is set to "off".
+        00481: --interconnect_mode is set to "wireload".
+        00481: --lef_library is not set.
+        00481: --logfile is set to "bdw_work/modules/feature_write_addr_gen/DPA/stratus_hls.log".
+        00481: --lsb_trimming is set to "off".
+        00481: --message_detail is set to "3".
+        00481: --message_level is not set.
+        00481: --message_suppress is not set.
+        00481: --method_processing is set to "synthesize".
+        00481: --mux_pushing is set to "on".
+        00481: --number_of_routing_layers is not set.
+        00481: --output is set to "feature_write_addr_gen_rtl.cpp".
+        00481: --output_dir is set to "bdw_work/modules/feature_write_addr_gen/DPA".
+        00481: --output_style_fp_rtl_same_arch is set to "off".
+        00481: --output_style_fsm_increment is set to "on".
+        00481: --output_style_mem is set to "array".
+        00481: --output_style_merge_cases is set to "on".
+        00481: --output_style_mux is set to "impl_case".
+        00481: --output_style_parts is set to "rtl".
+        00481: --output_style_pipelined_parts is set to "generic".
+        00481: --output_style_reset_all is set to "off".
+        00481: --output_style_reset_all_async is set to "off".
+        00481: --output_style_reset_all_sync is set to "off".
+        00481: --output_style_separate_behaviors is set to "off".
+        00481: --output_style_separate_memories is set to "off".
+        00481: --output_style_starc is set to "S2.2.2.2,S2.2.3.1,S2.3.1.1".
+        00481: --output_style_structure_only is set to "off".
+        00481: --output_style_two_part_fsm is set to "on".
+        00481: --output_style_ungroup_parts is set to "on".
+        00481: --parts_effort is set to "high".
+        00481: --parts_lib is not set.
+        00481: --parts_lib_path is not set.
+        00481: --path_delay_limit is set to "100".
+        00481: --path_delay_limit_unshare_regs is set to "on".
+        00481: --pipelined_parts is set to "on".
+        00481: --port_conns is set to "named".
+        00481: --power is set to "off".
+        00481: --power_clock_gating is set to "off".
+        00481: --power_fsm is set to "off".
+        00481: --power_memory is set to "off".
+        00481: --prints is set to "on".
+        00481: --project is set to "project.tcl".
+        00481: --qrc_tech_file is not set.
+        00481: --register_fsm_mux_selects is set to "on".
+        00481: --relax_timing is set to "off".
+        00481: --rtl_annotation is set to "op,stack".
+        00481: --run_through is set to "rtl".
+        00481: --scale_of_cap_per_unit_len is not set.
+        00481: --scale_of_res_per_unit_len is not set.
+        00481: --sched_analysis is set to "on_failure".
+        00481: --sched_asap is set to "off".
+        00481: --sched_effort is set to "medium".
+        00481: --sharing_effort_parts is set to "high".
+        00481: --sharing_effort_regs is set to "high".
+        00481: --shift_trimming is set to "standard".
+        00481: --simple_index_mapping is set to "off".
+        00481: --split_add is set to "0".
+        00481: --split_multiply is set to "0".
+        00481: --src_file is set to "feature_write_addr_gen.cpp".
+        00481: --summary_level is set to "WARNING".
+        00481: --switch_optimizer is set to "on".
+        00481: --tech_lib is set to "/usr/cadence/installs/Stratus/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib".
+        00481: --timing_aggression is set to "off".
+        00481: --undef_func is set to "warn".
+        00481: --unroll_loops is set to "off".
+        00481: --verilog_dialect is set to "1995".
+        00481: --wait_for_license is set to "off".
+        00481: --wireload is not set.
+   NOTE 03065: Control flow zipping is enabled
+   NOTE 01483: Using cmdesigner 2019.1.01.8041 (03251817).
+   NOTE 01727: Using Genus 17.11-s014_1.
+
+        01425: Loading design and library files:
+        01279:   All time values are in "ns".
+   NOTE 01277:   Using a clock period of 1.500ns.
+        01824:     Physical estimation options:
+        01825:       interconnect_mode .......... wireload
+        01825:       techlib ....................
+        01825.         /usr/cadence/installs/Stratus/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib
+        00967:   Processing library
+        02788:       Using cached results for cyn_reg_estimate_17
+        01472:       Register Metrics:
+        01440:          Register Type          Area              Delay (ns)
+        01440.         --------------   -------------------   ---------------
+        01440.         EN SS SC AS AC   Total   Comb    Seq     Prop    Setup
+        01440.         -- -- -- -- --   -----  -----  -----   ------   ------
+        01438:          0  0  0  0  0     5.5    0.0    5.5    0.114    0.066
+        01438:          0  0  0  0  1     6.2    0.0    6.2    0.131    0.067
+        01438:          0  0  0  1  0     6.5    0.0    6.5    0.127    0.067
+        01438:          0  0  0  1  1    12.0    0.7   11.3    0.141    0.098
+        01438:          0  0  1  0  0     6.8    1.4    5.5    0.114    0.123
+        01438:          0  0  1  0  1     7.5    1.4    6.2    0.131    0.125
+        01438:          0  0  1  1  0     7.9    1.0    6.8    0.161    0.089
+        01438:          0  0  1  1  1    12.3    1.0   11.3    0.141    0.106
+        01438:          0  1  0  0  0     6.8    1.4    5.5    0.114    0.104
+        01438:          0  1  0  0  1     7.5    1.4    6.2    0.131    0.105
+        01438:          0  1  0  1  0     7.9    1.0    6.8    0.161    0.100
+        01438:          0  1  0  1  1    12.3    1.0   11.3    0.141    0.115
+        01438:          0  1  1  0  0     7.5    2.1    5.5    0.114    0.147
+        01438:          0  1  1  0  1     8.2    2.1    6.2    0.131    0.149
+        01438:          0  1  1  1  0     8.6    1.7    6.8    0.161    0.111
+        01438:          0  1  1  1  1    13.0    1.7   11.3    0.141    0.127
+        01438:          1  0  0  0  0     7.5    0.0    7.5    0.112    0.122
+        01438:          1  0  0  0  1     8.2    0.0    8.2    0.134    0.110
+        01438:          1  0  0  1  0     8.9    2.4    6.5    0.129    0.143
+        01438:          1  0  0  1  1    13.7    2.4   11.3    0.143    0.133
+        01438:          1  0  1  0  0     8.9    1.4    7.5    0.112    0.177
+        01438:          1  0  1  0  1     9.6    1.4    8.2    0.134    0.169
+        01438:          1  0  1  1  0     9.9    1.7    8.2    0.153    0.131
+        01438:          1  0  1  1  1    14.4    1.7   12.7    0.149    0.164
+        01438:          1  1  0  0  0     8.9    1.4    7.5    0.112    0.158
+        01438:          1  1  0  0  1     9.6    1.4    8.2    0.134    0.150
+        01438:          1  1  0  1  0     9.9    1.7    8.2    0.153    0.145
+        01438:          1  1  0  1  1    14.4    1.7   12.7    0.149    0.175
+        01438:          1  1  1  0  0     9.6    2.1    7.5    0.112    0.202
+        01438:          1  1  1  0  1    10.3    2.1    8.2    0.134    0.192
+        01438:          1  1  1  1  0    10.6    2.4    8.2    0.153    0.156
+        01438:          1  1  1  1  1    15.0    2.4   12.7    0.149    0.187
+   NOTE 01037:     Characterizing multiplexors up to 1 bits by 33 inputs.
+        02788:       Using cached results for cyn_mux_estimate_44
+        01429:       Binary Multiplexor Metrics:
+        01431:         Bitwidth    Num Inputs      Area    Delay (ns)
+        01430:     1            2          2.86      0.061
+        01430:     1            3          4.78      0.120
+        01430:     1            4          7.23      0.120
+        01430:     1            5          9.69      0.178
+        01430:     1            8         17.06      0.178
+        01430:     1            9         19.52      0.237
+        01430:     1           16         36.72      0.237
+        01430:     1           17         39.18      0.295
+        01430:     1           32         76.04      0.295
+        01430:     1           33         78.50      0.354
+        01429:       Onehot Multiplexor Metrics:
+        01431:         Bitwidth    Num Inputs      Area    Delay (ns)
+        01430:     1            2          3.10      0.061
+        01430:     1            3          4.15      0.095
+        01430:     1            4          5.57      0.095
+        01430:     1            5          7.00      0.133
+        01430:     1            8         11.27      0.133
+        01430:     1            9         12.70      0.172
+        01430:     1           16         22.67      0.172
+        01430:     1           17         24.09      0.210
+        01430:     1           32         45.46      0.210
+        01430:     1           33         46.88      0.249
+
+        00148: Normalization and optimization:
+   NOTE 00860:   Long int data types are being implemented with 64 bits.
+        02923:   Dissolving function boundaries.
+        02924:   Dissolved 0 function calls.
+   NOTE 01446:   at feature_write_addr_gen.h line 52
+   NOTE 01446.     The edge-triggered SC_METHOD, _delay, does not have a
+   NOTE 01446.     "dont_initialize()" invocation. This may lead to a mismatch
+   NOTE 01446.     between the SystemC and Verilog simulation models.
+   NOTE 01446:   at feature_write_addr_gen.h line 167
+   NOTE 01446.     The edge-triggered SC_METHOD, _up_count, does not have a
+   NOTE 01446.     "dont_initialize()" invocation. This may lead to a mismatch
+   NOTE 01446.     between the SystemC and Verilog simulation models.
+   NOTE 01446:   at feature_write_addr_gen.h line 147
+   NOTE 01446.     The edge-triggered SC_METHOD, _stop, does not have a
+   NOTE 01446.     "dont_initialize()" invocation. This may lead to a mismatch
+   NOTE 01446.     between the SystemC and Verilog simulation models.
+   NOTE 01446:   at feature_write_addr_gen.h line 178
+   NOTE 01446.     The edge-triggered SC_METHOD, _fifo_write, does not have a
+   NOTE 01446.     "dont_initialize()" invocation. This may lead to a mismatch
+   NOTE 01446.     between the SystemC and Verilog simulation models.
+   NOTE 01446:   at feature_write_addr_gen.h line 85
+   NOTE 01446.     The edge-triggered SC_METHOD, _assign, does not have a
+   NOTE 01446.     "dont_initialize()" invocation. This may lead to a mismatch
+   NOTE 01446.     between the SystemC and Verilog simulation models.
+   NOTE 01446:   at feature_write_addr_gen.h line 117
+   NOTE 01446.     The edge-triggered SC_METHOD, _read_data, does not have a
+   NOTE 01446.     "dont_initialize()" invocation. This may lead to a mismatch
+   NOTE 01446.     between the SystemC and Verilog simulation models.
+   NOTE 01446:   at feature_write_addr_gen.h line 205
+   NOTE 01446.     The edge-triggered SC_METHOD, _fifo_cnt, does not have a
+   NOTE 01446.     "dont_initialize()" invocation. This may lead to a mismatch
+   NOTE 01446.     between the SystemC and Verilog simulation models.
+   NOTE 01446:   at feature_write_addr_gen.h line 67
+   NOTE 01446.     The edge-triggered SC_METHOD, _fifo_cnt_1d, does not have a
+   NOTE 01446.     "dont_initialize()" invocation. This may lead to a mismatch
+   NOTE 01446.     between the SystemC and Verilog simulation models.
+   NOTE 01446:   at feature_write_addr_gen.h line 235
+   NOTE 01446.     The edge-triggered SC_METHOD, _wr_ptr, does not have a
+   NOTE 01446.     "dont_initialize()" invocation. This may lead to a mismatch
+   NOTE 01446.     between the SystemC and Verilog simulation models.
+   NOTE 01446:   at feature_write_addr_gen.h line 243
+   NOTE 01446.     The edge-triggered SC_METHOD, _rd_ptr, does not have a
+   NOTE 01446.     "dont_initialize()" invocation. This may lead to a mismatch
+   NOTE 01446.     between the SystemC and Verilog simulation models.
+        00116:   at feature_write_addr_gen.h line 243
+        00116.     Optimizing method feature_write_addr_gen::_rd_ptr
+        00116:   at feature_write_addr_gen.h line 235
+        00116.     Optimizing method feature_write_addr_gen::_wr_ptr
+        00116:   at feature_write_addr_gen.h line 226
+        00116.     Optimizing method feature_write_addr_gen::_rd_en
+        00116:   at feature_write_addr_gen.h line 218
+        00116.     Optimizing method feature_write_addr_gen::_wr_en
+        00116:   at feature_write_addr_gen.h line 205
+        00116.     Optimizing method feature_write_addr_gen::_fifo_cnt
+        00116:   at feature_write_addr_gen.h line 191
+        00116.     Optimizing method feature_write_addr_gen::_fifo_read
+        00116:   at feature_write_addr_gen.h line 178
+        00116.     Optimizing method feature_write_addr_gen::_fifo_write
+        00116:   at feature_write_addr_gen.h line 167
+        00116.     Optimizing method feature_write_addr_gen::_up_count
+        00116:   at feature_write_addr_gen.h line 159
+        00116.     Optimizing method feature_write_addr_gen::_address
+        00116:   at feature_write_addr_gen.h line 147
+        00116.     Optimizing method feature_write_addr_gen::_stop
+        00116:   at feature_write_addr_gen.h line 117
+        00116.     Optimizing method feature_write_addr_gen::_read_data
+        00116:   at feature_write_addr_gen.h line 85
+        00116.     Optimizing method feature_write_addr_gen::_assign
+        00116:   at feature_write_addr_gen.h line 81
+        00116.     Optimizing method feature_write_addr_gen::_write_addr_valid
+        00116:   at feature_write_addr_gen.h line 67
+        00116.     Optimizing method feature_write_addr_gen::_fifo_cnt_1d
+        00116:   at feature_write_addr_gen.h line 52
+        00116.     Optimizing method feature_write_addr_gen::_delay
+        00116:   at feature_write_addr_gen.h line 243
+        00116.     Optimizing method feature_write_addr_gen::_rd_ptr
+        00305:     169 nodes
+        00306:     Optimize: pass 1.
+        00305:     71 nodes
+        00306:     Optimize: pass 2.
+        00305:     93 nodes
+        00306:     Optimize: pass 3.
+        00305:     93 nodes
+        00306:     Optimize: pass 4.
+        00305:     93 nodes
+        00306:     Optimize: pass 5.
+        02831:       at feature_write_addr_gen.h line 247
+        02831.         Converting control branching to datapath elements. (11
+        02831.         bits multiplexed)
+        00305:     73 nodes
+        00306:     Optimize: pass 6..
+        00305:     70 nodes
+        00306:     Optimize: pass 7.
+        00305:     69 nodes
+        00306:     Optimize: pass 8..
+        00305:     67 nodes
+        00306:     Optimize: pass 9.
+        00305:     63 nodes
+        00306:     Optimize: pass 10..
+        00305:     60 nodes
+        00306:     Optimize: pass 11.
+        00305:     60 nodes
+        00306:     Optimize: pass 12.
+        00305:     60 nodes
+        00306:     Optimize: pass 13.
+        00116:   at feature_write_addr_gen.h line 235
+        00116.     Optimizing method feature_write_addr_gen::_wr_ptr
+        00305:     171 nodes
+        00306:     Optimize: pass 1.
+        00305:     72 nodes
+        00306:     Optimize: pass 2.
+        00305:     94 nodes
+        00306:     Optimize: pass 3.
+        00305:     94 nodes
+        00306:     Optimize: pass 4.
+        00305:     94 nodes
+        00306:     Optimize: pass 5.
+        02831:       at feature_write_addr_gen.h line 239
+        02831.         Converting control branching to datapath elements. (11
+        02831.         bits multiplexed)
+        00305:     74 nodes
+        00306:     Optimize: pass 6..
+        00305:     71 nodes
+        00306:     Optimize: pass 7.
+        00305:     70 nodes
+        00306:     Optimize: pass 8..
+        00305:     68 nodes
+        00306:     Optimize: pass 9.
+        00305:     64 nodes
+        00306:     Optimize: pass 10..
+        00305:     61 nodes
+        00306:     Optimize: pass 11.
+        00305:     61 nodes
+        00306:     Optimize: pass 12.
+        00305:     61 nodes
+        00306:     Optimize: pass 13.
+        00116:   at feature_write_addr_gen.h line 226
+        00116.     Optimizing method feature_write_addr_gen::_rd_en
+        00305:     62 nodes
+        00306:     Optimize: pass 1.
+        00305:     81 nodes
+        00306:     Optimize: pass 2..
+        00305:     78 nodes
+        00306:     Optimize: pass 3.
+        00305:     78 nodes
+        00306:     Optimize: pass 4.
+        00305:     78 nodes
+        00306:     Optimize: pass 5.
+        02831:       at feature_write_addr_gen.h line 228
+        02831.         Converting control branching to datapath elements. (11
+        02831.         bits multiplexed)
+        00305:     47 nodes
+        00306:     Optimize: pass 6..
+        00305:     41 nodes
+        00306:     Optimize: pass 7.
+        00305:     40 nodes
+        00306:     Optimize: pass 8..
+        00305:     35 nodes
+        00306:     Optimize: pass 9.
+        00305:     37 nodes
+        00306:     Optimize: pass 10..
+        00305:     34 nodes
+        00306:     Optimize: pass 11.
+        00305:     34 nodes
+        00306:     Optimize: pass 12.
+        00305:     34 nodes
+        00306:     Optimize: pass 13.
+        00116:   at feature_write_addr_gen.h line 218
+        00116.     Optimizing method feature_write_addr_gen::_wr_en
+        00305:     59 nodes
+        00306:     Optimize: pass 1.
+        00305:     78 nodes
+        00306:     Optimize: pass 2..
+        00305:     75 nodes
+        00306:     Optimize: pass 3.
+        00305:     75 nodes
+        00306:     Optimize: pass 4.
+        00305:     75 nodes
+        00306:     Optimize: pass 5.
+        02831:       at feature_write_addr_gen.h line 220
+        02831.         Converting control branching to datapath elements. (11
+        02831.         bits multiplexed)
+        00305:     44 nodes
+        00306:     Optimize: pass 6..
+        00305:     38 nodes
+        00306:     Optimize: pass 7.
+        00305:     37 nodes
+        00306:     Optimize: pass 8..
+        00305:     32 nodes
+        00306:     Optimize: pass 9.
+        00305:     28 nodes
+        00306:     Optimize: pass 10.
+        00305:     28 nodes
+        00306:     Optimize: pass 11.
+        00116:   at feature_write_addr_gen.h line 205
+        00116.     Optimizing method feature_write_addr_gen::_fifo_cnt
+        00305:     321 nodes
+        00306:     Optimize: pass 1.
+        00305:     151 nodes
+        00306:     Optimize: pass 2.
+        00305:     173 nodes
+        00306:     Optimize: pass 3.
+        00305:     173 nodes
+        00306:     Optimize: pass 4.
+        00305:     173 nodes
+        00306:     Optimize: pass 5.
+        02831:       at feature_write_addr_gen.h line 213
+        02831.         Converting control branching to datapath elements. (11
+        02831.         bits multiplexed)
+        00305:     164 nodes
+        00306:     Optimize: pass 6.
+        02831:       at feature_write_addr_gen.h line 211
+        02831.         Converting control branching to datapath elements. (11
+        02831.         bits multiplexed)
+        00305:     144 nodes
+        00306:     Optimize: pass 7..
+        00305:     141 nodes
+        00306:     Optimize: pass 8.
+        02831:       at feature_write_addr_gen.h line 209
+        02831.         Converting control branching to datapath elements. (11
+        02831.         bits multiplexed)
+        00305:     110 nodes
+        00306:     Optimize: pass 9..
+        00305:     104 nodes
+        00306:     Optimize: pass 10.
+        00305:     101 nodes
+        00306:     Optimize: pass 11..
+        00305:     95 nodes
+        00306:     Optimize: pass 12.
+        00305:     83 nodes
+        00306:     Optimize: pass 13..
+        00305:     81 nodes
+        00306:     Optimize: pass 14.
+        00305:     81 nodes
+        00306:     Optimize: pass 15.
+        00305:     81 nodes
+        00306:     Optimize: pass 16.
+        00116:   at feature_write_addr_gen.h line 191
+        00116.     Optimizing method feature_write_addr_gen::_fifo_read
+        00305:     64 nodes
+        00306:     Optimize: pass 1.
+        00305:     77 nodes
+        00306:     Optimize: pass 2.
+        00305:     66 nodes
+        00306:     Optimize: pass 3.
+        00305:     66 nodes
+        00306:     Optimize: pass 4.
+        00258:       at feature_write_addr_gen.h line 36
+        00258.         Array fifo_mem, 8 words x 320 bits (2560 total bits),
+        00258.         HAS been flattened into 8, 320 bit scalar variables
+        00258.         because it is an array of signals.
+        00261:       at feature_write_addr_gen.h line 197
+        00261.         This is the first of 1 variable reads from fifo_mem.
+        00305:     94 nodes
+        00306:     Optimize: pass 5..
+        00305:     94 nodes
+        00306:     Optimize: pass 6.
+        00305:     94 nodes
+        00306:     Optimize: pass 7.
+        00305:     125 nodes
+        00306:     Optimize: pass 8.
+        00305:     125 nodes
+        00306:     Optimize: pass 9.
+        00305:     125 nodes
+        00306:     Optimize: pass 10.
+        02835:       at feature_write_addr_gen.h line 195
+        02835.         Not converting control branching to datapath elements
+        02835.         because we have a process output, volatile variable, or
+        02835.         unresolved pointer.
+        00116:   at feature_write_addr_gen.h line 178
+        00116.     Optimizing method feature_write_addr_gen::_fifo_write
+        00305:     242 nodes
+        00306:     Optimize: pass 1..
+        00305:     104 nodes
+        00306:     Optimize: pass 2.
+        00305:     117 nodes
+        00306:     Optimize: pass 3.
+        00305:     106 nodes
+        00306:     Optimize: pass 4.
+        00288:     at feature_write_addr_gen.h line 181
+        00288.       Unrolling loop 8 times because it is inside a protocol
+        00288.       block and does not contain a wait.
+        00305:     210 nodes
+        00306:     Optimize: pass 5....
+        00305:     124 nodes
+        00306:     Optimize: pass 6..
+        00305:     121 nodes
+        00306:     Optimize: pass 7.
+        00305:     121 nodes
+        00306:     Optimize: pass 8.
+   NOTE 00260:       at feature_write_addr_gen.h line 187
+   NOTE 00260.         This is the first of 1 variable writes to fifo_mem.
+        00305:     151 nodes
+        00306:     Optimize: pass 9..
+        00305:     151 nodes
+        00306:     Optimize: pass 10.
+        00305:     151 nodes
+        00306:     Optimize: pass 11.
+        00305:     141 nodes
+        00306:     Optimize: pass 12.
+        00305:     141 nodes
+        00306:     Optimize: pass 13.
+        00305:     141 nodes
+        00306:     Optimize: pass 14.
+        00116:   at feature_write_addr_gen.h line 167
+        00116.     Optimizing method feature_write_addr_gen::_up_count
+        00305:     237 nodes
+        00306:     Optimize: pass 1.
+        00305:     107 nodes
+        00306:     Optimize: pass 2.
+        00305:     129 nodes
+        00306:     Optimize: pass 3.
+        00305:     129 nodes
+        00306:     Optimize: pass 4.
+        00305:     129 nodes
+        00306:     Optimize: pass 5.
+        02831:       at feature_write_addr_gen.h line 174
+        02831.         Converting control branching to datapath elements. (11
+        02831.         bits multiplexed)
+        00305:     120 nodes
+        00306:     Optimize: pass 6.
+        02831:       at feature_write_addr_gen.h line 171
+        02831.         Converting control branching to datapath elements. (11
+        02831.         bits multiplexed)
+        00305:     89 nodes
+        00306:     Optimize: pass 7..
+        00305:     83 nodes
+        00306:     Optimize: pass 8.
+        00305:     81 nodes
+        00306:     Optimize: pass 9..
+        00305:     77 nodes
+        00306:     Optimize: pass 10.
+        00305:     69 nodes
+        00306:     Optimize: pass 11..
+        00305:     66 nodes
+        00306:     Optimize: pass 12.
+        00305:     66 nodes
+        00306:     Optimize: pass 13.
+        00305:     66 nodes
+        00306:     Optimize: pass 14.
+        00116:   at feature_write_addr_gen.h line 159
+        00116.     Optimizing method feature_write_addr_gen::_address
+        00305:     27 nodes
+        00306:     Optimize: pass 1.
+        00305:     33 nodes
+        00306:     Optimize: pass 2..
+        00305:     30 nodes
+        00306:     Optimize: pass 3.
+        00305:     30 nodes
+        00306:     Optimize: pass 4.
+        00305:     30 nodes
+        00306:     Optimize: pass 5.
+        00305:     36 nodes
+        00306:     Optimize: pass 6..
+        00305:     33 nodes
+        00306:     Optimize: pass 7.
+        00305:     33 nodes
+        00306:     Optimize: pass 8.
+        00305:     33 nodes
+        00306:     Optimize: pass 9.
+        00116:   at feature_write_addr_gen.h line 147
+        00116.     Optimizing method feature_write_addr_gen::_stop
+        00305:     279 nodes
+        00306:     Optimize: pass 1.
+        00305:     126 nodes
+        00306:     Optimize: pass 2.
+        00305:     145 nodes
+        00306:     Optimize: pass 3..
+        00305:     142 nodes
+        00306:     Optimize: pass 4.
+        00305:     142 nodes
+        00306:     Optimize: pass 5.
+        00305:     142 nodes
+        00306:     Optimize: pass 6.
+        02831:       at feature_write_addr_gen.h line 154
+        02831.         Converting control branching to datapath elements. (11
+        02831.         bits multiplexed)
+        00305:     123 nodes
+        00306:     Optimize: pass 7..
+        00305:     120 nodes
+        00306:     Optimize: pass 8.
+        02831:       at feature_write_addr_gen.h line 151
+        02831.         Converting control branching to datapath elements. (11
+        02831.         bits multiplexed)
+        00305:     89 nodes
+        00306:     Optimize: pass 9..
+        00305:     86 nodes
+        00306:     Optimize: pass 10.
+        00305:     84 nodes
+        00306:     Optimize: pass 11..
+        00305:     82 nodes
+        00306:     Optimize: pass 12.
+        00305:     82 nodes
+        00306:     Optimize: pass 13.
+        00305:     81 nodes
+        00306:     Optimize: pass 14.
+        00305:     80 nodes
+        00306:     Optimize: pass 15..
+        00305:     73 nodes
+        00306:     Optimize: pass 16.
+        00305:     73 nodes
+        00306:     Optimize: pass 17.
+        00305:     73 nodes
+        00306:     Optimize: pass 18.
+        00116:   at feature_write_addr_gen.h line 117
+        00116.     Optimizing method feature_write_addr_gen::_read_data
+        00305:     189 nodes
+        00306:     Optimize: pass 1.
+        00305:     82 nodes
+        00306:     Optimize: pass 2.
+        00305:     101 nodes
+        00306:     Optimize: pass 3..
+        00305:     98 nodes
+        00306:     Optimize: pass 4.
+        00305:     98 nodes
+        00306:     Optimize: pass 5.
+        00305:     98 nodes
+        00306:     Optimize: pass 6.
+        02831:       at feature_write_addr_gen.h line 122
+        02831.         Converting control branching to datapath elements. (11
+        02831.         bits multiplexed)
+        00305:     67 nodes
+        00306:     Optimize: pass 7..
+        00305:     64 nodes
+        00306:     Optimize: pass 8.
+        00305:     63 nodes
+        00306:     Optimize: pass 9..
+        00305:     61 nodes
+        00306:     Optimize: pass 10.
+        00305:     52 nodes
+        00306:     Optimize: pass 11..
+        00305:     49 nodes
+        00306:     Optimize: pass 12.
+        00305:     49 nodes
+        00306:     Optimize: pass 13.
+        00305:     49 nodes
+        00306:     Optimize: pass 14.
+        00116:   at feature_write_addr_gen.h line 85
+        00116.     Optimizing method feature_write_addr_gen::_assign
+        00305:     355 nodes
+        00306:     Optimize: pass 1.
+        00305:     165 nodes
+        00306:     Optimize: pass 2.
+        00305:     208 nodes
+        00306:     Optimize: pass 3..
+        00305:     193 nodes
+        00306:     Optimize: pass 4.
+        00305:     193 nodes
+        00306:     Optimize: pass 5.
+        00305:     193 nodes
+        00306:     Optimize: pass 6.
+        02831:       at feature_write_addr_gen.h line 101
+        02831.         Converting control branching to datapath elements. (11
+        02831.         bits multiplexed)
+        00305:     198 nodes
+        00306:     Optimize: pass 7..
+        00305:     177 nodes
+        00306:     Optimize: pass 8.
+        02831:       at feature_write_addr_gen.h line 94
+        02831.         Converting control branching to datapath elements. (11
+        02831.         bits multiplexed)
+        00305:     170 nodes
+        00306:     Optimize: pass 9..
+        00305:     152 nodes
+        00306:     Optimize: pass 10.
+        00305:     143 nodes
+        00306:     Optimize: pass 11..
+        00305:     133 nodes
+        00306:     Optimize: pass 12.
+        00305:     122 nodes
+        00306:     Optimize: pass 13.
+        00305:     118 nodes
+        00306:     Optimize: pass 14...
+        00305:     101 nodes
+        00306:     Optimize: pass 15.
+        00305:     101 nodes
+        00306:     Optimize: pass 16.
+        00305:     100 nodes
+        00306:     Optimize: pass 17.
+        00305:     100 nodes
+        00306:     Optimize: pass 18.
+        00116:   at feature_write_addr_gen.h line 81
+        00116.     Optimizing method feature_write_addr_gen::_write_addr_valid
+        00305:     26 nodes
+        00306:     Optimize: pass 1.
+        00305:     32 nodes
+        00306:     Optimize: pass 2..
+        00305:     29 nodes
+        00306:     Optimize: pass 3.
+        00305:     29 nodes
+        00306:     Optimize: pass 4.
+        00305:     29 nodes
+        00306:     Optimize: pass 5.
+        00305:     32 nodes
+        00306:     Optimize: pass 6..
+        00305:     29 nodes
+        00306:     Optimize: pass 7.
+        00305:     29 nodes
+        00306:     Optimize: pass 8.
+        00305:     29 nodes
+        00306:     Optimize: pass 9.
+        00116:   at feature_write_addr_gen.h line 67
+        00116.     Optimizing method feature_write_addr_gen::_fifo_cnt_1d
+        00305:     121 nodes
+        00306:     Optimize: pass 1.
+        00305:     46 nodes
+        00306:     Optimize: pass 2.
+        00305:     52 nodes
+        00306:     Optimize: pass 3..
+        00305:     49 nodes
+        00306:     Optimize: pass 4.
+        00305:     49 nodes
+        00306:     Optimize: pass 5.
+        00305:     49 nodes
+        00306:     Optimize: pass 6.
+        00305:     43 nodes
+        00306:     Optimize: pass 7.
+        00305:     43 nodes
+        00306:     Optimize: pass 8.
+        00116:   at feature_write_addr_gen.h line 52
+        00116.     Optimizing method feature_write_addr_gen::_delay
+        00305:     145 nodes
+        00306:     Optimize: pass 1.
+        00305:     58 nodes
+        00306:     Optimize: pass 2.
+        00305:     82 nodes
+        00306:     Optimize: pass 3..
+        00305:     67 nodes
+        00306:     Optimize: pass 4.
+        00305:     67 nodes
+        00306:     Optimize: pass 5.
+        00305:     67 nodes
+        00306:     Optimize: pass 6.
+        00305:     61 nodes
+        00306:     Optimize: pass 7.
+        00305:     61 nodes
+        00306:     Optimize: pass 8.
+        01352:   at feature_write_addr_gen.h line 243
+        01352.     Postprocessing method feature_write_addr_gen::_rd_ptr
+        01352:   at feature_write_addr_gen.h line 235
+        01352.     Postprocessing method feature_write_addr_gen::_wr_ptr
+        01352:   at feature_write_addr_gen.h line 226
+        01352.     Postprocessing method feature_write_addr_gen::_rd_en
+        01352:   at feature_write_addr_gen.h line 218
+        01352.     Postprocessing method feature_write_addr_gen::_wr_en
+        01352:   at feature_write_addr_gen.h line 205
+        01352.     Postprocessing method feature_write_addr_gen::_fifo_cnt
+        01352:   at feature_write_addr_gen.h line 191
+        01352.     Postprocessing method feature_write_addr_gen::_fifo_read
+        01352:   at feature_write_addr_gen.h line 178
+        01352.     Postprocessing method feature_write_addr_gen::_fifo_write
+        01352:   at feature_write_addr_gen.h line 167
+        01352.     Postprocessing method feature_write_addr_gen::_up_count
+        01352:   at feature_write_addr_gen.h line 159
+        01352.     Postprocessing method feature_write_addr_gen::_address
+        01352:   at feature_write_addr_gen.h line 147
+        01352.     Postprocessing method feature_write_addr_gen::_stop
+        01352:   at feature_write_addr_gen.h line 117
+        01352.     Postprocessing method feature_write_addr_gen::_read_data
+        01352:   at feature_write_addr_gen.h line 85
+        01352.     Postprocessing method feature_write_addr_gen::_assign
+        01352:   at feature_write_addr_gen.h line 81
+        01352.     Postprocessing method
+        01352.     feature_write_addr_gen::_write_addr_valid
+        01352:   at feature_write_addr_gen.h line 67
+        01352.     Postprocessing method feature_write_addr_gen::_fifo_cnt_1d
+        01352:   at feature_write_addr_gen.h line 52
+        01352.     Postprocessing method feature_write_addr_gen::_delay
+   NOTE 00486: Creating custom parts for this design
+   NOTE 00487: Created 35 parts
+   NOTE 00488:     dpopt_auto: Suggesting 17 parts
+
+WARNING 01290: at feature_write_addr_gen.h line 191
+WARNING 01290.   SC_METHOD _fifo_read has rd_ptr as an input, but is not
+WARNING 01290.   sensitive to it. It will be added to the sensitivity list.
+
+        00182: Initial resource mapping:
+   NOTE 01037:     Characterizing multiplexors up to 320 bits by 33 inputs.
+        02788:       Using cached results for cyn_mux_estimate_46
+        01429:       Binary Multiplexor Metrics:
+        01431:         Bitwidth    Num Inputs      Area    Delay (ns)
+        01430:     1            2          2.86      0.061
+        01430:     1            3          4.78      0.120
+        01430:     1            4          7.23      0.120
+        01430:     1            5          9.69      0.178
+        01430:     1            8         17.06      0.178
+        01430:     1            9         19.52      0.237
+        01430:     1           16         36.72      0.237
+        01430:     1           17         39.18      0.295
+        01430:     1           32         76.04      0.295
+        01430:     1           33         78.50      0.354
+        01430:     2            2          5.72      0.061
+        01430:     2            3          8.36      0.129
+        01430:     2            4         12.66      0.129
+        01430:     2            5         16.96      0.188
+        01430:     2            8         29.86      0.188
+        01430:     2            9         34.16      0.246
+        01430:     2           16         64.27      0.246
+        01430:     2           17         68.57      0.305
+        01430:     2           32        133.08      0.305
+        01430:     2           33        137.38      0.363
+        01430:     4            2         11.45      0.061
+        01430:     4            3         16.72      0.139
+        01430:     4            4         25.32      0.139
+        01430:     4            5         33.92      0.197
+        01430:     4            8         59.72      0.197
+        01430:     4            9         68.32      0.256
+        01430:     4           16        128.53      0.256
+        01430:     4           17        137.13      0.314
+        01430:     4           32        266.15      0.314
+        01430:     4           33        274.75      0.373
+        01430:     8            2         22.89      0.061
+        01430:     8            3         31.04      0.148
+        01430:     8            4         47.02      0.148
+        01430:     8            5         62.99      0.207
+        01430:     8            8        110.91      0.207
+        01430:     8            9        126.89      0.265
+        01430:     8           16        238.70      0.265
+        01430:     8           17        254.68      0.324
+        01430:     8           32        494.28      0.324
+        01430:     8           33        510.26      0.382
+        01430:    32            2         91.57      0.061
+        01430:    32            3        117.01      0.167
+        01430:    32            4        177.22      0.167
+        01430:    32            5        237.43      0.225
+        01430:    32            8        418.05      0.225
+        01430:    32            9        478.26      0.284
+        01430:    32           16        899.73      0.284
+        01430:    32           17        959.93      0.342
+        01430:    32           32       1863.07      0.342
+        01430:    32           33       1923.28      0.401
+        01430:   256            2        732.59      0.061
+        01430:   256            3        919.34      0.195
+        01430:   256            4       1392.41      0.195
+        01430:   256            5       1865.48      0.254
+        01430:   256            8       3284.70      0.254
+        01430:   256            9       3757.77      0.312
+        01430:   256           16       7069.27      0.312
+        01430:   256           17       7542.34      0.371
+        01430:   256           32      14638.40      0.371
+        01430:   256           33      15111.50      0.429
+        01430:   320            2        915.74      0.061
+        01430:   320            3       1148.58      0.205
+        01430:   320            4       1739.61      0.205
+        01430:   320            5       2330.64      0.263
+        01430:   320            8       4103.74      0.263
+        01430:   320            9       4694.77      0.322
+        01430:   320           16       8831.99      0.322
+        01430:   320           17       9423.03      0.380
+        01430:   320           32      18288.50      0.380
+        01430:   320           33      18879.50      0.438
+        01429:       Onehot Multiplexor Metrics:
+        01431:         Bitwidth    Num Inputs      Area    Delay (ns)
+        01430:     1            2          3.10      0.061
+        01430:     1            3          4.15      0.095
+        01430:     1            4          5.57      0.095
+        01430:     1            5          7.00      0.133
+        01430:     1            8         11.27      0.133
+        01430:     1            9         12.70      0.172
+        01430:     1           16         22.67      0.172
+        01430:     1           17         24.09      0.210
+        01430:     1           32         45.46      0.210
+        01430:     1           33         46.88      0.249
+        01430:     2            2          6.21      0.061
+        01430:     2            3          7.26      0.095
+        01430:     2            4          9.76      0.095
+        01430:     2            5         12.25      0.133
+        01430:     2            8         19.73      0.133
+        01430:     2            9         22.22      0.172
+        01430:     2           16         39.67      0.172
+        01430:     2           17         42.16      0.210
+        01430:     2           32         79.55      0.210
+        01430:     2           33         82.04      0.249
+        01430:     4            2         12.42      0.061
+        01430:     4            3         14.53      0.095
+        01430:     4            4         19.51      0.095
+        01430:     4            5         24.50      0.133
+        01430:     4            8         39.45      0.133
+        01430:     4            9         44.44      0.172
+        01430:     4           16         79.34      0.172
+        01430:     4           17         84.32      0.210
+        01430:     4           32        159.10      0.210
+        01430:     4           33        164.09      0.249
+        01430:     8            2         24.84      0.061
+        01430:     8            3         26.98      0.095
+        01430:     8            4         36.23      0.095
+        01430:     8            5         45.49      0.133
+        01430:     8            8         73.27      0.133
+        01430:     8            9         82.53      0.172
+        01430:     8           16        147.34      0.172
+        01430:     8           17        156.60      0.210
+        01430:     8           32        295.48      0.210
+        01430:     8           33        304.73      0.249
+        01430:    32            2         99.34      0.061
+        01430:    32            3        101.68      0.095
+        01430:    32            4        136.58      0.095
+        01430:    32            5        171.47      0.133
+        01430:    32            8        276.17      0.133
+        01430:    32            9        311.07      0.172
+        01430:    32           16        555.35      0.172
+        01430:    32           17        590.25      0.210
+        01430:    32           32       1113.72      0.210
+        01430:    32           33       1148.61      0.249
+        01430:   256            2        794.75      0.061
+        01430:   256            3        798.91      0.095
+        01430:   256            4       1073.11      0.095
+        01430:   256            5       1347.31      0.133
+        01430:   256            8       2169.90      0.133
+        01430:   256            9       2444.09      0.172
+        01430:   256           16       4363.47      0.172
+        01430:   256           17       4637.67      0.210
+        01430:   256           32       8750.62      0.210
+        01430:   256           33       9024.82      0.249
+        01430:   320            2        993.44      0.061
+        01430:   320            3        998.12      0.095
+        01430:   320            4       1340.69      0.095
+        01430:   320            5       1683.26      0.133
+        01430:   320            8       2710.96      0.133
+        01430:   320            9       3053.53      0.172
+        01430:   320           16       5451.51      0.172
+        01430:   320           17       5794.08      0.210
+        01430:   320           32      10932.60      0.210
+        01430:   320           33      11275.20      0.249
+        00968:   Matching resources
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_Or_1Ux1U_1U_4
+        02790:         Area =     1.37  Latency = 0  Delay =    0.070ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_OrReduction_4U_1U_4
+        02790:         Area =     2.05  Latency = 0  Delay =    0.168ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_OrReduction_8U_1U_4
+        02790:         Area =     5.13  Latency = 0  Delay =    0.263ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_Equal_8Ux3U_1U_4
+        02790:         Area =    12.31  Latency = 0  Delay =    0.356ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_Equal_8Ux2U_1U_4
+        02790:         Area =     9.58  Latency = 0  Delay =    0.261ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_Add_32Ux32U_32U_4
+        02790:         Area =   290.36  Latency = 0  Delay =    1.164ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_Add_32Ux1U_32U_4
+        02790:         Area =   135.77  Latency = 0  Delay =    1.192ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_Not_1U_1U_4
+        02790:         Area =     0.68  Latency = 0  Delay =    0.029ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_Equal_3Ux1U_1U_4
+        02790:         Area =     4.45  Latency = 0  Delay =    0.190ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_Equal_3Ux2U_1U_4
+        02790:         Area =     6.84  Latency = 0  Delay =    0.179ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_Equal_3Ux3U_1U_4
+        02790:         Area =     9.23  Latency = 0  Delay =    0.212ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_N_MuxB_320_8_35_4
+        02790:         Area =  3200.44  Latency = 0  Delay =    0.523ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_Sub_3Ux1U_3S_4
+        02790:         Area =    10.26  Latency = 0  Delay =    0.186ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_NotEQ_3Ux3U_1U_4
+        02790:         Area =     8.89  Latency = 0  Delay =    0.177ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_Add_3Ux1U_3U_4
+        02790:         Area =     9.92  Latency = 0  Delay =    0.196ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_And_1Ux1U_1U_4
+        02790:         Area =     1.37  Latency = 0  Delay =    0.071ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_OrReduction_3U_1U_4
+        02790:         Area =     2.05  Latency = 0  Delay =    0.107ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_N_MuxB_320_2_24_4
+        02790:         Area =   437.76  Latency = 0  Delay =    0.063ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_N_MuxB_320_2_25_4
+        02790:         Area =   437.76  Latency = 0  Delay =    0.071ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_N_Muxb_1_2_26_4
+        02790:         Area =     2.39  Latency = 0  Delay =    0.090ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_N_Mux_3_2_28_4
+        02790:         Area =     7.18  Latency = 0  Delay =    0.090ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_N_Mux_32_2_34_4
+        02790:         Area =    76.61  Latency = 0  Delay =    0.090ns
+        02788:       Using cached results for feature_write_addr_gen_Add2i1u3_4
+        02790:         Area =     6.84  Latency = 0  Delay =    0.135ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_MuxAdd2i1u3u3u1_4
+        02790:         Area =    14.02  Latency = 0  Delay =    0.212ns
+        02788:       Using cached results for feature_write_addr_gen_Nei7u3_4
+        02790:         Area =     1.71  Latency = 0  Delay =    0.076ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_Add2i1u32_4
+        02790:         Area =   128.93  Latency = 0  Delay =    1.135ns
+        02788:       Using cached results for feature_write_addr_gen_Subi1u3_4
+        02790:         Area =     6.84  Latency = 0  Delay =    0.126ns
+        02788:       Using cached results for feature_write_addr_gen_Eqi7u3_4
+        02790:         Area =     2.05  Latency = 0  Delay =    0.112ns
+        02788:       Using cached results for feature_write_addr_gen_Eqi2u8_4
+        02790:         Area =     5.13  Latency = 0  Delay =    0.225ns
+        02788:       Using cached results for feature_write_addr_gen_Eqi6u3_4
+        02790:         Area =     2.05  Latency = 0  Delay =    0.079ns
+        02788:       Using cached results for feature_write_addr_gen_Eqi5u3_4
+        02790:         Area =     2.74  Latency = 0  Delay =    0.089ns
+        02788:       Using cached results for feature_write_addr_gen_Eqi4u3_4
+        02790:         Area =     2.05  Latency = 0  Delay =    0.089ns
+        02788:       Using cached results for feature_write_addr_gen_Eqi3u3_4
+        02790:         Area =     2.74  Latency = 0  Delay =    0.089ns
+        02788:       Using cached results for feature_write_addr_gen_Eqi2u3_4
+        02790:         Area =     2.05  Latency = 0  Delay =    0.089ns
+        02788:       Using cached results for feature_write_addr_gen_Eqi1u3_4
+        02790:         Area =     2.05  Latency = 0  Delay =    0.089ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_MuxSubi1u3u3u1_4
+        02790:         Area =    14.02  Latency = 0  Delay =    0.195ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_MuxAdd2i1u32u32u1_4
+        02790:         Area =   208.28  Latency = 0  Delay =    1.096ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_Muxi0u32u1_4
+        02790:         Area =    43.78  Latency = 0  Delay =    0.063ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_Muxu32i0u1_4
+        02790:         Area =    43.78  Latency = 0  Delay =    0.071ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_Or_1Ux1U_1U_1
+        02790:         Area =     4.45  Latency = 0  Delay =    0.051ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_OrReduction_4U_1U_1
+        02790:         Area =     8.89  Latency = 0  Delay =    0.068ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_OrReduction_8U_1U_1
+        02790:         Area =    19.15  Latency = 0  Delay =    0.126ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_Equal_8Ux3U_1U_1
+        02790:         Area =    24.28  Latency = 0  Delay =    0.175ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_Equal_8Ux2U_1U_1
+        02790:         Area =    23.94  Latency = 0  Delay =    0.158ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_Add_32Ux32U_32U_1
+        02790:         Area =   519.67  Latency = 0  Delay =    0.398ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_Add_32Ux1U_32U_1
+        02790:         Area =   258.06  Latency = 0  Delay =    0.301ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_Not_1U_1U_1
+        02790:         Area =     4.10  Latency = 0  Delay =    0.019ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_Equal_3Ux1U_1U_1
+        02790:         Area =    14.02  Latency = 0  Delay =    0.089ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_Equal_3Ux2U_1U_1
+        02790:         Area =    21.55  Latency = 0  Delay =    0.114ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_Equal_3Ux3U_1U_1
+        02790:         Area =    31.46  Latency = 0  Delay =    0.120ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_N_MuxB_320_8_35_1
+        02790:         Area =  4818.51  Latency = 0  Delay =    0.289ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_Sub_3Ux1U_3S_1
+        02790:         Area =    20.64  Latency = 0  Delay =    0.128ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_NotEQ_3Ux3U_1U_1
+        02790:         Area =    21.55  Latency = 0  Delay =    0.134ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_Add_3Ux1U_3U_1
+        02790:         Area =    16.54  Latency = 0  Delay =    0.121ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_And_1Ux1U_1U_1
+        02790:         Area =     8.89  Latency = 0  Delay =    0.046ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_OrReduction_3U_1U_1
+        02790:         Area =     5.47  Latency = 0  Delay =    0.068ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_N_MuxB_320_2_24_1
+        02790:         Area =  2298.24  Latency = 0  Delay =    0.039ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_N_MuxB_320_2_25_1
+        02790:         Area =   704.52  Latency = 0  Delay =    0.064ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_N_Muxb_1_2_26_1
+        02790:         Area =    11.75  Latency = 0  Delay =    0.060ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_N_Mux_3_2_28_1
+        02790:         Area =    35.24  Latency = 0  Delay =    0.060ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_N_Mux_32_2_34_1
+        02790:         Area =   375.93  Latency = 0  Delay =    0.060ns
+        02788:       Using cached results for feature_write_addr_gen_Add2i1u3_1
+        02790:         Area =    12.43  Latency = 0  Delay =    0.096ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_MuxAdd2i1u3u3u1_1
+        02790:         Area =    20.98  Latency = 0  Delay =    0.150ns
+        02788:       Using cached results for feature_write_addr_gen_Nei7u3_1
+        02790:         Area =     8.21  Latency = 0  Delay =    0.060ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_Add2i1u32_1
+        02790:         Area =   250.05  Latency = 0  Delay =    0.273ns
+        02788:       Using cached results for feature_write_addr_gen_Subi1u3_1
+        02790:         Area =    12.65  Latency = 0  Delay =    0.087ns
+        02788:       Using cached results for feature_write_addr_gen_Eqi7u3_1
+        02790:         Area =     5.88  Latency = 0  Delay =    0.070ns
+        02788:       Using cached results for feature_write_addr_gen_Eqi2u8_1
+        02790:         Area =    16.54  Latency = 0  Delay =    0.132ns
+        02788:       Using cached results for feature_write_addr_gen_Eqi6u3_1
+        02790:         Area =     8.33  Latency = 0  Delay =    0.063ns
+        02788:       Using cached results for feature_write_addr_gen_Eqi5u3_1
+        02790:         Area =    11.41  Latency = 0  Delay =    0.073ns
+        02788:       Using cached results for feature_write_addr_gen_Eqi4u3_1
+        02790:         Area =     8.89  Latency = 0  Delay =    0.052ns
+        02788:       Using cached results for feature_write_addr_gen_Eqi3u3_1
+        02790:         Area =    11.41  Latency = 0  Delay =    0.073ns
+        02788:       Using cached results for feature_write_addr_gen_Eqi2u3_1
+        02790:         Area =     8.89  Latency = 0  Delay =    0.052ns
+        02788:       Using cached results for feature_write_addr_gen_Eqi1u3_1
+        02790:         Area =     8.89  Latency = 0  Delay =    0.052ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_MuxSubi1u3u3u1_1
+        02790:         Area =    21.55  Latency = 0  Delay =    0.144ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_MuxAdd2i1u32u32u1_1
+        02790:         Area =   344.41  Latency = 0  Delay =    0.336ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_Muxi0u32u1_1
+        02790:         Area =   229.82  Latency = 0  Delay =    0.039ns
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_Muxu32i0u1_1
+        02790:         Area =    57.80  Latency = 0  Delay =    0.072ns
+
+        00969: Scheduling:
+   NOTE 01437:   at feature_write_addr_gen.h line 243
+   NOTE 01437.     Using global default input delay value of 0.100ns.
+   NOTE 01437:   at feature_write_addr_gen.h line 235
+   NOTE 01437.     Using global default input delay value of 0.100ns.
+   NOTE 01437:   at feature_write_addr_gen.h line 218
+   NOTE 01437.     Using global default input delay value of 0.100ns.
+   NOTE 01437:   at feature_write_addr_gen.h line 205
+   NOTE 01437.     Using global default input delay value of 0.100ns.
+   NOTE 01437:   at feature_write_addr_gen.h line 178
+   NOTE 01437.     Using global default input delay value of 0.100ns.
+   NOTE 01437:   at feature_write_addr_gen.h line 167
+   NOTE 01437.     Using global default input delay value of 0.100ns.
+   NOTE 01437:   at feature_write_addr_gen.h line 159
+   NOTE 01437.     Using global default input delay value of 0.100ns.
+   NOTE 01437:   at feature_write_addr_gen.h line 147
+   NOTE 01437.     Using global default input delay value of 0.100ns.
+   NOTE 01437:   at feature_write_addr_gen.h line 117
+   NOTE 01437.     Using global default input delay value of 0.100ns.
+   NOTE 01437:   at feature_write_addr_gen.h line 85
+   NOTE 01437.     Using global default input delay value of 0.100ns.
+   NOTE 01437:   at feature_write_addr_gen.h line 81
+   NOTE 01437.     Using global default input delay value of 0.100ns.
+   NOTE 01437:   at feature_write_addr_gen.h line 52
+   NOTE 01437.     Using global default input delay value of 0.100ns.
+               .
+        01171:   Scheduling method feature_write_addr_gen::_stop
+        02080:       sched_asap            off     
+        02080:       sched_effort          medium  
+        02080:       sharing_effort_parts  high    
+        02080:       sharing_effort_regs   high    
+        02080:       relax_timing          off     
+        02080:       power_clock_gating    off     
+        02098:     Total op count: 13
+        03257:     Sharable op count: 0
+        01170:     Unsharable op count: 13
+        01166:     Estimated intrinsic mux area: 11
+        01167:     at feature_write_addr_gen.h line 154 estimated mux area: 11
+        01168:     Symbol:CynTemp_13 Mux inputs: 2 Width: 1 Mux area: 11
+        02361:     Schedule complete. Optimizing
+        01230:     Optimize: pass 1.....
+        01230:     Optimize: pass 2
+
+        00970: Allocation & binding:
+        01218:     Scheduling Resources:
+        01219:                                         Resource Quantity
+        01220:            feature_write_addr_gen_And_1Ux1U_1U_4        1
+        01220:                  feature_write_addr_gen_Eqi2u8_4        1
+        01220:           feature_write_addr_gen_N_Muxb_1_2_26_4        1
+        01220:       feature_write_addr_gen_OrReduction_4U_1U_1        1
+        01220:       feature_write_addr_gen_OrReduction_8U_1U_4        1
+               .
+        01171:   Scheduling method feature_write_addr_gen::_read_data
+        02080:       sched_asap            off     
+        02080:       sched_effort          medium  
+        02080:       sharing_effort_parts  high    
+        02080:       sharing_effort_regs   high    
+        02080:       relax_timing          off     
+        02080:       power_clock_gating    off     
+        02098:     Total op count: 5
+        03257:     Sharable op count: 0
+        01170:     Unsharable op count: 5
+        01166:     Estimated intrinsic mux area: 704
+        01167:     at feature_write_addr_gen.h line 126 estimated mux area: 704
+        01168:     Symbol:read_data Mux inputs: 2 Width: 320 Mux area: 704
+        02361:     Schedule complete. Optimizing
+        01230:     Optimize: pass 1..
+        01230:     Optimize: pass 2
+
+        00970: Allocation & binding:
+        01218:     Scheduling Resources:
+        01219:                                       Resource Quantity
+        01220:       feature_write_addr_gen_N_MuxB_320_2_25_4        1
+               .
+        01171:   Scheduling method feature_write_addr_gen::_delay
+        02080:       sched_asap            off     
+        02080:       sched_effort          medium  
+        02080:       sharing_effort_parts  high    
+        02080:       sharing_effort_regs   high    
+        02080:       relax_timing          off     
+        02080:       power_clock_gating    off     
+        02098:     Total op count: 11
+        03257:     Sharable op count: 0
+        01170:     Unsharable op count: 11
+        01166:     Estimated intrinsic mux area: 0
+        02361:     Schedule complete. Optimizing
+        01230:     Optimize: pass 1.
+        01230:     Optimize: pass 2
+
+        00970: Allocation & binding:
+        01218:     Scheduling Resources:
+        01463:       No scheduled resources (functional units) are needed.
+               .
+        01171:   Scheduling method feature_write_addr_gen::_wr_en
+        02080:       sched_asap            off     
+        02080:       sched_effort          medium  
+        02080:       sharing_effort_parts  high    
+        02080:       sharing_effort_regs   high    
+        02080:       relax_timing          off     
+        02080:       power_clock_gating    off     
+        02098:     Total op count: 2
+        03257:     Sharable op count: 0
+        01170:     Unsharable op count: 2
+        01166:     Estimated intrinsic mux area: 0
+        02361:     Schedule complete. Optimizing
+        01230:     Optimize: pass 1.
+        01230:     Optimize: pass 2
+
+        00970: Allocation & binding:
+        01218:     Scheduling Resources:
+        01463:       No scheduled resources (functional units) are needed.
+               .
+        01171:   Scheduling method feature_write_addr_gen::_wr_ptr
+        02080:       sched_asap            off     
+        02080:       sched_effort          medium  
+        02080:       sharing_effort_parts  high    
+        02080:       sharing_effort_regs   high    
+        02080:       relax_timing          off     
+        02080:       power_clock_gating    off     
+        02098:     Total op count: 9
+        03257:     Sharable op count: 0
+        01170:     Unsharable op count: 9
+        01166:     Estimated intrinsic mux area: 0
+        02361:     Schedule complete. Optimizing
+        01230:     Optimize: pass 1....
+        01230:     Optimize: pass 2
+
+        00970: Allocation & binding:
+        01218:     Scheduling Resources:
+        01219:                                       Resource Quantity
+        01220:          feature_write_addr_gen_And_1Ux1U_1U_4        1
+        01220:       feature_write_addr_gen_MuxAdd2i1u3u3u1_4        1
+        01220:                feature_write_addr_gen_Nei7u3_4        1
+               .
+        01171:   Scheduling method feature_write_addr_gen::_fifo_write
+        02080:       sched_asap            off     
+        02080:       sched_effort          medium  
+        02080:       sharing_effort_parts  high    
+        02080:       sharing_effort_regs   high    
+        02080:       relax_timing          off     
+        02080:       power_clock_gating    off     
+        02098:     Total op count: 32
+        03257:     Sharable op count: 0
+        01170:     Unsharable op count: 32
+        01166:     Estimated intrinsic mux area: 0
+        02361:     Schedule complete. Optimizing
+        01230:     Optimize: pass 1.
+        01230:     Optimize: pass 2
+
+        00970: Allocation & binding:
+        01218:     Scheduling Resources:
+        01219:                                         Resource Quantity
+        01220:            feature_write_addr_gen_And_1Ux1U_1U_1        1
+        01220:                  feature_write_addr_gen_Eqi1u3_1        1
+        01220:                  feature_write_addr_gen_Eqi2u3_1        1
+        01220:                  feature_write_addr_gen_Eqi3u3_1        1
+        01220:                  feature_write_addr_gen_Eqi4u3_1        1
+        01220:                  feature_write_addr_gen_Eqi5u3_1        1
+        01220:                  feature_write_addr_gen_Eqi6u3_1        1
+        01220:                  feature_write_addr_gen_Eqi7u3_1        1
+        01220:                  feature_write_addr_gen_Nei7u3_1        1
+        01220:               feature_write_addr_gen_Not_1U_1U_1        1
+        01220:       feature_write_addr_gen_OrReduction_3U_1U_1        1
+               .
+        01171:   Scheduling method feature_write_addr_gen::_address
+        02080:       sched_asap            off     
+        02080:       sched_effort          medium  
+        02080:       sharing_effort_parts  high    
+        02080:       sharing_effort_regs   high    
+        02080:       relax_timing          off     
+        02080:       power_clock_gating    off     
+        02098:     Total op count: 4
+        03257:     Sharable op count: 0
+        01170:     Unsharable op count: 4
+        01166:     Estimated intrinsic mux area: 0
+        02361:     Schedule complete. Optimizing
+        01230:     Optimize: pass 1.
+
+        00970: Allocation & binding:
+        01218:     Scheduling Resources:
+        01219:                                       Resource Quantity
+        01220:       feature_write_addr_gen_Add_32Ux32U_32U_1        1
+               .
+        01171:   Scheduling method feature_write_addr_gen::_write_addr_valid
+        02080:       sched_asap            off     
+        02080:       sched_effort          medium  
+        02080:       sharing_effort_parts  high    
+        02080:       sharing_effort_regs   high    
+        02080:       relax_timing          off     
+        02080:       power_clock_gating    off     
+        02098:     Total op count: 3
+        03257:     Sharable op count: 0
+        01170:     Unsharable op count: 3
+        01166:     Estimated intrinsic mux area: 0
+        02361:     Schedule complete. Optimizing
+        01230:     Optimize: pass 1.
+
+        00970: Allocation & binding:
+        01218:     Scheduling Resources:
+        01219:                                 Resource Quantity
+        01220:       feature_write_addr_gen_Not_1U_1U_1        1
+               .
+        01171:   Scheduling method feature_write_addr_gen::_fifo_cnt
+        02080:       sched_asap            off     
+        02080:       sched_effort          medium  
+        02080:       sharing_effort_parts  high    
+        02080:       sharing_effort_regs   high    
+        02080:       relax_timing          off     
+        02080:       power_clock_gating    off     
+        02098:     Total op count: 18
+        03257:     Sharable op count: 0
+        01170:     Unsharable op count: 18
+        01166:     Estimated intrinsic mux area: 70
+        01167:     at feature_write_addr_gen.h line 211 estimated mux area: 35
+        01168:     Symbol:CynTemp_7 Mux inputs: 2 Width: 3 Mux area: 35
+        01167:     at feature_write_addr_gen.h line 215 estimated mux area: 35
+        01168:     Symbol:fifo_cnt Mux inputs: 2 Width: 3 Mux area: 35
+        01117:     Initialized resource counts
+        02361:     Schedule complete. Optimizing
+        01230:     Optimize: pass 1.....
+        01230:     Optimize: pass 2
+
+        00970: Allocation & binding:
+        01218:     Scheduling Resources:
+        01219:                                         Resource Quantity
+        01220:            feature_write_addr_gen_And_1Ux1U_1U_4        3
+        01220:            feature_write_addr_gen_N_Mux_3_2_28_4        2
+        01220:       feature_write_addr_gen_OrReduction_3U_1U_4        2
+        01220:                feature_write_addr_gen_Add2i1u3_1        1
+        01220:          feature_write_addr_gen_MuxSubi1u3u3u1_4        1
+               .
+        01171:   Scheduling method feature_write_addr_gen::_up_count
+        02080:       sched_asap            off     
+        02080:       sched_effort          medium  
+        02080:       sharing_effort_parts  high    
+        02080:       sharing_effort_regs   high    
+        02080:       relax_timing          off     
+        02080:       power_clock_gating    off     
+        02098:     Total op count: 12
+        03257:     Sharable op count: 0
+        01170:     Unsharable op count: 12
+        01166:     Estimated intrinsic mux area: 604
+        01167:     at feature_write_addr_gen.h line 174 estimated mux area: 375
+        01168:     Symbol:CynTemp_10 Mux inputs: 2 Width: 32 Mux area: 375
+        01167:     at feature_write_addr_gen.h line 175 estimated mux area: 229
+        01168:     Symbol:write_cnt Mux inputs: 2 Width: 32 Mux area: 229
+        02361:     Schedule complete. Optimizing
+        01230:     Optimize: pass 1...
+        01230:     Optimize: pass 2
+
+        00970: Allocation & binding:
+        01218:     Scheduling Resources:
+        01219:                                         Resource Quantity
+        01220:               feature_write_addr_gen_Add2i1u32_1        1
+        01220:            feature_write_addr_gen_And_1Ux1U_1U_1        1
+        01220:              feature_write_addr_gen_Muxi0u32u1_4        1
+        01220:           feature_write_addr_gen_N_Mux_32_2_34_4        1
+        01220:       feature_write_addr_gen_OrReduction_3U_1U_1        1
+               .
+        01171:   Scheduling method feature_write_addr_gen::_rd_en
+        02080:       sched_asap            off     
+        02080:       sched_effort          medium  
+        02080:       sharing_effort_parts  high    
+        02080:       sharing_effort_regs   high    
+        02080:       relax_timing          off     
+        02080:       power_clock_gating    off     
+        02098:     Total op count: 5
+        03257:     Sharable op count: 0
+        01170:     Unsharable op count: 5
+        01166:     Estimated intrinsic mux area: 0
+        02361:     Schedule complete. Optimizing
+        01230:     Optimize: pass 1.
+
+        00970: Allocation & binding:
+        01218:     Scheduling Resources:
+        01219:                                         Resource Quantity
+        01220:            feature_write_addr_gen_And_1Ux1U_1U_1        1
+        01220:       feature_write_addr_gen_OrReduction_3U_1U_1        1
+               .
+        01171:   Scheduling method feature_write_addr_gen::_rd_ptr
+        02080:       sched_asap            off     
+        02080:       sched_effort          medium  
+        02080:       sharing_effort_parts  high    
+        02080:       sharing_effort_regs   high    
+        02080:       relax_timing          off     
+        02080:       power_clock_gating    off     
+        02098:     Total op count: 9
+        03257:     Sharable op count: 0
+        01170:     Unsharable op count: 9
+        01166:     Estimated intrinsic mux area: 0
+        02361:     Schedule complete. Optimizing
+        01230:     Optimize: pass 1....
+        01230:     Optimize: pass 2
+
+        00970: Allocation & binding:
+        01218:     Scheduling Resources:
+        01219:                                         Resource Quantity
+        01220:            feature_write_addr_gen_And_1Ux1U_1U_4        1
+        01220:         feature_write_addr_gen_MuxAdd2i1u3u3u1_4        1
+        01220:       feature_write_addr_gen_OrReduction_3U_1U_4        1
+               .
+        01171:   Scheduling method feature_write_addr_gen::_fifo_read
+        02080:       sched_asap            off     
+        02080:       sched_effort          medium  
+        02080:       sharing_effort_parts  high    
+        02080:       sharing_effort_regs   high    
+        02080:       relax_timing          off     
+        02080:       power_clock_gating    off     
+        02098:     Total op count: 17
+        03257:     Sharable op count: 0
+        01170:     Unsharable op count: 17
+        01166:     Estimated intrinsic mux area: 4818
+        01167:     at feature_write_addr_gen.h line 197 estimated mux area:
+        01167.       4818
+        01168:     Symbol:fifo_out Mux inputs: 8 Width: 320 Mux area: 4818
+        02361:     Schedule complete. Optimizing
+        01230:     Optimize: pass 1.
+
+        00970: Allocation & binding:
+        01218:     Scheduling Resources:
+        01219:                                         Resource Quantity
+        01220:            feature_write_addr_gen_And_1Ux1U_1U_1        1
+        01220:         feature_write_addr_gen_N_MuxB_320_8_35_1        1
+        01220:       feature_write_addr_gen_OrReduction_3U_1U_1        1
+               .
+        01171:   Scheduling method feature_write_addr_gen::_assign
+        02080:       sched_asap            off     
+        02080:       sched_effort          medium  
+        02080:       sharing_effort_parts  high    
+        02080:       sharing_effort_regs   high    
+        02080:       relax_timing          off     
+        02080:       power_clock_gating    off     
+        02098:     Total op count: 26
+        03257:     Sharable op count: 0
+        01170:     Unsharable op count: 26
+        01166:     Estimated intrinsic mux area: 2716
+        01167:     at feature_write_addr_gen.h line 113 estimated mux area:
+        01167.       2298
+        01168:     Symbol:data_out Mux inputs: 2 Width: 320 Mux area: 2298
+        01167:     at feature_write_addr_gen.h line 109 estimated mux area: 375
+        01168:     Symbol:address_0 Mux inputs: 2 Width: 32 Mux area: 375
+        01167:     at feature_write_addr_gen.h line 101 estimated mux area: 43
+        01168:     Symbol:CynTemp_18 Mux inputs: 2 Width: 32 Mux area: 43
+        01117:     Initialized resource counts
+        02361:     Schedule complete. Optimizing
+        01230:     Optimize: pass 1...
+        01230:     Optimize: pass 2
+
+        00970: Allocation & binding:
+        01218:     Scheduling Resources:
+        01219:                                         Resource Quantity
+        01220:       feature_write_addr_gen_OrReduction_3U_1U_1        3
+        01220:               feature_write_addr_gen_Not_1U_1U_1        2
+        01220:             feature_write_addr_gen_Or_1Ux1U_1U_1        2
+        01220:            feature_write_addr_gen_And_1Ux1U_1U_1        1
+        01220:              feature_write_addr_gen_Muxu32i0u1_4        1
+        01220:         feature_write_addr_gen_N_MuxB_320_2_24_4        1
+        01220:           feature_write_addr_gen_N_Mux_32_2_34_4        1
+
+        02918: RTL Generation & Optimization:
+        02917:   Preparing method feature_write_addr_gen::_stop for final RTL
+        02917.     output
+        01006:     States: 2
+        01677:     Building RTL structures, pass 1
+        01677:     Building RTL structures, pass 2
+
+               ........................................................................................
+               .                                                                                      .
+        00802: . Allocation Report for method "_stop":                                                .
+        00805: .                                                          Area/Instance               .
+        00805: .                                                    ------------------------    Total .
+        00805: .                                   Resource  Count    Seq(#FF)    Comb    BB     Area .
+        00805: . ------------------------------------------  -----  ----------  ------  ----  ------- .
+        00807: . feature_write_addr_gen_OrReduction_8U_1U_4      1                 5.1            5.1 .
+        00807: .            feature_write_addr_gen_Eqi2u8_4      1                 5.1            5.1 .
+        00807: .     feature_write_addr_gen_N_Muxb_1_2_26_4      1                 2.4            2.4 .
+        00807: . feature_write_addr_gen_OrReduction_4U_1U_4      1                 2.1            2.1 .
+        00807: .      feature_write_addr_gen_And_1Ux1U_1U_4      1                 1.4            1.4 .
+        00810: .                             implicit muxes                                       2.9 .
+        00808: .                                  registers      1                                    .
+        00809: .                              register bits      1    5.5(1)       0.0            5.5 .
+        00811: . ------------------------------------------------------------------------------------ .
+        00812: .                                 Total Area           5.5(1)      18.9   0.0     24.4 .
+               .                                                                                      .
+               ........................................................................................
+
+
+        01677:     Building RTL structures, pass 3
+        02917:   Preparing method feature_write_addr_gen::_read_data for final
+        02917.     RTL output
+        01006:     States: 2
+        01677:     Building RTL structures, pass 1
+        01677:     Building RTL structures, pass 2
+
+               .......................................................................................
+               .                                                                                     .
+        00802: . Allocation Report for method "_read_data":                                          .
+        00805: .                                                        Area/Instance                .
+        00805: .                                                  -------------------------    Total .
+        00805: .                                 Resource  Count     Seq(#FF)    Comb    BB     Area .
+        00805: . ----------------------------------------  -----  -----------  ------  ----  ------- .
+        00807: . feature_write_addr_gen_N_MuxB_320_2_25_4      1                437.8          437.8 .
+        00810: .                           implicit muxes                                      915.7 .
+        00808: .                                registers      1                                     .
+        00809: .                            register bits    320     5.5(1)       0.0         1751.0 .
+        00811: . ----------------------------------------------------------------------------------- .
+        00812: .                               Total Area         1751.0(320)  1353.5   0.0   3104.5 .
+               .                                                                                     .
+               .......................................................................................
+
+
+        01677:     Building RTL structures, pass 3
+        02917:   Preparing method feature_write_addr_gen::_delay for final RTL
+        02917.     output
+        01006:     States: 2
+        01677:     Building RTL structures, pass 1
+        01677:     Building RTL structures, pass 2
+
+               ............................................................
+               .                                                          .
+        00802: . Allocation Report for method "_delay":                   .
+        00805: .                              Area/Instance               .
+        00805: .                        ------------------------    Total .
+        00805: .       Resource  Count    Seq(#FF)    Comb    BB     Area .
+        00805: . --------------  -----  ----------  ------  ----  ------- .
+        00810: . implicit muxes                                       8.6 .
+        00808: .      registers      3                                    .
+        00809: .  register bits      3    5.5(1)       0.0           16.4 .
+        00811: . -------------------------------------------------------- .
+        00812: .     Total Area          16.4(3)       8.6   0.0     25.0 .
+               .                                                          .
+               ............................................................
+
+
+        01677:     Building RTL structures, pass 3
+        02917:   Preparing method feature_write_addr_gen::_wr_en for final RTL
+        02917.     output
+        01006:     States: 2
+        01677:     Building RTL structures, pass 1
+        01677:     Building RTL structures, pass 2
+
+               ............................................................
+               .                                                          .
+        00802: . Allocation Report for method "_wr_en":                   .
+        00805: .                              Area/Instance               .
+        00805: .                        ------------------------    Total .
+        00805: .       Resource  Count    Seq(#FF)    Comb    BB     Area .
+        00805: . --------------  -----  ----------  ------  ----  ------- .
+        00810: . implicit muxes                                       0.0 .
+        00808: .      registers      0                                    .
+        00809: .  register bits      0    5.5(1)       0.0            0.0 .
+        00811: . -------------------------------------------------------- .
+        00812: .     Total Area           0.0(0)       0.0   0.0      0.0 .
+               .                                                          .
+               ............................................................
+
+
+        01677:     Building RTL structures, pass 3
+        02917:   Preparing method feature_write_addr_gen::_wr_ptr for final RTL
+        02917.     output
+        01006:     States: 2
+        01677:     Building RTL structures, pass 1
+        01677:     Building RTL structures, pass 2
+
+               ......................................................................................
+               .                                                                                    .
+        00802: . Allocation Report for method "_wr_ptr":                                            .
+        00805: .                                                        Area/Instance               .
+        00805: .                                                  ------------------------    Total .
+        00805: .                                 Resource  Count    Seq(#FF)    Comb    BB     Area .
+        00805: . ----------------------------------------  -----  ----------  ------  ----  ------- .
+        00807: . feature_write_addr_gen_MuxAdd2i1u3u3u1_4      1                14.0           14.0 .
+        00807: .          feature_write_addr_gen_Nei7u3_4      1                 1.7            1.7 .
+        00807: .    feature_write_addr_gen_And_1Ux1U_1U_4      1                 1.4            1.4 .
+        00810: .                           implicit muxes                                       8.6 .
+        00808: .                                registers      1                                    .
+        00809: .                            register bits      3    5.5(1)       0.0           16.4 .
+        00811: . ---------------------------------------------------------------------------------- .
+        00812: .                               Total Area          16.4(3)      25.7   0.0     42.1 .
+               .                                                                                    .
+               ......................................................................................
+
+
+        01677:     Building RTL structures, pass 3
+        02917:   Preparing method feature_write_addr_gen::_fifo_write for final
+        02917.     RTL output
+        01006:     States: 2
+        01677:     Building RTL structures, pass 1
+        01677:     Building RTL structures, pass 2
+
+               ...........................................................................................
+               .                                                                                         .
+        00802: . Allocation Report for method "_fifo_write":                                             .
+        00805: .                                                           Area/Instance                 .
+        00805: .                                                    ---------------------------    Total .
+        00805: .                                   Resource  Count      Seq(#FF)     Comb    BB     Area .
+        00805: . ------------------------------------------  -----  -------------  ------  ----  ------- .
+        00807: .            feature_write_addr_gen_Eqi5u3_4      1                    2.7            2.7 .
+        00807: .            feature_write_addr_gen_Eqi3u3_4      1                    2.7            2.7 .
+        00807: . feature_write_addr_gen_OrReduction_3U_1U_4      1                    2.1            2.1 .
+        00807: .            feature_write_addr_gen_Eqi7u3_4      1                    2.1            2.1 .
+        00807: .            feature_write_addr_gen_Eqi6u3_4      1                    2.1            2.1 .
+        00807: .            feature_write_addr_gen_Eqi4u3_4      1                    2.1            2.1 .
+        00807: .            feature_write_addr_gen_Eqi2u3_4      1                    2.1            2.1 .
+        00807: .            feature_write_addr_gen_Eqi1u3_4      1                    2.1            2.1 .
+        00807: .            feature_write_addr_gen_Nei7u3_4      1                    1.7            1.7 .
+        00807: .      feature_write_addr_gen_And_1Ux1U_1U_4      1                    1.4            1.4 .
+        00807: .         feature_write_addr_gen_Not_1U_1U_4      1                    0.7            0.7 .
+        00810: .                             implicit muxes                                       7325.9 .
+        00808: .                                  registers      8                                       .
+        00809: .                              register bits   2560      5.5(1)        0.0        14008.3 .
+        00811: . --------------------------------------------------------------------------------------- .
+        00812: .                                 Total Area         14008.3(2560)  7347.5   0.0  21355.8 .
+               .                                                                                         .
+               ...........................................................................................
+
+
+        01677:     Building RTL structures, pass 3
+        02917:   Preparing method feature_write_addr_gen::_address for final
+        02917.     RTL output
+        01006:     States: 2
+        01677:     Building RTL structures, pass 1
+        01677:     Building RTL structures, pass 2
+
+               ......................................................................................
+               .                                                                                    .
+        00802: . Allocation Report for method "_address":                                           .
+        00805: .                                                        Area/Instance               .
+        00805: .                                                  ------------------------    Total .
+        00805: .                                 Resource  Count    Seq(#FF)    Comb    BB     Area .
+        00805: . ----------------------------------------  -----  ----------  ------  ----  ------- .
+        00807: . feature_write_addr_gen_Add_32Ux32U_32U_1      1               519.7          519.7 .
+        00810: .                           implicit muxes                                       0.0 .
+        00808: .                                registers      0                                    .
+        00809: .                            register bits      0    5.5(1)       0.0            0.0 .
+        00811: . ---------------------------------------------------------------------------------- .
+        00812: .                               Total Area           0.0(0)     519.7   0.0    519.7 .
+               .                                                                                    .
+               ......................................................................................
+
+
+        01677:     Building RTL structures, pass 3
+        02917:   Preparing method feature_write_addr_gen::_write_addr_valid for
+        02917.     final RTL output
+        01006:     States: 2
+        01677:     Building RTL structures, pass 1
+        01677:     Building RTL structures, pass 2
+
+               ................................................................................
+               .                                                                              .
+        00802: . Allocation Report for method "_write_addr_valid":                            .
+        00805: .                                                  Area/Instance               .
+        00805: .                                            ------------------------    Total .
+        00805: .                           Resource  Count    Seq(#FF)    Comb    BB     Area .
+        00805: . ----------------------------------  -----  ----------  ------  ----  ------- .
+        00807: . feature_write_addr_gen_Not_1U_1U_1      1                 4.1            4.1 .
+        00810: .                     implicit muxes                                       0.0 .
+        00808: .                          registers      0                                    .
+        00809: .                      register bits      0    5.5(1)       0.0            0.0 .
+        00811: . ---------------------------------------------------------------------------- .
+        00812: .                         Total Area           0.0(0)       4.1   0.0      4.1 .
+               .                                                                              .
+               ................................................................................
+
+
+        01677:     Building RTL structures, pass 3
+        02917:   Preparing method feature_write_addr_gen::_fifo_cnt for final
+        02917.     RTL output
+        01006:     States: 2
+        01677:     Building RTL structures, pass 1
+        01677:     Building RTL structures, pass 2
+
+               ........................................................................................
+               .                                                                                      .
+        00802: . Allocation Report for method "_fifo_cnt":                                            .
+        00805: .                                                          Area/Instance               .
+        00805: .                                                    ------------------------    Total .
+        00805: .                                   Resource  Count    Seq(#FF)    Comb    BB     Area .
+        00805: . ------------------------------------------  -----  ----------  ------  ----  ------- .
+        00807: .      feature_write_addr_gen_N_Mux_3_2_28_4      2                 7.2           14.4 .
+        00807: .    feature_write_addr_gen_MuxSubi1u3u3u1_4      1                14.0           14.0 .
+        00807: .          feature_write_addr_gen_Add2i1u3_4      1                 6.8            6.8 .
+        00807: .      feature_write_addr_gen_And_1Ux1U_1U_4      3                 1.4            4.1 .
+        00807: . feature_write_addr_gen_OrReduction_3U_1U_4      1                 2.1            2.1 .
+        00810: .                             implicit muxes                                       8.6 .
+        00808: .                                  registers      1                                    .
+        00809: .                              register bits      3    5.5(1)       0.0           16.4 .
+        00811: . ------------------------------------------------------------------------------------ .
+        00812: .                                 Total Area          16.4(3)      50.0   0.0     66.4 .
+               .                                                                                      .
+               ........................................................................................
+
+
+        01677:     Building RTL structures, pass 3
+        02917:   Preparing method feature_write_addr_gen::_up_count for final
+        02917.     RTL output
+        01006:     States: 2
+        01677:     Building RTL structures, pass 1
+        01677:     Building RTL structures, pass 2
+
+               ........................................................................................
+               .                                                                                      .
+        00802: . Allocation Report for method "_up_count":                                            .
+        00805: .                                                          Area/Instance               .
+        00805: .                                                    ------------------------    Total .
+        00805: .                                   Resource  Count    Seq(#FF)    Comb    BB     Area .
+        00805: . ------------------------------------------  -----  ----------  ------  ----  ------- .
+        00807: .         feature_write_addr_gen_Add2i1u32_1      1               250.1          250.1 .
+        00807: .     feature_write_addr_gen_N_Mux_32_2_34_4      1                76.6           76.6 .
+        00807: .        feature_write_addr_gen_Muxi0u32u1_4      1                43.8           43.8 .
+        00807: . feature_write_addr_gen_OrReduction_3U_1U_4      1                 2.1            2.1 .
+        00807: .      feature_write_addr_gen_And_1Ux1U_1U_4      1                 1.4            1.4 .
+        00810: .                             implicit muxes                                      91.6 .
+        00808: .                                  registers      1                                    .
+        00809: .                              register bits     32    5.5(1)       0.0          175.1 .
+        00811: . ------------------------------------------------------------------------------------ .
+        00812: .                                 Total Area         175.1(32)    465.4   0.0    640.5 .
+               .                                                                                      .
+               ........................................................................................
+
+
+        01677:     Building RTL structures, pass 3
+        02917:   Preparing method feature_write_addr_gen::_rd_en for final RTL
+        02917.     output
+        01006:     States: 2
+        01677:     Building RTL structures, pass 1
+        01677:     Building RTL structures, pass 2
+
+               ........................................................................................
+               .                                                                                      .
+        00802: . Allocation Report for method "_rd_en":                                               .
+        00805: .                                                          Area/Instance               .
+        00805: .                                                    ------------------------    Total .
+        00805: .                                   Resource  Count    Seq(#FF)    Comb    BB     Area .
+        00805: . ------------------------------------------  -----  ----------  ------  ----  ------- .
+        00807: .      feature_write_addr_gen_And_1Ux1U_1U_1      1                 8.9            8.9 .
+        00807: . feature_write_addr_gen_OrReduction_3U_1U_1      1                 5.5            5.5 .
+        00810: .                             implicit muxes                                       0.0 .
+        00808: .                                  registers      0                                    .
+        00809: .                              register bits      0    5.5(1)       0.0            0.0 .
+        00811: . ------------------------------------------------------------------------------------ .
+        00812: .                                 Total Area           0.0(0)      14.4   0.0     14.4 .
+               .                                                                                      .
+               ........................................................................................
+
+
+        01677:     Building RTL structures, pass 3
+        02917:   Preparing method feature_write_addr_gen::_rd_ptr for final RTL
+        02917.     output
+        01006:     States: 2
+        01677:     Building RTL structures, pass 1
+        01677:     Building RTL structures, pass 2
+
+               ........................................................................................
+               .                                                                                      .
+        00802: . Allocation Report for method "_rd_ptr":                                              .
+        00805: .                                                          Area/Instance               .
+        00805: .                                                    ------------------------    Total .
+        00805: .                                   Resource  Count    Seq(#FF)    Comb    BB     Area .
+        00805: . ------------------------------------------  -----  ----------  ------  ----  ------- .
+        00807: .   feature_write_addr_gen_MuxAdd2i1u3u3u1_4      1                14.0           14.0 .
+        00807: . feature_write_addr_gen_OrReduction_3U_1U_4      1                 2.1            2.1 .
+        00807: .      feature_write_addr_gen_And_1Ux1U_1U_4      1                 1.4            1.4 .
+        00810: .                             implicit muxes                                       8.6 .
+        00808: .                                  registers      1                                    .
+        00809: .                              register bits      3    5.5(1)       0.0           16.4 .
+        00811: . ------------------------------------------------------------------------------------ .
+        00812: .                                 Total Area          16.4(3)      26.0   0.0     42.4 .
+               .                                                                                      .
+               ........................................................................................
+
+
+        01677:     Building RTL structures, pass 3
+        02917:   Preparing method feature_write_addr_gen::_fifo_read for final
+        02917.     RTL output
+        01006:     States: 2
+        01677:     Building RTL structures, pass 1
+        01677:     Building RTL structures, pass 2
+
+               ........................................................................................
+               .                                                                                      .
+        00802: . Allocation Report for method "_fifo_read":                                           .
+        00805: .                                                          Area/Instance               .
+        00805: .                                                    ------------------------    Total .
+        00805: .                                   Resource  Count    Seq(#FF)    Comb    BB     Area .
+        00805: . ------------------------------------------  -----  ----------  ------  ----  ------- .
+        00807: .   feature_write_addr_gen_N_MuxB_320_8_35_1      1              4818.5         4818.5 .
+        00807: . feature_write_addr_gen_OrReduction_3U_1U_4      1                 2.1            2.1 .
+        00807: .      feature_write_addr_gen_And_1Ux1U_1U_4      1                 1.4            1.4 .
+        00810: .                             implicit muxes                                       0.0 .
+        00808: .                                  registers      0                                    .
+        00809: .                              register bits      0    5.5(1)       0.0            0.0 .
+        00811: . ------------------------------------------------------------------------------------ .
+        00812: .                                 Total Area           0.0(0)    4821.9   0.0   4821.9 .
+               .                                                                                      .
+               ........................................................................................
+
+
+        01677:     Building RTL structures, pass 3
+        02917:   Preparing method feature_write_addr_gen::_assign for final RTL
+        02917.     output
+        01006:     States: 2
+        01677:     Building RTL structures, pass 1
+        01677:     Building RTL structures, pass 2
+
+               .........................................................................................
+               .                                                                                       .
+        00802: . Allocation Report for method "_assign":                                               .
+        00805: .                                                          Area/Instance                .
+        00805: .                                                    -------------------------    Total .
+        00805: .                                   Resource  Count     Seq(#FF)    Comb    BB     Area .
+        00805: . ------------------------------------------  -----  -----------  ------  ----  ------- .
+        00807: .   feature_write_addr_gen_N_MuxB_320_2_24_4      1                437.8          437.8 .
+        00807: .     feature_write_addr_gen_N_Mux_32_2_34_4      1                 76.6           76.6 .
+        00807: .        feature_write_addr_gen_Muxu32i0u1_4      1                 43.8           43.8 .
+        00807: .       feature_write_addr_gen_Or_1Ux1U_1U_4      2                  1.4            2.7 .
+        00807: . feature_write_addr_gen_OrReduction_3U_1U_4      1                  2.1            2.1 .
+        00807: .         feature_write_addr_gen_Not_1U_1U_4      2                  0.7            1.4 .
+        00807: .      feature_write_addr_gen_And_1Ux1U_1U_4      1                  1.4            1.4 .
+        00810: .                             implicit muxes                                     1015.9 .
+        00808: .                                  registers      5                                     .
+        00809: .                              register bits    355     5.5(1)       0.0         1942.6 .
+        00811: . ------------------------------------------------------------------------------------- .
+        00812: .                                 Total Area         1942.6(355)  1581.6   0.0   3524.1 .
+               .                                                                                       .
+               .........................................................................................
+
+
+        01677:     Building RTL structures, pass 3
+        00971:   Cleaning up
+        00144:     Global optimizations.........................
+        00144:     Global optimizations.........................
+        02788:       Using cached results for
+        02788.         feature_write_addr_gen_DECODE_2U_36_4
+        02790:         Area =     0.68  Latency = 0  Delay =    0.029ns
+
+               +-----------------------------------------------------------------------------------------+
+               |                                                                                         |
+        00803: | Allocation Report for all threads:                                                      |
+        00805: |                                                           Area/Instance                 |
+        00805: |                                                    ---------------------------    Total |
+        00805: |                                   Resource  Count      Seq(#FF)     Comb    BB     Area |
+        00805: | ------------------------------------------  -----  -------------  ------  ----  ------- |
+        00807: |   feature_write_addr_gen_N_MuxB_320_8_35_1      1                 4818.5         4818.5 |
+        00807: |                              mux_320bx2i1c      1                  869.3          869.3 |
+        00807: |   feature_write_addr_gen_Add_32Ux32U_32U_1      1                  519.7          519.7 |
+        00807: |   feature_write_addr_gen_N_MuxB_320_2_24_4      1                  437.8          437.8 |
+        00807: |   feature_write_addr_gen_N_MuxB_320_2_25_4      1                  437.8          437.8 |
+        00807: |         feature_write_addr_gen_Add2i1u32_1      1                  250.1          250.1 |
+        00807: |     feature_write_addr_gen_N_Mux_32_2_34_4      2                   76.6          153.2 |
+        00807: |        feature_write_addr_gen_Muxu32i0u1_4      1                   43.8           43.8 |
+        00807: |        feature_write_addr_gen_Muxi0u32u1_4      1                   43.8           43.8 |
+        00807: |   feature_write_addr_gen_MuxAdd2i1u3u3u1_4      2                   14.0           28.0 |
+        00807: |      feature_write_addr_gen_N_Mux_3_2_28_4      2                    7.2           14.4 |
+        00807: |    feature_write_addr_gen_MuxSubi1u3u3u1_4      1                   14.0           14.0 |
+        00807: |      feature_write_addr_gen_And_1Ux1U_1U_4     10                    1.4           13.7 |
+        00807: | feature_write_addr_gen_OrReduction_3U_1U_4      6                    2.1           12.3 |
+        00807: |      feature_write_addr_gen_And_1Ux1U_1U_1      1                    8.9            8.9 |
+        00807: |          feature_write_addr_gen_Add2i1u3_4      1                    6.8            6.8 |
+        00807: | feature_write_addr_gen_OrReduction_3U_1U_1      1                    5.5            5.5 |
+        00807: | feature_write_addr_gen_OrReduction_8U_1U_4      1                    5.1            5.1 |
+        00807: |            feature_write_addr_gen_Eqi2u8_4      1                    5.1            5.1 |
+        00807: |         feature_write_addr_gen_Not_1U_1U_1      1                    4.1            4.1 |
+        00807: |            feature_write_addr_gen_Nei7u3_4      2                    1.7            3.4 |
+        00807: |       feature_write_addr_gen_Or_1Ux1U_1U_4      2                    1.4            2.7 |
+        00807: |            feature_write_addr_gen_Eqi3u3_4      1                    2.7            2.7 |
+        00807: |            feature_write_addr_gen_Eqi5u3_4      1                    2.7            2.7 |
+        00807: |     feature_write_addr_gen_N_Muxb_1_2_26_4      1                    2.4            2.4 |
+        00807: | feature_write_addr_gen_OrReduction_4U_1U_4      1                    2.1            2.1 |
+        00807: |         feature_write_addr_gen_Not_1U_1U_4      3                    0.7            2.1 |
+        00807: |            feature_write_addr_gen_Eqi1u3_4      1                    2.1            2.1 |
+        00807: |            feature_write_addr_gen_Eqi2u3_4      1                    2.1            2.1 |
+        00807: |            feature_write_addr_gen_Eqi4u3_4      1                    2.1            2.1 |
+        00807: |            feature_write_addr_gen_Eqi6u3_4      1                    2.1            2.1 |
+        00807: |            feature_write_addr_gen_Eqi7u3_4      1                    2.1            2.1 |
+        00808: |                                  registers     22                                       |
+        01442: |                          Reg bits by type:                                              |
+        01442. |                             EN SS SC AS AC                                              |
+        00809: |                              0  0  0  0  1    720      6.2(1)        0.0                |
+        00809: |                              1  0  0  0  1   2560      8.2(1)        0.0                |
+        00809: |                          all register bits   3280      7.8(1)        0.0        25444.8 |
+        02604: |                            estimated cntrl      1                   15.3           15.3 |
+        00811: | --------------------------------------------------------------------------------------- |
+        00812: |                                 Total Area         25444.8(3280)  7735.4   0.0  33180.2 |
+               |                                                                                         |
+               +-----------------------------------------------------------------------------------------+
+
+
+
+        00195: Writing RTL files:
+        01766:   bdw_work/modules/feature_write_addr_gen/DPA/feature_write_addr_gen_rtl.h
+        01767:   bdw_work/modules/feature_write_addr_gen/DPA/feature_write_addr_gen_rtl.cpp
+        01768:   bdw_work/modules/feature_write_addr_gen/DPA/feature_write_addr_gen_rtl.v
+
+        01445: Summary of messages of severity WARNING or greater:
+        01193:   SEVERITY MSGID CNT
+        01198:    WARNING 01290   1
+
+stratus_hls succeeded with 0 errors and 1 warning.
+
+make[1]: `bdw_work/modules/feature_write_addr_gen/DPA/feature_write_addr_gen_rtl.v' is up to date.
+/usr/cadence/installs/Stratus/bin/bdw_makegen project.tcl -scsim builtin -lib bdw_work/modules/feature_write_addr_gen/DPA -o bdw_work/modules/feature_write_addr_gen/DPA/Makefile -module feature_write_addr_gen -cynthconfig DPA  

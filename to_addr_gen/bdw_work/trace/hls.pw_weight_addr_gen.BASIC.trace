@@ -1,0 +1,87 @@
+Created makefile: Makefile.prj
+Generating dependencies for HLS config BASIC of pw_weight_addr_gen.cpp
+Generating dependencies for HLS config BASIC of pw_feature_addr_gen.cpp
+Generating dependencies for HLS config BASIC of st_weight_addr_gen.cpp
+Generating dependencies for HLS config BASIC of st_feature_addr_gen.cpp
+/usr/cadence/installs/Stratus/bin/bdw_wrapgen -project project.tcl -module pw_weight_addr_gen "-Ibdw_work/wrappers   -DCLOCK_PERIOD=2.0 -g  "
+              #################################################################
+              #                                                               #
+  ERROR 02512:# Error importing SystemC modules from file                     #
+  ERROR 02512.#   'pw_weight_addr_gen.cpp':                                   #
+              #                                                               #
+              #################################################################
+
+BDW_Extract 19.10-p100  (91500.011109)
+Copyright (c) 2019 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+              #################################################################
+              #                                                               #
+  FATAL 91696:#  at pw_weight_addr_gen.h line 5 col 23                        #
+  FATAL 91696.#   cannot open source file "interface.h"                       #
+              #                                                               #
+              #################################################################
+
+BDW_Extract failed with 1 error and 0 warnings.
+
+/usr/cadence/installs/Stratus/bin/bdw_wrapgen -project project.tcl -module pw_feature_addr_gen "-Ibdw_work/wrappers   -DCLOCK_PERIOD=2.0 -g  "
+              #################################################################
+              #                                                               #
+  ERROR 02512:# Error importing SystemC modules from file                     #
+  ERROR 02512.#   'pw_feature_addr_gen.cpp':                                  #
+              #                                                               #
+              #################################################################
+
+BDW_Extract 19.10-p100  (91500.011109)
+Copyright (c) 2019 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+              #################################################################
+              #                                                               #
+  FATAL 91696:#  at pw_feature_addr_gen.h line 5 col 23                       #
+  FATAL 91696.#   cannot open source file "interface.h"                       #
+              #                                                               #
+              #################################################################
+
+BDW_Extract failed with 1 error and 0 warnings.
+
+/usr/cadence/installs/Stratus/bin/bdw_wrapgen -project project.tcl -module pw_weight_addr_gen "-Ibdw_work/wrappers   -DCLOCK_PERIOD=2.0 -g  "
+              #################################################################
+              #                                                               #
+  ERROR 02512:# Error importing SystemC modules from file                     #
+  ERROR 02512.#   'pw_weight_addr_gen.cpp':                                   #
+              #                                                               #
+              #################################################################
+
+BDW_Extract 19.10-p100  (91500.011109)
+Copyright (c) 2019 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+              #################################################################
+              #                                                               #
+  FATAL 91696:#  at pw_weight_addr_gen.h line 5 col 23                        #
+  FATAL 91696.#   cannot open source file "interface.h"                       #
+              #                                                               #
+              #################################################################
+
+BDW_Extract failed with 1 error and 0 warnings.
+
+/usr/cadence/installs/Stratus/bin/bdw_wrapgen -project project.tcl -module pw_feature_addr_gen "-Ibdw_work/wrappers   -DCLOCK_PERIOD=2.0 -g  "
+              #################################################################
+              #                                                               #
+  ERROR 02512:# Error importing SystemC modules from file                     #
+  ERROR 02512.#   'pw_feature_addr_gen.cpp':                                  #
+              #                                                               #
+              #################################################################
+
+BDW_Extract 19.10-p100  (91500.011109)
+Copyright (c) 2019 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+              #################################################################
+              #                                                               #
+  FATAL 91696:#  at pw_feature_addr_gen.h line 5 col 23                       #
+  FATAL 91696.#   cannot open source file "interface.h"                       #
+              #                                                               #
+              #################################################################
+
+BDW_Extract failed with 1 error and 0 warnings.
+
+make[1]: *** No rule to make target `bdw_work/wrappers/pw_feature_addr_gen.updated', needed by `bdw_work/wrappers/pw_feature_addr_gen_wrap.h'.  Stop.
+make: *** [hlsc_pw_weight_addr_gen_BASIC] Error 2

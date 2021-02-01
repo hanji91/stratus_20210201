@@ -1,0 +1,12 @@
+42621
+42638
+design1
+bdw_work/trace/hls.org_bn_addr_gen.DPA.s.trace
+2
+0
+0
+0
+1609751419
+1609751429
+/usr/cadence/installs/Stratus/bin/stratus_hls --logfile=stratus_hls.log -I. -Ibdw_work/wrappers -I/usr/cadence/installs/Stratus/share/stratus/include --tl=/usr/cadence/installs/Stratus/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib --clock_period=3.200 --default_input_delay=0.100 --flatten_arrays=none --message_detail=3 --path_delay_limit=100.000 --rtl_annotation=op,stack -DDPA=1 -DBDW_RTL_org_bn_addr_gen_DPA=1 --clock_period=3.200 --dpopt_auto=op,expr -d bdw_work/modules/org_bn_addr_gen/DPA -o org_bn_addr_gen_rtl.cpp --hls_module=org_bn_addr_gen --hls_config=DPA --project=project.tcl org_bn_addr_gen.cpp
+

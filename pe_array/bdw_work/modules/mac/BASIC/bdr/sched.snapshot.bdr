@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<snapshot>
+	<name>sched</name>
+	<port>
+		<name>clk</name>
+		<source_loc>634</source_loc>
+		<clock/>
+		<direction>in</direction>
+		<datatype W="1">bool</datatype>
+	</port>
+	<port>
+		<name>rstn</name>
+		<source_loc>635</source_loc>
+		<direction>in</direction>
+		<datatype W="1">bool</datatype>
+	</port>
+	<port>
+		<name>init</name>
+		<source_loc>636</source_loc>
+		<direction>in</direction>
+		<datatype W="1">bool</datatype>
+	</port>
+	<port>
+		<name>clear</name>
+		<source_loc>637</source_loc>
+		<direction>in</direction>
+		<datatype W="1">bool</datatype>
+	</port>
+	<port>
+		<name>src_vld</name>
+		<source_loc>638</source_loc>
+		<direction>in</direction>
+		<datatype W="1">bool</datatype>
+	</port>
+	<port>
+		<name>src_0</name>
+		<source_loc>660</source_loc>
+		<direction>in</direction>
+		<datatype W="10">sc_int</datatype>
+	</port>
+	<port>
+		<name>src_1</name>
+		<source_loc>661</source_loc>
+		<direction>in</direction>
+		<datatype W="8">sc_int</datatype>
+	</port>
+	<port>
+		<name>acc</name>
+		<source_loc>703</source_loc>
+		<direction>out</direction>
+		<datatype W="32">sc_int</datatype>
+	</port>
+	<port>
+		<name>src_1_1d</name>
+		<source_loc>704</source_loc>
+		<direction>out</direction>
+		<datatype W="8">sc_int</datatype>
+	</port>
+	<ios>
+		<thread>_accumulator</thread>
+		<port>
+			<name>clk</name>
+			<source_loc>634</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>mul</name>
+			<source_loc>750</source_loc>
+			<direction>in</direction>
+			<datatype W="18">sc_int</datatype>
+		</port>
+		<port>
+			<name>src_vld</name>
+			<source_loc>638</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>clear</name>
+			<source_loc>637</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>init</name>
+			<source_loc>636</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>rstn</name>
+			<source_loc>635</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>acc</name>
+			<source_loc>703</source_loc>
+			<direction>out</direction>
+			<datatype W="32">sc_int</datatype>
+		</port>
+	</ios>
+	<ios>
+		<thread>_multiplier</thread>
+		<port>
+			<name>src_1</name>
+			<source_loc>661</source_loc>
+			<direction>in</direction>
+			<datatype W="8">sc_int</datatype>
+		</port>
+		<port>
+			<name>src_0</name>
+			<source_loc>660</source_loc>
+			<direction>in</direction>
+			<datatype W="10">sc_int</datatype>
+		</port>
+		<port>
+			<name>src_vld</name>
+			<source_loc>638</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>mul</name>
+			<source_loc>750</source_loc>
+			<direction>out</direction>
+			<datatype W="18">sc_int</datatype>
+		</port>
+	</ios>
+	<ios>
+		<thread>_delays</thread>
+		<port>
+			<name>clk</name>
+			<source_loc>634</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>src_1</name>
+			<source_loc>661</source_loc>
+			<direction>in</direction>
+			<datatype W="8">sc_int</datatype>
+		</port>
+		<port>
+			<name>rstn</name>
+			<source_loc>635</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>src_1_1d</name>
+			<source_loc>704</source_loc>
+			<direction>out</direction>
+			<datatype W="8">sc_int</datatype>
+		</port>
+	</ios>
+</snapshot>

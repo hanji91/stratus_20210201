@@ -1,0 +1,367 @@
+<?xml version="1.0"?>
+<source_file>
+    <module>
+        <name>cache</name>
+        <id>2180</id>
+        <source_path>cache.h</source_path>
+        <source_line>7</source_line>
+        <source_column>1</source_column>
+        <port>
+            <name>clk</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>clk</rtl_port_name>
+        </port>
+        <port>
+            <name>rstn</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>rstn</rtl_port_name>
+        </port>
+        <port>
+            <name>cache_en</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>cache_en</rtl_port_name>
+        </port>
+        <port>
+            <name>systolic_en</name>
+            <direction>in</direction>
+            <datatype W="8">sc_uint</datatype>
+            <rtl_port_name>systolic_en</rtl_port_name>
+        </port>
+        <port>
+            <name>systolic_depth</name>
+            <direction>in</direction>
+            <datatype W="8">sc_uint</datatype>
+            <rtl_port_name>systolic_depth</rtl_port_name>
+        </port>
+        <port>
+            <name>addr_if_start</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>addr_if_start</rtl_port_name>
+        </port>
+        <port>
+            <name>systolic_sel</name>
+            <direction>in</direction>
+            <datatype W="8">sc_uint</datatype>
+            <rtl_port_name>systolic_sel</rtl_port_name>
+        </port>
+        <port>
+            <name>feature_data</name>
+            <direction>in</direction>
+            <datatype W="320">sc_biguint</datatype>
+            <rtl_port_name>feature_data</rtl_port_name>
+        </port>
+        <port>
+            <name>feature_share_en</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>feature_share_en</rtl_port_name>
+        </port>
+        <port>
+            <name>feature_data_en</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>feature_data_en</rtl_port_name>
+        </port>
+        <port>
+            <name>feature_data_sel</name>
+            <direction>in</direction>
+            <datatype W="16">sc_uint</datatype>
+            <rtl_port_name>feature_data_sel</rtl_port_name>
+        </port>
+        <port>
+            <name>weight_data</name>
+            <direction>in</direction>
+            <datatype W="256">sc_biguint</datatype>
+            <rtl_port_name>weight_data</rtl_port_name>
+        </port>
+        <port>
+            <name>weight_data_en</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>weight_data_en</rtl_port_name>
+        </port>
+        <port>
+            <name>mac_src_0_s0</name>
+            <direction>out</direction>
+            <datatype>
+                <array>32</array>
+                <datatype W="10">sc_int</datatype>
+                <rtl_port_name>mac_src_0_s0_[32]</rtl_port_name>
+            </datatype>
+        </port>
+        <port>
+            <name>mac_src_0_s1</name>
+            <direction>out</direction>
+            <datatype>
+                <array>32</array>
+                <datatype W="10">sc_int</datatype>
+                <rtl_port_name>mac_src_0_s1_[32]</rtl_port_name>
+            </datatype>
+        </port>
+        <port>
+            <name>mac_src_0_s2</name>
+            <direction>out</direction>
+            <datatype>
+                <array>32</array>
+                <datatype W="10">sc_int</datatype>
+                <rtl_port_name>mac_src_0_s2_[32]</rtl_port_name>
+            </datatype>
+        </port>
+        <port>
+            <name>mac_src_0_s3</name>
+            <direction>out</direction>
+            <datatype>
+                <array>32</array>
+                <datatype W="10">sc_int</datatype>
+                <rtl_port_name>mac_src_0_s3_[32]</rtl_port_name>
+            </datatype>
+        </port>
+        <port>
+            <name>mac_src_0_s4</name>
+            <direction>out</direction>
+            <datatype>
+                <array>32</array>
+                <datatype W="10">sc_int</datatype>
+                <rtl_port_name>mac_src_0_s4_[32]</rtl_port_name>
+            </datatype>
+        </port>
+        <port>
+            <name>mac_src_0_s5</name>
+            <direction>out</direction>
+            <datatype>
+                <array>32</array>
+                <datatype W="10">sc_int</datatype>
+                <rtl_port_name>mac_src_0_s5_[32]</rtl_port_name>
+            </datatype>
+        </port>
+        <port>
+            <name>mac_src_0_s6</name>
+            <direction>out</direction>
+            <datatype>
+                <array>32</array>
+                <datatype W="10">sc_int</datatype>
+                <rtl_port_name>mac_src_0_s6_[32]</rtl_port_name>
+            </datatype>
+        </port>
+        <port>
+            <name>mac_src_1</name>
+            <direction>out</direction>
+            <datatype>
+                <array>32</array>
+                <datatype W="8">sc_int</datatype>
+                <rtl_port_name>mac_src_1_[32]</rtl_port_name>
+            </datatype>
+        </port>
+        <port>
+            <name>mac_src_valid</name>
+            <direction>out</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>mac_src_valid</rtl_port_name>
+        </port>
+        <port>
+            <name>mac_clear</name>
+            <direction>out</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>mac_clear</rtl_port_name>
+        </port>
+        <signal>
+            <name>addr_if_start_1d</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>addr_if_start_1d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>cache_en_1d</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>cache_en_1d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>feature_share_en_1d</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>feature_share_en_1d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>feature_share_en_2d</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>feature_share_en_2d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>feature_share_en_3d</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>feature_share_en_3d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>feature_share_en_4d</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>feature_share_en_4d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>feature_share_en_5d</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>feature_share_en_5d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>feature_share_en_6d</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>feature_share_en_6d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>feature_share_en_7d</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>feature_share_en_7d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>feature_data_en_1d</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>feature_data_en_1d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>feature_data_en_2d</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>feature_data_en_2d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>feature_data_en_3d</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>feature_data_en_3d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>feature_data_en_4d</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>feature_data_en_4d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>feature_data_en_5d</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>feature_data_en_5d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>feature_data_en_6d</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>feature_data_en_6d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>feature_data_en_7d</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>feature_data_en_7d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>feature_data_sel_1d</name>
+                        <datatype W="5">sc_uint</datatype>
+            <rtl_port_name>feature_data_sel_1d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>feature_data_sel_2d</name>
+                        <datatype W="5">sc_uint</datatype>
+            <rtl_port_name>feature_data_sel_2d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>feature_data_sel_3d</name>
+                        <datatype W="5">sc_uint</datatype>
+            <rtl_port_name>feature_data_sel_3d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>feature_data_sel_4d</name>
+                        <datatype W="5">sc_uint</datatype>
+            <rtl_port_name>feature_data_sel_4d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>feature_data_sel_5d</name>
+                        <datatype W="5">sc_uint</datatype>
+            <rtl_port_name>feature_data_sel_5d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>feature_data_sel_6d</name>
+                        <datatype W="5">sc_uint</datatype>
+            <rtl_port_name>feature_data_sel_6d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>feature_data_sel_7d</name>
+                        <datatype W="5">sc_uint</datatype>
+            <rtl_port_name>feature_data_sel_7d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>systolic0_feature_data_1d</name>
+                        <datatype>
+                <array>32</array>
+                <datatype W="10">sc_uint</datatype>
+                <rtl_port_name>systolic0_feature_data_1d_[32]</rtl_port_name>
+            </datatype>
+        </signal>
+        <signal>
+            <name>systolic1_feature_data_1d</name>
+                        <datatype>
+                <array>32</array>
+                <datatype W="10">sc_uint</datatype>
+                <rtl_port_name>systolic1_feature_data_1d_[32]</rtl_port_name>
+            </datatype>
+        </signal>
+        <signal>
+            <name>systolic2_feature_data_1d</name>
+                        <datatype>
+                <array>32</array>
+                <datatype W="10">sc_uint</datatype>
+                <rtl_port_name>systolic2_feature_data_1d_[32]</rtl_port_name>
+            </datatype>
+        </signal>
+        <signal>
+            <name>systolic3_feature_data_1d</name>
+                        <datatype>
+                <array>32</array>
+                <datatype W="10">sc_uint</datatype>
+                <rtl_port_name>systolic3_feature_data_1d_[32]</rtl_port_name>
+            </datatype>
+        </signal>
+        <signal>
+            <name>systolic4_feature_data_1d</name>
+                        <datatype>
+                <array>32</array>
+                <datatype W="10">sc_uint</datatype>
+                <rtl_port_name>systolic4_feature_data_1d_[32]</rtl_port_name>
+            </datatype>
+        </signal>
+        <signal>
+            <name>systolic5_feature_data_1d</name>
+                        <datatype>
+                <array>32</array>
+                <datatype W="10">sc_uint</datatype>
+                <rtl_port_name>systolic5_feature_data_1d_[32]</rtl_port_name>
+            </datatype>
+        </signal>
+        <signal>
+            <name>systolic6_feature_data_1d</name>
+                        <datatype>
+                <array>32</array>
+                <datatype W="10">sc_uint</datatype>
+                <rtl_port_name>systolic6_feature_data_1d_[32]</rtl_port_name>
+            </datatype>
+        </signal>
+        <signal>
+            <name>weight_data_1d</name>
+                        <datatype>
+                <name>c2_Ulong_$</name>
+                <id>3277</id>
+            </datatype>
+            <rtl_port_name>weight_data_1d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>weight_data_en_1d</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>weight_data_en_1d</rtl_port_name>
+        </signal>
+        <ctor_params>
+            <param>
+                <name/>
+                <datatype>
+                    <name>sc_core::sc_module_name</name>
+                    <id>2163</id>
+                </datatype>
+                <rtl_port_name/>
+            </param>
+        </ctor_params>
+    </module>
+	<exit_status>0</exit_status>
+</source_file>

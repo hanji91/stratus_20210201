@@ -1,0 +1,12 @@
+20356
+20546
+design1
+-
+2
+0
+0
+0
+1610092424
+1610092426
+make CWBExec=1 clean_hls_bias_add_DPA
+

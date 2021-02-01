@@ -1,0 +1,12 @@
+57861
+57895
+design1
+bdw_work/trace/hls.learn_clip.DPA.trace
+2
+0
+0
+0
+1609983086
+1609983119
+make CWBExec=1 hls_learn_clip_DPA
+

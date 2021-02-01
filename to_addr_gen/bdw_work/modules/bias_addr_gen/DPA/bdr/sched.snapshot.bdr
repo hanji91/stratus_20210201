@@ -1,0 +1,494 @@
+<?xml version="1.0"?>
+<snapshot>
+	<name>sched</name>
+	<port>
+		<name>clk</name>
+		<source_loc>618</source_loc>
+		<clock/>
+		<direction>in</direction>
+		<datatype W="1">bool</datatype>
+	</port>
+	<port>
+		<name>rstn</name>
+		<source_loc>619</source_loc>
+		<direction>in</direction>
+		<datatype W="1">bool</datatype>
+	</port>
+	<port>
+		<name>init</name>
+		<source_loc>620</source_loc>
+		<direction>in</direction>
+		<datatype W="1">bool</datatype>
+	</port>
+	<port>
+		<name>out_feature_width</name>
+		<source_loc>644</source_loc>
+		<direction>in</direction>
+		<datatype W="16">sc_uint</datatype>
+	</port>
+	<port>
+		<name>out_feature_height</name>
+		<source_loc>645</source_loc>
+		<direction>in</direction>
+		<datatype W="16">sc_uint</datatype>
+	</port>
+	<port>
+		<name>out_feature_channel</name>
+		<source_loc>646</source_loc>
+		<direction>in</direction>
+		<datatype W="16">sc_uint</datatype>
+	</port>
+	<port>
+		<name>bias_read_base_addr</name>
+		<source_loc>668</source_loc>
+		<direction>in</direction>
+		<datatype W="32">sc_uint</datatype>
+	</port>
+	<port>
+		<name>bias_en</name>
+		<source_loc>669</source_loc>
+		<direction>in</direction>
+		<datatype W="1">bool</datatype>
+	</port>
+	<port>
+		<name>start_rising</name>
+		<source_loc>685</source_loc>
+		<direction>in</direction>
+		<datatype W="1">sc_uint</datatype>
+	</port>
+	<port>
+		<name>data_en</name>
+		<source_loc>686</source_loc>
+		<direction>in</direction>
+		<datatype W="1">bool</datatype>
+	</port>
+	<port>
+		<name>bias_addr</name>
+		<source_loc>725</source_loc>
+		<direction>out</direction>
+		<datatype W="32">sc_uint</datatype>
+	</port>
+	<port>
+		<name>bias_addr_valid</name>
+		<source_loc>739</source_loc>
+		<direction>out</direction>
+		<datatype W="1">bool</datatype>
+	</port>
+	<ios>
+		<thread>_bias_addr_valid</thread>
+		<port>
+			<name>clk</name>
+			<source_loc>618</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>bias_addr_update</name>
+			<source_loc>871</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>init</name>
+			<source_loc>620</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>rstn</name>
+			<source_loc>619</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>bias_addr_valid</name>
+			<source_loc>739</source_loc>
+			<direction>out</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+	</ios>
+	<ios>
+		<thread>_bias_add</thread>
+		<port>
+			<name>clk</name>
+			<source_loc>618</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>of_cnt</name>
+			<source_loc>775</source_loc>
+			<direction>in</direction>
+			<datatype W="16">sc_uint</datatype>
+		</port>
+		<port>
+			<name>bias_read_base_addr</name>
+			<source_loc>668</source_loc>
+			<direction>in</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+		<port>
+			<name>bias_en</name>
+			<source_loc>669</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>rstn</name>
+			<source_loc>619</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>bias_addr</name>
+			<source_loc>725</source_loc>
+			<direction>out</direction>
+			<datatype W="32">sc_uint</datatype>
+		</port>
+	</ios>
+	<ios>
+		<thread>_set_max_num</thread>
+		<port>
+			<name>clk</name>
+			<source_loc>618</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>out_feature_channel</name>
+			<source_loc>646</source_loc>
+			<direction>in</direction>
+			<datatype W="16">sc_uint</datatype>
+		</port>
+		<port>
+			<name>out_feature_height</name>
+			<source_loc>645</source_loc>
+			<direction>in</direction>
+			<datatype W="16">sc_uint</datatype>
+		</port>
+		<port>
+			<name>out_feature_width</name>
+			<source_loc>644</source_loc>
+			<direction>in</direction>
+			<datatype W="16">sc_uint</datatype>
+		</port>
+		<port>
+			<name>ox_cnt_max</name>
+			<source_loc>769</source_loc>
+			<direction>out</direction>
+			<datatype W="16">sc_uint</datatype>
+		</port>
+		<port>
+			<name>oy_cnt_max</name>
+			<source_loc>773</source_loc>
+			<direction>out</direction>
+			<datatype W="16">sc_uint</datatype>
+		</port>
+		<port>
+			<name>of_cnt_max</name>
+			<source_loc>783</source_loc>
+			<direction>out</direction>
+			<datatype W="16">sc_uint</datatype>
+		</port>
+	</ios>
+	<ios>
+		<thread>_of_counter</thread>
+		<port>
+			<name>clk</name>
+			<source_loc>618</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>of_enable</name>
+			<source_loc>774</source_loc>
+			<direction>in</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>of_clear</name>
+			<source_loc>776</source_loc>
+			<direction>in</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>init</name>
+			<source_loc>620</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>rstn</name>
+			<source_loc>619</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>of_cnt</name>
+			<source_loc>775</source_loc>
+			<direction>out</direction>
+			<datatype W="16">sc_uint</datatype>
+		</port>
+	</ios>
+	<ios>
+		<thread>_of_ctrl</thread>
+		<port>
+			<name>oy_enable</name>
+			<source_loc>770</source_loc>
+			<direction>in</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>oy_clear</name>
+			<source_loc>772</source_loc>
+			<direction>in</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>of_cnt_max</name>
+			<source_loc>783</source_loc>
+			<direction>in</direction>
+			<datatype W="16">sc_uint</datatype>
+		</port>
+		<port>
+			<name>of_cnt</name>
+			<source_loc>775</source_loc>
+			<direction>in</direction>
+			<datatype W="16">sc_uint</datatype>
+		</port>
+		<port>
+			<name>of_clear</name>
+			<source_loc>776</source_loc>
+			<direction>out</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>of_enable</name>
+			<source_loc>774</source_loc>
+			<direction>out</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+	</ios>
+	<ios>
+		<thread>_oy_counter</thread>
+		<port>
+			<name>clk</name>
+			<source_loc>618</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>oy_enable</name>
+			<source_loc>770</source_loc>
+			<direction>in</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>oy_clear</name>
+			<source_loc>772</source_loc>
+			<direction>in</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>init</name>
+			<source_loc>620</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>rstn</name>
+			<source_loc>619</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>oy_cnt</name>
+			<source_loc>771</source_loc>
+			<direction>out</direction>
+			<datatype W="16">sc_uint</datatype>
+		</port>
+	</ios>
+	<ios>
+		<thread>_oy_ctrl</thread>
+		<port>
+			<name>ox_enable</name>
+			<source_loc>740</source_loc>
+			<direction>in</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>ox_clear</name>
+			<source_loc>768</source_loc>
+			<direction>in</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>oy_cnt_max</name>
+			<source_loc>773</source_loc>
+			<direction>in</direction>
+			<datatype W="16">sc_uint</datatype>
+		</port>
+		<port>
+			<name>oy_cnt</name>
+			<source_loc>771</source_loc>
+			<direction>in</direction>
+			<datatype W="16">sc_uint</datatype>
+		</port>
+		<port>
+			<name>oy_clear</name>
+			<source_loc>772</source_loc>
+			<direction>out</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>oy_enable</name>
+			<source_loc>770</source_loc>
+			<direction>out</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+	</ios>
+	<ios>
+		<thread>_ox_counter</thread>
+		<port>
+			<name>clk</name>
+			<source_loc>618</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>ox_enable</name>
+			<source_loc>740</source_loc>
+			<direction>in</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>ox_clear</name>
+			<source_loc>768</source_loc>
+			<direction>in</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>init</name>
+			<source_loc>620</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>rstn</name>
+			<source_loc>619</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>ox_cnt</name>
+			<source_loc>767</source_loc>
+			<direction>out</direction>
+			<datatype W="16">sc_uint</datatype>
+		</port>
+	</ios>
+	<ios>
+		<thread>_ox_ctrl</thread>
+		<port>
+			<name>bias_en</name>
+			<source_loc>669</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>data_en</name>
+			<source_loc>686</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>ox_cnt_max</name>
+			<source_loc>769</source_loc>
+			<direction>in</direction>
+			<datatype W="16">sc_uint</datatype>
+		</port>
+		<port>
+			<name>ox_cnt</name>
+			<source_loc>767</source_loc>
+			<direction>in</direction>
+			<datatype W="16">sc_uint</datatype>
+		</port>
+		<port>
+			<name>ox_enable</name>
+			<source_loc>740</source_loc>
+			<direction>out</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>ox_clear</name>
+			<source_loc>768</source_loc>
+			<direction>out</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+	</ios>
+	<ios>
+		<thread>_bias_addr_update</thread>
+		<port>
+			<name>clk</name>
+			<source_loc>618</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>bias_en</name>
+			<source_loc>669</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>of_enable_6d</name>
+			<source_loc>782</source_loc>
+			<direction>in</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>start_rising</name>
+			<source_loc>685</source_loc>
+			<direction>in</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>rstn</name>
+			<source_loc>619</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>bias_addr_update</name>
+			<source_loc>871</source_loc>
+			<direction>out</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+	</ios>
+	<ios>
+		<thread>_delay</thread>
+		<port>
+			<name>clk</name>
+			<source_loc>618</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>of_enable</name>
+			<source_loc>774</source_loc>
+			<direction>in</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+		<port>
+			<name>rstn</name>
+			<source_loc>619</source_loc>
+			<direction>in</direction>
+			<datatype W="1">bool</datatype>
+		</port>
+		<port>
+			<name>of_enable_6d</name>
+			<source_loc>782</source_loc>
+			<direction>out</direction>
+			<datatype W="1">sc_uint</datatype>
+		</port>
+	</ios>
+</snapshot>

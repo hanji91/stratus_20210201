@@ -1,0 +1,12 @@
+65616
+65648
+design1
+bdw_work/trace/hls.pw_weight_addr_gen.BASIC.trace
+2
+2
+0
+0
+1607583357
+1607583368
+make CWBExec=1 hls_pw_weight_addr_gen_BASIC
+

@@ -1,0 +1,12 @@
+46037
+46038
+design1
+bdw_work/trace/hls.relu_offset_float.DPA.trace
+2
+0
+0
+1
+1609931686
+1609931710
+make CWBExec=1 hls_relu_offset_float_DPA
+

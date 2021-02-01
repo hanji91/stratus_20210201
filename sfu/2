@@ -1,0 +1,156 @@
+#ifndef FLOAT2FIX_H
+#define FLOAT2FIX_H
+#include "systemc.h"
+#include "stratus_hls.h"
+#include "config.h"
+SC_MODULE(float2fix)
+{
+  sc_in<bool> clk;
+  sc_in<bool> rstn;
+  sc_in<bool> src_valid;
+  sc_in< sc_uint<32> > src;
+  sc_out<bool> dst_valid;
+  sc_out< sc_uint<32> > dst;
+
+  //sc_signal< sc_uint<32> > src_float;
+
+  sc_signal< sc_uint<32> > r_in_data;
+  sc_signal< sc_uint<5> > shift_num;
+  sc_signal<bool> src_valid_1d;
+  sc_signal<bool> src_valid_2d;
+  sc_signal<bool> src_valid_3d;
+  sc_signal<bool> zero_sig, max_sig;
+  sc_signal<bool> zm_sig;
+  sc_signal<bool> r_zero_sig, r_max_sig;
+  sc_signal< sc_uint<32> > a_m, r_a_m;
+  sc_signal< sc_uint<8> > a_e, r_a_e;
+  sc_signal<bool> a_s, r_a_s;
+
+  void _delay()
+  {
+    if (!rstn.read()) { // Added on 2021/01/07 by hanji
+      src_valid_1d.write(0);
+      src_valid_2d.write(0);
+      src_valid_3d.write(0);
+      r_a_s.write(0);
+      r_zero_sig.write(0);
+      r_max_sig.write(0);
+    }
+    else {
+      src_valid_1d = src_valid.read();
+      src_valid_2d = src_valid_1d.read();
+      src_valid_3d = src_valid_2d.read();
+      r_a_s = a_s.read();
+      r_zero_sig = zero_sig.read();
+      r_max_sig = max_sig.read();
+    }
+  }
+
+  void _r_in_data()
+  {
+    if (!rstn.read()) { // Added on 2021/01/07 by hanji
+      r_in_data.write(0);
+    }
+    else if (src_valid.read()) {
+      r_in_data = src.read();
+    }
+  }
+
+  void _a_m_e_s()
+  {
+    if (!rstn.read()) { // Added on 2021/01/07 by hanji
+      a_m.write(0);
+      a_e.write(0);
+      a_s.write(0);
+    }
+    else if (!src_valid_1d.read()) {
+      a_m.write(0);
+      a_e.write(0);
+      a_s.write(0);
+    }
+    else {
+      a_m = (sc_uint<1>(1), r_in_data.read()(22, 0), sc_uint<8>(0));
+      a_e = r_in_data.read()(30, 23) - 127; 
+      a_s = r_in_data.read()(31, 31);
+    }
+  }
+
+  void _comb_sig()
+  {
+      zero_sig = ((signed)(a_e.read()) == (-127)) ? 1 : 0;
+      max_sig = ((signed)(a_e.read()) > 31) ? 1 : 0;
+      zm_sig = zero_sig | max_sig;
+      shift_num = 31 - a_e.read();
+  }
+
+  void _r_a_m()
+  {
+    if (!rstn.read()) { // Added on 2021/01/07 by hanji
+      r_a_m.write(0);
+    } 
+    //else if (!src_valid_1d) {
+    else if (!src_valid_2d) {
+      r_a_m.write(0);
+    }
+    else if (zm_sig) {
+      r_a_m.write(0);
+    }
+    else {
+      r_a_m = a_m.read() >> shift_num.read();
+    }
+  }
+
+  void _dst()
+  {
+    if (!rstn.read()) // Added on 2021/01/07 by hanji
+      dst.write(0);
+    //else if (!src_valid_2d.read())
+    else if (!src_valid_3d.read()) // Modified on 2021/01/15 by hanji
+      dst.write(0);
+    else if (r_zero_sig.read())
+      dst.write(0);
+    else if (r_max_sig.read())
+      dst.write(0);
+    else if (r_a_m.read()(31, 31))
+      dst.write(0);
+    else {
+     if (r_a_s.read())
+      dst = (~r_a_m.read()) + 1;
+     else 
+      dst = r_a_m.read();
+    }
+  }
+
+  void _dst_valid()
+  {
+    if (!rstn.read()) // Added on 2021/01/07 by hanji
+      dst_valid.write(0);
+    else
+      //dst_valid = src_valid_2d.read();
+      dst_valid = src_valid_3d.read(); // Modified on 2021/01/15 by hanji
+  }
+
+
+  SC_CTOR(float2fix)
+  {
+    SC_METHOD(_dst);
+    sensitive << clk.pos() << rstn.neg();
+    SC_METHOD(_dst_valid);
+    sensitive << clk.pos() << rstn.neg();
+
+    // Added on 2021/01/07 by hanji
+    SC_METHOD(_delay);
+    sensitive << clk.pos() << rstn.neg();
+
+    SC_METHOD(_r_in_data);
+    sensitive << clk.pos() << rstn.neg(); 
+    SC_METHOD(_a_m_e_s);
+    sensitive << clk.pos() << rstn.neg();
+    SC_METHOD(_comb_sig);
+    sensitive << a_e; 
+    SC_METHOD(_r_a_m);
+    sensitive << clk.pos() << rstn.neg();
+  };
+};
+
+#endif

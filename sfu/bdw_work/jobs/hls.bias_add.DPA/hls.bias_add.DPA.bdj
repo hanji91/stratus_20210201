@@ -1,0 +1,12 @@
+34003
+34038
+design1
+bdw_work/trace/hls.bias_add.DPA.trace
+2
+0
+0
+0
+1610877301
+1610877333
+make CWBExec=1 hls_bias_add_DPA
+

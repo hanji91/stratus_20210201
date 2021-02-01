@@ -1,0 +1,402 @@
+<?xml version="1.0"?>
+<source_file>
+    <module>
+        <name>pw_weight_addr_gen</name>
+        <id>2286</id>
+        <source_path>pw_weight_addr_gen.h</source_path>
+        <source_line>8</source_line>
+        <source_column>1</source_column>
+        <port>
+            <name>clk</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>clk</rtl_port_name>
+        </port>
+        <port>
+            <name>rstn</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>rstn</rtl_port_name>
+        </port>
+        <port>
+            <name>stop</name>
+            <direction>in</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>stop</rtl_port_name>
+        </port>
+        <port>
+            <name>start</name>
+            <direction>in</direction>
+            <datatype W="8">sc_uint</datatype>
+            <rtl_port_name>start</rtl_port_name>
+        </port>
+        <port>
+            <name>start_rising</name>
+            <direction>in</direction>
+            <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>start_rising</rtl_port_name>
+        </port>
+        <port>
+            <name>systolic_en</name>
+            <direction>in</direction>
+            <datatype W="8">sc_uint</datatype>
+            <rtl_port_name>systolic_en</rtl_port_name>
+        </port>
+        <port>
+            <name>systolic_depth</name>
+            <direction>in</direction>
+            <datatype W="8">sc_uint</datatype>
+            <rtl_port_name>systolic_depth</rtl_port_name>
+        </port>
+        <port>
+            <name>feature_width</name>
+            <direction>in</direction>
+            <datatype W="16">sc_uint</datatype>
+            <rtl_port_name>feature_width</rtl_port_name>
+        </port>
+        <port>
+            <name>feature_height</name>
+            <direction>in</direction>
+            <datatype W="16">sc_uint</datatype>
+            <rtl_port_name>feature_height</rtl_port_name>
+        </port>
+        <port>
+            <name>feature_channel</name>
+            <direction>in</direction>
+            <datatype W="16">sc_uint</datatype>
+            <rtl_port_name>feature_channel</rtl_port_name>
+        </port>
+        <port>
+            <name>out_feature_width</name>
+            <direction>in</direction>
+            <datatype W="16">sc_uint</datatype>
+            <rtl_port_name>out_feature_width</rtl_port_name>
+        </port>
+        <port>
+            <name>out_feature_height</name>
+            <direction>in</direction>
+            <datatype W="16">sc_uint</datatype>
+            <rtl_port_name>out_feature_height</rtl_port_name>
+        </port>
+        <port>
+            <name>out_feature_channel</name>
+            <direction>in</direction>
+            <datatype W="16">sc_uint</datatype>
+            <rtl_port_name>out_feature_channel</rtl_port_name>
+        </port>
+        <port>
+            <name>filter_width</name>
+            <direction>in</direction>
+            <datatype W="16">sc_uint</datatype>
+            <rtl_port_name>filter_width</rtl_port_name>
+        </port>
+        <port>
+            <name>filter_height</name>
+            <direction>in</direction>
+            <datatype W="16">sc_uint</datatype>
+            <rtl_port_name>filter_height</rtl_port_name>
+        </port>
+        <port>
+            <name>filter_channel</name>
+            <direction>in</direction>
+            <datatype W="16">sc_uint</datatype>
+            <rtl_port_name>filter_channel</rtl_port_name>
+        </port>
+        <port>
+            <name>stride_x</name>
+            <direction>in</direction>
+            <datatype W="8">sc_uint</datatype>
+            <rtl_port_name>stride_x</rtl_port_name>
+        </port>
+        <port>
+            <name>stride_y</name>
+            <direction>in</direction>
+            <datatype W="8">sc_uint</datatype>
+            <rtl_port_name>stride_y</rtl_port_name>
+        </port>
+        <port>
+            <name>pad_top_size</name>
+            <direction>in</direction>
+            <datatype W="8">sc_uint</datatype>
+            <rtl_port_name>pad_top_size</rtl_port_name>
+        </port>
+        <port>
+            <name>pad_bottom_size</name>
+            <direction>in</direction>
+            <datatype W="8">sc_uint</datatype>
+            <rtl_port_name>pad_bottom_size</rtl_port_name>
+        </port>
+        <port>
+            <name>pad_left_size</name>
+            <direction>in</direction>
+            <datatype W="8">sc_uint</datatype>
+            <rtl_port_name>pad_left_size</rtl_port_name>
+        </port>
+        <port>
+            <name>pad_right_size</name>
+            <direction>in</direction>
+            <datatype W="8">sc_uint</datatype>
+            <rtl_port_name>pad_right_size</rtl_port_name>
+        </port>
+        <port>
+            <name>read_weight_base_addr</name>
+            <direction>in</direction>
+            <datatype W="32">sc_uint</datatype>
+            <rtl_port_name>read_weight_base_addr</rtl_port_name>
+        </port>
+        <port>
+            <name>pw_weight_addr</name>
+            <direction>out</direction>
+            <datatype W="32">sc_uint</datatype>
+            <rtl_port_name>pw_weight_addr</rtl_port_name>
+        </port>
+        <port>
+            <name>pw_weight_addr_valid</name>
+            <direction>out</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>pw_weight_addr_valid</rtl_port_name>
+        </port>
+        <port>
+            <name>pw_weight_data_valid</name>
+            <direction>out</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>pw_weight_data_valid</rtl_port_name>
+        </port>
+        <port>
+            <name>cache_en</name>
+            <direction>out</direction>
+            <datatype W="1">bool</datatype>
+            <rtl_port_name>cache_en</rtl_port_name>
+        </port>
+        <signal>
+            <name>tmp_pw_weight_addr</name>
+                        <datatype W="32">sc_uint</datatype>
+            <rtl_port_name>tmp_pw_weight_addr</rtl_port_name>
+        </signal>
+        <signal>
+            <name>pw_weight_addr_valid_1d</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>pw_weight_addr_valid_1d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>pw_weight_addr_valid_2d</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>pw_weight_addr_valid_2d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>pw_weight_addr_valid_3d</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>pw_weight_addr_valid_3d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>pw_weight_addr_valid_4d</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>pw_weight_addr_valid_4d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>pw_weight_addr_valid_5d</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>pw_weight_addr_valid_5d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>pw_weight_addr_valid_6d</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>pw_weight_addr_valid_6d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>pw_weight_addr_valid_7d</name>
+                        <datatype W="1">bool</datatype>
+            <rtl_port_name>pw_weight_addr_valid_7d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>if_cnt_max</name>
+                        <datatype W="16">sc_uint</datatype>
+            <rtl_port_name>if_cnt_max</rtl_port_name>
+        </signal>
+        <signal>
+            <name>ox_cnt_max</name>
+                        <datatype W="16">sc_uint</datatype>
+            <rtl_port_name>ox_cnt_max</rtl_port_name>
+        </signal>
+        <signal>
+            <name>ox_cnt_max2</name>
+                        <datatype W="16">sc_uint</datatype>
+            <rtl_port_name>ox_cnt_max2</rtl_port_name>
+        </signal>
+        <signal>
+            <name>oy_cnt_max</name>
+                        <datatype W="16">sc_uint</datatype>
+            <rtl_port_name>oy_cnt_max</rtl_port_name>
+        </signal>
+        <signal>
+            <name>oy_cnt_max2</name>
+                        <datatype W="16">sc_uint</datatype>
+            <rtl_port_name>oy_cnt_max2</rtl_port_name>
+        </signal>
+        <signal>
+            <name>of_cnt_max</name>
+                        <datatype W="16">sc_uint</datatype>
+            <rtl_port_name>of_cnt_max</rtl_port_name>
+        </signal>
+        <signal>
+            <name>if_enable</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>if_enable</rtl_port_name>
+        </signal>
+        <signal>
+            <name>if_cnt</name>
+                        <datatype W="16">sc_uint</datatype>
+            <rtl_port_name>if_cnt</rtl_port_name>
+        </signal>
+        <signal>
+            <name>if_clear</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>if_clear</rtl_port_name>
+        </signal>
+        <signal>
+            <name>if_pos</name>
+                        <datatype W="16">sc_uint</datatype>
+            <rtl_port_name>if_pos</rtl_port_name>
+        </signal>
+        <signal>
+            <name>ox_enable</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>ox_enable</rtl_port_name>
+        </signal>
+        <signal>
+            <name>ox_cnt</name>
+                        <datatype W="16">sc_uint</datatype>
+            <rtl_port_name>ox_cnt</rtl_port_name>
+        </signal>
+        <signal>
+            <name>ox_clear</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>ox_clear</rtl_port_name>
+        </signal>
+        <signal>
+            <name>oy_enable</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>oy_enable</rtl_port_name>
+        </signal>
+        <signal>
+            <name>oy_cnt</name>
+                        <datatype W="16">sc_uint</datatype>
+            <rtl_port_name>oy_cnt</rtl_port_name>
+        </signal>
+        <signal>
+            <name>oy_clear</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>oy_clear</rtl_port_name>
+        </signal>
+        <signal>
+            <name>of_enable</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>of_enable</rtl_port_name>
+        </signal>
+        <signal>
+            <name>of_cnt</name>
+                        <datatype W="16">sc_uint</datatype>
+            <rtl_port_name>of_cnt</rtl_port_name>
+        </signal>
+        <signal>
+            <name>of_clear</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>of_clear</rtl_port_name>
+        </signal>
+        <signal>
+            <name>of_pos</name>
+                        <datatype W="16">sc_uint</datatype>
+            <rtl_port_name>of_pos</rtl_port_name>
+        </signal>
+        <signal>
+            <name>org_if_pos</name>
+                        <datatype W="32">sc_uint</datatype>
+            <rtl_port_name>org_if_pos</rtl_port_name>
+        </signal>
+        <signal>
+            <name>org_of_pos</name>
+                        <datatype W="32">sc_uint</datatype>
+            <rtl_port_name>org_of_pos</rtl_port_name>
+        </signal>
+        <signal>
+            <name>start_1d</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>start_1d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>run</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>run</rtl_port_name>
+        </signal>
+        <signal>
+            <name>run_1d</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>run_1d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>run_2d</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>run_2d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>run_3d</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>run_3d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>run_4d</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>run_4d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>run_5d</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>run_5d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>run_6d</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>run_6d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>run_7d</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>run_7d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>run_8d</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>run_8d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>run_9d</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>run_9d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>run_10d</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>run_10d</rtl_port_name>
+        </signal>
+        <signal>
+            <name>finish</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>finish</rtl_port_name>
+        </signal>
+        <signal>
+            <name>enable</name>
+                        <datatype W="1">sc_uint</datatype>
+            <rtl_port_name>enable</rtl_port_name>
+        </signal>
+        <ctor_params>
+            <param>
+                <name></name>
+                <datatype>
+                    <name>sc_core::sc_module_name</name>
+                    <id>2269</id>
+                </datatype>
+                <rtl_port_name></rtl_port_name>
+            </param>
+        </ctor_params>
+    </module>
+</source_file>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<netlist>
+	<module_name>_wr_ptr</module_name>
+	<signal>
+		<name>MUX_N104</name>
+		<source_loc>2930</source_loc>
+		<async/>
+	</signal>
+	<thread>
+		<name>MUX_N104</name>
+		<async/>
+		<lhs>
+			<name>MUX_N104</name>
+		</lhs>
+		<rhs>
+			<name>uwr_ptr_wr_ptr_next</name>
+			<name>CynTemp_2</name>
+		</rhs>
+		<cond>
+			<name>dmux_ctrl_002</name>
+		</cond>
+		<mux_area>8.5850</mux_area>
+		<mux_delay>0.0615</mux_delay>
+		<control_delay>0.0615</control_delay>
+	</thread>
+</netlist>

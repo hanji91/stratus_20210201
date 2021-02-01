@@ -1,0 +1,883 @@
+Created makefile: Makefile.prj
+Generating dependencies for HLS config DPA of relu_offset_float.cpp
+Generating dependencies for HLS config DPA of fp_cmp.cpp
+/usr/cadence/installs/Stratus/bin/bdw_wrapgen -project project.tcl -module relu_offset_float "-Ibdw_work/wrappers  -I/usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts -DCLOCK_PERIOD=2.0 -g  "
+/usr/cadence/installs/Stratus/bin/bdw_tracegen -module relu_offset_float -vcd 
+/usr/cadence/installs/Stratus/bin/bdw_wrapgen -project project.tcl -module fp_cmp "-Ibdw_work/wrappers  -I/usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts -DCLOCK_PERIOD=2.0 -g  "
+/usr/cadence/installs/Stratus/bin/bdw_tracegen -module fp_cmp -vcd 
+BDW_HLS_CONFIG=DPA BDW_CYNTH_CONFIG=DPA \
+bdw_exec -jobproject project.tcl -job hls.fp_cmp.DPA.s \
+/usr/cadence/installs/Stratus/bin/stratus_hls --logfile=stratus_hls.log -I. -Ibdw_work/wrappers -I/usr/cadence/installs/Stratus/share/stratus/include   --tl=/usr/cadence/installs/Stratus/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib --clock_period=1.200 --default_input_delay=0.100 --flatten_arrays=none --message_detail=3 --path_delay_limit=100.000 --rtl_annotation=op,stack -DDPA=1 -DBDW_RTL_fp_cmp_DPA=1 --clock_period=1.200 --dpopt_auto=op,expr -Ibdw_work/libs/cynw_cm_float/c_parts -I/usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts \
+	-d bdw_work/modules/fp_cmp/DPA -o fp_cmp_rtl.cpp \
+	--hls_module=fp_cmp --hls_config=DPA --project=project.tcl \
+	-P bdw_work/libs/cynw_cm_float/c_parts -P /usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts \
+	-p cynw_cm_float \
+	 \
+	 \
+	 fp_cmp.cpp
+
+stratus_hls 19.10-p100  (91500.011111)
+Copyright (c) 2019 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+        00481: -D is set to "__x86_64__, STRATUS=1, STRATUS_HLS=1, CYNTHESIZER,
+        00481.   CYNTHHL, DPA=1, BDW_RTL_fp_cmp_DPA=1".
+        00481: -I is set to "., bdw_work/wrappers,
+        00481.   /usr/cadence/installs/Stratus/share/stratus/include,
+        00481.   bdw_work/libs/cynw_cm_float/c_parts,
+        00481.   /usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts,
+        00481.   /usr/cadence/installs/Stratus/share/stratus/include,
+        00481.   /usr/cadence/installs/Stratus/tools.lnx86/stratus/systemc/2.3.1/include".
+        00481: -U is not set.
+        00481: --abort_level is set to "FATAL".
+        00481: --allow_pipeline_loop_expansion is set to "on".
+        00481: --attrib_value is not set.
+        00481: --balance_expr is set to "off".
+        00481: --cachelib is set to "on".
+        00481: --cachelib_dir is not set.
+        00481: --cap_table_file is not set.
+        00481: --clock_gating_module is not set.
+        00481: --clock_period is set to "1.200".
+        00481: --comm_subexp_elim is set to "off".
+        00481: --constrain_multiport_mem_distance is set to "on".
+        00481: --cycle_slack is set to "0.000".
+        00481: --default_input_delay is set to "0.100".
+        00481: --default_preserve_io is set to "off".
+        00481: --default_protocol is set to "off".
+        00481: --default_stable_input_delay is not set.
+        00481: --dont_ungroup_name is not set.
+        00481: --dont_ungroup_type is set to "none".
+        00481: --dpopt_auto is set to "op,expr".
+        00481: --dpopt_effort is set to "normal".
+        00481: --dpopt_with_enable is set to "off".
+        00481: --eco_baseline is not set.
+        00481: --eco_sharing is set to "off".
+        00481: --fail_level is set to "ERROR".
+        00481: --fixed_reset is set to "off".
+        00481: --flatten_arrays is set to "none".
+        00481: --fpga_dsp_latency is set to "2".
+        00481: --fpga_dsp_min_widths is set to "12,12".
+        00481: --fpga_part is not set.
+        00481: --fpga_tool is not set.
+        00481: --fpga_use_dsp is set to "off".
+        00481: --global_state_encoding is set to "binary".
+        00481: --help is not set.
+        00481: --hls_config is set to "DPA".
+        00481: --hls_module is set to "fp_cmp".
+        00481: --ignore_cells is not set.
+        00481: --ignore_scan_cells is set to "off".
+        00481: --inline_partial_constants is set to "off".
+        00481: --interconnect_mode is set to "wireload".
+        00481: --lef_library is not set.
+        00481: --logfile is set to "bdw_work/modules/fp_cmp/DPA/stratus_hls.log".
+        00481: --lsb_trimming is set to "off".
+        00481: --message_detail is set to "3".
+        00481: --message_level is not set.
+        00481: --message_suppress is not set.
+        00481: --method_processing is set to "synthesize".
+        00481: --mux_pushing is set to "on".
+        00481: --number_of_routing_layers is not set.
+        00481: --output is set to "fp_cmp_rtl.cpp".
+        00481: --output_dir is set to "bdw_work/modules/fp_cmp/DPA".
+        00481: --output_style_fp_rtl_same_arch is set to "off".
+        00481: --output_style_fsm_increment is set to "on".
+        00481: --output_style_mem is set to "array".
+        00481: --output_style_merge_cases is set to "on".
+        00481: --output_style_mux is set to "impl_case".
+        00481: --output_style_parts is set to "rtl".
+        00481: --output_style_pipelined_parts is set to "generic".
+        00481: --output_style_reset_all is set to "off".
+        00481: --output_style_reset_all_async is set to "off".
+        00481: --output_style_reset_all_sync is set to "off".
+        00481: --output_style_separate_behaviors is set to "off".
+        00481: --output_style_separate_memories is set to "off".
+        00481: --output_style_starc is set to "S2.2.2.2,S2.2.3.1,S2.3.1.1".
+        00481: --output_style_structure_only is set to "off".
+        00481: --output_style_two_part_fsm is set to "on".
+        00481: --output_style_ungroup_parts is set to "on".
+        00481: --parts_effort is set to "high".
+        00481: --parts_lib is set to "cynw_cm_float".
+        00481: --parts_lib_path is set to "bdw_work/libs/cynw_cm_float/c_parts,
+        00481.   /usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts".
+        00481: --path_delay_limit is set to "100".
+        00481: --path_delay_limit_unshare_regs is set to "on".
+        00481: --pipelined_parts is set to "on".
+        00481: --port_conns is set to "named".
+        00481: --power is set to "off".
+        00481: --power_clock_gating is set to "off".
+        00481: --power_fsm is set to "off".
+        00481: --power_memory is set to "off".
+        00481: --prints is set to "on".
+        00481: --project is set to "project.tcl".
+        00481: --qrc_tech_file is not set.
+        00481: --register_fsm_mux_selects is set to "on".
+        00481: --relax_timing is set to "off".
+        00481: --rtl_annotation is set to "op,stack".
+        00481: --run_through is set to "rtl".
+        00481: --scale_of_cap_per_unit_len is not set.
+        00481: --scale_of_res_per_unit_len is not set.
+        00481: --sched_analysis is set to "on_failure".
+        00481: --sched_asap is set to "off".
+        00481: --sched_effort is set to "medium".
+        00481: --sharing_effort_parts is set to "high".
+        00481: --sharing_effort_regs is set to "high".
+        00481: --shift_trimming is set to "standard".
+        00481: --simple_index_mapping is set to "off".
+        00481: --split_add is set to "0".
+        00481: --split_multiply is set to "0".
+        00481: --src_file is set to "fp_cmp.cpp".
+        00481: --summary_level is set to "WARNING".
+        00481: --switch_optimizer is set to "on".
+        00481: --tech_lib is set to "/usr/cadence/installs/Stratus/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib".
+        00481: --timing_aggression is set to "off".
+        00481: --undef_func is set to "warn".
+        00481: --unroll_loops is set to "off".
+        00481: --verilog_dialect is set to "1995".
+        00481: --wait_for_license is set to "off".
+        00481: --wireload is not set.
+   NOTE 03065: Control flow zipping is enabled
+   NOTE 01483: Using cmdesigner 2019.1.01.8041 (03251817).
+   NOTE 01727: Using Genus 17.11-s014_1.
+
+        01425: Loading design and library files:
+        01279:   All time values are in "ns".
+   NOTE 01277:   Using a clock period of 1.200ns.
+        01824:     Physical estimation options:
+        01825:       interconnect_mode .......... wireload
+        01825:       techlib ....................
+        01825.         /usr/cadence/installs/Stratus/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib
+        00967:   Processing library
+        02788:       Using cached results for cyn_reg_estimate_10
+        01472:       Register Metrics:
+        01440:          Register Type          Area              Delay (ns)
+        01440.         --------------   -------------------   ---------------
+        01440.         EN SS SC AS AC   Total   Comb    Seq     Prop    Setup
+        01440.         -- -- -- -- --   -----  -----  -----   ------   ------
+        01438:          0  0  0  0  0     5.5    0.0    5.5    0.114    0.066
+        01438:          0  0  0  0  1     6.2    0.0    6.2    0.131    0.067
+        01438:          0  0  0  1  0     6.5    0.0    6.5    0.127    0.067
+        01438:          0  0  0  1  1    12.0    0.7   11.3    0.141    0.098
+        01438:          0  0  1  0  0     6.8    1.4    5.5    0.114    0.123
+        01438:          0  0  1  0  1     7.5    1.4    6.2    0.131    0.125
+        01438:          0  0  1  1  0     7.9    1.0    6.8    0.161    0.089
+        01438:          0  0  1  1  1    12.3    1.0   11.3    0.141    0.106
+        01438:          0  1  0  0  0     6.8    1.4    5.5    0.114    0.104
+        01438:          0  1  0  0  1     7.5    1.4    6.2    0.131    0.105
+        01438:          0  1  0  1  0     7.9    1.0    6.8    0.161    0.100
+        01438:          0  1  0  1  1    12.3    1.0   11.3    0.141    0.115
+        01438:          0  1  1  0  0     7.5    2.1    5.5    0.114    0.147
+        01438:          0  1  1  0  1     8.2    2.1    6.2    0.131    0.149
+        01438:          0  1  1  1  0     8.6    1.7    6.8    0.161    0.111
+        01438:          0  1  1  1  1    13.0    1.7   11.3    0.141    0.127
+        01438:          1  0  0  0  0     7.5    0.0    7.5    0.112    0.122
+        01438:          1  0  0  0  1     8.2    0.0    8.2    0.134    0.110
+        01438:          1  0  0  1  0     8.9    2.4    6.5    0.129    0.143
+        01438:          1  0  0  1  1    13.7    2.4   11.3    0.143    0.133
+        01438:          1  0  1  0  0     8.9    1.4    7.5    0.112    0.177
+        01438:          1  0  1  0  1     9.6    1.4    8.2    0.134    0.169
+        01438:          1  0  1  1  0     9.9    1.7    8.2    0.153    0.131
+        01438:          1  0  1  1  1    14.4    1.7   12.7    0.149    0.164
+        01438:          1  1  0  0  0     8.9    1.4    7.5    0.112    0.158
+        01438:          1  1  0  0  1     9.6    1.4    8.2    0.134    0.150
+        01438:          1  1  0  1  0     9.9    1.7    8.2    0.153    0.145
+        01438:          1  1  0  1  1    14.4    1.7   12.7    0.149    0.175
+        01438:          1  1  1  0  0     9.6    2.1    7.5    0.112    0.202
+        01438:          1  1  1  0  1    10.3    2.1    8.2    0.134    0.192
+        01438:          1  1  1  1  0    10.6    2.4    8.2    0.153    0.156
+        01438:          1  1  1  1  1    15.0    2.4   12.7    0.149    0.187
+   NOTE 01037:     Characterizing multiplexors up to 1 bits by 33 inputs.
+        02788:       Using cached results for cyn_mux_estimate_34
+        01429:       Binary Multiplexor Metrics:
+        01431:         Bitwidth    Num Inputs      Area    Delay (ns)
+        01430:     1            2          2.86      0.061
+        01430:     1            3          4.78      0.120
+        01430:     1            4          7.23      0.120
+        01430:     1            5          9.69      0.178
+        01430:     1            8         17.06      0.178
+        01430:     1            9         19.52      0.237
+        01430:     1           16         36.72      0.237
+        01430:     1           17         39.18      0.295
+        01430:     1           32         76.04      0.295
+        01430:     1           33         78.50      0.354
+        01429:       Onehot Multiplexor Metrics:
+        01431:         Bitwidth    Num Inputs      Area    Delay (ns)
+        01430:     1            2          3.10      0.061
+        01430:     1            3          4.15      0.095
+        01430:     1            4          5.57      0.095
+        01430:     1            5          7.00      0.133
+        01430:     1            8         11.27      0.133
+        01430:     1            9         12.70      0.172
+        01430:     1           16         22.67      0.172
+        01430:     1           17         24.09      0.210
+        01430:     1           32         45.46      0.210
+        01430:     1           33         46.88      0.249
+
+        00148: Normalization and optimization:
+   NOTE 00860:   Long int data types are being implemented with 64 bits.
+        02923:   Dissolving function boundaries.
+        02924:   Dissolved 39 function calls.
+   NOTE 01446:   at fp_cmp.h line 24
+   NOTE 01446.     The edge-triggered SC_METHOD, _float_cmp, does not have a
+   NOTE 01446.     "dont_initialize()" invocation. This may lead to a mismatch
+   NOTE 01446.     between the SystemC and Verilog simulation models.
+   NOTE 01446:   at fp_cmp.h line 45
+   NOTE 01446.     The edge-triggered SC_METHOD, _dst_valid, does not have a
+   NOTE 01446.     "dont_initialize()" invocation. This may lead to a mismatch
+   NOTE 01446.     between the SystemC and Verilog simulation models.
+        02831:       at /usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts/cynw_cm_float_int.h
+        02831.         line 1117
+        02831.         Converting control branching to datapath elements. (3
+        02831.         bits multiplexed)
+        00116:   at fp_cmp.h line 45
+        00116.     Optimizing method fp_cmp::_dst_valid
+        00116:   at fp_cmp.h line 24
+        00116.     Optimizing method fp_cmp::_float_cmp
+   HINT 00333:     at /usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts/cynw_cm_float_int.h
+   HINT 00333.       line 338
+   HINT 00333.       This design may benefit from propagation of partial
+   HINT 00333.       constants. Try using --inline_partial_constants=on
+        00116:   at fp_cmp.h line 45
+        00116.     Optimizing method fp_cmp::_dst_valid
+        00305:     121 nodes
+        00306:     Optimize: pass 1.
+        00305:     46 nodes
+        00306:     Optimize: pass 2.
+        00305:     52 nodes
+        00306:     Optimize: pass 3..
+        00305:     49 nodes
+        00306:     Optimize: pass 4.
+        00305:     49 nodes
+        00306:     Optimize: pass 5.
+        00305:     49 nodes
+        00306:     Optimize: pass 6.
+        00305:     43 nodes
+        00306:     Optimize: pass 7.
+        00305:     43 nodes
+        00306:     Optimize: pass 8.
+        00116:   at fp_cmp.h line 24
+        00116.     Optimizing method fp_cmp::_float_cmp
+        00305:     5926 nodes
+        00306:     Optimize: pass 1..
+        00305:     3028 nodes
+        00306:     Optimize: pass 2.
+        00305:     3053 nodes
+        00306:     Optimize: pass 3..
+        00305:     3044 nodes
+        00306:     Optimize: pass 4.
+        00288:     at /usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts/cynw_cm_float_int.h
+        00288.       line 803
+        00288.       Unrolling loop 32 times because it is inside a protocol
+        00288.       block and does not contain a wait.
+        00305:     9540 nodes
+        00306:     Optimize: pass 5...
+        00305:     5821 nodes
+        00306:     Optimize: pass 6.
+        00305:     5818 nodes
+        00306:     Optimize: pass 7.
+        00305:     5818 nodes
+        00306:     Optimize: pass 8.
+        00305:     5818 nodes
+        00306:     Optimize: pass 9.
+        02831:       at /usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts/cynw_cm_float_int.h
+        02831.         line 804
+        02831.         Converting control branching to datapath elements. (10
+        02831.         bits multiplexed)
+        02831:       at /usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts/cynw_cm_float_int.h
+        02831.         line 1122
+        02831.         Converting control branching to datapath elements. (10
+        02831.         bits multiplexed)
+        02831:       at /usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts/cynw_cm_float_int.h
+        02831.         line 957
+        02831.         Converting control branching to datapath elements. (10
+        02831.         bits multiplexed)
+        02831:       at /usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts/cynw_cm_float_int.h
+        02831.         line 1851
+        02831.         Converting control branching to datapath elements. (10
+        02831.         bits multiplexed)
+        02831:       at /usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts/cynw_cm_float_int.h
+        02831.         line 1856
+        02831.         Converting control branching to datapath elements. (10
+        02831.         bits multiplexed)
+        02831:       at /usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts/cynw_cm_float_int.h
+        02831.         line 1864
+        02831.         Converting control branching to datapath elements. (10
+        02831.         bits multiplexed)
+        02831:       at /usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts/cynw_cm_float_int.h
+        02831.         line 1881
+        02831.         Converting control branching to datapath elements. (10
+        02831.         bits multiplexed)
+        02831:       at fp_cmp.h line 38
+        02831.         Converting control branching to datapath elements. (11
+        02831.         bits multiplexed)
+        00305:     5285 nodes
+        00306:     Optimize: pass 10...
+        00305:     5216 nodes
+        00306:     Optimize: pass 11.
+        02831:       at /usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts/cynw_cm_float_int.h
+        02831.         line 1120
+        02831.         Converting control branching to datapath elements. (10
+        02831.         bits multiplexed)
+        02831:       at /usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts/cynw_cm_float_int.h
+        02831.         line 956
+        02831.         Converting control branching to datapath elements. (10
+        02831.         bits multiplexed)
+        02831:       at /usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts/cynw_cm_float_int.h
+        02831.         line 1878
+        02831.         Converting control branching to datapath elements. (10
+        02831.         bits multiplexed)
+        00305:     4896 nodes
+        00306:     Optimize: pass 12...
+        00305:     4797 nodes
+        00306:     Optimize: pass 13.
+        02831:       at /usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts/cynw_cm_float_int.h
+        02831.         line 1875
+        02831.         Converting control branching to datapath elements. (10
+        02831.         bits multiplexed)
+        00305:     4681 nodes
+        00306:     Optimize: pass 14..
+        00305:     4657 nodes
+        00306:     Optimize: pass 15.
+        02831:       at /usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts/cynw_cm_float_int.h
+        02831.         line 1872
+        02831.         Converting control branching to datapath elements. (10
+        02831.         bits multiplexed)
+        00305:     4541 nodes
+        00306:     Optimize: pass 16..
+        00305:     4517 nodes
+        00306:     Optimize: pass 17.
+        02831:       at /usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts/cynw_cm_float_int.h
+        02831.         line 1869
+        02831.         Converting control branching to datapath elements. (10
+        02831.         bits multiplexed)
+        00305:     4401 nodes
+        00306:     Optimize: pass 18..
+        00305:     4371 nodes
+        00306:     Optimize: pass 19.
+        02831:       at /usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts/cynw_cm_float_int.h
+        02831.         line 1867
+        02831.         Converting control branching to datapath elements. (10
+        02831.         bits multiplexed)
+        00305:     4219 nodes
+        00306:     Optimize: pass 20..
+        00305:     4177 nodes
+        00306:     Optimize: pass 21.
+        00305:     4129 nodes
+        00306:     Optimize: pass 22..
+        00305:     4111 nodes
+        00306:     Optimize: pass 23.
+        00305:     4063 nodes
+        00306:     Optimize: pass 24..
+        00305:     4045 nodes
+        00306:     Optimize: pass 25.
+        00305:     3997 nodes
+        00306:     Optimize: pass 26..
+        00305:     3979 nodes
+        00306:     Optimize: pass 27.
+        00305:     3931 nodes
+        00306:     Optimize: pass 28..
+        00305:     3913 nodes
+        00306:     Optimize: pass 29.
+        00305:     3865 nodes
+        00306:     Optimize: pass 30..
+        00305:     3847 nodes
+        00306:     Optimize: pass 31.
+        00305:     3799 nodes
+        00306:     Optimize: pass 32..
+        00305:     3781 nodes
+        00306:     Optimize: pass 33.
+        00305:     3733 nodes
+        00306:     Optimize: pass 34..
+        00305:     3715 nodes
+        00306:     Optimize: pass 35.
+        00305:     3667 nodes
+        00306:     Optimize: pass 36..
+        00305:     3649 nodes
+        00306:     Optimize: pass 37.
+        00305:     3601 nodes
+        00306:     Optimize: pass 38..
+        00305:     3583 nodes
+        00306:     Optimize: pass 39.
+        00305:     3535 nodes
+        00306:     Optimize: pass 40..
+        00305:     3517 nodes
+        00306:     Optimize: pass 41.
+        00305:     3469 nodes
+        00306:     Optimize: pass 42..
+        00305:     3451 nodes
+        00306:     Optimize: pass 43.
+        00305:     3403 nodes
+        00306:     Optimize: pass 44..
+        00305:     3385 nodes
+        00306:     Optimize: pass 45.
+        00305:     3337 nodes
+        00306:     Optimize: pass 46..
+        00305:     3319 nodes
+        00306:     Optimize: pass 47.
+        00305:     3271 nodes
+        00306:     Optimize: pass 48..
+        00305:     3253 nodes
+        00306:     Optimize: pass 49.
+        00305:     3205 nodes
+        00306:     Optimize: pass 50..
+        00305:     3187 nodes
+        00306:     Optimize: pass 51.
+        00305:     3139 nodes
+        00306:     Optimize: pass 52..
+        00305:     3121 nodes
+        00306:     Optimize: pass 53.
+        00305:     3073 nodes
+        00306:     Optimize: pass 54..
+        00305:     3055 nodes
+        00306:     Optimize: pass 55.
+        00305:     3007 nodes
+        00306:     Optimize: pass 56..
+        00305:     2989 nodes
+        00306:     Optimize: pass 57.
+        00305:     2941 nodes
+        00306:     Optimize: pass 58..
+        00305:     2923 nodes
+        00306:     Optimize: pass 59.
+        00305:     2875 nodes
+        00306:     Optimize: pass 60..
+        00305:     2857 nodes
+        00306:     Optimize: pass 61.
+        00305:     2809 nodes
+        00306:     Optimize: pass 62..
+        00305:     2791 nodes
+        00306:     Optimize: pass 63.
+        00305:     2743 nodes
+        00306:     Optimize: pass 64..
+        00305:     2725 nodes
+        00306:     Optimize: pass 65.
+        00305:     2677 nodes
+        00306:     Optimize: pass 66..
+        00305:     2659 nodes
+        00306:     Optimize: pass 67.
+        00305:     2611 nodes
+        00306:     Optimize: pass 68..
+        00305:     2593 nodes
+        00306:     Optimize: pass 69.
+        00305:     2545 nodes
+        00306:     Optimize: pass 70..
+        00305:     2527 nodes
+        00306:     Optimize: pass 71.
+        00305:     2425 nodes
+        00306:     Optimize: pass 72..
+        00305:     2398 nodes
+        00306:     Optimize: pass 73.
+        02831:       at /usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts/cynw_cm_float_int.h
+        02831.         line 1104
+        02831.         Converting control branching to datapath elements. (10
+        02831.         bits multiplexed)
+        00305:     2335 nodes
+        00306:     Optimize: pass 74...
+        00305:     2299 nodes
+        00306:     Optimize: pass 75.
+        02831:       at /usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts/cynw_cm_float_int.h
+        02831.         line 1098
+        02831.         Converting control branching to datapath elements. (10
+        02831.         bits multiplexed)
+        00305:     2236 nodes
+        00306:     Optimize: pass 76...
+        00305:     2200 nodes
+        00306:     Optimize: pass 77.
+        02831:       at fp_cmp.h line 28
+        02831.         Converting control branching to datapath elements. (11
+        02831.         bits multiplexed)
+        02831:       at fp_cmp.h line 36
+        02831.         Converting control branching to datapath elements. (11
+        02831.         bits multiplexed)
+        00305:     2177 nodes
+        00306:     Optimize: pass 78..
+        00305:     2159 nodes
+        00306:     Optimize: pass 79.
+        00305:     2192 nodes
+        00306:     Optimize: pass 80..
+        00305:     1732 nodes
+        00306:     Optimize: pass 81.
+        00305:     1691 nodes
+        00306:     Optimize: pass 82..
+        00305:     1665 nodes
+        00306:     Optimize: pass 83.
+        00305:     1662 nodes
+        00306:     Optimize: pass 84.
+        00305:     1656 nodes
+        00306:     Optimize: pass 85.
+        00305:     1647 nodes
+        00306:     Optimize: pass 86..
+        00305:     1644 nodes
+        00306:     Optimize: pass 87.
+        00305:     1650 nodes
+        00306:     Optimize: pass 88..
+        00305:     1638 nodes
+        00306:     Optimize: pass 89.
+   NOTE 00494:       at /usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts/cynw_cm_float_int.h
+   NOTE 00494.         line 1097
+   NOTE 00494.         Created dpopt part for "int_to_cynw_cm_float".
+   NOTE 00494:       at /usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts/cynw_cm_float_int.h
+   NOTE 00494.         line 1850
+   NOTE 00494.         Created dpopt part for "cynw_cm_float_ltle".
+   NOTE 00492:       at /usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts/cynw_cm_float_int.h
+   NOTE 00492.         line 1850
+   NOTE 00492.         Not reusing dpopt part "cynw_cm_float_ltle" because
+   NOTE 00492.         instances appear to be different after optimization (at
+   NOTE 00492.         /usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts/cynw_cm_float_int.h
+   NOTE 00492.         line 1851 and at /usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts/cynw_cm_float_int.h
+   NOTE 00492.         line 1851). Creating new part name
+   NOTE 00492.         "cynw_cm_float_ltle_alt0" instead.
+        00305:     757 nodes
+        00306:     Optimize: pass 90...
+        00305:     602 nodes
+        00306:     Optimize: pass 91.
+        00305:     595 nodes
+        00306:     Optimize: pass 92...
+        00305:     586 nodes
+        00306:     Optimize: pass 93.
+        00305:     578 nodes
+        00306:     Optimize: pass 94...
+        00305:     575 nodes
+        00306:     Optimize: pass 95.
+        00305:     569 nodes
+        00306:     Optimize: pass 96..
+        00305:     566 nodes
+        00306:     Optimize: pass 97.
+        00305:     172 nodes
+        00306:     Optimize: pass 98..
+        00305:     145 nodes
+        00306:     Optimize: pass 99.
+        00305:     145 nodes
+        00306:     Optimize: pass 100.
+        00305:     145 nodes
+        00306:     Optimize: pass 101.
+        01352:   at fp_cmp.h line 45
+        01352.     Postprocessing method fp_cmp::_dst_valid
+        01352:   at fp_cmp.h line 24
+        01352.     Postprocessing method fp_cmp::_float_cmp
+   NOTE 00486: Creating custom parts for this design
+   NOTE 00487: Created 7 parts
+   NOTE 00488:     dpopt_auto: Suggesting 3 parts
+
+        00182: Initial resource mapping:
+   NOTE 01037:     Characterizing multiplexors up to 23 bits by 33 inputs.
+        02788:       Using cached results for cyn_mux_estimate_35
+        01429:       Binary Multiplexor Metrics:
+        01431:         Bitwidth    Num Inputs      Area    Delay (ns)
+        01430:     1            2          2.86      0.061
+        01430:     1            3          4.78      0.120
+        01430:     1            4          7.23      0.120
+        01430:     1            5          9.69      0.178
+        01430:     1            8         17.06      0.178
+        01430:     1            9         19.52      0.237
+        01430:     1           16         36.72      0.237
+        01430:     1           17         39.18      0.295
+        01430:     1           32         76.04      0.295
+        01430:     1           33         78.50      0.354
+        01430:     2            2          5.72      0.061
+        01430:     2            3          8.36      0.129
+        01430:     2            4         12.66      0.129
+        01430:     2            5         16.96      0.188
+        01430:     2            8         29.86      0.188
+        01430:     2            9         34.16      0.246
+        01430:     2           16         64.27      0.246
+        01430:     2           17         68.57      0.305
+        01430:     2           32        133.08      0.305
+        01430:     2           33        137.38      0.363
+        01430:     8            2         22.89      0.061
+        01430:     8            3         31.04      0.148
+        01430:     8            4         47.02      0.148
+        01430:     8            5         62.99      0.207
+        01430:     8            8        110.91      0.207
+        01430:     8            9        126.89      0.265
+        01430:     8           16        238.70      0.265
+        01430:     8           17        254.68      0.324
+        01430:     8           32        494.28      0.324
+        01430:     8           33        510.26      0.382
+        01430:    16            2         45.79      0.061
+        01430:    16            3         59.70      0.158
+        01430:    16            4         90.42      0.158
+        01430:    16            5        121.14      0.216
+        01430:    16            8        213.29      0.216
+        01430:    16            9        244.01      0.274
+        01430:    16           16        459.04      0.274
+        01430:    16           17        489.76      0.333
+        01430:    16           32        950.55      0.333
+        01430:    16           33        981.26      0.391
+        01430:    23            2         65.82      0.061
+        01430:    23            3         84.77      0.167
+        01430:    23            4        128.39      0.167
+        01430:    23            5        172.01      0.225
+        01430:    23            8        302.88      0.225
+        01430:    23            9        346.50      0.284
+        01430:    23           16        651.84      0.284
+        01430:    23           17        695.46      0.342
+        01430:    23           32       1349.78      0.342
+        01430:    23           33       1393.40      0.401
+        01429:       Onehot Multiplexor Metrics:
+        01431:         Bitwidth    Num Inputs      Area    Delay (ns)
+        01430:     1            2          3.10      0.061
+        01430:     1            3          4.15      0.095
+        01430:     1            4          5.57      0.095
+        01430:     1            5          7.00      0.133
+        01430:     1            8         11.27      0.133
+        01430:     1            9         12.70      0.172
+        01430:     1           16         22.67      0.172
+        01430:     1           17         24.09      0.210
+        01430:     1           32         45.46      0.210
+        01430:     1           33         46.88      0.249
+        01430:     2            2          6.21      0.061
+        01430:     2            3          7.26      0.095
+        01430:     2            4          9.76      0.095
+        01430:     2            5         12.25      0.133
+        01430:     2            8         19.73      0.133
+        01430:     2            9         22.22      0.172
+        01430:     2           16         39.67      0.172
+        01430:     2           17         42.16      0.210
+        01430:     2           32         79.55      0.210
+        01430:     2           33         82.04      0.249
+        01430:     8            2         24.84      0.061
+        01430:     8            3         26.98      0.095
+        01430:     8            4         36.23      0.095
+        01430:     8            5         45.49      0.133
+        01430:     8            8         73.27      0.133
+        01430:     8            9         82.53      0.172
+        01430:     8           16        147.34      0.172
+        01430:     8           17        156.60      0.210
+        01430:     8           32        295.48      0.210
+        01430:     8           33        304.73      0.249
+        01430:    16            2         49.67      0.061
+        01430:    16            3         51.88      0.095
+        01430:    16            4         69.68      0.095
+        01430:    16            5         87.49      0.133
+        01430:    16            8        140.90      0.133
+        01430:    16            9        158.71      0.172
+        01430:    16           16        283.34      0.172
+        01430:    16           17        301.15      0.210
+        01430:    16           32        568.22      0.210
+        01430:    16           33        586.03      0.249
+        01430:    23            2         71.40      0.061
+        01430:    23            3         73.67      0.095
+        01430:    23            4         98.95      0.095
+        01430:    23            5        124.23      0.133
+        01430:    23            8        200.08      0.133
+        01430:    23            9        225.37      0.172
+        01430:    23           16        402.35      0.172
+        01430:    23           17        427.63      0.210
+        01430:    23           32        806.88      0.210
+        01430:    23           33        832.16      0.249
+        00968:   Matching resources
+        02788:       Using cached results for fp_cmp_OrReduction_2S_1U_4
+        02790:         Area =     1.37  Latency = 0  Delay =    0.070ns
+        02788:       Using cached results for fp_cmp_cynw_cm_float_ltle_alt0_4
+        02790:         Area =   314.98  Latency = 0  Delay =    0.943ns
+        02788:       Using cached results for fp_cmp_cynw_cm_float_ltle_4
+        02790:         Area =    29.07  Latency = 0  Delay =    0.466ns
+        02788:       Using cached results for fp_cmp_N_Mux_1_2_2_4
+        02790:         Area =     2.39  Latency = 0  Delay =    0.090ns
+        02788:       Using cached results for fp_cmp_N_Mux_8_2_4_4
+        02790:         Area =    19.15  Latency = 0  Delay =    0.090ns
+        02788:       Using cached results for fp_cmp_N_Mux_23_2_6_4
+        02790:         Area =    55.06  Latency = 0  Delay =    0.090ns
+        02723:       Synthesizing fp_cmp_Muxi0u23u1_4...
+
+   NOTE 03280: A specified technology library contains scan flip flops which
+   NOTE 03280.   may be used in timing estimation.
+
+   NOTE 00171: No wireload models present in technology library,
+   NOTE 00171.   /usr/cadence/installs/Stratus/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib.
+
+   NOTE 00198: No wire load model is being used.
+
+        02790:         Area =    31.46  Latency = 0  Delay =    0.063ns
+        02723:       Synthesizing fp_cmp_Muxi0u8u1_4...
+        02790:         Area =    10.94  Latency = 0  Delay =    0.063ns
+        02723:       Synthesizing fp_cmp_Muxi0u1u1_4...
+        02790:         Area =     1.37  Latency = 0  Delay =    0.063ns
+        02788:       Using cached results for fp_cmp_OrReduction_2S_1U_1
+        02790:         Area =     4.45  Latency = 0  Delay =    0.051ns
+        02788:       Using cached results for fp_cmp_cynw_cm_float_ltle_alt0_1
+        02790:         Area =   363.89  Latency = 0  Delay =    0.464ns
+        02788:       Using cached results for fp_cmp_cynw_cm_float_ltle_1
+        02790:         Area =    54.72  Latency = 0  Delay =    0.249ns
+        02788:       Using cached results for fp_cmp_N_Mux_1_2_2_1
+        02790:         Area =    11.75  Latency = 0  Delay =    0.060ns
+        02788:       Using cached results for fp_cmp_N_Mux_8_2_4_1
+        02790:         Area =    93.98  Latency = 0  Delay =    0.060ns
+        02788:       Using cached results for fp_cmp_N_Mux_23_2_6_1
+        02790:         Area =   270.20  Latency = 0  Delay =    0.060ns
+        02723:       Synthesizing fp_cmp_Muxi0u23u1_1...
+        02790:         Area =   165.19  Latency = 0  Delay =    0.039ns
+        02723:       Synthesizing fp_cmp_Muxi0u8u1_1...
+        02790:         Area =    57.46  Latency = 0  Delay =    0.039ns
+        02723:       Synthesizing fp_cmp_Muxi0u1u1_1...
+        02790:         Area =     7.18  Latency = 0  Delay =    0.039ns
+
+        00969: Scheduling:
+   NOTE 01437:   at fp_cmp.h line 45
+   NOTE 01437.     Using global default input delay value of 0.100ns.
+   NOTE 01437:   at fp_cmp.h line 24
+   NOTE 01437.     Using global default input delay value of 0.100ns.
+               .
+        01171:   Scheduling method fp_cmp::_dst_valid
+        02080:       sched_asap            off     
+        02080:       sched_effort          medium  
+        02080:       sharing_effort_parts  high    
+        02080:       sharing_effort_regs   high    
+        02080:       relax_timing          off     
+        02080:       power_clock_gating    off     
+        02098:     Total op count: 3
+        03257:     Sharable op count: 0
+        01170:     Unsharable op count: 3
+        01166:     Estimated intrinsic mux area: 0
+        02361:     Schedule complete. Optimizing
+        01230:     Optimize: pass 1.
+        01230:     Optimize: pass 2
+
+        00970: Allocation & binding:
+        01218:     Scheduling Resources:
+        01463:       No scheduled resources (functional units) are needed.
+               .
+        01171:   Scheduling method fp_cmp::_float_cmp
+        02080:       sched_asap            off     
+        02080:       sched_effort          medium  
+        02080:       sharing_effort_parts  high    
+        02080:       sharing_effort_regs   high    
+        02080:       relax_timing          off     
+        02080:       power_clock_gating    off     
+        02098:     Total op count: 26
+        03257:     Sharable op count: 0
+        01170:     Unsharable op count: 26
+        01166:     Estimated intrinsic mux area: 977
+        01167:     at fp_cmp.h line 38 estimated mux area: 270
+        01168:     Symbol:CynTemp_0 Mux inputs: 2 Width: 23 Mux area: 270
+        01167:     at /usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts/cynw_cm_float_int.h
+        01167.       line 407 estimated mux area: 270
+        01168:     Symbol:r.man Mux inputs: 2 Width: 23 Mux area: 270
+        01167:     at fp_cmp.h line 36 estimated mux area: 165
+        01168:     Symbol:CynTemp_1 Mux inputs: 2 Width: 23 Mux area: 165
+        01167:     at fp_cmp.h line 38 estimated mux area: 93
+        01168:     Symbol:CynTemp_2 Mux inputs: 2 Width: 8 Mux area: 93
+        01167:     at /usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts/cynw_cm_float_int.h
+        01167.       line 408 estimated mux area: 93
+        01168:     Symbol:r.exp Mux inputs: 2 Width: 8 Mux area: 93
+        01167:     at fp_cmp.h line 36 estimated mux area: 57
+        01168:     Symbol:CynTemp_3 Mux inputs: 2 Width: 8 Mux area: 57
+        01167:     at fp_cmp.h line 38 estimated mux area: 11
+        01168:     Symbol:CynTemp_4 Mux inputs: 2 Width: 1 Mux area: 11
+        01167:     at /usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts/cynw_cm_float_int.h
+        01167.       line 409 estimated mux area: 11
+        01168:     Symbol:r.sign Mux inputs: 2 Width: 1 Mux area: 11
+        01167:     at fp_cmp.h line 36 estimated mux area: 7
+        01168:     Symbol:CynTemp_5 Mux inputs: 2 Width: 1 Mux area: 7
+        01117:     Initialized resource counts
+        02361:     Schedule complete. Optimizing
+        01230:     Optimize: pass 1.....
+        01230:     Optimize: pass 2
+
+        00970: Allocation & binding:
+        01218:     Scheduling Resources:
+        01219:                               Resource Quantity
+        01220:                   fp_cmp_N_Mux_1_2_2_1        2
+        01220:                  fp_cmp_N_Mux_23_2_6_4        2
+        01220:                   fp_cmp_N_Mux_8_2_4_4        2
+        01220:             fp_cmp_OrReduction_2S_1U_1        2
+        01220:                     fp_cmp_Muxi0u1u1_1        1
+        01220:                    fp_cmp_Muxi0u23u1_4        1
+        01220:                     fp_cmp_Muxi0u8u1_4        1
+        01220:            fp_cmp_cynw_cm_float_ltle_1        1
+        01220:       fp_cmp_cynw_cm_float_ltle_alt0_1        1
+
+        02918: RTL Generation & Optimization:
+        02917:   Preparing method fp_cmp::_dst_valid for final RTL output
+        01006:     States: 2
+        01677:     Building RTL structures, pass 1
+        01677:     Building RTL structures, pass 2
+
+               ............................................................
+               .                                                          .
+        00802: . Allocation Report for method "_dst_valid":               .
+        00805: .                              Area/Instance               .
+        00805: .                        ------------------------    Total .
+        00805: .       Resource  Count    Seq(#FF)    Comb    BB     Area .
+        00805: . --------------  -----  ----------  ------  ----  ------- .
+        00810: . implicit muxes                                       2.9 .
+        00808: .      registers      1                                    .
+        00809: .  register bits      1    5.5(1)       0.0            5.5 .
+        00811: . -------------------------------------------------------- .
+        00812: .     Total Area           5.5(1)       2.9   0.0      8.3 .
+               .                                                          .
+               ............................................................
+
+
+        01677:     Building RTL structures, pass 3
+        02917:   Preparing method fp_cmp::_float_cmp for final RTL output
+        01006:     States: 2
+        01677:     Building RTL structures, pass 1
+        01677:     Building RTL structures, pass 2
+
+               ..............................................................................
+               .                                                                            .
+        00802: . Allocation Report for method "_float_cmp":                                 .
+        00805: .                                                Area/Instance               .
+        00805: .                                          ------------------------    Total .
+        00805: .                         Resource  Count    Seq(#FF)    Comb    BB     Area .
+        00805: . --------------------------------  -----  ----------  ------  ----  ------- .
+        00807: . fp_cmp_cynw_cm_float_ltle_alt0_1      1               363.9          363.9 .
+        00807: .            fp_cmp_N_Mux_23_2_6_4      2                55.1          110.1 .
+        00807: .             fp_cmp_N_Mux_8_2_4_4      2                19.2           38.3 .
+        00807: .              fp_cmp_Muxi0u23u1_4      1                31.5           31.5 .
+        00807: .      fp_cmp_cynw_cm_float_ltle_4      1                29.1           29.1 .
+        00807: .               fp_cmp_Muxi0u8u1_4      1                10.9           10.9 .
+        00807: .             fp_cmp_N_Mux_1_2_2_4      2                 2.4            4.8 .
+        00807: .       fp_cmp_OrReduction_2S_1U_4      2                 1.4            2.7 .
+        00807: .               fp_cmp_Muxi0u1u1_4      1                 1.4            1.4 .
+        00810: .                   implicit muxes                                      91.6 .
+        00808: .                        registers      3                                    .
+        00809: .                    register bits     32    5.5(1)       0.0          175.1 .
+        00811: . -------------------------------------------------------------------------- .
+        00812: .                       Total Area         175.1(32)    684.3   0.0    859.4 .
+               .                                                                            .
+               ..............................................................................
+
+
+        01677:     Building RTL structures, pass 3
+        00971:   Cleaning up
+        00144:     Global optimizations................................
+        00144:     Global optimizations................................
+
+               +----------------------------------------------------------------------------+
+               |                                                                            |
+        00803: | Allocation Report for all threads:                                         |
+        00805: |                                                Area/Instance               |
+        00805: |                                          ------------------------    Total |
+        00805: |                         Resource  Count    Seq(#FF)    Comb    BB     Area |
+        00805: | --------------------------------  -----  ----------  ------  ----  ------- |
+        00807: | fp_cmp_cynw_cm_float_ltle_alt0_1      1               363.9          363.9 |
+        00807: |            fp_cmp_N_Mux_23_2_6_4      2                55.1          110.1 |
+        00807: |             fp_cmp_N_Mux_8_2_4_4      2                19.2           38.3 |
+        00807: |              fp_cmp_Muxi0u23u1_4      1                31.5           31.5 |
+        00807: |      fp_cmp_cynw_cm_float_ltle_4      1                29.1           29.1 |
+        00807: |               fp_cmp_Muxi0u8u1_4      1                10.9           10.9 |
+        00807: |             fp_cmp_N_Mux_1_2_2_4      2                 2.4            4.8 |
+        00807: |       fp_cmp_OrReduction_2S_1U_4      2                 1.4            2.7 |
+        00807: |               fp_cmp_Muxi0u1u1_4      1                 1.4            1.4 |
+        00808: |                        registers      4                                    |
+        01442: |                Reg bits by type:                                           |
+        01442. |                   EN SS SC AS AC                                           |
+        00809: |                    0  0  0  0  1     33    6.2(1)       0.0                |
+        00809: |                all register bits     33    6.2(1)       0.0          203.1 |
+        02604: |                  estimated cntrl      1                 0.0            0.0 |
+        00811: | -------------------------------------------------------------------------- |
+        00812: |                       Total Area         203.1(33)    592.7   0.0    795.8 |
+               |                                                                            |
+               +----------------------------------------------------------------------------+
+
+
+
+        00195: Writing RTL files:
+        01766:   bdw_work/modules/fp_cmp/DPA/fp_cmp_rtl.h
+        01767:   bdw_work/modules/fp_cmp/DPA/fp_cmp_rtl.cpp
+        01768:   bdw_work/modules/fp_cmp/DPA/fp_cmp_rtl.v
+
+stratus_hls succeeded with 0 errors and 0 warnings.
+
+make[1]: `bdw_work/modules/fp_cmp/DPA/fp_cmp_rtl.v' is up to date.
+/usr/cadence/installs/Stratus/bin/bdw_makegen project.tcl -scsim builtin -lib bdw_work/modules/fp_cmp/DPA -o bdw_work/modules/fp_cmp/DPA/Makefile -module fp_cmp -cynthconfig DPA  

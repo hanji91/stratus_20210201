@@ -1,0 +1,4 @@
+FATAL: cannot continue, received signal: Segmentation fault
+##########################################################################
+# Server mode exiting: client has exited.
+##########################################################################

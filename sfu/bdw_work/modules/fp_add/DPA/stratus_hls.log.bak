@@ -1,0 +1,137 @@
+Start at Thu Dec 31 22:38:44 2020
+
+
+stratus_hls 19.10-p100  (91500.011111)
+Copyright (c) 2019 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+        00481: -D is set to "__x86_64__, STRATUS=1, STRATUS_HLS=1, CYNTHESIZER,
+        00481.   CYNTHHL, DPA=1, BDW_RTL_fp_add_DPA=1".
+        00481: -I is set to "., bdw_work/wrappers,
+        00481.   /usr/cadence/installs/Stratus/share/stratus/include,
+        00481.   bdw_work/libs/cynw_cm_float/c_parts,
+        00481.   /usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts,
+        00481.   /usr/cadence/installs/Stratus/share/stratus/include,
+        00481.   /usr/cadence/installs/Stratus/tools.lnx86/stratus/systemc/2.3.1/include".
+        00481: -U is not set.
+        00481: --abort_level is set to "FATAL".
+        00481: --allow_pipeline_loop_expansion is set to "on".
+        00481: --attrib_value is not set.
+        00481: --balance_expr is set to "off".
+        00481: --cachelib is set to "on".
+        00481: --cachelib_dir is not set.
+        00481: --cap_table_file is not set.
+        00481: --clock_gating_module is not set.
+        00481: --clock_period is set to "2.800".
+        00481: --comm_subexp_elim is set to "off".
+        00481: --constrain_multiport_mem_distance is set to "on".
+        00481: --cycle_slack is set to "0.000".
+        00481: --default_input_delay is set to "0.100".
+        00481: --default_preserve_io is set to "off".
+        00481: --default_protocol is set to "off".
+        00481: --default_stable_input_delay is not set.
+        00481: --dont_ungroup_name is not set.
+        00481: --dont_ungroup_type is set to "none".
+        00481: --dpopt_auto is set to "op,expr".
+        00481: --dpopt_effort is set to "normal".
+        00481: --dpopt_with_enable is set to "off".
+        00481: --eco_baseline is not set.
+        00481: --eco_sharing is set to "off".
+        00481: --fail_level is set to "ERROR".
+        00481: --fixed_reset is set to "off".
+        00481: --flatten_arrays is set to "none".
+        00481: --fpga_dsp_latency is set to "2".
+        00481: --fpga_dsp_min_widths is set to "12,12".
+        00481: --fpga_part is not set.
+        00481: --fpga_tool is not set.
+        00481: --fpga_use_dsp is set to "off".
+        00481: --global_state_encoding is set to "binary".
+        00481: --help is not set.
+        00481: --hls_config is set to "DPA".
+        00481: --hls_module is set to "fp_add".
+        00481: --ignore_cells is not set.
+        00481: --ignore_scan_cells is set to "off".
+        00481: --inline_partial_constants is set to "off".
+        00481: --interconnect_mode is set to "wireload".
+        00481: --lef_library is not set.
+        00481: --logfile is set to "bdw_work/modules/fp_add/DPA/stratus_hls.log".
+        00481: --lsb_trimming is set to "off".
+        00481: --message_detail is set to "3".
+        00481: --message_level is not set.
+        00481: --message_suppress is not set.
+        00481: --method_processing is set to "synthesize".
+        00481: --mux_pushing is set to "on".
+        00481: --number_of_routing_layers is not set.
+        00481: --output is set to "fp_add_rtl.cpp".
+        00481: --output_dir is set to "bdw_work/modules/fp_add/DPA".
+        00481: --output_style_fp_rtl_same_arch is set to "off".
+        00481: --output_style_fsm_increment is set to "on".
+        00481: --output_style_mem is set to "array".
+        00481: --output_style_merge_cases is set to "on".
+        00481: --output_style_mux is set to "impl_case".
+        00481: --output_style_parts is set to "rtl".
+        00481: --output_style_pipelined_parts is set to "generic".
+        00481: --output_style_reset_all is set to "off".
+        00481: --output_style_reset_all_async is set to "off".
+        00481: --output_style_reset_all_sync is set to "off".
+        00481: --output_style_separate_behaviors is set to "off".
+        00481: --output_style_separate_memories is set to "off".
+        00481: --output_style_starc is set to "S2.2.2.2,S2.2.3.1,S2.3.1.1".
+        00481: --output_style_structure_only is set to "off".
+        00481: --output_style_two_part_fsm is set to "on".
+        00481: --output_style_ungroup_parts is set to "on".
+        00481: --parts_effort is set to "high".
+        00481: --parts_lib is set to "cynw_cm_float".
+        00481: --parts_lib_path is set to "bdw_work/libs/cynw_cm_float/c_parts,
+        00481.   /usr/cadence/installs/Stratus/share/stratus/cynware/cynw_cm_float/c_parts".
+        00481: --path_delay_limit is set to "100".
+        00481: --path_delay_limit_unshare_regs is set to "on".
+        00481: --pipelined_parts is set to "on".
+        00481: --port_conns is set to "named".
+        00481: --power is set to "off".
+        00481: --power_clock_gating is set to "off".
+        00481: --power_fsm is set to "off".
+        00481: --power_memory is set to "off".
+        00481: --prints is set to "on".
+        00481: --project is set to "project.tcl".
+        00481: --qrc_tech_file is not set.
+        00481: --register_fsm_mux_selects is set to "on".
+        00481: --relax_timing is set to "off".
+        00481: --rtl_annotation is set to "op,stack".
+        00481: --run_through is set to "rtl".
+        00481: --scale_of_cap_per_unit_len is not set.
+        00481: --scale_of_res_per_unit_len is not set.
+        00481: --sched_analysis is set to "on_failure".
+        00481: --sched_asap is set to "off".
+        00481: --sched_effort is set to "medium".
+        00481: --sharing_effort_parts is set to "high".
+        00481: --sharing_effort_regs is set to "high".
+        00481: --shift_trimming is set to "standard".
+        00481: --simple_index_mapping is set to "off".
+        00481: --split_add is set to "0".
+        00481: --split_multiply is set to "0".
+        00481: --src_file is set to "fp_add.cpp".
+        00481: --summary_level is set to "WARNING".
+        00481: --switch_optimizer is set to "on".
+        00481: --tech_lib is set to "/usr/cadence/installs/Stratus/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib".
+        00481: --timing_aggression is set to "off".
+        00481: --undef_func is set to "warn".
+        00481: --unroll_loops is set to "off".
+        00481: --verilog_dialect is set to "1995".
+        00481: --wait_for_license is set to "off".
+        00481: --wireload is not set.
+   NOTE 03065: Control flow zipping is enabled
+              #################################################################
+              #                                                               #
+  ERROR 02733:# Cannot start server, cmdesigner, see startup log at           #
+  ERROR 02733.#   /home/hanji/stratus/mv1/train_npu/sfu/bdw_work/modules/fp_add/DPA/bdw_work/jobs/cmd_server/startup.log #
+              #                                                               #
+              #################################################################
+
+        01445: Summary of messages of severity WARNING or greater:
+        01193:   SEVERITY MSGID CNT
+        01198:      ERROR 02733   1
+
+stratus_hls failed with 1 error and 0 warnings.
+
+End at Thu Dec 31 22:38:45 2020
+

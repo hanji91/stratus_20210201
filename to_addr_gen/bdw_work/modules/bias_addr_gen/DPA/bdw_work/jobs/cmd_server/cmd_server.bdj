@@ -1,0 +1,12 @@
+4900
+4904
+design1
+-
+3
+0
+0
+1
+1611710558
+1611710573
+/usr/cadence/installs/Stratus/tools.lnx86/stratus/bin/bdw_cmd_shell -dpopt --locallogfile /dev/null -x bdw_server_start
+

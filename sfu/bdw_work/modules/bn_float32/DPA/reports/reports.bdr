@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<report_catalogue>
+	<report_file>
+		<report_def>
+			<name>scheduler</name>
+			<summary>Reports all of the operations scheduled in each thread.</summary>
+			<unprintable/>
+			<node_kind>hls_config</node_kind>
+		</report_def>
+		<name>scheduler</name>
+		<object>hls_config:sfu/bn_float32/DPA</object>
+		<silent/>
+		<time>Tue Jan  5 20:57:14 2021</time>
+		<hostname>design1</hostname>
+		<user>hanji</user>
+		<version>19.10-p100</version>
+	</report_file>
+</report_catalogue>
